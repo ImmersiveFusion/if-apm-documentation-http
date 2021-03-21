@@ -1,0 +1,16 @@
+title: 3D Client
+collapse: true
+arrange:
+    - index.md
+    - installation.md
+    - connection
+    - grid
+    - avatar
+    - screen-ring
+    - movement
+    - hyper-cubes
+    - virtual-nodes
+    - hyper-terminals    
+    - virtual-nexus    
+    - console    
+
