@@ -2,7 +2,7 @@
 
 Follow the steps at https://www.mkdocs.org/
 
-## Install Python
+## Installing Python
 1. Determine if `python` needs installed, follow instructions
 
 ```
