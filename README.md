@@ -30,6 +30,9 @@ python -m pip install -U pip
 powershell .\serve.ps1
 ```
 
+Look at the serve output for the local URL for the docs.
+
+
 ## Use rich elements
 https://squidfunk.github.io/mkdocs-material/
 
