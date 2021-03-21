@@ -1,0 +1,138 @@
+site_name: Immersive Fusion Docs
+site_url: https://www.immersivefusion.com
+site_description: Fusion package and product documentation
+site_author: Immersive Fusion LLC
+
+#repo_url: https://github.com/mkdocs/mkdocs/
+#edit_uri: ""
+
+theme:
+    name: material
+    custom_dir: overrides
+    
+    # Don't include MkDocs' JavaScript
+    include_search_page: false
+    search_index_only: true
+    
+    # Default values, taken from mkdocs_theme.yml
+    language: en
+    features:
+        - navigation.tabs
+        - navigation.instant
+        - navigation.expand
+    palette:
+        scheme: default
+        #https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
+        primary: white
+        accent: light-blue
+    font:
+        text: Open Sans
+        code: Roboto Mono
+    favicon: assets/favicon.png
+    # icon:
+    #     logo: material/library
+    logo: assets/logo.png
+        
+plugins:
+    - search:
+        prebuild_index: true
+    - awesome-pages
+        #collapse_single_pages: false
+    - git-revision-date-localized
+    - minify:
+        minify_html: true
+        minify_js: true
+        htmlmin_opts:
+            remove_comments: true
+        #js_files:
+            # - my/javascript/dir/file1.js
+            # - my/javascript/dir/file2.js
+    - redirects:
+        redirect_maps:
+            # 'old.md': 'new.md'
+            # 'old/file.md': 'new/file.md'
+            # 'some_file.md': 'http://external.url.com/foobar'
+        
+markdown_extensions:
+    - toc:
+        permalink: true
+    - admonition
+    - def_list
+    - markdown.extensions.admonition
+    - markdown.extensions.attr_list
+    - markdown.extensions.def_list
+    - markdown.extensions.footnotes
+    - markdown.extensions.meta
+    - markdown.extensions.toc:
+        permalink: true
+    - pymdownx.arithmatex:
+        generic: true
+    - pymdownx.betterem:
+        smart_enable: all
+    - pymdownx.caret
+    - pymdownx.critic
+    - pymdownx.details
+    - pymdownx.emoji:
+        emoji_index: !!python/name:materialx.emoji.twemoji
+        emoji_generator: !!python/name:materialx.emoji.to_svg
+    - pymdownx.highlight:
+        use_pygments: true
+        linenums: true
+        linenums_style: pymdownx.inline
+    - pymdownx.inlinehilite
+    - pymdownx.keys
+    # - pymdownx.magiclink:
+        # repo_url_shorthand: true
+        # user: squidfunk
+        # repo: mkdocs-material
+    - pymdownx.mark
+    - pymdownx.smartsymbols
+    - pymdownx.snippets:
+        check_paths: true
+    - pymdownx.superfences:
+        custom_fences:
+            - name: mermaid
+              class: mermaid
+              format: !!python/name:pymdownx.superfences.fence_code_format
+    - pymdownx.tabbed
+    - pymdownx.tasklist:
+        custom_checkbox: true
+    - pymdownx.tilde
+    - markdown_include.include:
+        base_path: docs
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js  
+  - js/config.js
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css
+  #- css/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/solid/home
+      link: https://www.immersivefusion.com
+    - icon: fontawesome/solid/server
+      link: https://my.immersivefusion.com
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/immersivefusion
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/channel/UCVf6dSkjq0YaqgNAIRGjvwg
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/immersivefusion      
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/immersivefusion
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/immersivefusion
+    - icon: fontawesome/brands/github
+      link: https://github.com/immersivefusion
+      
+
+
+
+copyright: Copyright &copy; 2021 <a href="https://www.immersivefusion.com">Immersive Fusion LLC</a>, Maintained by the <a href="/about/release-notes/#maintenance-team">Fusion Team</a>.
+google_analytics: 
+    - #{GA.TrackingID}#
+    - auto
+
