@@ -12,7 +12,7 @@ Time required: `15 minutes`
 
 ## Before you begin
 
-### Fusion Hub connection information
+### Immersive Hub connection information
 
 * [Trial or paid license](/getting-started)
 
@@ -91,12 +91,12 @@ If you have any SQL or Redis cache connections, add the following packages as we
 
 ### Immersive Fusion packages
 
-Add the packages for direct connection to the Fusion Hub.
+Add the packages for direct connection to the Immersive Hub.
 
 === "Powershell"
 
     ``` powershell
-    dotnet add package IF.APM.OpenTelemetry.Direct  --prerelease
+    dotnet add package IF.APM.OpenTelemetry.Direct
     ```
 
 ## Update Start.cs
@@ -127,17 +127,18 @@ Add the following to the ConfigureService method body.
             // optional
             //.AddSqlClientInstrumentation()
 
-            .AddFusionExporter(fusionOptions =>
+            .AddImmersiveExporter(fusionOptions =>
             {
                 fusionOptions.DirectConnection = new DirectConnectionInformation
                 {
                     Name = "Tutorial",
-                    Uri = new Uri("FUSIONHUBURI"),
+                    Uri = new Uri("IMMERSIVEHUBURI"),
                     Tls = false, //set to 'true' in production
                     IgnoreTlsErrors = true, //set to 'false' in production
                     UserName = "YOURUSERNAME",
                     Password = "YOURPASSWORD",
-                    Exchange = "YOUREXCHANGE"
+                    Exchange = "YOUREXCHANGE",
+                    VirtualHost = "VIRTUALHOST"
                 };
             })
         );
@@ -150,11 +151,7 @@ Congratulations! Your application is now instrumented.
 
 If you still have a Powershell window with `dotnet watch run`, your application will be recompiled automatically.
 
-When you navigate back to [http://localhost:5001](http://localhost:5001){target=aspnetcoreapp} trace data being sent to your Fusion Hub and attached Immersive APM 3D client.
-
-The result would look like the following:
-
-![Instrumentation Result](img/result.png)
+When you navigate back to [http://localhost:5001](http://localhost:5001){target=aspnetcoreapp} trace data being sent to your Immersive Hub and attached Immersive APM 3D client.
 
 ## Clean up
 

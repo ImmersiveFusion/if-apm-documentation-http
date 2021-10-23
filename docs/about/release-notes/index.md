@@ -6,11 +6,18 @@ The Immersive APM documentation is managed by our developers and product manager
 
 ## Changes
 
-### 0.1.1 <small>October 5, 2020</small>
+### <small>October 5, 2021</small>
+
+* Re-branding
+* Adding Disqus
+* Updated 3D client screens and vernacular
+* Updated ASP.NET Core script samples to reflect nuget packages
+
+### <small>October 5, 2020</small>
 
 * ASP.NET Core Instrumentation example
 
-### 0.1.0 <small>August 20, 2020</small>
+### <small>August 20, 2020</small>
 
 * Initial release
 

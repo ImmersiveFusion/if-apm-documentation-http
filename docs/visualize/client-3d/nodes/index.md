@@ -1,4 +1,4 @@
-# Virtual Nodes
+# Nodes
 
 {!template/coming-soon.mdp!}
 

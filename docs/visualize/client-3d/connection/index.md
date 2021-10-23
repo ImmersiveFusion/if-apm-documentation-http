@@ -9,6 +9,3 @@ Enjoy!
 !!! note "Pro-tip"
     Pressing `F10` on your keyboard will bring up the connection screen.
 
-
-=== "Fusion Hub Connection"
-    ![Fusion Hub Connection](img/connectionscreen.png)

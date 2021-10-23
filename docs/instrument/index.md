@@ -10,9 +10,9 @@ Instrumentation with Immersive APM can be nearly automatic or manual, depending 
 
 ## Data flow
 
-Instrumentation is the beginning of gaining immense visibility into your application using Immersive APM. After instrumentation is in place, all Traces and Spans with metadata will be sent to a central location called the Fusion Hub.
+Instrumentation is the beginning of gaining immense visibility into your application using Immersive APM. After instrumentation is in place, all Traces and Spans with metadata will be sent to a central location called the Immersive Hub.
 
-Depending on your license model, data sent to Fusion Hub may be persisted and analyzed by a combination of real-time or post-processing modules that a cumulatively called the Nexus. Anyone using the [Immersive APM 3D client](/visualize/client-3d/) will see real-time application operations and metrics.
+Depending on your license model, data sent to the Immersive Hub may be persisted and analyzed by a combination of real-time or post-processing modules that a cumulatively called the Nexus. Anyone using the [Immersive APM 3D client](/visualize/client-3d/) will see real-time application operations and metrics.
 
 ![Fusion_APM_Instrumentation_Implementation_and_Tooling_Flow](diagram/flow.png)
 

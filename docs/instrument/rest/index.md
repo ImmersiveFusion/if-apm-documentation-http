@@ -4,7 +4,7 @@
 
 ## Overview
 
-The Immersive APM REST API is available for users who are not able to implement a direct connection to the Fusion Hub(s).  The API requires bearer token authentication is generally used directly for low-level instrumentation or as part of tracing standard implementation.
+The Immersive APM REST API is available for users who are not able to implement a direct connection to the Immersive Hub(s).  The API requires bearer token authentication is generally used directly for low-level instrumentation or as part of tracing standard implementation.
 
 ## Available Endpoints
 

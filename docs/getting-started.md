@@ -6,7 +6,7 @@
 1. Start sending trace information
 1. Visualize in 3D/VR/Web
 
-## Obtain a Fusion License
+## Obtain an Immersive License
 
 Level of effort: `low`
 
@@ -25,7 +25,7 @@ Level of effort: `medium`
 
 Time required: `15+ minutes`
 
-The next step is to enable your application to start recording trace data. Trace data are detailed metrics about what an application is doing, how well, and how quickly it's doing the work. Once the data is collected, it is sent to a Fusion Hub for storage or to be visible in real-time in the Immersive APM client applications.
+The next step is to enable your application to start recording trace data. Trace data are detailed metrics about what an application is doing, how well, and how quickly it's doing the work. Once the data is collected, it is sent to an Immersive Hub for storage or to be visible in real-time in the Immersive APM client applications.
 
 Instrumentation varies in complexity. Some of the available methods provide richer trace data than others, or they provide more performant collection for high-throughput environments at the expense of richness of the data.
 
