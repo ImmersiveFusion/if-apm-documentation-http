@@ -3,7 +3,7 @@
 Follow the steps at https://www.mkdocs.org/
 
 ## Installing Python
-1. Determine if `python` needs installed, follow instructions
+1. Determine if `python` needs to be installed, follow instructions on https://www.python.org/downloads/ Make sure to select add to PATH
 
 ```
 $ python --version
