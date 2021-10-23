@@ -19,8 +19,12 @@ Users may jump by pressing the Space bar.
 
 ## Mouse movement
 
-Using the mouse wheel causes the camera to zoom in and out.
+Holding down Control and using the mouse wheel causes the camera to zoom in and out.
 
 Holding down the right mouse button while moving the mouse causes the camera to rotate around the avatar.
 
 Holding down the right mouse button while walking will cause the avatar to turn in the direction of the mouse.
+
+# Ambient object rotation
+
+Holding down Alt and using the mouse wheel causes some objects like the Core charts to rotate.

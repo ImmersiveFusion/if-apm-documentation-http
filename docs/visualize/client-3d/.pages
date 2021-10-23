@@ -4,13 +4,14 @@ arrange:
     - index.md
     - installation.md
     - connection
+    - core
     - grid
+    - blocks
     - avatar
     - screen-ring
     - movement
-    - hyper-cubes
-    - virtual-nodes
-    - hyper-terminals    
-    - virtual-nexus    
+    - nodes
+    - terminals    
+        
     - console    
 
