@@ -7,10 +7,10 @@ After you have [applied Immersive APM Instrumentation](/instrument) in your appl
 !!! note ""
     The 3D client currently supports Windows OS x86 and x64
 
-* [Stable Release](https://ifapm.blob.core.windows.net/release/rtm/msi/ImmersiveAPM.latest.msi) - *recommended*
+* [Stable Release](https://ifapm.blob.core.windows.net/release/rtm/msi/ImmersiveAPM.latest.msi) - *(RECOMMENDED)*
 * [Beta Release](https://ifapm.blob.core.windows.net/release/beta/msi/ImmersiveAPM.latest.msi)
 * [Alpha Release](https://ifapm.blob.core.windows.net/release/alpha/msi/ImmersiveAPM.latest.msi)
 
-## Running the installer
+## Running the Installer
 
-To install the client, run the downloaded MSI. The client will automatically install in your computer's program files folder and create a Immersive APM icon in the start menu.
+To install the client, run the downloaded MSI. The client will automatically install in your computer's program files folder and create an Immersive APM icon at the desktop and in the start menu.

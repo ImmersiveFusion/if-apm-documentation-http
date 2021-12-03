@@ -2,7 +2,7 @@
 
 {!template/coming-soon.mdp!}
 
-The 3D Client is the primary visualization and analysis tool for Immersive APM. The 3D Client brings your data to life and gives you the power to explore your environment and application execution in Real-Time or, time-travel back to any past application load and explore the detailed, full picture of your landscape when past errors occurred. It is an unique data-visualization tool that brings your application and its operations to life. Users can immerse themselves into the application and experience the fusion of ambient application activity information, high-level and and granular details of application state and health as well as real-time and historic summary and analysis.
+The 3D Client is the primary visualization and analysis tool for Immersive APM. The 3D Client brings your data to life and gives you the power to explore your environment and application execution in Real-Time, or time-travel back to any past application load for exploring the details, full-picture of your landscape when past errors occurred. It is a unique data visualization tool that brings your application and its operations to life. Users can immerse themselves into the application and experience the fusion of ambient application activity information; high-level, and granular details of application state, real-time and previous health, summary, and analysis. 
 
 !!! note "Pro-tip"
     Pressing `F1` inside the 3D client will toggle basic help information to be displayed.
