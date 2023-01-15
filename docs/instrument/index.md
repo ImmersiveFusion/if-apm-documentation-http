@@ -14,11 +14,9 @@ Instrumentation is the beginning of gaining immense visibility into your applica
 
 Depending on your license model, data sent to the Immersive Hub may be persisted and analyzed by a combination of real-time or post-processing modules that a cumulatively called the Nexus. Anyone using the [Immersive APM 3D client](/visualize/client-3d/) will see real-time application operations and metrics.
 
-![Fusion_APM_Instrumentation_Implementation_and_Tooling_Flow](diagram/flow.png)
-
 ## Instrumentation Options
 
-We are constantly improving our instrumentation options to be provide an effortless and intuitive experience. We provide ready-made packages for applications written in a variety of languages. We also provide a REST web service option if a package for your application is not yet available. Please [contact us](/contact.md) with questions or if you need assistance.
+We are constantly improving our instrumentation options to be provide an effortless and intuitive experience. We provide ready-made packages for applications written in a variety of languages. We also provide a REST web service option if a package for your application is not yet available. Please [contact us](/contact) with questions or if you need assistance.
 
 ### Automatic Instrumentation / High Level
 
