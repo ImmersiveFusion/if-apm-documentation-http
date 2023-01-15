@@ -50,8 +50,8 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
   font:
-    header: Josefin Sans
-    //text: Josefin Sans
+    header: Josefin Sans # doesn't actually do anything, just for the record
+    #text: Josefin Sans
     text: Roboto
     code: Roboto Mono
   favicon: assets/favicon.png
