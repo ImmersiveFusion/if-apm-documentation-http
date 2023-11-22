@@ -1,3 +1,5 @@
+# Source: https://github.com/squidfunk/mkdocs-material/blob/master/mkdocs.yml
+
 # Project information
 site_name: Immersive Fusion Docs
 site_url: https://docs.immersivefusion.com
@@ -9,16 +11,21 @@ repo_name: Immersive Fusion Docs
 repo_url: https://github.com/ImmersiveFusion/if-apm-documentation-http
 edit_uri: edit/main/docs
 
+# Copyright
+copyright: Copyright &copy; 2023 <a href="https://www.immersivefusion.com">Immersive Fusion LLC</a>, Maintained by the <a href="/about/release-notes/#maintenance-team">Immersive Team</a>.
+
+
 # Configuration
 theme:
   name: material
   custom_dir: overrides
   features:
-    # - announce.dismiss
+    - announce.dismiss
     - content.action.edit
     - content.action.view
     - content.code.annotate
     - content.code.copy
+    - content.code.select
     # - content.tabs.link
     - content.tooltips
     # - header.autohide
@@ -26,6 +33,8 @@ theme:
     - navigation.footer
     - navigation.indexes
     # - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.progress
     # - navigation.prune
     - navigation.sections
     - navigation.tabs
@@ -39,14 +48,14 @@ theme:
     # - toc.integrate
   palette:
     - scheme: default
-      primary: deep purple
-      accent: deep purple
+      primary: indigo
+      accent: indigo
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - scheme: slate
-      primary: deep purple
-      accent: deep purple
+      primary: black
+      accent: indigo
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
@@ -56,68 +65,88 @@ theme:
     text: Roboto
     code: Roboto Mono
   favicon: assets/favicon.png
+  # icon:
+  #   logo: assets/logo
   logo: assets/logo.png
 
 # Plugins
 plugins:
+  #- blog
   - search:
-      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - awesome-pages
         #collapse_single_pages: false
   - git-revision-date-localized
   - minify:
       minify_html: true
-      minify_js: true
-      htmlmin_opts:
-        remove_comments: true
-      #js_files:
-        # - my/javascript/dir/file1.js
-        # - my/javascript/dir/file2.js
-  - redirects:
-      redirect_maps:
-        # 'old.md': 'new.md'
-        # 'old/file.md': 'new/file.md'
-        # 'some_file.md': 'http://external.url.com/foobar'
 
-# Markdown extensions
+# Hooks
+# hooks:
+#   - material/overrides/hooks/shortcodes.py
+#   - material/overrides/hooks/translations.py
+
+# Additional configuration
+extra:
+  homepage: https://immersivefusion.com
+  annotate:
+    json: [.s2]
+  analytics:
+    provider: google
+    property: #{GA.TrackingID}#
+
+  social:
+    #  - icon: fontawesome/solid/home
+    #    link: https://www.immersivefusion.com
+    #  - icon: fontawesome/solid/server
+    #    link: https://my.immersivefusion.com
+    #  - icon: fontawesome/brands/instagram
+    #    link: https://www.instagram.com/immersivefusion
+    #  - icon: fontawesome/brands/youtube
+    #    link: https://www.youtube.com/channel/UCVf6dSkjq0YaqgNAIRGjvwg
+    #  - icon: fontawesome/brands/twitter
+    #    link: https://twitter.com/immersivefusion      
+    #  - icon: fontawesome/brands/facebook
+    #    link: https://www.facebook.com/immersivefusion
+    #  - icon: fontawesome/brands/linkedin
+    #    link: https://www.linkedin.com/company/immersivefusion
+    #  - icon: fontawesome/brands/github
+    #    link: https://github.com/immersivefusion
+
+# Extensions
 markdown_extensions:
-  - toc:
-      permalink: true
   - abbr
   - admonition
   - attr_list
   - def_list
   - footnotes
   - md_in_html
-  - markdown.extensions.admonition
-  - markdown.extensions.attr_list
-  - markdown.extensions.def_list
-  - markdown.extensions.footnotes
-  - markdown.extensions.meta
-  - markdown.extensions.toc:
+  - toc:
       permalink: true
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.caret
-  - pymdownx.critic
   - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
   - pymdownx.highlight:
       anchor_linenums: true
-      use_pygments: true
-      linenums: true
-      linenums_style: pymdownx.inline
+      line_spans: __span
+      pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.magiclink:
+      normalize_issue_symbols: true
       repo_url_shorthand: true
       user: squidfunk
       repo: mkdocs-material
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.snippets:
-      check_paths: true
+      auto_append:
+        - includes/mkdocs.md
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -125,6 +154,10 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
@@ -138,104 +171,98 @@ extra_javascript:
 extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css
   - css/extra.css
-
-# # # Page tree
-# # nav:
-# #   - Home: index.md
-# #   - Getting started:
-# #     - Installation: getting-started.md
-# #     - Creating your site: creating-your-site.md
-# #     - Publishing your site: publishing-your-site.md
-# #     - Customization: customization.md
-# #     - Browser support: browser-support.md
-# #     - Philosophy: philosophy.md
-# #     - Alternatives: alternatives.md
-# #     - License: license.md
-# #     - Bug reporting:
-# #       - bug-report/index.md
-# #       - Creating a reproduction: bug-report/reproduction.md
-# #     - Changelog:
-# #       - changelog/index.md
-# #       - How to upgrade: upgrade.md
-# #   - Setup:
-# #     - Changing the colors: setup/changing-the-colors.md
-# #     - Changing the fonts: setup/changing-the-fonts.md
-# #     - Changing the language: setup/changing-the-language.md
-# #     - Changing the logo and icons: setup/changing-the-logo-and-icons.md
-# #     - Ensuring data privacy: setup/ensuring-data-privacy.md
-# #     - Setting up navigation: setup/setting-up-navigation.md
-# #     - Setting up site search: setup/setting-up-site-search.md
-# #     - Setting up site analytics: setup/setting-up-site-analytics.md
-# #     - Setting up social cards: setup/setting-up-social-cards.md
-# #     - Setting up a blog: setup/setting-up-a-blog.md
-# #     - Setting up tags: setup/setting-up-tags.md
-# #     - Setting up versioning: setup/setting-up-versioning.md
-# #     - Setting up the header: setup/setting-up-the-header.md
-# #     - Setting up the footer: setup/setting-up-the-footer.md
-# #     - Adding a git repository: setup/adding-a-git-repository.md
-# #     - Adding a comment system: setup/adding-a-comment-system.md
-# #     - Building for offline usage: setup/building-for-offline-usage.md
-# #     - Extensions:
-# #       - setup/extensions/index.md
-# #       - Python Markdown: setup/extensions/python-markdown.md
-# #       - Python Markdown Extensions: setup/extensions/python-markdown-extensions.md
-# #   - Reference:
-# #     - reference/index.md
-# #     - Admonitions: reference/admonitions.md
-# #     - Annotations: reference/annotations.md
-# #     - Buttons: reference/buttons.md
-# #     - Code blocks: reference/code-blocks.md
-# #     - Content tabs: reference/content-tabs.md
-# #     - Data tables: reference/data-tables.md
-# #     - Diagrams: reference/diagrams.md
-# #     - Footnotes: reference/footnotes.md
-# #     - Formatting: reference/formatting.md
-# #     - Grids: reference/grids.md
-# #     - Icons, Emojis: reference/icons-emojis.md
-# #     - Images: reference/images.md
-# #     - Lists: reference/lists.md
-# #     - MathJax: reference/mathjax.md
-# #     - Tooltips: reference/tooltips.md
-# #   - Insiders:
-# #     - insiders/index.md
-# #     - Getting started:
-# #       - Installation: insiders/getting-started.md
-# #       - Changelog: insiders/changelog.md
-# #   - Blog:
-# #     - blog/index.md
-# #     - 2022:
-# #       - blog/posts/blog-support-just-landed.md
-# #       - blog/posts/chinese-search-support.md
-# #     - 2021:
-# #       - blog/posts/the-past-present-and-future.md
-# #       - blog/posts/excluding-content-from-search.md
-# #       - blog/posts/search-better-faster-smaller.md
-
-# Customization
-extra:
-  homepage: https://immersivefusion.com
-  # social:
-  #   - icon: fontawesome/solid/home
-  #     link: https://www.immersivefusion.com
-  #   - icon: fontawesome/solid/server
-  #     link: https://my.immersivefusion.com
-  #   - icon: fontawesome/brands/instagram
-  #     link: https://www.instagram.com/immersivefusion
-  #   - icon: fontawesome/brands/youtube
-  #     link: https://www.youtube.com/channel/UCVf6dSkjq0YaqgNAIRGjvwg
-  #   - icon: fontawesome/brands/twitter
-  #     link: https://twitter.com/immersivefusion      
-  #   - icon: fontawesome/brands/facebook
-  #     link: https://www.facebook.com/immersivefusion
-  #   - icon: fontawesome/brands/linkedin
-  #     link: https://www.linkedin.com/company/immersivefusion
-  #   - icon: fontawesome/brands/github
-  #     link: https://github.com/immersivefusion
-  analytics:
-    provider: google
-    property: #{GA.TrackingID}#
-  disqus: if-docs
-
-
-# Copyright
-copyright: Copyright &copy; 2023 <a href="https://www.immersivefusion.com">Immersive Fusion LLC</a>, Maintained by the <a href="/about/release-notes/#maintenance-team">Immersive Team</a>.
+# # Page tree
+# nav:
+#   - Home: index.md
+#   - Getting started:
+#     - Installation: getting-started.md
+#     - Creating your site: creating-your-site.md
+#     - Publishing your site: publishing-your-site.md
+#     - Customization: customization.md
+#     - Conventions: conventions.md
+#     - Browser support: browser-support.md
+#     - Enterprise feedback: enterprise-support.md
+#     - Philosophy: philosophy.md
+#     - Alternatives: alternatives.md
+#     - License: license.md
+#     - Changelog:
+#       - changelog/index.md
+#       - How to upgrade: upgrade.md
+#     - Contributing:
+#       - contributing/index.md
+#       - Reporting a bug: contributing/reporting-a-bug.md
+#       - Reporting a docs issue: contributing/reporting-a-docs-issue.md
+#       - Requesting a change: contributing/requesting-a-change.md
+#       - Adding translations: contributing/adding-translations.md
+#       - Asking a question: https://github.com/squidfunk/mkdocs-material/discussions
+#     - Guides:
+#       - Creating a reproduction: guides/creating-a-reproduction.md
+#   - Setup:
+#     - setup/index.md
+#     - Changing the colors: setup/changing-the-colors.md
+#     - Changing the fonts: setup/changing-the-fonts.md
+#     - Changing the language: setup/changing-the-language.md
+#     - Changing the logo and icons: setup/changing-the-logo-and-icons.md
+#     - Ensuring data privacy: setup/ensuring-data-privacy.md
+#     - Setting up navigation: setup/setting-up-navigation.md
+#     - Setting up site search: setup/setting-up-site-search.md
+#     - Setting up site analytics: setup/setting-up-site-analytics.md
+#     - Setting up social cards: setup/setting-up-social-cards.md
+#     - Setting up a blog: setup/setting-up-a-blog.md
+#     - Setting up tags: setup/setting-up-tags.md
+#     - Setting up versioning: setup/setting-up-versioning.md
+#     - Setting up the header: setup/setting-up-the-header.md
+#     - Setting up the footer: setup/setting-up-the-footer.md
+#     - Adding a git repository: setup/adding-a-git-repository.md
+#     - Adding a comment system: setup/adding-a-comment-system.md
+#     - Building an optimized site: setup/building-an-optimized-site.md
+#     - Building for offline usage: setup/building-for-offline-usage.md
+#     - Extensions:
+#       - setup/extensions/index.md
+#       - Python Markdown: setup/extensions/python-markdown.md
+#       - Python Markdown Extensions: setup/extensions/python-markdown-extensions.md
+#   - Plugins:
+#     - plugins/index.md
+#     - Blog: plugins/blog.md
+#     - Group: plugins/group.md
+#     - Info: plugins/info.md
+#     - Meta: plugins/meta.md
+#     - Offline: plugins/offline.md
+#     - Optimize: plugins/optimize.md
+#     - Privacy: plugins/privacy.md
+#     - Projects: plugins/projects.md
+#     - Search: plugins/search.md
+#     - Social: plugins/social.md
+#     - Tags: plugins/tags.md
+#     - Typeset: plugins/typeset.md
+#     - Requirements:
+#       - Image processing: plugins/requirements/image-processing.md
+#       - Caching: plugins/requirements/caching.md
+#   - Reference:
+#     - reference/index.md
+#     - Admonitions: reference/admonitions.md
+#     - Annotations: reference/annotations.md
+#     - Buttons: reference/buttons.md
+#     - Code blocks: reference/code-blocks.md
+#     - Content tabs: reference/content-tabs.md
+#     - Data tables: reference/data-tables.md
+#     - Diagrams: reference/diagrams.md
+#     - Footnotes: reference/footnotes.md
+#     - Formatting: reference/formatting.md
+#     - Grids: reference/grids.md
+#     - Icons, Emojis: reference/icons-emojis.md
+#     - Images: reference/images.md
+#     - Lists: reference/lists.md
+#     - Math: reference/math.md
+#     - Tooltips: reference/tooltips.md
+#   - Insiders:
+#     - insiders/index.md
+#     - Getting started: insiders/getting-started.md
+#     - FAQ: insiders/faq/sponsoring.md
+#     - Changelog:
+#       - insiders/changelog/index.md
+#       - How to upgrade: insiders/upgrade.md
+#     - Community Experts Program:
+#       - insiders/community-experts-program/index.md
+#   - Blog:
+#     - blog/index.md

@@ -1,6 +1,27 @@
-{% extends "base.html" %}
-
-{% block extrahead %}
-<link href="//fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=b33c5a1c-bfe2-432b-84ae-613f7eb1d2b6"> </script>
-{% endblock %}
+{#-
+    This file was automatically generated - do not edit
+  -#}
+  {% extends "base.html" %}
+  {% block extrahead %}
+    <link rel="stylesheet" href="{{ 'assets/stylesheets/custom.00c04c01.min.css' | url }}">
+  {% endblock %}
+  {% block announce %}
+    For updates follow <strong>@immersivefusion</strong> on
+    <a rel="me" href="https://mastodon.social/@immersivefusion">
+      <span class="twemoji mastodon">
+        {% include ".icons/fontawesome/brands/mastodon.svg" %}
+      </span>
+      <strong>Mastodon</strong>
+    </a>
+    and
+    <a href="https://twitter.com/immersivefusion">
+      <span class="twemoji twitter">
+        {% include ".icons/fontawesome/brands/twitter.svg" %}
+      </span>
+      <strong>Twitter</strong>
+    </a>
+  {% endblock %}
+  {% block scripts %}
+    {{ super() }}
+    <script src="{{ 'assets/javascripts/custom.fe17d8dd.min.js' | url }}"></script>
+  {% endblock %}
