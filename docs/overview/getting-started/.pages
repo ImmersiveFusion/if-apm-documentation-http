@@ -1,0 +1,7 @@
+arrange:
+    - billing.md
+    - plans.md
+    - forever-trial.md
+    - sla.md
+    - instrumentation.md
+

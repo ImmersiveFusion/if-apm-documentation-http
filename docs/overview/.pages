@@ -1,0 +1,7 @@
+arrange:
+    - index.md
+    - observability
+    - apm
+    - ...
+    - getting-started
+    - contact.md
