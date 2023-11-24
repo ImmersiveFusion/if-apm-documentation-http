@@ -1,5 +1,7 @@
 arrange:
-    - overview
+    - index.md
+    - observability
+    - apm
     - ...
-    - instrument
-    - visualize
+    - getting-started
+    - contact.md
