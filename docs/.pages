@@ -1,8 +1,5 @@
 arrange:
-    - index.md
-    - getting-started.md
-    - contact.md
+    - overview
     - ...
     - instrument
     - visualize
-    - about

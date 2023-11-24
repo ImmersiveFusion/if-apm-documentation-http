@@ -1,0 +1,3 @@
+# Getting started 
+
+Getting started with a subscription to Immersive APM is a simple process. Customers can choose the [plan](plans.md) that best suits their needs, take advantage of the [Forever Trial](forever-trial.md) to try out the product, and easily upgrade or downgrade their plan as needed. With its easy-to-use tools and user-friendly interface, customers can be up and running in minutes, monitoring their applications and infrastructure with ease. 

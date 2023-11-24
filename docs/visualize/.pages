@@ -1,4 +1,2 @@
-arrange:
-    - index.md
-    - client-3d
-    - client-web
+collapse: true
+hide: true
