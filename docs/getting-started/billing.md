@@ -10,11 +10,11 @@ Metered billing is a pricing model where customers are charged based on their ac
 * Scalability: Metered billing can help businesses scale their services more efficiently. By charging customers based on their usage, businesses can better manage their resources and capacity, which can help them grow without incurring unnecessary costs.
 * Flexibility: Metered billing can be more flexible than other pricing models, as businesses can adjust their rates based on market demand or changes in resource costs. This can help businesses remain competitive and attract customers who are looking for more flexible pricing options.
 
-![Immersive Fusion Billing Model](img/billingmodel.png)
-
 ## Customer Account
 
 A customer account is a personalized space provided by Immersive Fusion to its customers, where they can subscribe to, join and access various features and services. A customer account typically requires customers to create a profile with their personal information, such as their name, email address, and sometimes billing information. 
+
+![Immersive Fusion Billing Model](img/billingmodel.png)
 
 ### Tenant
 
