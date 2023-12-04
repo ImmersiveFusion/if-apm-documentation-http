@@ -1,31 +1,57 @@
-# Instrumentation Overview
+# Instrumentation 
 
 {!template/subscription-required.mdp!}
 
-{!template/coming-soon.mdp!}
+Immersive APM offers support for the [OpenTelemetry](../observability/open-telemetry.md) [observailbity framework](../observability). This is the most common and easiest configuration for customers to get started.
 
-Instrumentation is the process of extending your applications' codebase to capture and report real-time operations, stack traces, performance metrics, and much more automatically every time all or certain operations execute.
+The process is called [instrumentation](https://opentelemetry.io/docs/instrumentation/) and [OpenTelemetry](../observability/open-telemetry.md) provides an exhaustive amount of documentation for many mainstream programming langugages. The process of instrumentation with OpenTelemetry involves adding the OpenTelemetry SDK to the application's codebase and configuring it to collect telemetry data. The SDK provides APIs to capture telemetry data from various sources in the application, including traces, metrics, and logs. Once the SDK is integrated into the application, developers can configure it to export the collected telemetry data to various tools and platforms, such as my.immersivefusion.com or other observability tools. The OpenTelemetry collector is a component that can be used to receive, process, and export telemetry data from the application.
 
-Instrumentation with Immersive APM can be nearly automatic or manual, depending on your needs. To get a deep insight into specific communication layers or a particularly important stack trace will require a small addition to your existing source code.
+After instrumentation is completed Immersive APM will start collecting telemetry data from the software application to gain insights into its performance, behavior, and usage. This data can then be seen in the [Immersive APM Web](../apm/web.md) and [Immersive APM 3D/VR](../apm/3d.md) clients. 
 
-## Data flow
+## Sending data to Immersive APM
 
-Instrumentation is the beginning of gaining immense visibility into your application using Immersive APM. After instrumentation is in place, all Traces and Spans with metadata will be sent to a central location called the Immersive Hub.
+Sending data to Immersive APM is easy! Configure your OTLP endpoint to `otlp.immersivefusion.com` and supply your API key.
 
-Depending on your license model, data sent to the Immersive Hub may be persisted and analyzed by a combination of real-time or post-processing modules that a cumulatively called the Nexus. Anyone using the [Immersive APM 3D client](/visualize/client-3d/) will see real-time application operations and metrics.
+### New Customers
 
-## Instrumentation Options
+If you haven't already, [start your subscription](https://www.immersivefusion.com/pricing){:target="myif"} by choosing the plan right for you. Then, follow the steps to configure your acocunt:
 
-We are constantly improving our instrumentation options to be provide an effortless and intuitive experience. We provide ready-made packages for applications written in a variety of languages. We also provide a REST web service option if a package for your application is not yet available. Please [contact us](/contact) with questions or if you need assistance.
+1. [Create a new tenant](https://my.immersivefusion.com/admin/tenants){:target="myif"} ([What is this?](../getting-started/account/#tenant)) 
+1. [Create a new billing profile](https://my.immersivefusion.com/admin/tenant-billing-profiles){:target="myif"} ([What is this?](../getting-started/account/#billing-profile)) 
+1. [Create a new subscription](https://my.immersivefusion.com/admin/subscriptions){:target="myif"}  ([What is this?](../getting-started/account/#subscription)) 
+1. [Create a new environment](https://my.immersivefusion.com/admin/environments){:target="myif"} ([What is this?](../getting-started/account/#environment)) 
+1. [Create a new (application) grid](https://my.immersivefusion.com/admin/grids){:target="myif"}. ([What is this?](../getting-started/account/#grid)) 
 
-### Automatic Instrumentation / High Level
+### Existing Customers
 
-High-level instrumentation packages deliver an clean, out-of-the-box experience allowing for a streamlined way to get started. There is a little effort to get an application fully instrumented and operational.
+Once you have at least one grid created, click on the instrumentation button :gear:
 
-### Manual Instrumentation / Low Level
+![Grids](img/grids.png)
 
-Low-level instrumentation packages enable finer control but require more effort. Typical uses for low level hooks include but are not limited to high-throughput applications which may only need a subset of the trace data.
+Follow the wizard to create your application grid API key, instrument your application and test the instrumentation setup. If you application is already instrumented, you just need to take the API key. 
 
-#### REST Endpoint Fall-back
+!!! warning "API keys are per Grid"
+    Every application grid should have its own unique API key. Otherwise, trace/log data from two or more applications will be mixed together.
 
-We also offer a fall-back REST option for cases where the standard ways of connecting are not suitable. This may be due to firewall restrictions or the language of your application is not one we already have a high-level or a low-level instrumentation package for.
+![Grids](img/instrument.png)
+
+The final piece is to specify your OTLP endpoint and API key. The code to do so will look different based on the language your application is written in. Here's C# example. Supply the API key to your application and deploy it. That's it!
+
+C# example:
+
+```csharp
+.AddOtlpExporter(o =>
+{
+    o.Endpoint = new Uri(this.Configuration["IfApmOtlpEndpoint"]);
+    o.Headers = $"API-Key={this.Configuration["IfApmAPIKey"]}";
+});
+```
+
+### Enter your grid and Enter the World of Your Application &trade;
+
+Once you have configured, deployed and tested your instrumentation, [Enter the World of Your Application &trade;](https://my.immersivefusion.com/apm/){:target="myif"} by either clicking the enter :material-login: button in [Immersive APM Web](../apm/web#immersive-apm-web) and [Immersive APM 3D/VR](../apm/3d#immersive-apm-3dvr) to start seeing your traces and log information.
+
+
+## Summary
+
+Instrumentation with the OpenTelemetry observability framework is a powerful tool for collecting telemetry data from software applications. It allows developers to use [Immersive APM Web](../apm/web#immersive-apm-web) and [Immersive APM 3D/VR](../apm/3d#immersive-apm-3dvr) clients and gain valuable insights into the application's performance, behavior, and usage, and make data-driven decisions to improve the application's functionality and user experience.
