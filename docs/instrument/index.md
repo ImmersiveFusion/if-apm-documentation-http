@@ -20,7 +20,7 @@ If you haven't already, [start your subscription](https://www.immersivefusion.co
 1. [Create a new billing profile](https://my.immersivefusion.com/admin/tenant-billing-profiles){:target="myif"} ([What is this?](../getting-started/account/#billing-profile)) 
 1. [Create a new subscription](https://my.immersivefusion.com/admin/subscriptions){:target="myif"}  ([What is this?](../getting-started/account/#subscription)) 
 1. [Create a new environment](https://my.immersivefusion.com/admin/environments){:target="myif"} ([What is this?](../getting-started/account/#environment)) 
-1. [Create a new (application) grid](https://my.immersivefusion.com/admin/grids){:target="myif"}. ([What is this?](../getting-started/account/#grid)) 
+1. [Create a new (application) grid](https://my.immersivefusion.com/admin/grids){:target="myif"} ([What is this?](../getting-started/account/#grid)) 
 
 ### Existing Customers
 
