@@ -47,7 +47,7 @@ C# example:
 });
 ```
 
-### Enter your grid and Enter the World of Your Application &trade;
+### Enter your grid
 
 Once you have configured, deployed and tested your instrumentation, [Enter the World of Your Application &trade;](https://my.immersivefusion.com/apm/){:target="myif"} by either clicking the enter :material-login: button in [Immersive APM Web](../apm/web#immersive-apm-web) and [Immersive APM 3D/VR](../apm/3d#immersive-apm-3dvr) to start seeing your traces and log information.
 
