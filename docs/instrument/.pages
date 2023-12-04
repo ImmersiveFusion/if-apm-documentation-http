@@ -1,8 +1,2 @@
-hide: true
 arrange:
     - index.md
-    - standards.md
-    - automatic
-    - manual
-    - rest
-    - packages
