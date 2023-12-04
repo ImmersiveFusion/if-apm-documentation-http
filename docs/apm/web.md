@@ -12,6 +12,12 @@ Another advantage of web-based APM solutions is their scalability. Since the sof
 
 Web-based APM solutions are also typically designed with user-friendly interfaces that make it easy for non-technical users to access and interpret performance data. This can help organizations to improve collaboration and communication between IT and business teams, and enable faster, more effective decision-making.
 
+## Immersive APM Web
+[Immersive APM Web](https://immersivefusion.com/web){:target="if"} allows users to Enter the World of Their Application through a web browser. It is optimal for users who do not want to install the client but rather easily access it on their mobile device or desktop.
+
+!!! info "Be sure to check out Immersive APM 3D/VR"
+    Check out [Immersive APM 3D/VR](../3d#immersive-apm-3dvr) for a rich and immersive experience.
+
 ## Summary
 
 A web-based APM solution can be an effective way for organizations to monitor and manage the performance of their applications and IT infrastructure. By providing a centralized view of application performance that is accessible from any location, web-based APM solutions can help organizations to identify and resolve issues quickly, improve user satisfaction, and reduce costs.

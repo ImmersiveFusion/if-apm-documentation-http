@@ -49,9 +49,9 @@ C# example:
 
 ### Enter your grid and Enter the World of Your Application &trade;
 
-Once you have configured, deployed and tested your instrumentation, [Enter the World of Your Application &trade;](https://my.immersivefusion.com/apm/){:target="myif"} by either clicking the enter :material-login: button in [Immersive APM Web](../../apm/web/) or [Immersive APM 3D/VR](../../apm/3d/) to start seeing your traces and log information.
+Once you have configured, deployed and tested your instrumentation, [Enter the World of Your Application &trade;](https://my.immersivefusion.com/apm/){:target="myif"} by either clicking the enter :material-login: button in [Immersive APM Web](../apm/web#immersive-apm-web) and [Immersive APM 3D/VR](../apm/3d#immersive-apm-3dvr) to start seeing your traces and log information.
 
 
 ## Summary
 
-Instrumentation with the OpenTelemetry observability framework is a powerful tool for collecting telemetry data from software applications. It allows developers to use [Immersive APM Web](../apm/web.md) and [Immersive APM 3D/VR](../apm/3d.md) clients and gain valuable insights into the application's performance, behavior, and usage, and make data-driven decisions to improve the application's functionality and user experience.
+Instrumentation with the OpenTelemetry observability framework is a powerful tool for collecting telemetry data from software applications. It allows developers to use [Immersive APM Web](../apm/web#immersive-apm-web) and [Immersive APM 3D/VR](../apm/3d#immersive-apm-3dvr) clients and gain valuable insights into the application's performance, behavior, and usage, and make data-driven decisions to improve the application's functionality and user experience.
