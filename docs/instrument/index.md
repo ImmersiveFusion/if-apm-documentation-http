@@ -42,8 +42,8 @@ C# example:
 ```csharp
 .AddOtlpExporter(o =>
 {
-    o.Endpoint = new Uri(this.Configuration["IfApmOtlpEndpoint"]);
-    o.Headers = $"API-Key={this.Configuration["IfApmAPIKey"]}";
+    o.Endpoint = new Uri("https://otlp.iapm.app");// i.e. this.Configuration["IfApmOtlpEndpoint"]
+    o.Headers = $"API-Key=IF-API-KEY-HERE";// i.e. {this.Configuration["IfApmAPIKey"]}
 });
 ```
 
