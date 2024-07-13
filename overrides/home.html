@@ -1,32 +1,7 @@
-<!--
-  Copyright (c) 2016-2024 Martin Donath <martin.donath@squidfunk.com>
-
-  Permission is hereby granted, free of charge, to any person obtaining a copy
-  of this software and associated documentation files (the "Software"), to
-  deal in the Software without restriction, including without limitation the
-  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
-  sell copies of the Software, and to permit persons to whom the Software is
-  furnished to do so, subject to the following conditions:
-
-  The above copyright notice and this permission notice shall be included in
-  all copies or substantial portions of the Software.
-
-  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
-  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
-  IN THE SOFTWARE.
--->
 
 {% extends "main.html" %}
 
-<!-- Render hero under tabs -->
-{% block tabs %}
-  {{ super() }}
-
-  <!-- Additional styles for landing page -->
+{% block extrahead %}
   <style>
 
     /* Application header should be static for the landing page */
@@ -39,9 +14,53 @@
       margin: 0;
     }
 
-    /* Hide main content for now */
-    .md-content {
-      display: none;
+
+    body{
+      background-image: url("assets/images/backdrop.png");
+      background-size: cover;
+    }
+
+    .backdrop
+    {
+      height:70vh;
+      display: flex;
+      align-items: center;
+    }
+
+    .light
+    {
+      color: white;
+    }
+
+    .text-center
+    {
+      text-align: center;
+    }
+
+    .text-uppercase {
+      text-transform: uppercase;
+    }
+
+    .smoke, h5 small, .md-typeset h5 {
+      color: #aaa;
+      font-family: 'Roboto', serif;
+    }
+
+    .md-typeset h1 
+    {
+      color: white;
+      font-weight: inherit;
+    }
+
+    .md-typeset h5
+    {
+      text-transform: inherit;
+      font-family: 'Roboto', serif;
+      font-size: 19px;
+      font-weight: normal;
+      font-style: italic;
+      line-height: 1.48;
+      margin: 0 0 15px 0;
     }
 
     /* Hide table of contents */
@@ -58,27 +77,25 @@
       }
     }
   </style>
+{% endblock %}
+
+<!-- Render hero under tabs -->
+{% block tabs %}
+  {{ super() }}
+
+  <!-- Additional styles for landing page -->
+  
+  </style>
 
   <!-- Hero for landing page -->
-  <section class="mdx-container">
+  <section class="mdx-container backdrop">
     <div class="md-grid md-typeset">
-      <div class="mdx-hero">
-
-        <!-- Hero image -->
-        <div class="mdx-hero__image">
-          <img
-            src="assets/images/illustration.png"
-            alt=""
-            width="1659"
-            height="1200"
-            draggable="false"
-          >
-        </div>
+      <div>
 
         <!-- Hero content -->
-        <div class="mdx-hero__content">
-          <h1>Technical documentation that just works</h1>
-          <p>{{ config.site_description }}. Set up in 5 minutes.</p>
+        <div class="text-center">
+          <h1 class="text-uppercase light">Software visualization and analysis that just works</h1>
+          <h5 class="smoke">{{ config.site_description }}. Set up in 5 minutes.</h5>
           <a
             href="{{ page.next_page.url | url }}"
             title="{{ page.next_page.title | e }}"
@@ -86,13 +103,13 @@
           >
             Quick start
           </a>
-          <a
+          <!-- <a
             href="{{ 'insiders/' | url }}"
             title="Material for MkDocs Insiders"
             class="md-button"
           >
             Get Insiders
-          </a>
+          </a> -->
         </div>
       </div>
     </div>
@@ -100,7 +117,9 @@
 {% endblock %}
 
 <!-- Content -->
-{% block content %}{% endblock %}
+{% block content %}
+{% endblock %}
 
 <!-- Application footer -->
-{% block footer %}{% endblock %}
+{% block footer %}
+{% endblock %}
