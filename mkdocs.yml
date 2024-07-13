@@ -87,7 +87,7 @@ plugins:
 
 # Additional configuration
 extra:
-  homepage: https://immersivefusion.com
+  homepage: /
   annotate:
     json: [.s2]
   analytics:
