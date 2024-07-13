@@ -3,7 +3,7 @@
 # Project information
 site_name: Immersive Fusion Docs
 site_url: https://docs.immersivefusion.com
-site_description: Immersive Function package and product documentation
+site_description: Immersive Function product and services documentation
 site_author: Immersive Fusion LLC
 
 # Repository
@@ -168,6 +168,7 @@ markdown_extensions:
       base_path: docs
 
 extra_javascript:
+  #- https://static.zdassets.com/ekr/snippet.js?key=b33c5a1c-bfe2-432b-84ae-613f7eb1d2b6
   - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js
   - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js  
   - js/config.js

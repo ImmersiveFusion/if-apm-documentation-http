@@ -2,6 +2,9 @@
 {% extends "main.html" %}
 
 {% block extrahead %}
+
+  <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=b33c5a1c-bfe2-432b-84ae-613f7eb1d2b6"> </script>
+
   <style>
 
     /* Application header should be static for the landing page */
@@ -94,14 +97,14 @@
 
         <!-- Hero content -->
         <div class="text-center">
-          <h1 class="text-uppercase light">Software visualization and analysis that just works</h1>
-          <h5 class="smoke">{{ config.site_description }}. Set up in 5 minutes.</h5>
+          <h1 class="text-uppercase light">Analyze the health of your Software Application</h1>
+          <h5 class="smoke">{{ config.site_description }}</h5>
           <a
             href="{{ page.next_page.url | url }}"
             title="{{ page.next_page.title | e }}"
             class="md-button md-button--primary"
           >
-            Quick start
+            Get Started
           </a>
           <!-- <a
             href="{{ 'insiders/' | url }}"
