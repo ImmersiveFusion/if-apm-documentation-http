@@ -1,0 +1,12 @@
+arrange:
+    - index.md
+    - Try
+    - Buy
+    #- Immersive-Clouds
+    #- Account-Configuration
+    # - observability
+    # - apm
+    # - ...
+    # - getting-started
+    # - instrument
+    # - contact.md

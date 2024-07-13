@@ -1,0 +1,14 @@
+arrange:
+    - index.md
+    - Supported-Configuration
+    - Installation
+    - Integrations
+    - release-notes.md
+    #- Immersive-Clouds
+    #- Account-Configuration
+    # - observability
+    # - apm
+    # - ...
+    # - getting-started
+    # - instrument
+    # - contact.md
