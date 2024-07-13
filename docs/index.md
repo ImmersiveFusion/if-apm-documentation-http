@@ -1,3 +1,11 @@
+---
+template: home.html
+title: Material for MkDocs
+social:
+  cards_layout_options:
+    title: Documentation that simply works
+---
+
 # Overview 
 
 Immersive Fusion (&commat;ImmersiveFusion on social media) is a company that is committed to providing advanced solutions for application performance management ([APM](apm)). The company's Immersive APM solution is designed to leverage the latest technological capabilities and provide software and operations engineers with a complete view of their entire application. With regular updates that are timely and designed with the user in mind, the Immersive APM solution provides customers with the newest features and capabilities.

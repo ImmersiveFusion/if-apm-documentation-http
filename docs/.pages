@@ -1,8 +1,8 @@
 arrange:
     - index.md
-    - observability
-    - apm
-    - ...
-    - getting-started
-    - instrument
-    - contact.md
+    # - observability
+    # - apm
+    # - ...
+    # - getting-started
+    # - instrument
+    # - contact.md
