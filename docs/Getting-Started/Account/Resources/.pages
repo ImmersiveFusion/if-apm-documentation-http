@@ -1,7 +1,7 @@
 arrange:
     - index.md
-    - Getting-Started
-    - Setup
+    #- Immersive-Clouds
+    #- Account-Configuration
     # - observability
     # - apm
     # - ...

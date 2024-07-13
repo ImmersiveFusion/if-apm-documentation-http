@@ -1,7 +1,8 @@
 arrange:
     - index.md
-    - Getting-Started
-    - Setup
+    - Account
+    - Philosophy
+    - License
     # - observability
     # - apm
     # - ...

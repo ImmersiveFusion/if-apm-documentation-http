@@ -1,7 +1,9 @@
 arrange:
     - index.md
-    - Getting-Started
-    - Setup
+    - Tenant
+    - Billing-Profile
+    - Subscription
+    - Environment
     # - observability
     # - apm
     # - ...

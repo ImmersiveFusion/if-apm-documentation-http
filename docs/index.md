@@ -1,9 +1,9 @@
 ---
 template: home.html
-title: Immersive Fusion Docs
+title: Home
 social:
   cards_layout_options:
-    title: Software visualization and analysis that just works
+    title: Analyze the health of your Software Application
 ---
 
 !!! info "Social"
