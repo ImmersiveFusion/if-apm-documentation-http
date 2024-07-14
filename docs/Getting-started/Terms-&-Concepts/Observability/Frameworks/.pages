@@ -1,5 +1,5 @@
 arrange:
-    - index.md
+    #- index.md
     - OpenTelemetry
     #- Immersive-Clouds
     #- Account-Configuration

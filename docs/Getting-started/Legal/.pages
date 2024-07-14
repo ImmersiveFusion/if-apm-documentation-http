@@ -4,3 +4,4 @@ arrange:
     - tos.md
     - policies.md
     - sla.md
+hide: true
