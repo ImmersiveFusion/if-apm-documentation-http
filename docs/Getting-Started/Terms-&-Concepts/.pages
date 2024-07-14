@@ -1,8 +1,10 @@
 arrange:
     - index.md
-    - Login-Options
-    - Sandbox
-    - Your-application
+    - Observability
+    - Instrumentation
+    - Frameworks
+    - Collection
+    - Correlation
     #- Immersive-Clouds
     #- Account-Configuration
     # - observability

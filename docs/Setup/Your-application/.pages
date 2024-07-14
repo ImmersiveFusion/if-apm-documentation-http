@@ -1,7 +1,9 @@
 arrange:
     - index.md
-    - Billing
-    - Resources
+    - Configure-your-account
+    - Get-your-API-Key
+    #- Immersive-Clouds
+    #- Account-Configuration
     # - observability
     # - apm
     # - ...

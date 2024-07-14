@@ -1,7 +1,5 @@
 arrange:
     - index.md
-    - Monthly-Subscription
-    - API-Key
     #- Immersive-Clouds
     #- Account-Configuration
     # - observability

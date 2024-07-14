@@ -1,8 +1,9 @@
 arrange:
     - index.md
+    - Terms-&-Concepts
+    - Data-Security
     - Account
     - Philosophy
-    - License
     # - observability
     # - apm
     # - ...

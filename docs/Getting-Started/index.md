@@ -1,1 +1,1 @@
-Hi there
+# Getting started

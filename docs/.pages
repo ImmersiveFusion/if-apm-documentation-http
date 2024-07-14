@@ -2,6 +2,7 @@ arrange:
     - index.md
     - Getting-Started
     - Setup
+    - Analysis-&-Visualization
     # - observability
     # - apm
     # - ...
