@@ -1,6 +1,6 @@
 # Immersive APM
 
-Immersive APM (&commat;ImmersiveAPM and #ImmersiveAPM on social media) is an Immersive Fusion product that leverages and showcases innovative approaches to ([APM](../APM/index.md)). It uses [web](../../../Analysis-and-Visualization/Web/index.md) and immersive technologies, such as [three dimensions (3D) and Virtual Reality (VR)](../../../Analysis-and-Visualization/3D-and-VR/index.md), to provide engineers with a more intuitive and immersive view of application performance.
+Immersive APM (&commat;ImmersiveAPM and #ImmersiveAPM on social media) is an Immersive Fusion product that leverages and showcases innovative approaches to ([APM](../.././Terms-and-Concepts/APM/index.md)). It uses [web](../../../Analysis-and-Visualization/Web-and-Mobile/index.md) and immersive technologies, such as [three dimensions (3D) and Virtual Reality (VR)](../../../Analysis-and-Visualization/3D-and-VR/index.md), to provide engineers with a more intuitive and immersive view of application performance.
 
 Immersive APM is cloud native solution that leverages the [OpenTelemetry](../Observability/Frameworks/OpenTelemetry/index.md) observability framework. This data is then used to create a three-dimensional representation of the application and its performance in a virtual or augmented environment. Engineers can then use VR or AR headsets or devices to navigate and explore the application in real-time, allowing for a more intuitive and immersive understanding of application performance.
 
