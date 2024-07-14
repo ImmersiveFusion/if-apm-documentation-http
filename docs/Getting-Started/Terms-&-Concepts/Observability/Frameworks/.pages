@@ -1,11 +1,6 @@
 arrange:
     - index.md
-    - Observability
-    - Instrumentation
-    - Collection
-    - Correlation
-    - APM
-    - IAPM
+    - OpenTelemetry
     #- Immersive-Clouds
     #- Account-Configuration
     # - observability
