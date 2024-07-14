@@ -1,6 +1,6 @@
 arrange:
     - index.md
-    - Getting-Started
+    - Getting-started
     - Setup
     - Analysis-&-Visualization
     # - observability
