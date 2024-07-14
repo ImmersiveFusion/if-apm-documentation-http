@@ -14,4 +14,4 @@ Immersive Fusion (&commat;ImmersiveFusion on social media) is a company that is 
 
 The Immersive APM solutions offer innovative approaches to ([APM](apm)) that provides software and operations engineers with the ability to view their entire application all at once. This is achieved through the use of web, VR, and 3D technology, which allows for quick and effective root-cause analysis, decreased downtime, and higher productivity. With Immersive APM, software and operations engineers can start answering questions such as how their application is performing at any given moment, which part of their system is having issues, and what they can expect to happen given the current load.
 
-![Immersive Fusion](img/avatar.png)
+![Immersive Fusion](../../assets/images/avatar.png)

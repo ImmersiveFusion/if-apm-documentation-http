@@ -13,9 +13,5 @@ The *Professional* plan is ideal for medium-sized teams or businesses that requi
 
 The *Enterprise* plan is designed for large organizations with complex IT infrastructures. It includes all the features of the Professional plan, as well as advanced security and compliance features, dedicated support, and more.
 
-!!! info "Forever Trial"
-    [Forever Trial](forever-trial.md), which is always free and provides most of the functionality of the product, but at a limited scale. This allows customers to try out the product and get a feel for its capabilities before committing to a paid plan.
-
-
 ## Summary 
 Getting started with a subscription to Immersive APM is a simple process. Customers can choose the plan that best suits their needs, take advantage of the Forever Trial to try out the product, and easily upgrade or downgrade their plan as needed. With its easy-to-use tools and user-friendly interface, customers can be up and running in minutes, monitoring their applications and infrastructure with ease.

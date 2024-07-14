@@ -1,12 +1,8 @@
 arrange:
     - index.md
+    - Immersive-Fusion
     - Terms-&-Concepts
     - Data-Security
     - Account
     - Philosophy
-    # - observability
-    # - apm
-    # - ...
-    # - getting-started
-    # - instrument
-    # - contact.md
+    - contact.md
