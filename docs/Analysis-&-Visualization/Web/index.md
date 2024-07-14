@@ -17,7 +17,7 @@ Web-based APM solutions are also typically designed with user-friendly interface
 [Immersive APM Web](https://immersivefusion.com/web){:target="if"} allows users to Enter the World of Their Application through a web browser. It is optimal for users who do not want to install the client but rather easily access it on their mobile device or desktop.
 
 !!! info "Be sure to check out Immersive APM 3D/VR"
-    Check out [Immersive APM 3D/VR](../3d#immersive-apm-3dvr) for a rich and immersive experience.
+    Check out [Immersive APM 3D/VR](../3D-&-VR/index.md) for a rich and immersive experience.
 
 ## Summary
 

@@ -2,7 +2,7 @@
 
 ![OpenTelemetry Logo](https://opentelemetry.io/img/logos/opentelemetry-horizontal-color.svg)
 
-[OpenTelemetry](https://opentelemetry.io/) is an open-source, vendor-agnostic [observability](../Observability/index.md) framework for cloud-native applications. It provides a unified set of APIs, libraries, and agents for collecting telemetry data (metrics, logs, and traces) from applications and infrastructure. OpenTelemetry aims to simplify the collection, processing, and analysis of telemetry data and provide a consistent way to instrument applications and services across different languages and platforms.
+[OpenTelemetry](https://opentelemetry.io/) is an open-source, vendor-agnostic [observability](../../../Observability/index.md) framework for cloud-native applications. It provides a unified set of APIs, libraries, and agents for collecting telemetry data (metrics, logs, and traces) from applications and infrastructure. OpenTelemetry aims to simplify the collection, processing, and analysis of telemetry data and provide a consistent way to instrument applications and services across different languages and platforms.
 
 OpenTelemetry was created by combining two existing observability projects, OpenCensus and OpenTracing, in an effort to create a single, standardized framework for observability. The project is currently maintained by the Cloud Native Computing Foundation (CNCF) and has a large and active community of contributors.
 

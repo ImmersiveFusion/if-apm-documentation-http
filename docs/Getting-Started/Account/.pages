@@ -1,6 +1,5 @@
 arrange:
     - index.md
-    - Grids
     # - observability
     # - apm
     # - ...

@@ -16,7 +16,7 @@ VR-based APM solutions are also well-suited for monitoring and managing complex,
 ![3D/VR Introduction](img/3dclientintro.png)
 
 !!! info "Be sure to check out Immersive APM Web"
-    Check out [Immersive APM Web](../web#immersive-apm-web) for a quick and cross platform experience.
+    Check out [Immersive APM Web](../Web/index.md) for a quick and cross platform experience.
 
 
 ## Summary
