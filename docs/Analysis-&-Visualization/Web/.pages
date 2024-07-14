@@ -1,6 +1,6 @@
 arrange:
     - index.md
-    - Supported-Configuration
+    - Supported-Configurations
     #- Intergrations
     - release-notes.md
     #- Immersive-Clouds

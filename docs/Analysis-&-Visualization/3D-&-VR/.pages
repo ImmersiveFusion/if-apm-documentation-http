@@ -1,6 +1,6 @@
 arrange:
     - index.md
-    - Supported-Configuration
+    - Supported-Configurations
     - Installation
     - Integrations
     - release-notes.md
