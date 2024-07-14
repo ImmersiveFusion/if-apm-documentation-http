@@ -1,6 +1,8 @@
 # Billing
 
-## Metererd Billing 
+Almost all subscription charges on your Immersive Fusion account are calculated using metered billing. 
+
+## Metered Billing 
 
 Metered billing is a pricing model where customers are charged based on their actual usage of a product or service. This differs from other pricing models, such as flat-rate or tiered pricing, where customers are charged a fixed fee regardless of their usage. There are several benefits of metered billing, both for businesses and customers.
 

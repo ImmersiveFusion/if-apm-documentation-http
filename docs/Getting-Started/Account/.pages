@@ -1,7 +1,6 @@
 arrange:
     - index.md
-    - Billing
-    - Resources
+    - Grids
     # - observability
     # - apm
     # - ...

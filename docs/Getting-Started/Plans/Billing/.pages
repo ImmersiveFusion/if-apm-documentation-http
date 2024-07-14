@@ -1,9 +1,5 @@
 arrange:
     - index.md
-    - Tenant
-    - Billing-Profile
-    - Subscription
-    - Environment
     # - observability
     # - apm
     # - ...

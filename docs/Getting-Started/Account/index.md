@@ -22,7 +22,7 @@ Managed resources for a tenant are organized by *environments*. Environments gro
 
 ## Grid
 
-Each managed application is a memeber of environment is referred to a *grid*.
+Each managed application is a member of environment is referred to a *grid*.
 
 ## Summary 
 
