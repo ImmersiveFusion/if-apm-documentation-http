@@ -1,8 +1,7 @@
 arrange:
     #- index.md
-    - Login
     - Sandbox
-    - Your-application
+    - Custom-application
     #- Immersive-Clouds
     #- Account-Configuration
     # - observability

@@ -4,7 +4,7 @@ Subscription plans are a common pricing model used by businesses to offer their 
 
 ## Plans
 
-The *Immersive Grid* (Basic) plan is perfect for small teams or individuals who are just getting started with Immersive APM. It provides access to the essential features needed for monitoring and managing applications, such as metrics, logs, and traces. The plan does have a SLA. The plan offers real-time data only and offers no data retention.
+The *Immersive Grid* (Basic) plan is perfect for small teams or individuals who are just getting started with Immersive APM. It provides access to the essential features needed for monitoring and managing applications, such as metrics, logs, and traces. The plan does not have a SLA. The plan offers real-time data only and offers no data retention.
 
 !!! warning "Coming soon"
     Professional and Enterprise plans only available to Private Preview customers.

@@ -2,7 +2,7 @@
 
 ## Immersive Fusion
 
-Immersive Fusion (&commat;ImmersiveFusion on social media) is a company that is committed to providing advanced solutions for Application Performance Monitoring and Management ([APM](../Getting-started/Terms-&-Concepts/APM/index.md)). The company's Immersive APM solution is designed to leverage the latest technological capabilities and provide software and operations engineers with a complete view of their entire application. With regular updates that are timely and designed with the user in mind, the Immersive APM solution provides customers with the newest features and capabilities.
+Immersive Fusion (&commat;ImmersiveFusion on social media) is a company that is committed to providing advanced solutions for Application Performance Monitoring and Management ([APM](../Getting-started/Terms-and-Concepts/APM/index.md)). The company's Immersive APM solution is designed to leverage the latest technological capabilities and provide software and operations engineers with a complete view of their entire application. With regular updates that are timely and designed with the user in mind, the Immersive APM solution provides customers with the newest features and capabilities.
 
 !!! info "Social"
     [LinkedIn](https://www.linkedin.com/company/immersivefusion) | 
@@ -14,7 +14,7 @@ Immersive Fusion (&commat;ImmersiveFusion on social media) is a company that is 
     [GitHub](https://github.com/immersivefusion) |
     [Discord](https://discord.gg/zevywnQp6K)
 
-Our solutions leverage immersion and ambient information and emphasize simplicity through ([Immersive APM](../Getting-started/Terms-&-Concepts/IAPM/index.md)). The solution enables software and operations engineers with the ability to view their entire application all at once in order to perform quick and effective root-cause analysis, decrease downtime, and have higher productivity. With Immersive APM, software and operations engineers can start answering questions such as how their application is performing at any given moment, which part of their system is having issues, and what they can expect to happen given the current load.
+Our solutions leverage immersion and ambient information and emphasize simplicity through ([Immersive APM](../Getting-started/Terms-and-Concepts/IAPM/index.md)). The solution enables software and operations engineers with the ability to view their entire application all at once in order to perform quick and effective root-cause analysis, decrease downtime, and have higher productivity. With Immersive APM, software and operations engineers can start answering questions such as how their application is performing at any given moment, which part of their system is having issues, and what they can expect to happen given the current load.
 
 ![Immersive Fusion Avatar](../assets/images/avatar.png)
 

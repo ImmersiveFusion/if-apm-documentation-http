@@ -18,7 +18,5 @@ VR-based APM solutions are also well-suited for monitoring and managing complex,
 !!! info "Be sure to check out Immersive APM Web"
     Check out [Immersive APM Web](../Web/index.md) for a quick and cross platform experience.
 
-<!-- <a href="//azure.iapm.app" title="Immersive APM (Azure)" class="md-button md-button--primary">Login into Immersive APM with Entra ID</a> -->
-
 ## Summary
 VR-based APM solution can be an effective way for organizations to gain a deeper understanding of application performance and identify potential issues more quickly. By providing an immersive and intuitive view of application performance, VR-based APM solutions can help engineers to work more effectively, improve collaboration, and make faster, more informed decisions.

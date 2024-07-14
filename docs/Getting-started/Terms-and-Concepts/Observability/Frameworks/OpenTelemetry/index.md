@@ -1,6 +1,6 @@
 # OpenTelemetry
 
-![OpenTelemetry Logo](https://opentelemetry.io/img/logos/opentelemetry-horizontal-color.svg)
+![OpenTelemetry Logo](https://opentelemetry.io/img/logos/opentelemetry-horizontal-color.svg){:style="height:100px; float:right"}
 
 [OpenTelemetry](https://opentelemetry.io/) is an open-source, vendor-agnostic [observability](../../../Observability/index.md) framework for cloud-native applications. It provides a unified set of APIs, libraries, and agents for collecting telemetry data (metrics, logs, and traces) from applications and infrastructure. OpenTelemetry aims to simplify the collection, processing, and analysis of telemetry data and provide a consistent way to instrument applications and services across different languages and platforms.
 
