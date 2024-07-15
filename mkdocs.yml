@@ -82,6 +82,22 @@ plugins:
   - git-revision-date-localized
   - minify:
       minify_html: true
+  - redirects:
+      redirect_maps:
+        'getting-started/account.md': 'Getting-started/Account/index.md'
+        'instrument/index.md': 'Setup/Custom-application/Instrument-your-application/index.md'
+
+        #social
+        'social/x/index.md': 'https://x.com/immersivefusion'
+        'social/linkedin/index.md': 'https://www.linkedin.com/company/immersivefusion'
+        'social/mastodon/index.md': 'https://mastodon.social/@immersivefusion'
+        'social/youtube/index.md': 'https://www.youtube.com/@immersivefusion'
+        'social/facebook/index.md': 'https://www.facebook.com/immersivefusion'
+        'social/github/index.md': 'https://github.com/immersivefusion'
+        'social/instagram/index.md': 'https://www.instagram.com/immersivefusion'
+        
+        #links
+        'link/discord/index.md': 'https://discord.gg/zevywnQp6K'
 
 # Hooks
 # hooks:
