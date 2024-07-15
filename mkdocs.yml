@@ -84,7 +84,6 @@ plugins:
       minify_html: true
   - redirects:
       redirect_maps:
-        'getting-started/account.md': 'Getting-started/Account/index.md'
         'instrument/index.md': 'Setup/Custom-application/Instrument-your-application/index.md'
 
         #social
