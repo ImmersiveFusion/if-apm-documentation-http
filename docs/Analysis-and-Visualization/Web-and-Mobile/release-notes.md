@@ -2,10 +2,7 @@
 
 ## Immersive APM Web
 
-### 2.0.0 <small>July 2, 2024</small> { id="9.5.28" }
+### 3.25.0 <small>July 2, 2024</small> { id="3.25.0" }
 
-- Fixed #7313: Improved tooltips mounted in sidebar when feature is disabled
+- Add the ability to show the demo IAPM grid for all accounts.
 
-### 0.1.0 <small>February 9, 2016</small> { id="0.1.0" }
-
-- Initial release
