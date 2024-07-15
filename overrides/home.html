@@ -1,0 +1,128 @@
+
+{% extends "main.html" %}
+
+{% block extrahead %}
+
+  <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=b33c5a1c-bfe2-432b-84ae-613f7eb1d2b6"> </script>
+
+  <style>
+
+    /* Application header should be static for the landing page */
+    .md-header {
+      position: initial;
+    }
+
+    /* Remove spacing, as we cannot hide it completely */
+    .md-main__inner {
+      margin: 0;
+    }
+
+
+    body{
+      background-image: url("assets/images/backdrop.png");
+      background-size: cover;
+    }
+
+    .backdrop
+    {
+      height:70vh;
+      display: flex;
+      align-items: center;
+    }
+
+    .light
+    {
+      color: white;
+    }
+
+    .text-center
+    {
+      text-align: center;
+    }
+
+    .text-uppercase {
+      text-transform: uppercase;
+    }
+
+    .smoke, h5 small, .md-typeset h5 {
+      color: #aaa;
+      font-family: 'Roboto', serif;
+    }
+
+    .md-typeset h1 
+    {
+      color: white;
+      font-weight: inherit;
+    }
+
+    .md-typeset h5
+    {
+      text-transform: inherit;
+      font-family: 'Roboto', serif;
+      font-size: 19px;
+      font-weight: normal;
+      font-style: italic;
+      line-height: 1.48;
+      margin: 0 0 15px 0;
+    }
+
+    /* Hide table of contents */
+    @media screen and (min-width: 60em) {
+      .md-sidebar--secondary {
+        display: none;
+      }
+    }
+
+    /* Hide navigation */
+    @media screen and (min-width: 76.25em) {
+      .md-sidebar--primary {
+        display: none;
+      }
+    }
+  </style>
+{% endblock %}
+
+<!-- Render hero under tabs -->
+{% block tabs %}
+  {{ super() }}
+
+  <!-- Additional styles for landing page -->
+  
+  </style>
+
+  <!-- Hero for landing page -->
+  <section class="mdx-container backdrop">
+    <div class="md-grid md-typeset">
+      <div>
+
+        <!-- Hero content -->
+        <div class="text-center">
+          <h1 class="text-uppercase light">Analyze the health of your Software Application</h1>
+          <h5 class="smoke">{{ config.site_description }}</h5>
+          <a
+            href="{{ page.next_page.url | url }}"
+            title="{{ page.next_page.title | e }}"
+            class="md-button md-button--primary"
+          >
+            Get started
+          </a>
+          <a
+            href="{{ '//immersivefusion.com' | url }}"
+            title="Company web site"
+            class="md-button"
+          >
+            Company web site
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
+
+<!-- Content -->
+{% block content %}
+{% endblock %}
+
+<!-- Application footer -->
+{% block footer %}
+{% endblock %}

@@ -1,8 +1,9 @@
 arrange:
     - index.md
-    - Getting-started
-    - Setup
-    - Analysis-and-Visualization
+    - Live-Demo
+    - Analyse-and-visualize
+    #- Immersive-Clouds
+    #- Account-Configuration
     # - observability
     # - apm
     # - ...

@@ -1,8 +1,10 @@
 arrange:
     - index.md
-    - Getting-started
-    - Setup
-    - Analysis-and-Visualization
+    - Supported-Configurations
+    #- Intergrations
+    - release-notes.md
+    #- Immersive-Clouds
+    #- Account-Configuration
     # - observability
     # - apm
     # - ...

@@ -1,8 +1,10 @@
 arrange:
     - index.md
-    - Getting-started
-    - Setup
-    - Analysis-and-Visualization
+    - Windows
+    - Linux
+    - Mac
+    #- Immersive-Clouds
+    #- Account-Configuration
     # - observability
     # - apm
     # - ...

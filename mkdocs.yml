@@ -3,7 +3,7 @@
 # Project information
 site_name: Immersive Fusion Docs
 site_url: https://docs.immersivefusion.com
-site_description: Immersive Function package and product documentation
+site_description: Immersive Function product and services documentation
 site_author: Immersive Fusion LLC
 
 # Repository
@@ -14,6 +14,9 @@ edit_uri: edit/main/docs
 # Copyright
 copyright: Copyright &copy; 2020-2024 <a href="https://www.immersivefusion.com">Immersive Fusion LLC</a>, Maintained by the <a href="/about/release-notes/#maintenance-team">Immersive Team</a>. Some content generation and supplimentation using GPT through Azure OpenIA 
 
+watch:
+  - docs
+  - overrides
 
 # Configuration
 theme:
@@ -32,10 +35,10 @@ theme:
     # - navigation.expand
     - navigation.footer
     - navigation.indexes
-    # - navigation.instant
-    # - navigation.instant.prefetch
-    # - navigation.instant.progress
-    # - navigation.prune
+    #- navigation.instant
+    #- navigation.instant.prefetch
+    #- navigation.instant.progress
+    #- navigation.prune
     - navigation.sections
     - navigation.tabs
     # - navigation.tabs.sticky
@@ -79,6 +82,21 @@ plugins:
   - git-revision-date-localized
   - minify:
       minify_html: true
+  - redirects:
+      redirect_maps:
+        'instrument/index.md': 'Setup/Custom-application/Instrument-your-application/index.md'
+
+        #social
+        'social/x/index.md': 'https://x.com/immersivefusion'
+        'social/linkedin/index.md': 'https://www.linkedin.com/company/immersivefusion'
+        'social/mastodon/index.md': 'https://mastodon.social/@immersivefusion'
+        'social/youtube/index.md': 'https://www.youtube.com/@immersivefusion'
+        'social/facebook/index.md': 'https://www.facebook.com/immersivefusion'
+        'social/github/index.md': 'https://github.com/immersivefusion'
+        'social/instagram/index.md': 'https://www.instagram.com/immersivefusion'
+        
+        #links
+        'link/discord/index.md': 'https://discord.gg/zevywnQp6K'
 
 # Hooks
 # hooks:
@@ -87,7 +105,7 @@ plugins:
 
 # Additional configuration
 extra:
-  homepage: https://immersivefusion.com
+  homepage: /
   annotate:
     json: [.s2]
   analytics:
@@ -165,6 +183,7 @@ markdown_extensions:
       base_path: docs
 
 extra_javascript:
+  #- https://static.zdassets.com/ekr/snippet.js?key=b33c5a1c-bfe2-432b-84ae-613f7eb1d2b6
   - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js
   - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js  
   - js/config.js

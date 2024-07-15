@@ -1,8 +1,9 @@
 arrange:
     - index.md
-    - Getting-started
-    - Setup
-    - Analysis-and-Visualization
+    - Meta-Quest
+    - HTC-Vive
+    #- Immersive-Clouds
+    #- Account-Configuration
     # - observability
     # - apm
     # - ...
