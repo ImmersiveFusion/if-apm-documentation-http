@@ -1,6 +1,6 @@
 # Supported Configurations
 
-Immersive APM for 3D & VR supports most Windows OS.
+Immersive APM for 3D and VR supports most Windows OS.
 
 !!! info "Support for other Operating Systems"
     Support for Linux and Mac is on our roadmap.
