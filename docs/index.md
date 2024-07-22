@@ -1,9 +1,9 @@
 ---
 template: home.html
-title: Home
+title: Essentials and guides to analyze the health of your Software Application
 social:
   cards_layout_options:
-    title: Analyze the health of your Software Application
+    title: Essentials and guides to analyze the health of your Software Application
 ---
 
 !!! info "Social"
