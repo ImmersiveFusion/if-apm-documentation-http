@@ -1,9 +1,5 @@
 arrange:
     - index.md
-    - Supported-Configurations
-    #- Guides
-    #- Intergrations
-    - release-notes.md
     #- Immersive-Clouds
     #- Account-Configuration
     # - observability

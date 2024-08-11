@@ -1,8 +1,8 @@
 arrange:
     - index.md
     - Supported-Configurations
-    - Installation
     - Integrations
+    - Guides
     - release-notes.md
     #- Immersive-Clouds
     #- Account-Configuration

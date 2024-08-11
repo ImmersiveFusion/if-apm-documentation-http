@@ -1,9 +1,7 @@
 arrange:
     - index.md
-    - Supported-Configurations
-    #- Guides
-    #- Intergrations
-    - release-notes.md
+    # - 3D-and-VR
+    # - Web-and-Mobile
     #- Immersive-Clouds
     #- Account-Configuration
     # - observability
@@ -12,3 +10,4 @@ arrange:
     # - getting-started
     # - instrument
     # - contact.md
+hide: true

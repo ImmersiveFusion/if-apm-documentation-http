@@ -1,9 +1,9 @@
 ---
 template: home.html
-title: Essentials and guides to analyze the health of your Software Application
+title: Home
 social:
   cards_layout_options:
-    title: Essentials and guides to analyze the health of your Software Application
+    title: Immersive Function product and services documentation
 ---
 
 !!! info "Social"
