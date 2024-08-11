@@ -2,6 +2,11 @@
 
 ## Immersive APM 3D and VR
 
+### 0.9.2 <small>July 29, 2024</small> { id="0.9.2" }
+
+- Unity upgrade
+- Stability and perf improvements
+
 ### 0.8.7 <small>July 16, 2024</small> { id="0.8.7" }
 
 - Performance, stability, UI improvements
