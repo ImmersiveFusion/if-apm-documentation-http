@@ -2,6 +2,11 @@
 
 ## Immersive APM 3D and VR
 
+### 1.2.1 <small>September 10, 2024</small> { id="1.2.1" }
+
+- Fixed bug: generic avatar interactive and proximity zones fixed
+- Fixed bug: ground spacing fixed
+
 ### 1.2.0 <small>September 10, 2024</small> { id="1.2.0" }
 
 - Replacing female avatar with ragdoll. She's not gone and will be back!
