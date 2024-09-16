@@ -2,6 +2,18 @@
 
 ## Immersive APM Web
 
+### 3.34.1 <small>September 16, 2024</small> { id="3.34.1" }
+
+- Fixed bug: Fixes to time picker
+
+### 3.34.0 <small>September 15, 2024</small> { id="3.34.0" }
+
+- Metered billing improvements
+
+### 3.33.0 <small>Aug 23, 2024</small> { id="3.33.0" }
+
+- OData endpoint removal
+
 ### 3.31.0 <small>Aug 9, 2024</small> { id="3.31.0" }
 
 - Affiliate network wire up
