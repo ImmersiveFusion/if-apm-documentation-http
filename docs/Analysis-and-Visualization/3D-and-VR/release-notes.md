@@ -2,6 +2,13 @@
 
 ## Immersive APM 3D and VR
 
+### 1.3.0 <small>October 10, 2024</small> { id="1.3.0" }
+
+- Unity 6 upgrade
+- Minor shader fixes after upgrade.
+- Context menu prep.
+- Teleport to platform prep.
+
 ### 1.2.2 <small>September 13, 2024</small> { id="1.2.2" }
 
 - Fixed bug: Trace/process camera zooms
