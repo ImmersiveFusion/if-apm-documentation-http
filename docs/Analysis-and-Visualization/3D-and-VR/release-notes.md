@@ -2,6 +2,10 @@
 
 ## Immersive APM 3D and VR
 
+### 1.3.3 <small>October 20, 2024</small> { id="1.3.2" }
+
+- Teleport fixes
+
 ### 1.3.2 <small>October 20, 2024</small> { id="1.3.2" }
 
 - Unity 6 upgrade fixes
