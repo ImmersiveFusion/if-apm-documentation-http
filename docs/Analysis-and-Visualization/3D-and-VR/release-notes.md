@@ -2,20 +2,14 @@
 
 ## Immersive APM 3D and VR
 
-### 1.4.0 <small>October 20, 2024</small> { id="1.4.0" }
+### 1.4.0 <small>December 1, 2024</small> { id="1.4.0" }
 
+- Teleport fixes
 - Fixed Platform colors
 - Fixed Platform teleport functionality
 - Fixed photon coloring and visibility
-
-### 1.3.3 <small>October 20, 2024</small> { id="1.3.3" }
-
-- General Teleport fixes
-
-### 1.3.2 <small>October 20, 2024</small> { id="1.3.2" }
-
-- Unity 6 upgrade fixes
-- Teleport fixes
+- Various Hall of Supporters fixes
+- Fixed 3D/VR Avatar scale and head issues
 
 ### 1.3.0 <small>October 10, 2024</small> { id="1.3.0" }
 
