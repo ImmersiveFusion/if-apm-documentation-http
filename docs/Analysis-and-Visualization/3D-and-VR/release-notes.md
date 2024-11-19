@@ -10,6 +10,7 @@
 - Fixed photon coloring and visibility
 - Various Hall of Supporters fixes
 - Fixed 3D/VR Avatar scale and head issues
+- Added **Reload current grid** button to grid to reload the grid and fix potential world issues
 
 ### 1.3.0 <small>October 10, 2024</small> { id="1.3.0" }
 
