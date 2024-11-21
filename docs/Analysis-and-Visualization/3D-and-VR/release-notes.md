@@ -14,6 +14,7 @@
 - Added service name and instance ID on platforms
 - Added operation count on platforms
 - Fixed various framerate issues
+- Process/dependency virtual differentiation
 
 ### 1.3.0 <small>October 10, 2024</small> { id="1.3.0" }
 
