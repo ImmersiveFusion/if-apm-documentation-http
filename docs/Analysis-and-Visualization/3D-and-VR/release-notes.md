@@ -2,7 +2,15 @@
 
 ## Immersive APM 3D and VR
 
-### 1.4.0 <small>December 1, 2024</small> { id="1.4.0" }
+### 1.5.0 <small>December 1, 2024</small> { id="1.4.8" }
+
+- Various topology graph reactive and ambience fixes
+- Changed out-of-range block colors to have glow
+- Fixed XR/HMD awareness issues
+- Fixed XR UX issues and added tooltips
+- Added `BETA VR Functionality` warning
+
+### 1.4.0 <small>November 1, 2024</small> { id="1.4.0" }
 
 - Teleport fixes
 - Fixed Platform colors
