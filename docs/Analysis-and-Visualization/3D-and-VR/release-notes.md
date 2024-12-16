@@ -2,7 +2,7 @@
 
 ## Immersive APM 3D and VR
 
-### 1.5.0 <small>December 1, 2024</small> { id="1.4.8" }
+### 1.5.0 <small>December 16, 2024</small> { id="1.5.0" }
 
 - Various topology graph reactive and ambience fixes
 - Changed out-of-range block colors to have glow
