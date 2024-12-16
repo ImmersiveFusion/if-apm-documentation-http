@@ -2,6 +2,35 @@
 
 ## Immersive APM 3D and VR
 
+### 1.5.0 <small>December 16, 2024</small> { id="1.5.0" }
+
+- Various topology graph reactive and ambience fixes
+- Changed out-of-range block colors to have glow
+- Fixed XR/HMD awareness issues
+- Fixed XR UX issues and added tooltips
+- Added `BETA VR Functionality` warning
+
+### 1.4.0 <small>November 1, 2024</small> { id="1.4.0" }
+
+- Teleport fixes
+- Fixed Platform colors
+- Fixed Platform teleport functionality
+- Fixed photon coloring and visibility
+- Various Hall of Supporters fixes
+- Fixed 3D/VR Avatar scale and head issues
+- Added **Reload current grid** button to grid to reload the grid and fix potential world issues
+- Added service name and instance ID on platforms
+- Added operation count on platforms
+- Fixed various framerate issues
+- Process/dependency virtual differentiation
+
+### 1.3.0 <small>October 10, 2024</small> { id="1.3.0" }
+
+- Unity 6 upgrade
+- Minor shader fixes after upgrade
+- Context menu prep
+- Teleport to platform prep
+
 ### 1.2.2 <small>September 13, 2024</small> { id="1.2.2" }
 
 - Fixed bug: Trace/process camera zooms
