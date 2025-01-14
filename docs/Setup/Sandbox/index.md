@@ -16,7 +16,7 @@ Overall, a sandbox environment provides a safe and controlled environment for us
 
 ![Immersive Fusion OpenTelemetry Chaos Simulator](img/screenshot.png)
 
-The Immersive Fusion [OpenTelemetry Chaos Simulator](https://github.com/ImmersiveFusion/if-opentelemetry-chaos-simulator-sample){:target="gh"} is an Open Source application that is available at [demo.iapm.app](//demo.iapm.app){:target="if-demo"} It is a simple Angular/ASP.NET Core application that answers the question "What's the point?". It allows you to inject/eject failures into an application and see how those failures affect the telemetry that is generated. It is already pre-configured with an OpenTelemetry exporter so you don't need to change any code or enter any API keys simply log into [Immersive APM for 3D and VR](../../../Analysis-and-Visualization/3D-and-VR/index.md) to see the results the actions your perform.
+The Immersive Fusion [OpenTelemetry Chaos Simulator](https://github.com/ImmersiveFusion/if-opentelemetry-chaos-simulator-sample){:target="gh"} is an Open Source application that is available at [demo.iapm.app](//demo.iapm.app){:target="if-demo"} It is a simple Angular/ASP.NET Core application that answers the question "What's the point?". It allows you to inject/eject failures into an application and see how those failures affect the telemetry that is generated. It is already pre-configured with an OpenTelemetry exporter so you don't need to change any code or enter any API keys simply log into [Immersive APM for 3D and VR](../../Analysis-and-Visualization/3D-and-VR/index.md) to see the results the actions your perform.
 
 <!-- or [Immersive APM for Web & Mobile](../../../Analysis-and-Visualization/web/)  -->
 
