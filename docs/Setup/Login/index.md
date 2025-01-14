@@ -13,7 +13,8 @@ We want to make the experience to be as quick and simple as possible by offering
 
 Entra ID is a cloud-based identity and access management solution provided by Microsoft that provides businesses with a range of benefits. It provides businesses with a secure way to manage user identities and access to resources. It includes features such as multi-factor authentication, single sign-on, and role-based access control, which can help to prevent unauthorized access and protect sensitive data. This type of login can provide a more convenient and streamlined experience for users, as they do not need to create a new account or remember a new set of login credentials and is generally managed and secured by the organization providing the option such as a business or a education entity.
 
-[Login using Microsoft Office 365 / Azure / Entra ID](https://azure.iapm.app){:class="md-button md-button--primary"}
+[Login using Microsoft Office 365 / Azure / Entra ID Account](https://azure.iapm.app){:class="md-button md-button--primary"}
+[Press release](https://immersivefusion.com/about/pressrelease/immersive-fusion-announces-single-sign-on-microsoft-azure){:class="md-button"}
 
 ### Local & Social Accounts
 

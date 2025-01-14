@@ -1,10 +1,12 @@
-# Local & Social Account
+# Step By Step: Use Local & Social account
 
-## Step 0 (Optional): Basic information
+## Step 0: Basic information
 
-* [Observability](../../Resources/Terms-and-Concepts/Observability/index.md)
-* [APM Basics](../../Resources/Terms-and-Concepts/APM/index.md)
-* [Immersive APM (IAPM)](../../Resources/Terms-and-Concepts/IAPM/index.md)
+> Recommended but not required
+
+* [Observability](../../../Resources/Terms-and-Concepts/Observability/index.md)
+* [APM Basics](../../../Resources/Terms-and-Concepts/APM/index.md)
+* [Immersive APM (IAPM)](../../../Resources/Terms-and-Concepts/IAPM/index.md)
 
 ## Step 1: Configure your account
 
@@ -18,7 +20,7 @@ How would you like to configure your account?
 
 ## Step 2: Get your API key
 
-Once you create your first [grid](../../Setup/Account/index.md#grid). Click on `Instrument` button and get your API key.
+Once you create your first [grid](../../../Setup/Account/index.md#grid). Click on `Instrument` button and get your API key.
 
 [Manage Grids](https://my.iapm.app/admin/grids){:class="md-button md-button--primary"} 
 
@@ -26,7 +28,7 @@ Once you create your first [grid](../../Setup/Account/index.md#grid). Click on `
 
 Add your API Key to your OpenTelemetry OTLP Exporter Configuration and redeploy it or run it locally.
 
-[View Example](../../Setup/Custom-application/Instrument-your-application/index.md){:class="md-button md-button--primary"} 
+[View Example](../../../Setup/Custom-application/Instrument-your-application/index.md){:class="md-button md-button--primary"} 
 
 > If you don't already have OpenTelemetry packages added to your application, check out the list of supported [Language APIs and SDKs](https://opentelemetry.io/docs/languages/){:target="otel"}. Your API key can be used in your own custom application and other OpenTelemtry enabled applications.
 
@@ -38,15 +40,15 @@ Enter the World of Your Application&reg; with your mouse and keyboard or Virtual
 
 Select the grid for the API key you used and click `Enter`
 
-[Install](../../Analysis-and-Visualization/3D-and-VR/Guides/Installation//index.md){:class="md-button md-button--primary"} 
-[Docs](../../Analysis-and-Visualization/3D-and-VR/index.md){:class="md-button"} 
+[Install](../../../Analysis-and-Visualization/3D-and-VR/Guides/Installation//index.md){:class="md-button md-button--primary"} 
+[Docs](../../../Analysis-and-Visualization/3D-and-VR/index.md){:class="md-button"} 
 
 ### Web browser & Mobile
 
 Select the grid for the API key you used and click `Enter`
 
 [Manage Grids](https://my.iapm.app/admin/grids){:class="md-button md-button--primary"} 
-[Docs](../../Analysis-and-Visualization/Web-and-Mobile/index.md){:class="md-button"} 
+[Docs](../../../Analysis-and-Visualization/Web-and-Mobile/index.md){:class="md-button"} 
 
 
 
