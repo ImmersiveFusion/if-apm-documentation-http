@@ -2,9 +2,13 @@
 
 Observability framework is a set of practices and tools that enable software development and operations teams to gain visibility into complex systems, detect issues, and troubleshoot problems quickly. Observability is a key aspect of modern software development and operations, as it enables teams to monitor and manage the performance of applications and IT infrastructure in real-time.
 
-## Pillars
+## Logs, Metrics and Trace
 
-The observability framework includes three main pillars: logs, metrics, and traces. Logs refer to the detailed records of events and actions that occur within an application or IT infrastructure. Metrics refer to quantitative measurements of application and infrastructure performance, such as response time, resource usage, and error rates. Traces refer to the end-to-end path of a transaction through a complex system, including all the services and components that are involved.
+The observability framework includes three main pillars: logs, metrics, and traces. 
+
+* Logs refer to the detailed records of events and actions that occur within an application or IT infrastructure. 
+* Metrics refer to quantitative measurements of application and infrastructure performance, such as response time, resource usage, and error rates.
+* Traces refer to the end-to-end path of a transaction through a complex system, including all the services and components that are involved.
 
 ## Tools
 
