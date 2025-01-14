@@ -8,7 +8,7 @@ The process is called [instrumentation](https://opentelemetry.io/docs/instrument
 
 After instrumentation is completed Immersive APM will start collecting telemetry data from the software application to gain insights into its performance, behavior, and usage. This data can then be seen in the [Immersive APM Web](../../../Analysis-and-Visualization/Web-and-Mobile/index.md) and [Immersive APM 3D/VR](../../../Analysis-and-Visualization/3D-and-VR/index.md) clients. 
 
-![Grids](../img/instrument.png)
+![Instrument](../img/instrument.png)
 
 The final piece is to specify your OTLP endpoint and API key. The code to do so will look different based on the language your application is written in. Here's C# example. Supply the API key to your application and deploy it. That's it!
 
@@ -21,3 +21,7 @@ C# example:
     o.Headers = $"API-Key=IF-API-KEY-HERE";// i.e. {this.Configuration["IfApmAPIKey"]}
 });
 ```
+
+# Are you ready?
+
+[Get Started Today!](../../../Getting-Started/index.md){:class="md-button md-button--primary"}

@@ -1,4 +1,4 @@
-# APM
+# APM Basics
 
 Application Performance Management (APM) is the process of monitoring and managing the performance and availability of software applications. APM tools typically leverage a [observability framework](../Observability/index.md) to monitor and analyze application performance metrics, such as response time, resource usage, and error rates, in order to identify issues and help ensure that applications perform optimally.
 

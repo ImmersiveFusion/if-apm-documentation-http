@@ -1,9 +1,5 @@
 # Getting started 
 
-## Immersive Fusion
-
-Immersive Fusion (&commat;ImmersiveFusion on social media) is a company that is committed to providing advanced solutions for Application Performance Monitoring and Management ([APM](../Getting-started/Terms-and-Concepts/APM/index.md)). The company's Immersive APM solution is designed to leverage the latest technological capabilities and provide software and operations engineers with a complete view of their entire application. With regular updates that are timely and designed with the user in mind, the Immersive APM solution provides customers with the newest features and capabilities.
-
 !!! info "Social"
     [LinkedIn](https://www.linkedin.com/company/immersivefusion) | 
     [Mastodon](https://mastodon.social/@immersivefusion) |
@@ -14,8 +10,18 @@ Immersive Fusion (&commat;ImmersiveFusion on social media) is a company that is 
     [GitHub](https://github.com/immersivefusion) |
     [Discord](https://discord.gg/zevywnQp6K)
 
-Our solutions leverage immersion and ambient information and emphasize simplicity through ([Immersive APM](../Getting-started/Terms-and-Concepts/IAPM/index.md)). The solution enables software and operations engineers with the ability to view their entire application all at once in order to perform quick and effective root-cause analysis, decrease downtime, and have higher productivity. With Immersive APM, software and operations engineers can start answering questions such as how their application is performing at any given moment, which part of their system is having issues, and what they can expect to happen given the current load.
+<!-- ![Immersive Fusion Avatar](../assets/images/avatar.png) -->
 
-![Immersive Fusion Avatar](../assets/images/avatar.png)
+## Choose a cloud
 
-Getting started with a subscription to Immersive APM is a simple process. Customers try the [live demo](../Setup/Sandbox/Live-Demo/index.md) free of charge and can also choose the [plan](./Plans/index.md) that best suits their needs. Customers can easily upgrade or downgrade their plan as needed. With its easy-to-use tools and user-friendly interface, customers can be up and running in minutes, monitoring their applications and infrastructure with ease. 
+[Microsoft Office 365 / Azure / Entra ID](Office365-Azure-Entra-ID/index.md){:class="md-button md-button--primary"}
+> Entra ID is a cloud-based identity and access management solution provided by Microsoft that provides businesses with a range of benefits. It provides businesses with a secure way to manage user identities and access to resources. It includes features such as multi-factor authentication, single sign-on. [Click](../Setup/Login/index.md#microsoft-office-365-azure-entra-id) for details.
+
+[Local & Social Account](Local-Social/index.md){:class="md-button"}
+> Local account and social logins are two common login options for online services and applications. A local account login requires users to create a username and password. Immersive Fusion offers this functionality free of charge for customers. [Click](../Setup/Login/index.md#local-social-accounts) for details.
+
+## We are here to help!
+
+You if you are having any issues at all. [Chat with us](javascript:zE.activate()) through the site or join us on [Discord](https://discord.gg/zevywnQp6K).
+
+

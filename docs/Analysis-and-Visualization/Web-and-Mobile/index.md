@@ -1,8 +1,6 @@
 # Immersive APM for Web & Mobile
 
-
-
-A web-based Application Performance Management ([APM](index.md)) solution is a type of APM software that is delivered over the internet and accessible through a web browser. A web-based APM solution provides a centralized view of application performance that can be accessed from any location with an internet connection.
+A web-based Application Performance Management ([APM](../../Resources/Terms-and-Concepts/APM/index.md)) solution is a type of APM software that is delivered over the internet and accessible through a web browser. A web-based APM solution provides a centralized view of application performance that can be accessed from any location with an internet connection.
 
 APM solutions typically use a combination of monitoring agents, data collectors, and analytics tools to collect and analyze performance data. This data is then sent to a centralized dashboard or analytics tool that provides insights into application performance and identifies potential issues.
 

@@ -1,6 +1,6 @@
 # Immersive APM for 3D & Virtual Reality
 
-A Virtual Reality (VR) based Application Performance Management ([APM](../../Getting-started/Terms-and-Concepts/APM/index.md)) solution is an innovative approach to APM that allows software and operations engineers to view their applications in a three-dimensional, immersive environment. By leveraging VR technology, engineers can gain a deeper understanding of application performance and quickly identify potential issues.
+A Virtual Reality (VR) based Application Performance Management ([APM](../../Resources/Terms-and-Concepts/APM/index.md)) solution is an innovative approach to APM that allows software and operations engineers to view their applications in a three-dimensional, immersive environment. By leveraging VR technology, engineers can gain a deeper understanding of application performance and quickly identify potential issues.
 
 APM solutions typically use a combination of monitoring agents, data collectors, and analytics tools to collect and analyze performance data. This data is then used to create a three-dimensional representation of the application and its performance in a virtual environment. Engineers can then use VR headsets to navigate and explore the application in real-time, allowing for a more intuitive and immersive understanding of application performance.
 
@@ -13,7 +13,18 @@ VR-based APM solutions are also well-suited for monitoring and managing complex,
 ## Immersive APM 3D/VR
 [Immersive APM 3D/VR](https://immersivefusion.com/3D){:target="if"} allows users to Enter the World of Their Application through the 3D/VR space. Our 3D/VR client is easily installed onto a computer and is optimal for users who seek more expeditious capabilities.
 
-![3D/VR Introduction](img/3dclientintro.png)
+<iframe width="1024" height="576" src="https://www.youtube.com/embed/Hc9xWW4TH3I?si=Pnh3pFjRW0vYGNXh&amp;start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+[Full Video](https://youtu.be/QrIwTrElnyQ)
+
+## Move Videos
+
+[Our Vision](https://www.youtube.com/playlist?list=PLRCpHPtJkLZJQckGfucr0qYJYGHMtIBeY){:class="md-button"}
+[Explainers](https://www.youtube.com/playlist?list=PLRCpHPtJkLZLM4h_4T6DMG99_SsIGyiYi){:class="md-button"}
+[Testimonials](https://www.youtube.com/playlist?list=PLRCpHPtJkLZJNMSlq8gd1ayCsOk_X-myO){:class="md-button"}
+
+
+<!-- ![3D/VR Introduction](img/3dclientintro.png) -->
 
 !!! info "Be sure to check out Immersive APM Web"
     Check out [Immersive APM Web](../Web-and-Mobile/index.md) for a quick and cross platform experience.
