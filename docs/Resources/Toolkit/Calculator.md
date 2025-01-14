@@ -16,6 +16,9 @@ Trying to estimate your monthly Immersive APM costs? We've got you covered. Make
 
 ![Calculator Example](img/calculator-example.png)
 
+!!! info "Usage Weight"
+    Usage weight is a simple way to break down your scenarios. For example, using only the Visualize plan would have a usage weight of 100%. A mix of Visualize and Analyze packages can be accomplished by splitting the percentage. For example, %50 in Visualize and %50 in Analyze.
+
 ## Discounts and Promotions
 
 Check out or inquire about [discounts and promotions](https://discord.gg/UhSAUHAW) in Discord.
