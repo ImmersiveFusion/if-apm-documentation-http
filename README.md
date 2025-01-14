@@ -7,7 +7,7 @@ Follow the steps at https://www.mkdocs.org/
 
 ```
 $ python --version
-Python 3.11.5
+Python 3.12.4
 ```
 
 ## Installing Mkdocs and plugins
