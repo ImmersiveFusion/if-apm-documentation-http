@@ -1,6 +1,11 @@
 arrange:
     #- index.md
     - Sandbox
+    - Offers
+    - Discounts
+    - Login
+    - Account
+    - Api-Key
     - Custom-application
     #- Immersive-Clouds
     #- Account-Configuration

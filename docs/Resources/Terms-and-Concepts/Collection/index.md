@@ -1,4 +1,4 @@
-# Collection
+# Data Collection
 
 Telemetry data collection is the process of gathering and analyzing data related to the performance and behavior of a system or application. This data is used to monitor the health of the system and to identify potential issues before they become critical problems. Here are some key aspects of telemetry data collection:
 

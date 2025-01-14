@@ -1,10 +1,6 @@
 arrange:
     - index.md
-    - Log-in
-    - Configure-your-account
-    - Get-your-API-Key
     - Instrument-your-application
-    - Analyse-and-visualize
     #- Immersive-Clouds
     #- Account-Configuration
     # - observability
