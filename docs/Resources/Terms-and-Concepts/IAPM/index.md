@@ -10,5 +10,7 @@ Another advantage of immersive APM is its ability to improve collaboration and c
 
 Immersive APM solutions are also well-suited for monitoring and managing complex, distributed applications. By providing a centralized view of performance data in an immersive environment, engineers can more easily identify issues that may be hidden in traditional monitoring tools.
 
+<iframe width="1024" height="576" src="https://www.youtube.com/embed/ECE2sYKaTGs?si=BcF81WSK97wIeBwu&amp;start=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 Overall, Immersive APM is an effective way for organizations to gain a deeper understanding of application performance and identify potential issues more quickly. By providing an immersive and intuitive view of application performance, immersive APM solutions can help engineers to work more effectively, improve collaboration, and make faster, more informed decisions.
 
