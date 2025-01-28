@@ -6,11 +6,15 @@
 
 - Top view updates with automatic zoom
 - *Live Charts!* - Published/Processed/Failed/Lost counts in the Core
-- Changed to using time bar chart for grid view. Spiral view is hidden for the moment.
+- Changed to using time bar chart for grid view. Spiral view is hidden for the moment
+- Accounted for OTLP Exporter delays due to buffering
+- Improved process cube creation rates and FPS guards
+- Added Default/Grid/Graph buttons
+- Updated platform tooltips to show the name of the application and the operation count
 
 Bug fixes:
 - Fixed bug that crashes client on exit 
-
+- Fixed issue where platforms did not have tooltips
 
 ### 1.5.0 <small>December 16, 2024</small> { id="1.5.0" }
 
