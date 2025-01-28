@@ -11,6 +11,7 @@
 - Improved process cube creation rates and FPS guards
 - Added Default/Grid/Graph buttons
 - Updated platform tooltips to show the name of the application and the operation count
+- Added UI disable when idle
 
 Bug fixes:
 
