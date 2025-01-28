@@ -13,6 +13,7 @@
 - Updated platform tooltips to show the name of the application and the operation count
 
 Bug fixes:
+
 - Fixed bug that crashes client on exit 
 - Fixed issue where platforms did not have tooltips
 
@@ -23,6 +24,7 @@ Bug fixes:
 - Added `BETA VR Functionality` warning
 
 Bug fixes:
+
 - Fixed XR/HMD awareness issues
 - Fixed XR UX issues and added tooltips
 
@@ -36,6 +38,7 @@ Bug fixes:
 - Process/dependency virtual differentiation
 
 Bug fixes:
+
 - Fixed Platform colors
 - Fixed Platform teleport functionality
 - Fixed photon coloring and visibility
@@ -53,6 +56,7 @@ Bug fixes:
 ### 1.2.2 <small>September 13, 2024</small> { id="1.2.2" }
 
 Bug fixes: 
+
 - Fixed bug: Trace/process camera zooms
 - Fixed bug: Log tooltips
 
