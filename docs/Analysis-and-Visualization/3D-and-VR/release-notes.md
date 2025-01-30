@@ -4,31 +4,52 @@
 
 ### 1.6.0 <small>January 15, 2024</small> { id="1.6.0" }
 
+**Introduction:**
+This release includes several new features, improvements, and bug fixes to enhance the user experience and performance of Immersive APM 3D and VR.
+
+**New Features:**
 - Top view updates with automatic zoom
 - *Live Charts!* - Published/Processed/Failed/Lost counts in the Core
+- Added Default/Grid/Graph buttons
+- Added UI disable when idle
+
+**Improvements:**
 - Changed to using time bar chart for grid view. Spiral view is hidden for the moment
 - Accounted for OTLP Exporter delays due to buffering
 - Improved process cube creation rates and FPS guards
-- Added Default/Grid/Graph buttons
 - Updated platform tooltips to show the name of the application and the operation count
-- Added UI disable when idle
 
-Bug fixes:
-
+**Bug Fixes:**
 - Fixed bug that crashes client on exit 
 - Fixed issue where platforms did not have tooltips
 
+**Known Issues:**
+- [List any known issues or limitations here]
+
+**Upgrade Instructions:**
+- [Provide instructions on how to upgrade to the new version, if applicable]
+
 ### 1.5.0 <small>December 16, 2024</small> { id="1.5.0" }
 
-- Various topology graph reactive and ambience fixes
-- Changed out-of-range block colors to have glow
+**Introduction:**
+This release focuses on various fixes and the introduction of beta VR functionality.
+
+**New Features:**
 - Added `BETA VR Functionality` warning
 
-Bug fixes:
+**Improvements:**
+- Various topology graph reactive and ambience fixes
+- Changed out-of-range block colors to have glow
 
+**Bug Fixes:**
 - Fixed XR/HMD awareness issues
 - Fixed XR UX issues and added tooltips
 
+**Known Issues:**
+- Filters UI is being developed
+
+**Installation & Upgrade Instructions:**
+- Get the [latest build](./Guides/Installation/index.md) and run the MSI. An existing version Immersive APM will be upgraded.
 
 ### 1.4.0 <small>November 1, 2024</small> { id="1.4.0" }
 
