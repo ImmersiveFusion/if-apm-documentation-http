@@ -12,7 +12,7 @@ repo_url: https://github.com/ImmersiveFusion/if-apm-documentation-http
 edit_uri: edit/main/docs
 
 # Copyright
-copyright: Copyright &copy; 2020-2024 <a href="https://www.immersivefusion.com">Immersive Fusion LLC</a>, Maintained by the <a href="/about/release-notes/#maintenance-team">Immersive Team</a>. Some content generation and supplimentation using GPT through Azure OpenIA 
+copyright: Copyright &copy; 2020-2025 <a href="https://www.immersivefusion.com">Immersive Fusion LLC</a>, Maintained by the <a href="/about/release-notes/#maintenance-team">Immersive Team</a>. Some content generation and supplimentation using GPT through Azure OpenIA 
 
 watch:
   - docs
