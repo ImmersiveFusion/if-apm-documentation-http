@@ -1,3 +1,3 @@
 & .\envprep.ps1
-
-& mkdocs serve
+& python -m mkdocs --version
+& python -m mkdocs serve

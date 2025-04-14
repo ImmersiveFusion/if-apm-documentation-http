@@ -1,5 +1,13 @@
 # Installing on Windows
 
+## Steam
+
+{!template/store-steam.mdp!}
+
+Learn more about [Steam](https://store.steampowered.com/about/){:target="sp"} on their web site.
+
+## Offline Installer (MSI)
+
 [Latest Release Build](https://ifapm.blob.core.windows.net/release/rtm/msi/ImmersiveAPM.latest.msi){:class="md-button md-button--primary"}
 [Latest Beta Build](https://ifapm.blob.core.windows.net/release/beta/msi/ImmersiveAPM.latest.msi){:class="md-button md-button--secondary"}
 [Latest Alpha Build](https://ifapm.blob.core.windows.net/release/alpha/msi/ImmersiveAPM.latest.msi){:class="md-button"}
