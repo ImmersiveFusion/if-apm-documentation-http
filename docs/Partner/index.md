@@ -4,7 +4,7 @@ Immersive Fusion places immense value on early adopters and partners, recognizin
 
 ## Valuing Early Adopters
 
-Premium Recognition in the Hall of Supporters: Early adopters are celebrated with prime placement in the Buzludja-inspired Hall of Supporters. Their logos are prominently displayed on the monument’s glowing dome, larger and with bespoke animations to signify their pioneering role. Interactive vignettes on the Journey Wall highlight their early bets—say, adopting Immersive APM’s beta for predictive maintenance—cementing their legacy as trailblazers.
+Premium Recognition in the [Hall of Supporters](./Hall-of-Supporters/index.md): Early adopters are celebrated with prime placement in the Buzludja-inspired Hall of Supporters. Their logos are prominently displayed on the monument’s glowing dome, larger and with bespoke animations to signify their pioneering role. Interactive vignettes on the Journey Wall highlight their early bets—say, adopting Immersive APM’s beta for predictive maintenance—cementing their legacy as trailblazers.
 
 **Exclusive Access and Influence**: Early adopters gain beta access to new features, like advanced VR diagnostics or AI-driven insights, allowing them to shape development through feedback. This insider status fosters loyalty and gives them a competitive edge in their industries.
 
