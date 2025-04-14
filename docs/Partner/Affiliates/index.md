@@ -35,4 +35,4 @@ By empowering affiliates with transparency, flexibility, and rewards, Immersive 
 
 ## Become an Affiliate
 
-[Sign-up today](https://immersivefusion.trackdesk.com/sign-up){:target=if-an}
+<a href="https://immersivefusion.trackdesk.com/sign-up" title="Sign-up today" class="md-button md-button--primary" target="if-an">Sign-up today</a>
