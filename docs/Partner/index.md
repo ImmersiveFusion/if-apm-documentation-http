@@ -1,6 +1,6 @@
 # Partner
 
-Immersive Fusion places immense value on early adopters and partners, recognizing them as the cornerstone of its growth and awareness in the 3D/VR asset performance management (APM) landscape. Here’s how:
+Immersive Fusion places immense value on early adopters and partners, recognizing them as the cornerstone of its growth and awareness in the 3D/VR Application Performance Management (APM) landscape. Here’s how:
 
 ## Valuing Early Adopters
 

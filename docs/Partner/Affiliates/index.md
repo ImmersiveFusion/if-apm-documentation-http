@@ -1,6 +1,6 @@
 # Affiliates 
 
-Immersive Fusion’s affiliate program is a powerhouse for driving mutual success, offering affiliates a dynamic opportunity to earn, engage, and grow alongside a cutting-edge 3D/VR asset performance management (APM) platform. With a fully transparent affiliate network and a range of tailored offers, affiliates are empowered to thrive while amplifying Immersive Fusion’s mission—a vision shaped by its roots as a graduate of Microsoft for Startups.
+Immersive Fusion’s affiliate program is a powerhouse for driving mutual success, offering affiliates a dynamic opportunity to earn, engage, and grow alongside a cutting-edge 3D/VR Application Performance Management (APM) platform. With a fully transparent affiliate network and a range of tailored offers, affiliates are empowered to thrive while amplifying Immersive Fusion’s mission—a vision shaped by its roots as a graduate of Microsoft for Startups.
 
 ## Benefits to Affiliates
 
@@ -29,9 +29,9 @@ Immersive Fusion offers a range of affiliate promotions to suit diverse audience
 ## Driving Growth and Impact
 
 The affiliate program supercharges Immersive Fusion’s growth by turning affiliates into a global sales force. Their referrals expand the platform’s footprint, reaching industries hesitant about 3D/VR APM—logistics, manufacturing, or utilities—by showcasing tangible benefits through tailored offers. Transparent commissions incentivize affiliates to target high-usage clients, ensuring a steady stream of engaged users who scale Immersive Fusion’s servers and feature adoption.
-For awareness, affiliates amplify Immersive Fusion’s message across platforms like X, blogs, or webinars, sharing stories of how the platform (and its Microsoft-backed innovation) transforms asset management. The portal’s clarity builds trust, encouraging affiliates to promote boldly, while varied offers let them resonate with diverse audiences—from startups needing affordable APM to enterprises seeking VR scalability. Each referral becomes a proof point, breaking adoption barriers by demonstrating real-world value, like cost savings or predictive accuracy.
+For awareness, affiliates amplify Immersive Fusion’s message across platforms like X, blogs, or webinars, sharing stories of how the platform (and its Microsoft-backed innovation) transforms Application Performance Management. The portal’s clarity builds trust, encouraging affiliates to promote boldly, while varied offers let them resonate with diverse audiences—from startups needing affordable APM to enterprises seeking VR scalability. Each referral becomes a proof point, breaking adoption barriers by demonstrating real-world value, like cost savings or predictive accuracy.
 
-By empowering affiliates with transparency, flexibility, and rewards, Immersive Fusion creates a win-win: affiliates earn meaningfully while fueling a movement to make 3D/VR APM the industry standard. Their efforts light up the [Hall of Supporters](../Hall-of-Supporters/index.md)’ legacy, proving that every voice counts in building the future of asset performance.
+By empowering affiliates with transparency, flexibility, and rewards, Immersive Fusion creates a win-win: affiliates earn meaningfully while fueling a movement to make 3D/VR APM the industry standard. Their efforts light up the [Hall of Supporters](../Hall-of-Supporters/index.md)’ legacy, proving that every voice counts in building the future of application performance.
 
 ## Become an Affiliate
 
