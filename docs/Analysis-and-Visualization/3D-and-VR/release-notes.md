@@ -2,6 +2,35 @@
 
 ## Immersive APM 3D and VR
 
+
+### 1.8.0 <small>April 15, 2024</small> { id="1.8.0" }
+
+**Introduction:**
+
+This release includes the addition of the [Buzludzha Monument](https://en.wikipedia.org/wiki/Buzludzha_monument) video and panels for more details. Materials are courtesy of the [Buzludzha Project](https://buzludzha-project.com/en/?source=if). The Buzludzha Monument, reimagined as the [Hall of Supporters](https://docs.immersivefusion.com/Partner/Hall-of-Supporters/) in Immersive Fusion’s 3D/VR world, is a powerful symbol of renewal, bridging a historic vision of Application Performance Management (APM) with a revolutionary new approach.
+
+**Improvements:**
+
+- .NET 9.0 rollup
+
+**Known Issues:**
+
+- Users still have to provide their authentication information in a browser. This is a standard Entra ID flow. We know it's not ideal ;(
+
+### 1.7.0 <small>March 15, 2024</small> { id="1.7.0" }
+
+**Introduction:**
+
+This release includes an update the authentication utility.
+
+**Improvements:**
+
+- .NET 9.0 rollup
+
+**Known Issues:**
+
+- Users still have to provide their authentication information in a browser. This is a standard Entra ID flow. We know it's not ideal ;(
+
 ### 1.6.0 <small>January 15, 2024</small> { id="1.6.0" }
 
 **Introduction:**
