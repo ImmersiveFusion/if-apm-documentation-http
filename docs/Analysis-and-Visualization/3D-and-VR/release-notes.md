@@ -3,7 +3,7 @@
 ## Immersive APM 3D and VR
 
 
-### 1.8.0 <small>April 15, 2024</small> { id="1.8.0" }
+### 1.8.0 <small>April 15, 2025</small> { id="1.8.0" }
 
 **Introduction:**
 
@@ -17,7 +17,7 @@ This release includes the addition of the [Buzludzha Monument](https://en.wikipe
 
 - Users still have to provide their authentication information in a browser. This is a standard Entra ID flow. We know it's not ideal ;(
 
-### 1.7.0 <small>March 15, 2024</small> { id="1.7.0" }
+### 1.7.0 <small>March 15, 2025</small> { id="1.7.0" }
 
 **Introduction:**
 
@@ -31,7 +31,7 @@ This release includes an update the authentication utility.
 
 - Users still have to provide their authentication information in a browser. This is a standard Entra ID flow. We know it's not ideal ;(
 
-### 1.6.0 <small>January 15, 2024</small> { id="1.6.0" }
+### 1.6.0 <small>January 15, 2025</small> { id="1.6.0" }
 
 **Introduction:**
 
