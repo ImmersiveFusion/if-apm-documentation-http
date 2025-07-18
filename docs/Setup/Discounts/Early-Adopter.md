@@ -6,7 +6,7 @@ All early adopters enjoy a lifetime 50% discount on all cloud service charges. J
 
 ## Other Discounts and Promotions
 
-Check out or inquire about [discounts and promotions](https://discord.gg/UhSAUHAW) in Discord.
+Check out or inquire about [discounts and promotions](https://discord.com/channels/946854209272287333/1328717683226837093) in Discord.
 
 
 # Are you ready?
