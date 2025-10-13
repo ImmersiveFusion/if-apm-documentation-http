@@ -2,6 +2,28 @@
 
 ## Immersive APM 3D and VR
 
+### 1.10.0 - Upcoming Release <small>October 13, 2025</small> { id="1.10.0" }
+
+**Introduction:**
+
+This release marks a major milestone for Immersive APM with the debut of the **AI Copilot**, our first integrated GPT-powered assistant. Users can now interact with their telemetry data using **natural language**, via **chat or voice**, to explore performance metrics, investigate anomalies, and generate insights without writing a single query.
+
+Also introduced is **experimental support for macOS**, allowing developers and analysts on Apple Silicon devices to begin testing Immersive APM in native environments. While not yet feature-complete, this lays the groundwork for full cross-platform parity in future releases.
+
+**Improvements:**
+
+- Introduced **Immersive APM AI Copilot** with GPT integration for chat and voice-based data exploration.
+- Initial support for **macOS (experimental)**.
+- **Rendering pipeline improvements**:
+    - Enhanced **real-time traffic visualization** on performance graphs.
+    - Improved **photo rendering fidelity** for embedded media and scene textures.
+    - Updated **quality settings** for better scalability across device profiles.
+- Added additional **code signing for authentication DLLs** to improve security and integrity validation during deployment.
+
+**Known Issues:**
+
+- Authentication still requires browser-based Entra ID flow.
+- macOS support is experimental and may lack full feature parity with Windows builds.
 
 ### 1.8.0 <small>April 15, 2025</small> { id="1.8.0" }
 

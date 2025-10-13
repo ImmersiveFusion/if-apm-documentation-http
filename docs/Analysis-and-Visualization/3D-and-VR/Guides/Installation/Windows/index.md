@@ -12,7 +12,7 @@ Learn more about [Steam](https://store.steampowered.com/about/){:target="sp"} on
 [Latest Beta Build](https://ifapm.blob.core.windows.net/release/beta/msi/ImmersiveAPM.latest.msi){:class="md-button md-button--secondary"}
 [Latest Alpha Build](https://ifapm.blob.core.windows.net/release/alpha/msi/ImmersiveAPM.latest.msi){:class="md-button"}
 
-1. Click on the button above to download the installer for Immersive APM for Windows from the cloud. The file size is around `1GB`
+1. Click on the button above to download the installer for Immersive APM for Windows from the cloud. The file size is around `1.5GB`
     ![Download](img/1.download.png)
 
 1. Run the installer
