@@ -9,7 +9,7 @@ social:
 !!! info "Social"
     [LinkedIn](https://www.linkedin.com/company/immersivefusion) | 
     [Mastodon](https://mastodon.social/@immersivefusion) |
-    [Twitter](https://twitter.com/immersivefusion) |
+    [X](https://x.com/immersivefusion) |
     [YouTube](https://www.youtube.com/@immersivefusion) |
     [Facebook](https://www.facebook.com/immersivefusion) |
     [Instagram](https://www.instagram.com/immersivefusion) |
