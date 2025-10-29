@@ -19,6 +19,9 @@ Also introduced is **experimental support for macOS**, allowing developers and a
     - Improved **photo rendering fidelity** for embedded media and scene textures.
     - Updated **quality settings** for better scalability across device profiles.
 - Added additional **code signing for authentication DLLs** to improve security and integrity validation during deployment.
+- Fixed crouching animation.
+- Added an overhead camera that zooms in the view and removes the avatar from view.
+- Various package updates for Unity game engine.
 
 **Known Issues:**
 
