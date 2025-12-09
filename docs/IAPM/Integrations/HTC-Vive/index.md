@@ -1,3 +1,0 @@
-# HTC Vive
-
-Coming soon

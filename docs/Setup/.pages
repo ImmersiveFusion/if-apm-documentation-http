@@ -1,5 +1,6 @@
+title: Setup
 arrange:
-    #- index.md
+    - index.md
     - Sandbox
     - Offers
     - Discounts
@@ -7,11 +8,3 @@ arrange:
     - Account
     - Api-Key
     - Custom-application
-    #- Immersive-Clouds
-    #- Account-Configuration
-    # - observability
-    # - apm
-    # - ...
-    # - getting-started
-    # - instrument
-    # - contact.md
