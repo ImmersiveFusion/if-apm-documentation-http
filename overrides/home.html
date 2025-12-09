@@ -18,16 +18,15 @@
     }
 
 
-    body{
-      background-image: url("assets/images/backdrop.png");
-      background-size: cover;
-    }
-
     .backdrop
     {
-      height:70vh;
+      min-height: calc(100vh - 120px);
       display: flex;
       align-items: center;
+      background-image: url("{{ 'assets/images/backdrop.png' | url }}");
+      background-size: cover;
+      background-position: center bottom;
+      background-repeat: no-repeat;
     }
 
     .light

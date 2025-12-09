@@ -50,18 +50,20 @@ theme:
     - toc.follow
     # - toc.integrate
   palette:
+    # Dark mode first (default) - Futuristic cyberpunk theme
+    - scheme: slate
+      primary: black
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    # Light mode alternative
     - scheme: default
       primary: deep purple
       accent: deep purple
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-    - scheme: slate
-      primary: black
-      accent: deep purple
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
   font:
     header: Josefin Sans # doesn't actually do anything, just for the record
     #text: Josefin Sans
