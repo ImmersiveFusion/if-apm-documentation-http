@@ -1,0 +1,7 @@
+title: IAPM
+arrange:
+    - index.md
+    - Supported-Configurations
+    - Integrations
+    - Guides
+    - release-notes.md

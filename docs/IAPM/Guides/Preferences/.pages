@@ -1,11 +1,7 @@
 arrange:
     - index.md
-    - Getting-Started
-    - IAPM
-    - IAPM-Web
-    - Configuration-and-Management
-    - Partner
-    - Resources
+    #- Immersive-Clouds
+    #- Account-Configuration
     # - observability
     # - apm
     # - ...

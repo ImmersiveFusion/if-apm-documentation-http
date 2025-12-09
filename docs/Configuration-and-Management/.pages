@@ -1,0 +1,9 @@
+title: Configuration & Management
+arrange:
+    - Sandbox
+    - Offers
+    - Discounts
+    - Login
+    - Account
+    - Api-Key
+    - Custom-application

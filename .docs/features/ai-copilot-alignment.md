@@ -7,7 +7,7 @@
 
 ## Objective
 
-Align the Immersive APM documentation to reflect the company's strategic shift toward AI Copilot as a core differentiator and value proposition. The AI Copilot represents a major evolution in how users interact with their telemetry data through natural language (chat and voice), making APM more accessible and intelligent.
+Align the IAPM documentation to reflect the company's strategic shift toward AI Copilot as a core differentiator and value proposition. The AI Copilot represents a major evolution in how users interact with their telemetry data through natural language (chat and voice), making APM more accessible and intelligent.
 
 **Goals:**
 - Position AI Copilot as a primary feature, not just a release note item
@@ -34,7 +34,7 @@ Currently, AI Copilot is mentioned in:
 - **Incomplete feature description** - Chat vs. voice capabilities not fully documented
 
 ### Current Positioning
-The documentation currently positions Immersive APM as:
+The documentation currently positions IAPM as:
 1. 3D/VR visualization platform (primary)
 2. OpenTelemetry-based APM (secondary)
 3. Cloud-native SaaS solution (tertiary)
@@ -44,7 +44,7 @@ The documentation currently positions Immersive APM as:
 ## Proposed Changes
 
 ### Strategic Positioning
-Position Immersive APM around **three core pillars**:
+Position IAPM around **three core pillars**:
 1. **Immersive Visualization** (3D/VR)
 2. **AI-Powered Intelligence** (AI Copilot) ← NEW EMPHASIS
 3. **OpenTelemetry Standard** (Vendor-neutral)
@@ -285,7 +285,7 @@ These short aliases make URLs more shareable and marketing-friendly.
 **Positive impacts:**
 - Users discover AI Copilot capability they may not have known about
 - Clearer guidance on how to use AI features
-- Better understanding of Immersive APM's competitive advantages
+- Better understanding of IAPM's competitive advantages
 - More accessible entry point for non-technical users
 
 **Potential concerns:**

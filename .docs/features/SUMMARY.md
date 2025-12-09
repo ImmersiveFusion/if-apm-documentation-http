@@ -2,7 +2,7 @@
 
 ## What We're Doing
 
-Restructuring the Immersive APM documentation to:
+Restructuring the IAPM documentation to:
 1. Use proper product branding: **IAPM** vs. **IAPM Portal**
 2. Clarify purpose distinction: Immersive investigation vs. Conventional APM
 3. Position AI Copilot prominently as a key differentiator
@@ -21,11 +21,11 @@ Restructuring the Immersive APM documentation to:
 ### New Structure ✅
 ```
 ├── Configuration & Management (was "Setup")
-├── IAPM                       ← PRIMARY (immersive client)
+├── IAPM          ← PRIMARY (desktop client, the "immersive" experience)
 │   ├── AI Copilot            ← FIRST (most innovative)
-│   ├── 3D/VR Environment
+│   ├── Environment
 │   └── Advanced Features
-├── IAPM Portal               ← Conventional APM + management
+├── IAPM Web                ← Conventional APM + management
 │   ├── APM Features          ← NEW: Document full APM capabilities
 │   └── Management            ← NEW: Account/subscription UI
 ```
@@ -34,18 +34,17 @@ Restructuring the Immersive APM documentation to:
 
 | Old Path | New Path | Purpose |
 |----------|----------|---------|
-| `docs/Analysis-and-Visualization/3D-and-VR/` | `docs/IAPM/` | Immersive client (3D/VR + AI) |
-| `docs/Analysis-and-Visualization/Web-and-Mobile/` | `docs/IAPM-Portal/` | Conventional APM + management |
+| `docs/Analysis-and-Visualization/3D-and-VR/` | `docs/IAPM/` | Desktop client (the immersive experience + AI) |
+| `docs/Analysis-and-Visualization/Web-and-Mobile/` | `docs/IAPM-Web/` | Conventional APM + management |
 | `docs/Setup/` | `docs/Configuration-and-Management/` | Backend configuration |
 
 ## URL Strategy
 
 ### Marketing-Friendly Short URLs (all lowercase)
-- `/iapm/` → IAPM immersive client
+
+- `/iapm/` or `/iapm/` → IAPM
 - `/ai/` or `/copilot/` → AI Copilot documentation
-- `/portal/` → IAPM Portal
-- `/immersive/`, `/3d/`, `/vr/` → IAPM
-- `/web/` → IAPM Portal
+- `/iapm-web/` or `/iapm-web/` → IAPM Web
 - `/config/` → Configuration & Management
 
 ### Redirects
@@ -54,15 +53,19 @@ Note: All URLs are lowercase for web standards compliance
 
 ## Key Messaging
 
-### IAPM (Immersive Client)
+### IAPM
+
 **"Enter the World of Your Application"**
+
 - Deep troubleshooting with AI assistance
-- 3D/VR visualization
+- Immersive visualization
 - Desktop client (Windows/Mac/Linux)
 - Revolutionary approach to APM
 
-### IAPM Portal
+### IAPM Web
+
 **"Full-featured APM in your browser"**
+
 - Conventional APM (dashboards, traces, logs, alerts)
 - Account and subscription management
 - No installation required
@@ -72,19 +75,22 @@ Note: All URLs are lowercase for web standards compliance
 
 ### New Content Needed
 
-**1. IAPM Portal APM Features** (currently undocumented):
+**1. IAPM Web APM Features** (currently undocumented):
+
 - Dashboards and Metrics
 - Distributed Tracing
 - Log Aggregation and Analysis
 - Monitoring and Alerts
 - Analysis Tools
 
-**2. IAPM Portal Management** (currently scattered):
+**2. IAPM Web Management** (currently scattered):
+
 - Account Configuration
 - Subscription Management
 - User Administration
 
 **3. AI Copilot** (currently only in release notes):
+
 - Complete dedicated section under IAPM
 - What is AI Copilot?
 - Getting Started
@@ -107,7 +113,7 @@ Note: All URLs are lowercase for web standards compliance
 
 **Phase 3: New Content** (Week 3-4)
 - Write AI Copilot documentation
-- Document IAPM Portal APM features
+- Document IAPM Web APM features
 - Create "Choose Your Path" guidance
 
 **Phase 4: Polish** (Week 4)
@@ -118,9 +124,10 @@ Note: All URLs are lowercase for web standards compliance
 ## Success Metrics
 
 Users should be able to:
-1. ✅ Understand when to use IAPM vs. IAPM Portal
+
+1. ✅ Understand when to use IAPM vs. IAPM Web
 2. ✅ Find AI Copilot documentation easily
-3. ✅ Learn about IAPM Portal's APM capabilities
+3. ✅ Learn about IAPM Web's APM capabilities
 4. ✅ Navigate to the right product for their needs
 
 ## Planning Documents

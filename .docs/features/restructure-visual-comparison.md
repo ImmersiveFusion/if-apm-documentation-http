@@ -1,4 +1,4 @@
-# Visual Comparison: Current vs. Proposed Structure (IAPM vs. IAPM Portal)
+# Visual Comparison: Current vs. Proposed Structure (IAPM vs. IAPM Web)
 
 ## Current Structure (What Users See Today)
 
@@ -40,8 +40,8 @@
 - ❌ 3D/VR and Web/Mobile appear as **equal alternatives** when they serve different needs
 - ❌ **AI Copilot** isn't prominent (buried in release notes)
 - ❌ Users don't know **which tool to use when**
-- ❌ Revolutionary **IAPM (3D/VR+AI) experience** isn't positioned as the differentiator
-- ❌ **IAPM Portal's conventional APM** capabilities aren't documented properly
+- ❌ Revolutionary **IAPM experience** isn't positioned as the differentiator
+- ❌ **IAPM Web's conventional APM** capabilities aren't documented properly
 
 ---
 
@@ -53,11 +53,11 @@
 ├── 🏁 Getting Started
 │   ├── Overview
 │   ├── 🔀 Choose Your Path                ✨ NEW
-│   │   ├── IAPM Portal (Conventional APM)
+│   │   ├── IAPM Web (Conventional APM)
 │   │   └── IAPM Client (Immersive Experience)
 │   └── Authentication
 │
-├── 🌟 IAPM (Immersive Client)             ✨ PRIMARY FOCUS
+├── 🌟 IAPM             ✨ PRIMARY FOCUS
 │   ├── Overview                           ("Enter the World of Your Application")
 │   │
 │   ├── 🤖 AI Copilot                      ✨ FIRST (Most Innovative)
@@ -80,7 +80,7 @@
 │       ├── Hall of Supporters
 │       └── Release Notes
 │
-├── 💻 IAPM Portal                         ✨ CONVENTIONAL APM + MANAGEMENT
+├── 💻 IAPM Web                         ✨ CONVENTIONAL APM + MANAGEMENT
 │   ├── Overview                           ("Full-featured APM in your browser")
 │   ├── Getting Started
 │   │
@@ -111,13 +111,13 @@
 ```
 
 ### Benefits of Proposed Structure:
-- ✅ **Clear branding**: IAPM vs. IAPM Portal (matches product names)
-- ✅ **Purpose distinction**: IAPM Portal (conventional APM + management) vs. IAPM (immersive investigation)
+- ✅ **Clear branding**: IAPM vs. IAPM Web (matches product names)
+- ✅ **Purpose distinction**: IAPM Web (conventional APM + management) vs. IAPM (immersive investigation)
 - ✅ **AI Copilot prominent**: First feature under IAPM
-- ✅ **Prioritized navigation**: IAPM appears before IAPM Portal
+- ✅ **Prioritized navigation**: IAPM appears before IAPM Web
 - ✅ **Portal APM documented**: Conventional APM features properly documented
 - ✅ **User guidance**: "Choose Your Path" helps users pick the right tool
-- ✅ **Value proposition**: Revolutionary IAPM (3D/VR+AI) is clearly the differentiator
+- ✅ **Value proposition**: Revolutionary IAPM is clearly the differentiator
 
 ---
 
@@ -137,7 +137,7 @@ User arrives → "Analysis and Visualization" →
 User arrives → "Choose Your Path" →
 
     Path A: "I need conventional APM and management"
-        → IAPM Portal (Web/Mobile)
+        → IAPM Web (Web/Mobile)
         → Full APM features + account management
 
     Path B: "I want immersive investigation with AI"
@@ -149,7 +149,7 @@ User arrives → "Choose Your Path" →
 
 ## Positioning Statements
 
-### IAPM (Immersive Client)
+### IAPM
 **Folder:** `docs/IAPM/`
 **Tagline:** "Enter the World of Your Application"
 
@@ -175,8 +175,8 @@ User arrives → "Choose Your Path" →
 
 ---
 
-### IAPM Portal
-**Folder:** `docs/IAPM-Portal/`
+### IAPM Web
+**Folder:** `docs/IAPM-Web/`
 **Tagline:** "Full-featured APM in your browser"
 
 **When to use:**
@@ -220,7 +220,7 @@ User arrives → "Choose Your Path" →
 ### New Order ✨
 1. Getting Started
 2. **IAPM** ⭐ (PRIMARY - Revolutionary immersive client)
-3. **IAPM Portal** (Conventional APM + Management)
+3. **IAPM Web** (Conventional APM + Management)
 4. Configuration & Management (Backend setup)
 5. Partner
 6. Resources
@@ -231,14 +231,14 @@ User arrives → "Choose Your Path" →
 
 ### Short Marketing URLs
 ```
-docs.immersivefusion.com/iapm         → IAPM (Immersive Client)
+docs.immersivefusion.com/iapm         → IAPM
 docs.immersivefusion.com/ai           → AI Copilot
 docs.immersivefusion.com/copilot      → AI Copilot
-docs.immersivefusion.com/portal       → IAPM Portal
+docs.immersivefusion.com/portal       → IAPM Web
 docs.immersivefusion.com/immersive    → IAPM
 docs.immersivefusion.com/3d           → IAPM
 docs.immersivefusion.com/vr           → IAPM
-docs.immersivefusion.com/web          → IAPM Portal
+docs.immersivefusion.com/web          → IAPM Web
 ```
 
 ### Redirects Preserve Old URLs
@@ -246,7 +246,7 @@ All existing URLs redirect to new locations - **no broken links**.
 
 **Example:**
 - Old: `/Analysis-and-Visualization/3D-and-VR/` → New: `/IAPM/`
-- Old: `/Analysis-and-Visualization/Web-and-Mobile/` → New: `/IAPM-Portal/`
+- Old: `/Analysis-and-Visualization/Web-and-Mobile/` → New: `/IAPM-Web/`
 - Old: `/Setup/` → New: `/Configuration-and-Management/`
 
 ---
@@ -255,17 +255,17 @@ All existing URLs redirect to new locations - **no broken links**.
 
 1. **✅ RESOLVED: Naming**
    - IAPM (for immersive client) - CONFIRMED
-   - IAPM Portal (for management/conventional APM) - CONFIRMED
+   - IAPM Web (for management/conventional APM) - CONFIRMED
 
 2. **AI Copilot placement:**
    - First (most innovative) or after 3D/VR basics (progressive learning)?
    - **Recommendation:** First - it's the newest, most differentiating feature
 
 3. **✅ RESOLVED: Portal capabilities**
-   - IAPM Portal has conventional APM features - CONFIRMED
+   - IAPM Web has conventional APM features - CONFIRMED
    - Need to document: dashboards, metrics, traces, logs, alerts, analysis tools
 
-4. **IAPM Portal content needed:**
+4. **IAPM Web content needed:**
    - What specific APM features exist?
    - Screenshots of dashboards, trace views, log aggregation?
    - What management capabilities exist (account, subscription, user admin)?

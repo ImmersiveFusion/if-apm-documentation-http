@@ -88,6 +88,48 @@ plugins:
       redirect_maps:
         'instrument/index.md': 'Setup/Custom-application/Instrument-your-application/index.md'
 
+        # Restructure redirects - preserve old URLs
+        # Analysis-and-Visualization → IAPM / IAPM-Web
+        'analysis-and-visualization/index.md': 'IAPM/index.md'
+        'analysis-and-visualization/3d-and-vr/index.md': 'IAPM/index.md'
+        'analysis-and-visualization/3d-and-vr/guides/index.md': 'IAPM/Guides/index.md'
+        'analysis-and-visualization/3d-and-vr/guides/installation/index.md': 'IAPM/Guides/Installation/index.md'
+        'analysis-and-visualization/3d-and-vr/guides/installation/windows/index.md': 'IAPM/Guides/Installation/Windows/index.md'
+        'analysis-and-visualization/3d-and-vr/guides/installation/mac/index.md': 'IAPM/Guides/Installation/Mac/index.md'
+        'analysis-and-visualization/3d-and-vr/guides/installation/linux/index.md': 'IAPM/Guides/Installation/Linux/index.md'
+        'analysis-and-visualization/3d-and-vr/guides/navigation/index.md': 'IAPM/Guides/Navigation/index.md'
+        'analysis-and-visualization/3d-and-vr/guides/preferences/index.md': 'IAPM/Guides/Preferences/index.md'
+        'analysis-and-visualization/3d-and-vr/guides/uninstallation/index.md': 'IAPM/Guides/Uninstallation/index.md'
+        'analysis-and-visualization/3d-and-vr/guides/uninstallation/windows/index.md': 'IAPM/Guides/Uninstallation/Windows/index.md'
+        'analysis-and-visualization/3d-and-vr/guides/uninstallation/mac/index.md': 'IAPM/Guides/Uninstallation/Mac/index.md'
+        'analysis-and-visualization/3d-and-vr/guides/uninstallation/linux/index.md': 'IAPM/Guides/Uninstallation/Linux/index.md'
+        'analysis-and-visualization/3d-and-vr/integrations/index.md': 'IAPM/Integrations/index.md'
+        'analysis-and-visualization/3d-and-vr/integrations/htc-vive/index.md': 'IAPM/Integrations/HTC-Vive/index.md'
+        'analysis-and-visualization/3d-and-vr/integrations/meta-quest/index.md': 'IAPM/Integrations/Meta-Quest/index.md'
+        'analysis-and-visualization/3d-and-vr/supported-configurations/index.md': 'IAPM/Supported-Configurations/index.md'
+        'analysis-and-visualization/3d-and-vr/release-notes.md': 'IAPM/release-notes.md'
+
+        'analysis-and-visualization/web-and-mobile/index.md': 'IAPM-Web/index.md'
+        'analysis-and-visualization/web-and-mobile/guides/index.md': 'IAPM-Web/Guides/index.md'
+        'analysis-and-visualization/web-and-mobile/supported-configurations/index.md': 'IAPM-Web/Supported-Configurations/index.md'
+        'analysis-and-visualization/web-and-mobile/release-notes.md': 'IAPM-Web/release-notes.md'
+
+        # Setup → Configuration-and-Management
+        'setup/index.md': 'Configuration-and-Management/index.md'
+        'setup/sandbox/index.md': 'Configuration-and-Management/Sandbox/index.md'
+        'setup/login/index.md': 'Configuration-and-Management/Login/index.md'
+        'setup/account/index.md': 'Configuration-and-Management/Account/index.md'
+        'setup/api-key/index.md': 'Configuration-and-Management/Api-Key/index.md'
+        'setup/custom-application/index.md': 'Configuration-and-Management/Custom-application/index.md'
+        'setup/custom-application/instrument-your-application/index.md': 'Configuration-and-Management/Custom-application/Instrument-your-application/index.md'
+
+        # Short marketing-friendly aliases
+        'iapm/index.md': 'IAPM/index.md'
+        'iapm-web/index.md': 'IAPM-Web/index.md'
+        'ai/index.md': 'IAPM/AI-Copilot/index.md'
+        'copilot/index.md': 'IAPM/AI-Copilot/index.md'
+        'config/index.md': 'Configuration-and-Management/index.md'
+
         #social
         'social/x/index.md': 'https://x.com/immersivefusion'
         'social/linkedin/index.md': 'https://www.linkedin.com/company/immersivefusion'

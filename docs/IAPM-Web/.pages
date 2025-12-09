@@ -1,0 +1,6 @@
+title: IAPM Web
+arrange:
+    - index.md
+    - Supported-Configurations
+    - Guides
+    - release-notes.md

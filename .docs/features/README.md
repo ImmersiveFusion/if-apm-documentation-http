@@ -20,7 +20,7 @@ The features folder is used to:
 - Template or theme updates
 
 ### NOT Product Features
-This folder does NOT contain documentation about Immersive APM product features. Product feature documentation goes directly in the `docs/` folder following the standard content structure.
+This folder does NOT contain documentation about IAPM product features. Product feature documentation goes directly in the `docs/` folder following the standard content structure.
 
 ## Structure
 
@@ -67,7 +67,7 @@ Major restructure to clarify the distinction between IAPM Portal (conventional A
 
 **Folders:**
 - `docs/IAPM/` - Immersive client
-- `docs/IAPM-Portal/` - Conventional APM + management
+- `docs/IAPM-Web/` - Conventional APM + management
 - `docs/Configuration-and-Management/` - Backend setup
 
 ### [AI Copilot Documentation Alignment](ai-copilot-alignment.md)

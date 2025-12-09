@@ -1,4 +1,4 @@
-# Documentation Restructure: IAPM vs. IAPM Portal
+# Documentation Restructure: IAPM vs. IAPM Web
 
 **Status:** Planning
 **Created:** 2024-12-03
@@ -9,10 +9,10 @@
 ## Objective
 
 Restructure the documentation to better reflect the fundamental distinction between:
-1. **IAPM Portal** (Web/Mobile) - Management, configuration, and conventional APM functions
+1. **IAPM Web** (Web/Mobile) - Management, configuration, and conventional APM functions
 2. **IAPM** (3D/VR Client) - Immersive visualization, deep troubleshooting, and AI Copilot interaction
 
-This distinction is critical for users to understand which tool to use for which tasks and positions IAPM (the 3D/VR+AI experience) as the primary value proposition for serious troubleshooting and analysis, while IAPM Portal provides conventional APM and management capabilities.
+This distinction is critical for users to understand which tool to use for which tasks and positions IAPM (the 3D/VR+AI experience) as the primary value proposition for serious troubleshooting and analysis, while IAPM Web provides conventional APM and management capabilities.
 
 ## Current State
 
@@ -41,7 +41,7 @@ Users currently see:
 
 ### Desired Mental Model
 Users should understand:
-- **IAPM Portal** = Conventional APM, configuration, management, quick monitoring
+- **IAPM Web** = Conventional APM, configuration, management, quick monitoring
 - **IAPM** = Immersive investigation, deep troubleshooting, AI-assisted analysis, the revolutionary experience
 
 ## Proposed Changes
@@ -52,7 +52,7 @@ Users should understand:
 Getting Started
 ├── Overview
 ├── Choose Your Path
-│   ├── IAPM Portal (Conventional APM)
+│   ├── IAPM Web (Conventional APM)
 │   └── IAPM Client (Immersive Experience)
 └── Authentication
 
@@ -64,7 +64,7 @@ Configuration & Management
 ├── API Key Management
 └── Instrumentation
 
-IAPM (Immersive Client)           ← NEW: Primary focus, folder name: "IAPM"
+IAPM           ← NEW: Primary focus, folder name: "IAPM"
 ├── Overview
 ├── AI Copilot                    ← Prominent placement
 │   ├── What is AI Copilot?
@@ -85,7 +85,7 @@ IAPM (Immersive Client)           ← NEW: Primary focus, folder name: "IAPM"
     ├── Hall of Supporters
     └── Release Notes
 
-IAPM Portal                       ← NEW: Clear positioning, folder name: "IAPM-Portal"
+IAPM Web                       ← NEW: Clear positioning, folder name: "IAPM-Web"
 ├── Overview
 ├── Getting Started
 ├── APM Features                  ← Conventional APM capabilities
@@ -108,23 +108,23 @@ Resources
 
 1. **Rename "Analysis and Visualization" → Split into two clear sections:**
    - **"IAPM"** (3D/VR Client + AI Copilot) - The immersive experience
-   - **"IAPM Portal"** (Web/Mobile) - Conventional APM + Management
+   - **"IAPM Web"** (Web/Mobile) - Conventional APM + Management
 
 2. **Elevate "IAPM" as primary section**
-   - Appears before IAPM Portal in navigation
+   - Appears before IAPM Web in navigation
    - AI Copilot is first subsection (most innovative feature)
-   - Emphasizes this is the revolutionary Immersive APM experience
+   - Emphasizes this is the revolutionary IAPM experience
 
 3. **Rename "Setup" → "Configuration & Management"**
    - Clearer purpose
    - Backend configuration (API keys, instrumentation)
-   - UI-based management lives in IAPM Portal
+   - UI-based management lives in IAPM Web
 
 4. **Create "Choose Your Path" in Getting Started**
-   - IAPM Portal path → Conventional APM, quick monitoring, management
+   - IAPM Web path → Conventional APM, quick monitoring, management
    - IAPM Client path → Install 3D/VR client for immersive analysis
 
-5. **Document IAPM Portal APM features properly**
+5. **Document IAPM Web APM features properly**
    - Not just "light" APM - conventional APM capabilities
    - Dashboard, metrics, traces, logs
    - Monitoring and alerts
@@ -138,7 +138,7 @@ arrange:
     - index.md
     - Getting-Started
     - IAPM                        ← NEW (highest priority) - Immersive client
-    - IAPM-Portal                 ← NEW - Conventional APM + management
+    - IAPM-Web                 ← NEW - Conventional APM + management
     - Configuration-and-Management ← RENAMED from Setup
     - Partner
     - Resources
@@ -146,13 +146,13 @@ arrange:
 
 ### Folder Names
 
-- `docs/IAPM/` - Immersive APM client (3D/VR + AI Copilot)
-- `docs/IAPM-Portal/` - IAPM Portal (Web/Mobile, conventional APM)
+- `docs/IAPM/` - IAPM client (3D/VR + AI Copilot)
+- `docs/IAPM-Web/` - IAPM Web (Web/Mobile, conventional APM)
 - `docs/Configuration-and-Management/` - Backend setup (renamed from Setup)
 
 ### Content Positioning
 
-#### IAPM (Immersive Client)
+#### IAPM
 **Folder:** `docs/IAPM/`
 
 **Messaging:**
@@ -171,8 +171,8 @@ arrange:
 
 **Navigation Display:** "IAPM" or "IAPM Client" or "Immersive Client"
 
-#### IAPM Portal
-**Folder:** `docs/IAPM-Portal/`
+#### IAPM Web
+**Folder:** `docs/IAPM-Web/`
 
 **Messaging:**
 - "Conventional APM from anywhere"
@@ -196,7 +196,7 @@ arrange:
   - Cross-platform (desktop, mobile)
   - Available at azure.iapm.app and my.iapm.app
 
-**Navigation Display:** "IAPM Portal" or "Portal"
+**Navigation Display:** "IAPM Web" or "Portal"
 
 ## Implementation Steps
 
@@ -275,17 +275,17 @@ arrange:
 - `3D-VR-Environment/` - Subfolder for 3D/VR specific content (optional organization)
 - `Advanced-Features/` - Hall of Supporters, etc.
 
-### From "Analysis-and-Visualization/Web-and-Mobile" to "IAPM-Portal"
+### From "Analysis-and-Visualization/Web-and-Mobile" to "IAPM-Web"
 
 **Current Path** → **New Path**
 
-`docs/Analysis-and-Visualization/Web-and-Mobile/` → `docs/IAPM-Portal/`
+`docs/Analysis-and-Visualization/Web-and-Mobile/` → `docs/IAPM-Web/`
 - `index.md` → `index.md` (expand to include APM features + management)
 - `Guides/` → `Getting-Started/`
 - `Supported-Configurations/` → `Supported-Browsers/`
 - `release-notes.md` → `Release-Notes/index.md`
 
-**New Content in "IAPM-Portal":**
+**New Content in "IAPM-Web":**
 - `index.md` - Portal overview emphasizing conventional APM + management
 - `APM-Features/` - NEW: Document conventional APM capabilities
   - `Dashboards-and-Metrics/`
@@ -304,8 +304,8 @@ arrange:
 `docs/Setup/` → `docs/Configuration-and-Management/`
 - All files stay in same relative structure
 - Update overview content to clarify this is backend configuration (API keys, instrumentation)
-- Distinguish from UI-based management in IAPM Portal
-- Link to IAPM Portal for account/subscription UI management
+- Distinguish from UI-based management in IAPM Web
+- Link to IAPM Web for account/subscription UI management
 
 ## URL Redirects Required (mkdocs.yml)
 
@@ -324,7 +324,7 @@ arrange:
 'analysis-and-visualization/3d-and-vr/supported-configurations/index.md': 'iapm/system-requirements/index.md'
 'analysis-and-visualization/3d-and-vr/release-notes.md': 'iapm/release-notes/index.md'
 
-# Specific page redirects (Web-and-Mobile → IAPM-Portal)
+# Specific page redirects (Web-and-Mobile → IAPM-Web)
 'analysis-and-visualization/web-and-mobile/guides/index.md': 'iapm-portal/getting-started/index.md'
 'analysis-and-visualization/web-and-mobile/supported-configurations/index.md': 'iapm-portal/supported-browsers/index.md'
 'analysis-and-visualization/web-and-mobile/release-notes.md': 'iapm-portal/release-notes/index.md'
@@ -397,8 +397,8 @@ arrange:
 
 1. **Naming:**
    - Is "The Immersive Experience" the right name, or too wordy?
-   - Alternative: "Immersive APM Experience", "3D/VR Experience", "Immersive Client"?
-   - Is "Portal" clear enough, or should it be "Web Portal", "Management Portal"?
+   - Alternative: "IAPM Experience", "3D/VR Experience", "Immersive Client"?
+   - Is "Portal" clear enough, or should it be "IAPM Web", "Management Portal"?
 
 2. **AI Copilot Placement:**
    - Should AI Copilot be FIRST under Immersive Experience (most innovative)?
