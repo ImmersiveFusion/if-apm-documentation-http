@@ -124,10 +124,9 @@ plugins:
         'setup/custom-application/instrument-your-application/index.md': 'Configuration-and-Management/Custom-application/Instrument-your-application/index.md'
 
         # Short marketing-friendly aliases
-        'iapm/index.md': 'IAPM/index.md'
-        'iapm-web/index.md': 'IAPM-Web/index.md'
-        'ai/index.md': 'IAPM/AI-Copilot/index.md'
-        'copilot/index.md': 'IAPM/AI-Copilot/index.md'
+        # TODO: Uncomment when AI-Copilot docs are created
+        # 'ai/index.md': 'IAPM/AI-Copilot/index.md'
+        # 'copilot/index.md': 'IAPM/AI-Copilot/index.md'
         'config/index.md': 'Configuration-and-Management/index.md'
 
         #social
