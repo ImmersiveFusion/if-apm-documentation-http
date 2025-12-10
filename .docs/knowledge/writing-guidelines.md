@@ -165,8 +165,8 @@ Types: note, abstract, info, tip, success, question, warning, failure, danger, b
 
 ### Product Names
 - **Immersive APM** (not "immersive APM" or "Immersive Apm")
-- **Immersive APM Web & Mobile** (official client name)
-- **Immersive APM 3D & VR** (official client name)
+- **IAPM Web** (official web client name, formerly "Immersive APM Web & Mobile")
+- **IAPM Desktop** (official desktop client name, formerly "Immersive APM 3D & VR")
 - **Immersive Fusion** (company name)
 - **OpenTelemetry** (not "Open Telemetry")
 - **Entra ID** (not "Azure AD" - Microsoft rebranded)

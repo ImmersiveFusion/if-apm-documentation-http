@@ -1,6 +1,6 @@
 # Supported Configurations
 
-Immersive APM for 3D and VR supports most Windows operating systems. **Experimental support** for Mac operating systems is available.
+IAPM Desktop supports most Windows operating systems. **Experimental support** for macOS is available.
 
 ## Windows
 
@@ -15,7 +15,7 @@ Immersive APM for 3D and VR supports most Windows operating systems. **Experimen
 |Input              |Keyboard and mouse required                    | Microphone, OpenXR compatible headset         |
 |Resolution         |1280 x 720 display resolution                                                                  |
 
-## Mac (Experimental)
+## macOS (Experimental)
 
 |                   |Minimum                                        |Recommended                                    |
 |-------------------|-----------------------------------------------|-----------------------------------------------|

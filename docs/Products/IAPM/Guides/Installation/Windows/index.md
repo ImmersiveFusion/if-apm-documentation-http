@@ -12,7 +12,7 @@ Learn more about [Steam](https://store.steampowered.com/about/){:target="sp"} on
 [Latest Beta Build](https://ifapm.blob.core.windows.net/release/beta/msi/ImmersiveAPM.latest.msi){:class="md-button md-button--secondary"}
 [Latest Alpha Build](https://ifapm.blob.core.windows.net/release/alpha/msi/ImmersiveAPM.latest.msi){:class="md-button"}
 
-1. Click on the button above to download the installer for Immersive APM for Windows from the cloud. The file size is around `1.5GB`
+1. Click on the button above to download the installer for IAPM Desktop for Windows from the cloud. The file size is around `1.5GB`
     ![Download](img/1.download.png)
 
 1. Run the installer
@@ -21,13 +21,13 @@ Learn more about [Steam](https://store.steampowered.com/about/){:target="sp"} on
 
     ![Download](img/2.open.png)
 
-    The installer for Immersive APM for Windows uses standard technology from Microsoft (MSI) and performs the installation silently without any unnecessary prompts.
+    The installer for IAPM Desktop for Windows uses standard technology from Microsoft (MSI) and performs the installation silently without any unnecessary prompts.
 
     ![Download](img/4.install.a.png)
 
 1. Allow Installation (if User Account Control is enabled)
 
-    The installer file needs to make minimal modifications to your computer as part of the installation process as well as store Immersive APM for Windows files.
+    The installer file needs to make minimal modifications to your computer as part of the installation process as well as store IAPM Desktop for Windows files.
 
     If you have User Account Control enabled on your computer, ensure that the prompt displays `Verified publisher: Immersive Fusion LLC`. Click `Yes` once you have done so to allow the installer to make modifications to your computer. Click `No`, if you don't see such a message on the prompt and contact us for assistance. 
 

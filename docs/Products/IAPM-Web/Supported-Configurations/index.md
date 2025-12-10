@@ -1,6 +1,6 @@
 # Supported Configurations
 
-Immersive APM for Web & Mobile supports most recent browsers. This includes the following specific versions:
+IAPM Web supports most recent browsers. This includes the following specific versions:
 
 |Browser                                        |Supported Versions                         |
 |-----------------------------------------------|-------------------------------------------|

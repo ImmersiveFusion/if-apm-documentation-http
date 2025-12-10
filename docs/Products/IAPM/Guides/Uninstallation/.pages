@@ -1,8 +1,8 @@
 arrange:
     - index.md
     - Windows
+    - macOS
     - Linux
-    - Mac
     #- Immersive-Clouds
     #- Account-Configuration
     # - observability

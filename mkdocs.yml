@@ -95,13 +95,13 @@ plugins:
         'analysis-and-visualization/3d-and-vr/guides/index.md': 'Products/IAPM/Guides/index.md'
         'analysis-and-visualization/3d-and-vr/guides/installation/index.md': 'Products/IAPM/Guides/Installation/index.md'
         'analysis-and-visualization/3d-and-vr/guides/installation/windows/index.md': 'Products/IAPM/Guides/Installation/Windows/index.md'
-        'analysis-and-visualization/3d-and-vr/guides/installation/mac/index.md': 'Products/IAPM/Guides/Installation/Mac/index.md'
+        'analysis-and-visualization/3d-and-vr/guides/installation/mac/index.md': 'Products/IAPM/Guides/Installation/macOS/index.md'
         'analysis-and-visualization/3d-and-vr/guides/installation/linux/index.md': 'Products/IAPM/Guides/Installation/Linux/index.md'
         'analysis-and-visualization/3d-and-vr/guides/navigation/index.md': 'Products/IAPM/Guides/Navigation/index.md'
         'analysis-and-visualization/3d-and-vr/guides/preferences/index.md': 'Products/IAPM/Guides/Preferences/index.md'
         'analysis-and-visualization/3d-and-vr/guides/uninstallation/index.md': 'Products/IAPM/Guides/Uninstallation/index.md'
         'analysis-and-visualization/3d-and-vr/guides/uninstallation/windows/index.md': 'Products/IAPM/Guides/Uninstallation/Windows/index.md'
-        'analysis-and-visualization/3d-and-vr/guides/uninstallation/mac/index.md': 'Products/IAPM/Guides/Uninstallation/Mac/index.md'
+        'analysis-and-visualization/3d-and-vr/guides/uninstallation/mac/index.md': 'Products/IAPM/Guides/Uninstallation/macOS/index.md'
         'analysis-and-visualization/3d-and-vr/guides/uninstallation/linux/index.md': 'Products/IAPM/Guides/Uninstallation/Linux/index.md'
         'analysis-and-visualization/3d-and-vr/integrations/index.md': 'Products/IAPM/Integrations/index.md'
         'analysis-and-visualization/3d-and-vr/integrations/htc-vive/index.md': 'Products/IAPM/Integrations/HTC-Vive/index.md'
@@ -113,6 +113,10 @@ plugins:
         'analysis-and-visualization/web-and-mobile/guides/index.md': 'Products/IAPM-Web/Guides/index.md'
         'analysis-and-visualization/web-and-mobile/supported-configurations/index.md': 'Products/IAPM-Web/Supported-Configurations/index.md'
         'analysis-and-visualization/web-and-mobile/release-notes.md': 'Products/IAPM-Web/release-notes.md'
+
+        # Mac → macOS redirects
+        'Products/IAPM/Guides/Installation/Mac/index.md': 'Products/IAPM/Guides/Installation/macOS/index.md'
+        'Products/IAPM/Guides/Uninstallation/Mac/index.md': 'Products/IAPM/Guides/Uninstallation/macOS/index.md'
 
         # Old IAPM paths → Products/IAPM
         'iapm/index.md': 'Products/IAPM/index.md'

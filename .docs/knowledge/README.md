@@ -82,8 +82,8 @@ Standards and best practices for writing and maintaining documentation.
 
 ### Product Names
 - **Immersive APM** - The main product
-- **Immersive APM Web & Mobile** - Browser-based client
-- **Immersive APM 3D & VR** - Desktop VR client
+- **IAPM Web** - Browser-based client (formerly "Immersive APM Web & Mobile")
+- **IAPM Desktop** - Desktop VR client (formerly "Immersive APM 3D & VR")
 - **Immersive Fusion LLC** - The company
 
 ### Technology Stack Summary

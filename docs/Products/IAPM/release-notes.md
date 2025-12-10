@@ -1,6 +1,6 @@
 # Release Notes
 
-## Immersive APM 3D and VR
+## IAPM Desktop
 
 ### 1.10.0 - Upcoming Release <small>October 13, 2025</small> { id="1.10.0" }
 
@@ -60,7 +60,7 @@ This release includes an update the authentication utility.
 
 **Introduction:**
 
-This release includes several new features, improvements, and bug fixes to enhance the user experience and performance of Immersive APM 3D and VR.
+This release includes several new features, improvements, and bug fixes to enhance the user experience and performance of IAPM Desktop.
 
 **New Features:**
 

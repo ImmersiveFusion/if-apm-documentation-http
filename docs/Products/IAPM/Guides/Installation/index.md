@@ -1,6 +1,6 @@
 # Installation
 
-Immersive APM is a software application built on top of the Unity 3D engine and is a standalone software program that runs on a user's computer. The application needs to be installed in order to access the necessary files and resources required to run.
+IAPM Desktop is a software application built on top of the Unity 3D engine and is a standalone software program that runs on a user's computer. The application needs to be installed in order to access the necessary files and resources required to run.
 
 When the application is installed, it creates a folder on your computer that contains all necessary files and resources, such as textures, sounds, and scripts, needed to run the application. This ensures that the application has access to all required resources and can run smoothly without any issues.
 
@@ -8,4 +8,5 @@ Installing the application ensures that it is properly registered with the user'
 
 ## Available Installers
 
-[Windows](Windows/index.md){:class="md-button md-button--primary"} 
+[Windows](Windows/index.md){:class="md-button md-button--primary"}
+[macOS](macOS/index.md){:class="md-button"}

@@ -1,7 +1,7 @@
-# Installing on Mac
+# Installing on macOS
 
 !!! warning "Experimental"
-    The Mac build of Immersive APM is still considered experimental and not fully supported. Additional manual steps are required to use.
+    The macOS build of IAPM Desktop is still considered experimental and not fully supported. Additional manual steps are required to use.
 
 ## Steam
 
@@ -18,7 +18,7 @@ Learn more about [Steam](https://store.steampowered.com/about/){:target="sp"} on
 -->
 [Latest Alpha Build](https://ifapm.blob.core.windows.net/release/alpha/dmg/ImmersiveAPM.latest.dmg){:class="md-button"}
 
-1. Click on the button above to download the installer for Immersive APM for Mac from the cloud. The file size is around `1.5GB`
+1. Click on the button above to download the installer for IAPM Desktop for macOS from the cloud. The file size is around `1.5GB`
 
 1. Open the Disk Image file (DMG) and drag to your `Applications`.
 

@@ -38,16 +38,18 @@ Immersive APM is a cloud-native Application Performance Management (APM) solutio
 
 ## Products & Services
 
-### 1. Immersive APM Web & Mobile
-- Browser-based interface
+### 1. IAPM Web
+
+- Browser-based interface (formerly "Immersive APM Web & Mobile")
 - Cross-platform (desktop and mobile)
 - Real-time and historical data analysis
 - Two authentication options:
   - azure.iapm.app (Entra ID/Office 365)
   - my.iapm.app (Local/Social accounts)
 
-### 2. Immersive APM 3D & VR
-- Desktop application (Windows primary, Mac experimental, Linux)
+### 2. IAPM Desktop
+
+- Desktop application (formerly "Immersive APM 3D & VR") (Windows primary, Mac experimental, Linux)
 - Unity-based 3D visualization engine
 - VR headset support (HTC Vive, Meta Quest)
 - AI Copilot with chat and voice interaction

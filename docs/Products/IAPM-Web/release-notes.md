@@ -1,6 +1,6 @@
 # Release Notes
 
-## Immersive APM Web
+## IAPM Web
 
 ### 3.34.1 <small>September 16, 2024</small> { id="3.34.1" }
 
