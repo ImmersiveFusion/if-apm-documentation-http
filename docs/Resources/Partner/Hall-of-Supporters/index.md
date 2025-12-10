@@ -1,23 +1,59 @@
 # Hall of Supporters
 
-Partners need to be recognized. Participating in a fundraiser campaign, time or financial contributions that is not part of your subscription cost for Immersive APM adds to a total amount contributed by partner. Based on the total value you contributed, you can choose to be featured in the Immersive APM Hall of Supporters.
+The Hall of Supporters is a unique virtual space within IAPM where partners and contributors are permanently recognized. Your contributions—whether financial, technical, or advocacy—earn you a place in this immersive monument to collaboration.
 
-![alt text](img/frontdoor.png)
+![Hall of Supporters Entrance](img/frontdoor.png)
 
-The Hall of Supporters is a special location in the Immersive APM 3D/VR world. There, your company logo will be shown for everyone to see and appreciate that you are a vital part of the Immersive Fusion journey. This isn’t just a static display—it’s a vibrant, monument to collaboration, glowing with the energy of those who’ve fueled the mission. Picture a colossal, prismatic dome suspended in a starlit void, its walls shimmering with dynamic holograms of partner logos that pulse and shift, each one telling a story of commitment. The larger the contribution, the more prominent the display—logos scaling in size, radiating with bespoke animations that reflect your brand’s essence, from fiery trails for bold innovators to serene orbits for steadfast visionaries.
+## What is the Hall of Supporters?
 
-![alt text](img/dome.png)
+The Hall of Supporters is a special location in the IAPM 3D/VR world—a vibrant monument glowing with the energy of those who've fueled our mission. Picture a colossal, prismatic dome suspended in a starlit void, its walls shimmering with dynamic holograms of partner logos that pulse and shift.
 
-Step inside, and the Hall becomes a museum of milestones. Artifacts from the Immersive APM journey float in mid-air: crystalline data shards etched with the code of our first prototype, holographic blueprints of the platform’s evolution, and shimmering orbs that replay key moments—like the day we hit our first million users or launched VR integration. Each artifact is tagged with the names of partners who made those victories possible, their contributions immortalized in light and sound. Visitors can interact, zooming into timelines that weave your story into ours, showcasing how your support shaped the tech that’s redefining Application Performance Management (APM).
+![The Dome](img/dome.png)
 
-![alt text](img/ms-for-startups.png)
+### Recognition Tiers
 
-This isn’t just a thank-you; it’s a legacy. The Immersive APM Hall of Supporters is where your mark on the future is seen, felt, and remembered—a dazzling tribute to those who dared to build the next era of industry with us.
+| Contribution Level | Display Features |
+|-------------------|------------------|
+| **Supporter** | Logo displayed in the Hall |
+| **Partner** | Larger logo with custom animation |
+| **Founders' Tier** | Premium placement, Journey Wall feature, interactive vignette |
 
-![alt text](img/your-logo-here.png)
+The larger your contribution, the more prominent your display—logos scale in size with bespoke animations that reflect your brand's essence.
 
-## Embracing history, showing appreciation and looking forward
+## Inside the Hall
 
-![alt text](img/historic-buzludja.png)
+Step inside, and the Hall becomes a museum of milestones:
 
-The [Buzludja Monument](https://www.google.com/search?q=Buzludja+Monument){:target=g}, reimagined as the Hall of Supporters in Immersive Fusion’s 3D/VR world, is a powerful symbol of renewal, bridging a historic vision of Application Performance Management (APM) with a revolutionary new approach. Originally built in 1981 to political roots, the monument’s bold, futuristic architecture evokes a sense of ambition and grandeur. In its virtual incarnation, it transcends its political past, becoming a dynamic tribute to innovation, partnership, and forward-thinking. This transformation aligns seamlessly with the Hall of Supporters’ story, showcasing revolutionaries, appreciating the monument’s architectural legacy, culturally iconic figures and embracing revolutionary future unburdened by outdated ideologies.
+- **Floating Artifacts** - Crystalline data shards and holographic blueprints of IAPM's evolution
+- **Interactive Timeline** - Key moments tagged with the partners who made them possible
+- **Journey Wall** - Immersive vignettes showcasing partner stories and impact
+
+![Microsoft for Startups](img/ms-for-startups.png)
+
+Each artifact is tagged with the names of partners who made those victories possible—contributions immortalized in light and sound. Visitors can interact, zooming into timelines that weave your story into ours.
+
+## Your Place in History
+
+![Your Logo Here](img/your-logo-here.png)
+
+This isn't just a thank-you; it's a legacy. The Hall of Supporters is where your mark on the future is seen, felt, and remembered—a tribute to those who dared to build the next era of application performance management with us.
+
+## The Inspiration
+
+![Historic Buzludja](img/historic-buzludja.png)
+
+The Hall's design draws inspiration from the [Buzludja Monument](https://www.google.com/search?q=Buzludja+Monument){ target="_blank" }, reimagined for the digital age. Originally built in 1981, the monument's bold, futuristic architecture evokes ambition and grandeur. In its virtual incarnation, it transcends its origins to become a dynamic tribute to innovation, partnership, and forward-thinking.
+
+## How to Be Featured
+
+Contributions that qualify for Hall of Supporters recognition include:
+
+- Participating in fundraiser campaigns
+- Financial contributions beyond subscription costs
+- Technical contributions and expertise
+- Significant advocacy and community building
+
+Ready to join the Hall?
+
+[Become a Benefactor :material-arrow-right:](../Benefactors/index.md){ .md-button }
+[Contact Us :material-arrow-right:](mailto:partners@immersivefusion.com){ .md-button }
