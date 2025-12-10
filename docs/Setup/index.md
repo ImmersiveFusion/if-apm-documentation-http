@@ -9,6 +9,7 @@ Configure your Immersive APM environment, manage your account, and instrument yo
 - [Account](Account/index.md) - Account configuration and billing
 - [API Key](Api-Key/index.md) - Generate and manage API keys
 - [Custom Application](Custom-application/index.md) - Instrument your own applications
+- [Best Practices](Best-Practices/index.md) - OpenTelemetry instrumentation guidelines
 
 ## Getting Started
 

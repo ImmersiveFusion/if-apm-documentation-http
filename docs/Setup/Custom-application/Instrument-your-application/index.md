@@ -1,27 +1,167 @@
-# Instrument your application
+# Instrument Your Application
 
 {!template/subscription-required.mdp!}
 
-Immersive APM offers support for the [OpenTelemetry](../../../Resources/Terms-and-Concepts/Observability/Frameworks/OpenTelemetry/index.md) [observability framework](../../../Resources/Terms-and-Concepts/Observability/index.md). This is the most common and easiest configuration for customers to get started.
+Connect your application to Immersive APM using [OpenTelemetry](../../../Resources/Terms-and-Concepts/Observability/Frameworks/OpenTelemetry/index.md). Most applications see data within 5 minutes.
 
-The process is called [instrumentation](https://opentelemetry.io/docs/instrumentation/) and [OpenTelemetry](../../../Resources/Terms-and-Concepts/Observability/Frameworks/OpenTelemetry/index.md) provides an exhaustive amount of documentation for many mainstream programming languages. The process of instrumentation with OpenTelemetry involves adding the OpenTelemetry SDK to the application's codebase and configuring it to collect telemetry data. The SDK provides APIs to capture telemetry data from various sources in the application, including traces, metrics, and logs. Once the SDK is integrated into the application, developers can configure it to export the collected telemetry data to various tools and platforms, such as Immersive APM or other observability tools. The OpenTelemetry collector is a component that can be used to receive, process, and export telemetry data from the application.
+## Quick Configuration
 
-After instrumentation is completed Immersive APM will start collecting telemetry data from the software application to gain insights into its performance, behavior, and usage. This data can then be seen in the [Immersive APM Web](../../../Products/IAPM-Web/index.md) and [Immersive APM 3D/VR](../../../Products/IAPM/index.md) clients. 
+All you need is your **OTLP endpoint** and **API key**:
+
+| Setting | Value |
+|---------|-------|
+| **Endpoint** | `https://otlp.iapm.app` |
+| **API Key Header** | `API-Key=YOUR-API-KEY` |
+
+Get your API key from the [Grids page](https://my.iapm.app/admin/grids) by clicking **Instrument** on your grid.
 
 ![Instrument](../img/instrument.png)
 
-The final piece is to specify your OTLP endpoint and API key. The code to do so will look different based on the language your application is written in. Here's C# example. Supply the API key to your application and deploy it. That's it!
+## Language Examples
 
-C# example:
+Choose your language to see the OTLP exporter configuration:
 
-```csharp
-.AddOtlpExporter(o =>
-{
-    o.Endpoint = new Uri("https://otlp.iapm.app");// i.e. this.Configuration["IfApmOtlpEndpoint"]
-    o.Headers = $"API-Key=IF-API-KEY-HERE";// i.e. {this.Configuration["IfApmAPIKey"]}
-});
-```
+=== "C# / .NET"
 
-# Are you ready?
+    ```csharp
+    // In your OpenTelemetry setup (Program.cs or Startup.cs)
+    .AddOtlpExporter(options =>
+    {
+        options.Endpoint = new Uri("https://otlp.iapm.app");
+        options.Headers = "API-Key=YOUR-API-KEY";
+    })
+    ```
 
-[Get Started Today!](../../../Getting-Started/index.md){:class="md-button md-button--primary"}
+    **Full setup example:**
+
+    ```csharp
+    builder.Services.AddOpenTelemetry()
+        .WithTracing(tracing => tracing
+            .AddAspNetCoreInstrumentation()
+            .AddHttpClientInstrumentation()
+            .AddOtlpExporter(options =>
+            {
+                options.Endpoint = new Uri("https://otlp.iapm.app");
+                options.Headers = "API-Key=YOUR-API-KEY";
+            }))
+        .WithMetrics(metrics => metrics
+            .AddAspNetCoreInstrumentation()
+            .AddOtlpExporter(options =>
+            {
+                options.Endpoint = new Uri("https://otlp.iapm.app");
+                options.Headers = "API-Key=YOUR-API-KEY";
+            }));
+    ```
+
+    [.NET OpenTelemetry Docs](https://opentelemetry.io/docs/languages/net/){:target="_blank"}
+
+=== "Java"
+
+    ```java
+    // Environment variables
+    OTEL_EXPORTER_OTLP_ENDPOINT=https://otlp.iapm.app
+    OTEL_EXPORTER_OTLP_HEADERS=API-Key=YOUR-API-KEY
+    ```
+
+    **Or programmatically:**
+
+    ```java
+    OtlpGrpcSpanExporter exporter = OtlpGrpcSpanExporter.builder()
+        .setEndpoint("https://otlp.iapm.app")
+        .addHeader("API-Key", "YOUR-API-KEY")
+        .build();
+    ```
+
+    [Java OpenTelemetry Docs](https://opentelemetry.io/docs/languages/java/){:target="_blank"}
+
+=== "Python"
+
+    ```python
+    # Environment variables
+    OTEL_EXPORTER_OTLP_ENDPOINT=https://otlp.iapm.app
+    OTEL_EXPORTER_OTLP_HEADERS=API-Key=YOUR-API-KEY
+    ```
+
+    **Or programmatically:**
+
+    ```python
+    from opentelemetry.exporter.otlp.proto.grpc.trace_exporter import OTLPSpanExporter
+
+    exporter = OTLPSpanExporter(
+        endpoint="https://otlp.iapm.app",
+        headers={"API-Key": "YOUR-API-KEY"}
+    )
+    ```
+
+    [Python OpenTelemetry Docs](https://opentelemetry.io/docs/languages/python/){:target="_blank"}
+
+=== "Node.js"
+
+    ```javascript
+    // Environment variables
+    OTEL_EXPORTER_OTLP_ENDPOINT=https://otlp.iapm.app
+    OTEL_EXPORTER_OTLP_HEADERS=API-Key=YOUR-API-KEY
+    ```
+
+    **Or programmatically:**
+
+    ```javascript
+    const { OTLPTraceExporter } = require('@opentelemetry/exporter-trace-otlp-grpc');
+
+    const exporter = new OTLPTraceExporter({
+      url: 'https://otlp.iapm.app',
+      headers: { 'API-Key': 'YOUR-API-KEY' }
+    });
+    ```
+
+    [Node.js OpenTelemetry Docs](https://opentelemetry.io/docs/languages/js/){:target="_blank"}
+
+=== "Go"
+
+    ```go
+    // Environment variables
+    OTEL_EXPORTER_OTLP_ENDPOINT=https://otlp.iapm.app
+    OTEL_EXPORTER_OTLP_HEADERS=API-Key=YOUR-API-KEY
+    ```
+
+    **Or programmatically:**
+
+    ```go
+    import "go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc"
+
+    exporter, err := otlptracegrpc.New(ctx,
+        otlptracegrpc.WithEndpoint("otlp.iapm.app"),
+        otlptracegrpc.WithHeaders(map[string]string{
+            "API-Key": "YOUR-API-KEY",
+        }),
+    )
+    ```
+
+    [Go OpenTelemetry Docs](https://opentelemetry.io/docs/languages/go/){:target="_blank"}
+
+## What Gets Collected
+
+Once configured, OpenTelemetry automatically captures:
+
+- **Traces** - Request flows across services
+- **Metrics** - Performance measurements (latency, throughput, errors)
+- **Logs** - Application log events (when configured)
+
+## Verify It's Working
+
+1. Deploy or run your instrumented application
+2. Generate some traffic (make a few requests)
+3. Open [IAPM Web](https://my.iapm.app) and select your grid
+4. Click **Enter** to see your telemetry data
+
+!!! tip "Not seeing data?"
+    - Verify your API key is correct
+    - Check that your application can reach `https://otlp.iapm.app`
+    - Ensure OpenTelemetry packages are installed and configured
+    - Look for errors in your application logs
+
+## Next Steps
+
+- [View your data in IAPM Web](../../../Products/IAPM-Web/index.md)
+- [Explore in 3D with IAPM Desktop](../../../Products/IAPM/index.md)
+- [OpenTelemetry Language SDKs](https://opentelemetry.io/docs/languages/){:target="_blank"}
