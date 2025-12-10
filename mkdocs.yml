@@ -45,7 +45,7 @@ theme:
     - navigation.top
     - navigation.tracking
     - search.highlight
-    - search.share
+    # - search.share  # Disabled to prevent Google indexing ?q= URLs
     - search.suggest
     - toc.follow
     # - toc.integrate

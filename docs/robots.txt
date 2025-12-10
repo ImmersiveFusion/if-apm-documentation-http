@@ -1,0 +1,12 @@
+# Robots.txt for docs.immersivefusion.com
+User-agent: *
+
+# Allow all pages
+Allow: /
+
+# Block URLs with query parameters (search results, etc.)
+Disallow: /*?q=
+Disallow: /*?*q=
+
+# Sitemap
+Sitemap: https://docs.immersivefusion.com/sitemap.xml
