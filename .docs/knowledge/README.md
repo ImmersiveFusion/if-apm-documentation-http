@@ -35,7 +35,3 @@ Knowledge base for the Immersive APM documentation project.
 - **Immersive APM** - The platform
 - **IAPM Web** - Browser-based client
 - **IAPM Desktop** - 3D/VR desktop client
-
----
-
-*For detailed product and company information, see [IF.Knowledge](../../../IF.Knowledge/.docs/)*

@@ -48,7 +48,3 @@ This documentation site covers:
 - IAPM Web and IAPM Desktop usage
 - Partner programs
 - Legal and resources
-
----
-
-*For detailed product information, see [IF.Knowledge](../../../IF.Knowledge/.docs/Product/)*

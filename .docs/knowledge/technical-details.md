@@ -81,7 +81,3 @@
 3. Commit changes to feature branch
 4. Create PR to `main` branch
 5. Merge triggers automatic deployment
-
----
-
-*For product technical details (Unity, .NET, Angular), see [IF.Knowledge](../../../IF.Knowledge/.docs/Product/)*
