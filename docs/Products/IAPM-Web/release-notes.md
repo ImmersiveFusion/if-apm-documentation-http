@@ -2,6 +2,40 @@
 
 ## IAPM Web
 
+### 3.71.1 <small>December 9, 2025</small> { id="3.71.1" }
+
+**Introduction:**
+
+This release delivers a major dashboard overhaul, Angular 21 upgrade, and significant improvements to trace visualization capabilities. The UI has been refined with better dark/light theme support and a reorganized SCSS architecture for maintainability.
+
+**New Features:**
+
+- **Span View Tab**: New waterfall timeline visualization for detailed span analysis within traces.
+- **Network Graph Tab**: Interactive service dependency visualization for trace analysis.
+- **Nested Span Tags**: Collapsible tree view for exploring hierarchical span tag data.
+- **Layer Indicator Component**: Reusable partial component for consistent layer visualization.
+- **Empty Field Component**: Improved no-data messaging across the application.
+
+**Improvements:**
+
+- Upgraded from **Angular 20 to Angular 21**.
+- Major dashboard redesign with improved layout and tile components.
+- Reorganized SCSS architecture with centralized dark theme variables.
+- Renamed Immersive APM to **IAPM** throughout the application.
+- Enhanced dark/light theme support across all components.
+- Improved flame graph sizing and span visibility.
+
+**Bug Fixes:**
+
+- Fixed sidebar badge styling and text color.
+- Fixed sidebar submenu chevron positioning for dark/light themes.
+- Fixed notification dropdown layout and vertical alignment.
+- Fixed production build SCSS import paths.
+
+**Known Issues:**
+
+- None identified in this release.
+
 ### 3.34.1 <small>September 16, 2024</small> { id="3.34.1" }
 
 - Fixed bug: Fixes to time picker

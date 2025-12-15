@@ -1,40 +1,61 @@
 # Getting Started
 
-Get up and running with Immersive APM in minutes.
+Get up and running with IAPM in minutes. This guide walks you through account setup, application instrumentation, and your first visualization.
 
-## Quick Start
+## Choose Your Login Method
 
-### 1. Choose Your Login Method
+Select how you want to authenticate with IAPM:
 
-[Microsoft Entra ID (Office 365 / Azure)](Step-By-Step-Instructions/Entra-ID/index.md){:class="md-button md-button--primary"}
-[Local or Social Account](Step-By-Step-Instructions/Local-and-Social/index.md){:class="md-button"}
+[Microsoft Entra ID :material-microsoft:](Step-By-Step-Instructions/Entra-ID/index.md){ .md-button .md-button--primary }
+[Local or Social Account :material-account:](Step-By-Step-Instructions/Local-and-Social/index.md){ .md-button }
 
-Both options provide the same features and pricing. Choose based on your preferred authentication:
+| Option | Best For | Identity Providers |
+|--------|----------|-------------------|
+| **Entra ID** | Organizations using Microsoft 365 or Azure | Microsoft work/school accounts, SSO |
+| **Local/Social** | Individual developers, non-Microsoft environments | Email, Google, GitHub |
 
-| Option | Best For |
-|--------|----------|
-| **Entra ID** | Organizations using Microsoft 365, Azure, or requiring SSO |
-| **Local/Social** | Individual developers, Google/GitHub login, or non-Microsoft environments |
+Both options provide identical features and pricing.
 
-### 2. Create Your First Grid
+## Quick Start Overview
 
-After signing up, create a "grid" - your container for application telemetry data.
+```mermaid
+graph LR
+    A[Sign Up] --> B[Create Grid]
+    B --> C[Get API Key]
+    C --> D[Instrument App]
+    D --> E[Visualize Data]
+```
 
-### 3. Instrument Your Application
+| Step | Action | Time |
+|------|--------|------|
+| 1 | Sign up and configure your account | 2 min |
+| 2 | Create a grid (telemetry container) | 1 min |
+| 3 | Copy your API key | 30 sec |
+| 4 | Add OpenTelemetry to your application | 5-15 min |
+| 5 | Deploy and explore your data | Immediate |
 
-Add [OpenTelemetry](../Resources/Terms-and-Concepts/Observability/Frameworks/OpenTelemetry/index.md) to your application and configure it with your API key. [View instrumentation guide →](../Setup/Custom-application/Instrument-your-application/index.md)
+## Try Before You Instrument
 
-### 4. Explore Your Data
+Not ready to instrument your own application? Explore IAPM with pre-loaded demo data:
 
-- **[IAPM Web](../Products/IAPM-Web/index.md)** - Browser-based dashboards and account management
-- **[IAPM Desktop](../Products/IAPM/index.md)** - Full 3D visualization with optional VR support
+[Open Sandbox :material-flask:](../Setup/Sandbox/index.md){ .md-button .md-button--primary }
 
-## Try It First
+The sandbox provides a fully-functional environment with sample traces, metrics, and logs.
 
-Not ready to instrument your own app? Use our [Sandbox](../Setup/Sandbox/index.md) with pre-loaded demo data to explore the platform.
+## Explore Your Data
+
+Once your application is sending telemetry, choose how to visualize:
+
+| Product | Description | Access |
+|---------|-------------|--------|
+| **IAPM Web** | Browser-based dashboards, account management, alerts | [Learn more](../Products/IAPM-Web/index.md) |
+| **IAPM Desktop** | Full 3D visualization with optional VR support | [Learn more](../Products/IAPM-Desktop/index.md) |
 
 ## Need Help?
 
-- [Chat with us](javascript:zE.activate()) through the site
-- Join our [Discord community](https://discord.gg/zevywnQp6K)
-- Watch our [YouTube tutorials](https://www.youtube.com/@immersivefusion)
+| Channel | Best For |
+|---------|----------|
+| [Live Chat](javascript:zE.activate()) | Quick questions, immediate support |
+| [Discord](https://discord.gg/zevywnQp6K){ target="_blank" } | Community help, feature discussions |
+| [YouTube](https://www.youtube.com/@immersivefusion){ target="_blank" } | Video tutorials, walkthroughs |
+| [Contact Us](../contact.md) | Sales, licensing, enterprise support |

@@ -4,13 +4,13 @@
 
 {!template/store-steam.mdp!}
 
-Learn more about [Steam](https://store.steampowered.com/about/){:target="sp"} on their web site.
+Learn more about [Steam](https://store.steampowered.com/about/){ target="_blank" } on their website.
 
 ## Offline Installer (MSI)
 
-[Latest Release Build](https://ifapm.blob.core.windows.net/release/rtm/msi/ImmersiveAPM.latest.msi){:class="md-button md-button--primary"}
-[Latest Beta Build](https://ifapm.blob.core.windows.net/release/beta/msi/ImmersiveAPM.latest.msi){:class="md-button md-button--secondary"}
-[Latest Alpha Build](https://ifapm.blob.core.windows.net/release/alpha/msi/ImmersiveAPM.latest.msi){:class="md-button"}
+[Latest Release Build :material-download:](https://ifapm.blob.core.windows.net/release/rtm/msi/ImmersiveAPM.latest.msi){ .md-button .md-button--primary }
+[Latest Beta Build :material-download:](https://ifapm.blob.core.windows.net/release/beta/msi/ImmersiveAPM.latest.msi){ .md-button }
+[Latest Alpha Build :material-download:](https://ifapm.blob.core.windows.net/release/alpha/msi/ImmersiveAPM.latest.msi){ .md-button }
 
 1. Click on the button above to download the installer for IAPM Desktop for Windows from the cloud. The file size is around `1.5GB`
     ![Download](img/1.download.png)

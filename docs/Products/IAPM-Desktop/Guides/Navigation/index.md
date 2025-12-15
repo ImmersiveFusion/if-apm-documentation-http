@@ -4,48 +4,53 @@
 
 Master the controls to move through your application's 3D environment efficiently. IAPM supports both desktop and VR navigation modes.
 
+| Icon | Meaning |
+|------|---------|
+| :material-clock: | Coming soon |
+| :material-lock: | Not yet configurable |
+
 ## Desktop Controls
 
 ### Movement
 
-| Action | Keys | Description |
-|--------|------|-------------|
-| Move Forward | `W` | Move toward where you're looking |
-| Move Backward | `S` | Move away from where you're looking |
-| Strafe Left | `A` | Slide left while maintaining view direction |
-| Strafe Right | `D` | Slide right while maintaining view direction |
-| Move Up | `Space` | Rise vertically in the environment |
-| Move Down | `Ctrl` | Descend vertically in the environment |
-| Sprint | `Shift` + movement | Move faster in any direction |
+| Action | Keys | Description | Status |
+|--------|------|-------------|--------|
+| Move Forward | `W` or hold both mouse buttons | Move toward where you're looking or move and turn if holding both buttons | |
+| Move Backward | `S` | Move away from where you're looking | |
+| Strafe Left | `A` | Slide left while maintaining view direction | |
+| Strafe Right | `D` | Slide right while maintaining view direction | |
+| Move Up | `Space` | Rise vertically in the environment | :material-lock: |
+| Move Down | `Ctrl` | Descend vertically in the environment | :material-lock: |
+| Sprint | `Shift` + movement | Move faster in any direction | |
 
 ### Camera & View
 
 | Action | Control | Description |
 |--------|---------|-------------|
-| Look Around | Mouse movement | Rotate your view in any direction |
+| Look Around | Right mouse button + drag | Rotate your view in any direction |
 | Zoom In | Scroll wheel up | Get closer to objects |
 | Zoom Out | Scroll wheel down | See more of the environment |
 | Reset View | `Home` | Return to default camera position |
 
 ### Selection & Interaction
 
-| Action | Control | Description |
-|--------|---------|-------------|
-| Select Service | Left-click | Open service details panel |
-| Context Menu | Right-click | Show available actions |
-| Deselect | `Escape` | Clear current selection |
-| Follow Trace | Double-click on trace | Animate along the request path |
+| Action | Control | Description | Status |
+|--------|---------|-------------|--------|
+| Select | Left-click | Interact with world object | |
+| Context Menu | Right-click | Show available actions | :material-clock: |
+| Deselect | `Escape` | Clear current selection | |
+| Follow Trace | — | Animate along the request path | :material-clock: |
 
 ### UI & Panels
 
-| Action | Keys | Description |
-|--------|------|-------------|
-| Toggle AI Copilot | `C` | Open/close the AI assistant panel |
-| Toggle Metrics | `M` | Show/hide metrics overlay |
-| Toggle Logs | `L` | Show/hide log panel |
-| Toggle Traces | `T` | Show/hide trace details |
-| Full Screen | `F11` | Enter/exit full screen mode |
-| Settings | `P` | Open preferences |
+| Action | Keys | Description | Status |
+|--------|------|-------------|--------|
+| Toggle AI Copilot | `C` | Open/close the AI assistant panel | :material-clock: |
+| Toggle Metrics | — | Show/hide metrics overlay | :material-lock: |
+| Toggle Logs | `L` | Show/hide log panel | :material-clock: |
+| Toggle Traces | `T` | Show/hide trace details | :material-clock: |
+| Toggle Grid View | `M` | Switch to grid layout | |
+| Toggle Graph View | `N` | Switch to graph layout | |
 
 ## VR Controls
 
@@ -59,7 +64,7 @@ See [HTC Vive Integration](../../Integrations/HTC-Vive/index.md) for detailed se
 | Select | Trigger | Select service or UI element |
 | Grab | Grip buttons | Grab and manipulate objects |
 | Menu | Menu button | Open radial menu |
-| AI Copilot | Grip + voice | Activate voice assistant |
+<!-- | AI Copilot | Grip + voice | Activate voice assistant | -->
 
 ### Meta Quest
 
@@ -71,23 +76,9 @@ See [Meta Quest Integration](../../Integrations/Meta-Quest/index.md) for detaile
 | Select | Trigger | Select service or UI element |
 | Grab | Grip | Grab and manipulate objects |
 | Menu | Menu button | Open radial menu |
-| AI Copilot | Press A + speak | Activate voice assistant |
+<!-- | AI Copilot | Press A + speak | Activate voice assistant | -->
 
 ## Navigation Tips
-
-### Finding Services Quickly
-
-1. **Use the Search** - Press `/` to open search, type a service name
-2. **Follow the Data** - Click on a trace to see its path through services
-3. **Use Bookmarks** - Save frequently visited locations with `B`
-4. **Minimap** - Toggle with `N` for an overview of your environment
-
-### Efficient Troubleshooting
-
-1. **Start at the Entry Point** - Begin where requests enter your system
-2. **Follow Error Traces** - Red highlighted paths indicate errors
-3. **Check Bottlenecks** - Services with orange/red coloring have performance issues
-4. **Zoom for Details** - Get close to services to see detailed metrics
 
 ### Understanding Visual Indicators
 
@@ -101,14 +92,11 @@ See [Meta Quest Integration](../../Integrations/Meta-Quest/index.md) for detaile
 | Thick lines | High throughput |
 | Dashed lines | Intermittent connections |
 
-## View Modes
-
-IAPM offers two primary ways to visualize your application topology: **Grid View** and **Graph View**. Switch between them using `G` or the View menu.
-
 ### Grid View
 
 A structured, organized layout where services are arranged in a grid pattern.
 
+<!--
 **Best for:**
 
 - Large systems with many services
@@ -124,19 +112,20 @@ A structured, organized layout where services are arranged in a grid pattern.
 - Filter to show only specific service types
 - Clear labels visible at all zoom levels
 
-**Controls:**
+ **Controls:**
 
 | Action | Control | Description |
 |--------|---------|-------------|
 | Sort Services | `S` then select criteria | Reorder grid by metric |
 | Filter | `F` then type | Show matching services |
-| Group By | `G` + `1-4` | Group by namespace/type/status/custom |
+| Group By | `G` + `1-4` | Group by namespace/type/status/custom | 
+-->
 
 ### Graph View
 
 A dynamic, force-directed layout showing actual service relationships and dependencies.
 
-**Best for:**
+<!-- **Best for:**
 
 - Understanding service dependencies
 - Tracing request flows
@@ -158,16 +147,16 @@ A dynamic, force-directed layout showing actual service relationships and depend
 | Pin Service | `P` on selected | Lock position in space |
 | Unpin All | `Shift` + `P` | Release all pinned services |
 | Expand Cluster | Double-click cluster | Show hidden services |
-| Collapse Cluster | `Shift` + double-click | Group related services |
+| Collapse Cluster | `Shift` + double-click | Group related services | -->
 
 ### Switching Views
 
 | Action | Control |
 |--------|---------|
-| Toggle Grid/Graph | `G` |
-| Grid View | `Ctrl` + `1` |
-| Graph View | `Ctrl` + `2` |
+| Toggle Grid View | `M` |
+| Toggle Graph View | `N` |
 
+<!-- 
 ## Camera Modes
 
 ### Free Flight (Default)
@@ -189,6 +178,7 @@ Press `2` for a birds-eye view of your topology. Good for seeing the overall arc
 ### First-Person Mode
 
 Press `1` to return to standard first-person navigation.
+ -->
 
 ## Keyboard Shortcuts Reference
 
@@ -210,11 +200,13 @@ Press `1` to return to standard first-person navigation.
 |-----|--------|
 | Mouse | Look around |
 | Scroll | Zoom |
+<!-- 
 | `Home` | Reset view |
 | `O` | Orbit mode |
 | `F` | Follow mode |
 | `1` | First-person |
-| `2` | Top-down |
+| `2` | Top-down | 
+-->
 
 ### Selection
 
@@ -223,7 +215,7 @@ Press `1` to return to standard first-person navigation.
 | Click | Select |
 | `Esc` | Deselect |
 | Double-click | Follow trace |
-
+<!-- 
 ### Panels
 
 | Key | Action |
@@ -239,16 +231,16 @@ Press `1` to return to standard first-person navigation.
 |-----|--------|
 | `/` | Search |
 | `B` | Bookmark |
-| `N` | Minimap |
+| `N` | Minimap | -->
 
 ### General
 
 | Key | Action |
 |-----|--------|
-| `F11` | Fullscreen |
-| `P` | Preferences |
-| `?` | Help |
+| `F12` | Console |
+| `F10` | Preferences |
 
+<!-- 
 ## Accessibility
 
 ### Motion Sensitivity
@@ -263,7 +255,7 @@ If you experience motion sensitivity:
 
 ### Controller Remapping
 
-Custom key bindings can be configured in **Preferences** > **Controls** > **Key Bindings**.
+Custom key bindings can be configured in **Preferences** > **Controls** > **Key Bindings**. -->
 
 ## Related
 

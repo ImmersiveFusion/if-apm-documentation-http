@@ -11,7 +11,7 @@ All you need is your **OTLP endpoint** and **API key**:
 | Setting | Value |
 |---------|-------|
 | **Endpoint** | `https://otlp.iapm.app` |
-| **API Key Header** | `API-Key=YOUR-API-KEY` |
+| **API Key Header** | `API-Key: YOUR-API-KEY` |
 
 Get your API key from the [Grids page](https://my.iapm.app/admin/grids) by clicking **Instrument** on your grid.
 
@@ -53,7 +53,7 @@ Choose your language to see the OTLP exporter configuration:
             }));
     ```
 
-    [.NET OpenTelemetry Docs](https://opentelemetry.io/docs/languages/net/){:target="_blank"}
+    [.NET OpenTelemetry Docs](https://opentelemetry.io/docs/languages/net/){ target="_blank" }
 
 === "Java"
 
@@ -72,7 +72,7 @@ Choose your language to see the OTLP exporter configuration:
         .build();
     ```
 
-    [Java OpenTelemetry Docs](https://opentelemetry.io/docs/languages/java/){:target="_blank"}
+    [Java OpenTelemetry Docs](https://opentelemetry.io/docs/languages/java/){ target="_blank" }
 
 === "Python"
 
@@ -93,7 +93,7 @@ Choose your language to see the OTLP exporter configuration:
     )
     ```
 
-    [Python OpenTelemetry Docs](https://opentelemetry.io/docs/languages/python/){:target="_blank"}
+    [Python OpenTelemetry Docs](https://opentelemetry.io/docs/languages/python/){ target="_blank" }
 
 === "Node.js"
 
@@ -114,7 +114,7 @@ Choose your language to see the OTLP exporter configuration:
     });
     ```
 
-    [Node.js OpenTelemetry Docs](https://opentelemetry.io/docs/languages/js/){:target="_blank"}
+    [Node.js OpenTelemetry Docs](https://opentelemetry.io/docs/languages/js/){ target="_blank" }
 
 === "Go"
 
@@ -137,7 +137,7 @@ Choose your language to see the OTLP exporter configuration:
     )
     ```
 
-    [Go OpenTelemetry Docs](https://opentelemetry.io/docs/languages/go/){:target="_blank"}
+    [Go OpenTelemetry Docs](https://opentelemetry.io/docs/languages/go/){ target="_blank" }
 
 ## What Gets Collected
 
@@ -163,5 +163,5 @@ Once configured, OpenTelemetry automatically captures:
 ## Next Steps
 
 - [View your data in IAPM Web](../../../Products/IAPM-Web/index.md)
-- [Explore in 3D with IAPM Desktop](../../../Products/IAPM/index.md)
-- [OpenTelemetry Language SDKs](https://opentelemetry.io/docs/languages/){:target="_blank"}
+- [Explore in 3D with IAPM Desktop](../../../Products/IAPM-Desktop/index.md)
+- [OpenTelemetry Language SDKs](https://opentelemetry.io/docs/languages/){ target="_blank" }

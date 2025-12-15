@@ -26,10 +26,10 @@ OTEL_RESOURCE_ATTRIBUTES=service.version=1.2.3,deployment.environment=production
 
 | Language | Auto-Instrumentation |
 |----------|---------------------|
-| Java | [Java Agent](https://opentelemetry.io/docs/languages/java/automatic/){:target="_blank"} |
-| .NET | [.NET Auto-Instrumentation](https://opentelemetry.io/docs/languages/net/automatic/){:target="_blank"} |
-| Python | [Python Auto-Instrumentation](https://opentelemetry.io/docs/languages/python/automatic/){:target="_blank"} |
-| Node.js | [Node.js Auto-Instrumentation](https://opentelemetry.io/docs/languages/js/automatic/){:target="_blank"} |
+| Java | [Java Agent](https://opentelemetry.io/docs/languages/java/automatic/){ target="_blank" } |
+| .NET | [.NET Auto-Instrumentation](https://opentelemetry.io/docs/languages/net/automatic/){ target="_blank" } |
+| Python | [Python Auto-Instrumentation](https://opentelemetry.io/docs/languages/python/automatic/){ target="_blank" } |
+| Node.js | [Node.js Auto-Instrumentation](https://opentelemetry.io/docs/languages/js/automatic/){ target="_blank" } |
 
 **Add manual instrumentation** when you need:
 
@@ -39,7 +39,7 @@ OTEL_RESOURCE_ATTRIBUTES=service.version=1.2.3,deployment.environment=production
 
 ## Semantic Conventions
 
-Use [OpenTelemetry Semantic Conventions](https://opentelemetry.io/docs/specs/semconv/){:target="_blank"} for consistent attribute naming:
+Use [OpenTelemetry Semantic Conventions](https://opentelemetry.io/docs/specs/semconv/){ target="_blank" } for consistent attribute naming:
 
 ```
 # HTTP
@@ -125,5 +125,5 @@ Before going to production:
 ## Related
 
 - [Instrument Your Application](../Custom-application/Instrument-your-application/index.md) - Setup guide
-- [OpenTelemetry Docs](https://opentelemetry.io/docs/){:target="_blank"} - Official documentation
-- [Semantic Conventions](https://opentelemetry.io/docs/specs/semconv/){:target="_blank"} - Attribute naming standards
+- [OpenTelemetry Docs](https://opentelemetry.io/docs/){ target="_blank" } - Official documentation
+- [Semantic Conventions](https://opentelemetry.io/docs/specs/semconv/){ target="_blank" } - Attribute naming standards

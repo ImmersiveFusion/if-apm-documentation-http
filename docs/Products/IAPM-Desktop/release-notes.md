@@ -2,7 +2,7 @@
 
 ## IAPM Desktop
 
-### 1.10.0 - Upcoming Release <small>October 13, 2025</small> { id="1.10.0" }
+### 1.11.0 - Upcoming { id="1.11.0" }
 
 **Introduction:**
 
@@ -10,18 +10,65 @@ This release marks a major milestone for Immersive APM with the debut of the **A
 
 Also introduced is **experimental support for macOS**, allowing developers and analysts on Apple Silicon devices to begin testing Immersive APM in native environments. While not yet feature-complete, this lays the groundwork for full cross-platform parity in future releases.
 
+**New Features:**
+
+- **ProTips Guidance System**:
+    - Context-aware tooltip system for user guidance.
+    - ProTip manager with dynamic placement and visibility controls.
+    - Configurable display settings with auto-hide functionality.
+
 **Improvements:**
 
 - Introduced **Immersive APM AI Copilot** with GPT integration for chat and voice-based data exploration.
+- **AI Copilot Enhancements**:
+    - Migrated from OpenAI to **Microsoft Semantic Kernel** for improved extensibility.
+    - New kernel-based function architecture with input/output filters.
+    - Enhanced voice interaction with new voice profiles.
+    - Improved chat flow and assistant hologram visualization.
+    - Always-listening mode with self-listen safeguards.
 - Initial support for **macOS (experimental)**.
+- **Teleportation System Overhaul**:
+    - Avatar teleportation from trace blocks and viewport controls.
+    - Portal tunnel teleport effects.
+    - Improved teleport point placement and fixes.
+    - Linked viewport controls to avatar teleports.
 - **Rendering pipeline improvements**:
+    - New outline system replacing MK Glow for object highlighting.
+    - Updated materials to use V2 shaders.
     - Enhanced **real-time traffic visualization** on performance graphs.
     - Improved **photo rendering fidelity** for embedded media and scene textures.
     - Updated **quality settings** for better scalability across device profiles.
+    - Improved layer culling between cameras.
+    - Enhanced overhead camera with adjustable height and input handling.
+- **Platform & Engine Updates**:
+    - Upgraded to **Unity 6000.2.6f2**.
+    - Improved macOS build pipeline.
+    - Removed Photon Fusion networking dependencies.
+    - Removed `com.unity.visualscripting` package.
+    - Extensive assembly breakdown and namespace reorganization.
 - Added additional **code signing for authentication DLLs** to improve security and integrity validation during deployment.
+- **Authentication & Connectivity**:
+    - JWT and related connection fixes for improved reliability.
+    - Enhanced resilience in connection handling.
+- **UI/UX Improvements**:
+    - Quantum Console integration for debugging.
+    - Improved growl notifications with conditional logging.
+    - Dynamic highlighter property support.
+    - Idle indicator for system status.
+    - UI size and accuracy improvements.
 - Fixed crouching animation.
 - Added an overhead camera that zooms in the view and removes the avatar from view.
 - Various package updates for Unity game engine.
+
+**Bug Fixes:**
+
+- Fixed multiple serialization issues.
+- Fixed singleton initialization timing (moved to Start from Awake).
+- Fixed missing layer assignments.
+- Fixed prefab layer configurations.
+- Fixed raycast interactable issues.
+- Fixed status update synchronization.
+- Removed dead scripts, materials, and behaviors.
 
 **Known Issues:**
 

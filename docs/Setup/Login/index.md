@@ -1,30 +1,77 @@
-# Login
+# Login Options
 
-## Options
+IAPM supports multiple authentication methods. Choose the option that best fits your organization.
 
-Requiring users to login to use a service is a common practice that is implemented by many online services and applications. While it can be seen as an inconvenience to some users, there are several reasons why login is necessary such as Security, Personalization, Quality Assurance and Payment and Subscriptions.
+!!! tip "Same Features, Same Pricing"
+    All login methods provide identical features and pricing. Choose based on convenience and your organization's existing authentication infrastructure.
 
-We want to make the experience to be as quick and simple as possible by offering multiple login options. This practice is becoming increasingly popular as more and more services move online. These options provide users with a choice of authentication methods and allow them to use their preferred identity providers to access multiple services.
+## Authentication Methods
 
-!!! info "Choosing your login method"
-    Choose the login option your organization is most comfortable with. **Pricing is not affected** based on the option you choose. It's a matter of convenience and usually decided by existing authentication mechanisms already existing in your organization. Keep in mind that if you change your mind later on, you will have to updated permissions to resources. We are happy to assist you as necessary.
+| Method | Best For | Identity Providers |
+|--------|----------|-------------------|
+| **Microsoft Entra ID** | Organizations using Microsoft 365 or Azure | Work/school Microsoft accounts |
+| **Local & Social** | Individual developers, non-Microsoft environments | Email, Google, GitHub |
 
-### Microsoft Office 365 / Azure / Entra ID
+## Microsoft Entra ID
 
-Entra ID is a cloud-based identity and access management solution provided by Microsoft that provides businesses with a range of benefits. It provides businesses with a secure way to manage user identities and access to resources. It includes features such as multi-factor authentication, single sign-on, and role-based access control, which can help to prevent unauthorized access and protect sensitive data. This type of login can provide a more convenient and streamlined experience for users, as they do not need to create a new account or remember a new set of login credentials and is generally managed and secured by the organization providing the option such as a business or a education entity.
+Use your existing Microsoft work or school account for single sign-on.
 
-[Login using Microsoft Office 365 / Azure / Entra ID Account](https://azure.iapm.app){:class="md-button md-button--primary"}
-[Press release](https://immersivefusion.com/about/pressrelease/immersive-fusion-announces-single-sign-on-microsoft-azure){:class="md-button"}
+[Login with Entra ID :material-microsoft:](https://azure.iapm.app){ .md-button .md-button--primary target="_blank" }
 
-### Local & Social Accounts
+### Benefits
 
-Local account and social logins are two common login options for online services and applications. A local account login requires users to create a username and password. Immersive Fusion offers this functionality free of charge for customers. This type of login provides a high level of security and control for users but they are responsible for managing their own login credentials. However, it can also be inconvenient for users, as they need to remember multiple usernames and passwords for different services.
+| Feature | Description |
+|---------|-------------|
+| **Single Sign-On** | Use your existing Microsoft credentials |
+| **Centralized Management** | IT admins control access through Azure AD |
+| **MFA Support** | Leverage your organization's MFA policies |
+| **Compliance** | Meet enterprise security requirements |
 
-A social login allows users to access a service or application using their social media credentials, such as their GitHub account. This type of login can provide a more convenient and streamlined experience for users, as they do not need to create a new account or remember a new set of login credentials. However, it can also raise security and privacy concerns, as users may be sharing personal information with the service or application.
+### Supported Accounts
 
-[Login using a Local & Social Account](https://my.iapm.app){:class="md-button"}
+- Microsoft 365 (Business, Enterprise, Education)
+- Azure Active Directory / Entra ID
+- Work or school accounts
 
-# Are you ready?
+## Local & Social Accounts
 
-[Get Started Today!](../../Getting-Started/index.md){:class="md-button md-button--primary"}
+Create a dedicated IAPM account or sign in with a social provider.
 
+[Login with Local/Social :material-account:](https://my.iapm.app){ .md-button target="_blank" }
+
+### Available Providers
+
+| Provider | Description |
+|----------|-------------|
+| **Email** | Create account with email and password |
+| **Google** | Sign in with Google account |
+| **GitHub** | Sign in with GitHub account |
+
+### Why Choose Local/Social
+
+| Feature | Description |
+|---------|-------------|
+| **No IT dependency** | Set up without enterprise infrastructure |
+| **Quick start** | Create account in minutes |
+| **Flexible** | Use personal or work email |
+
+## Switching Login Methods
+
+If you need to change your authentication method later:
+
+1. Contact [support@immersivefusion.com](mailto:support@immersivefusion.com)
+2. We'll help migrate your account and permissions
+3. Your data and configurations are preserved
+
+## Security
+
+Both authentication methods include:
+
+- Encrypted connections (TLS 1.2+)
+- Session management
+- API key authentication for applications
+- Audit logging
+
+## Next Steps
+
+[Get Started :material-arrow-right:](../../Getting-Started/index.md){ .md-button .md-button--primary }

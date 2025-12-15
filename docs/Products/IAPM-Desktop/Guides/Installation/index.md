@@ -8,5 +8,5 @@ Installing the application ensures that it is properly registered with the user'
 
 ## Available Installers
 
-[Windows](Windows/index.md){:class="md-button md-button--primary"}
-[macOS](macOS/index.md){:class="md-button"}
+[Windows :material-microsoft-windows:](Windows/index.md){ .md-button .md-button--primary }
+[macOS :material-apple:](macOS/index.md){ .md-button }

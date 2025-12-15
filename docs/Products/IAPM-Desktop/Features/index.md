@@ -29,9 +29,9 @@ Complete, real-time perspective of your entire system. See how infrastructure, s
 | Team collaboration | Siloed views per team | Shared immersive space |
 | Learning curve | Complex query languages | Visual, intuitive exploration |
 
-## Business Impact
+## Why APM Matters
 
-Organizations using Immersive APM report:
+Industry research shows the business impact of effective APM:
 
 - **$5.6M** average annual savings from reduced incidents
 - **64%** of preventable downtime eliminated

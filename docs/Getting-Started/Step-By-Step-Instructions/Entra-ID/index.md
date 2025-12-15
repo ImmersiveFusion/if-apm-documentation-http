@@ -1,53 +1,68 @@
-# Step By Step: Use your Entra ID account
+# Microsoft Entra ID Setup
 
-> Also referred to as Office 365 or Azure account
+Use your Microsoft work or school account (Office 365, Azure) to access IAPM.
 
-## Step 0: Basic information
+## Prerequisites
 
-> Recommended but not required
+!!! info "Optional Reading"
+    New to observability? These concepts will help you get the most from IAPM:
 
-* [Observability](../../../Resources/Terms-and-Concepts/Observability/index.md)
-* [APM Basics](../../../Resources/Terms-and-Concepts/APM/index.md)
-* [Immersive APM (IAPM)](../../../Resources/Terms-and-Concepts/IAPM/index.md)
+    - [Observability](../../../Resources/Terms-and-Concepts/Observability/index.md) - The three pillars of monitoring
+    - [APM Basics](../../../Resources/Terms-and-Concepts/APM/index.md) - Application performance management fundamentals
+    - [IAPM](../../../Resources/Terms-and-Concepts/IAPM/index.md) - How IAPM visualizes telemetry data
 
-## Step 1: Configure your account
+## Step 1: Create Your Account
 
-How would you like to configure your account?
+Choose your setup experience:
 
-[Quick Start](https://azure.iapm.app/landing/quick-start/data-flow){:class="md-button md-button--primary"}
-> The Quick Start automates the process of Immersive APM account activation with the least number of steps and questions.
+| Option | Description | Best For |
+|--------|-------------|----------|
+| **Quick Start** | Automated setup with minimal steps | Getting started fast |
+| **Guided Setup** | Step-by-step with customization options | Fine-tuning your configuration |
 
-[Guided Setup](https://azure.iapm.app/landing/guided-setup/data-flow){:class="md-button"}
-> The Guided Setup also automates the process but allows for additional customization of your account and subscription.
+[Quick Start :material-rocket-launch:](https://azure.iapm.app/landing/quick-start/data-flow){ .md-button .md-button--primary target="_blank" }
+[Guided Setup :material-cog:](https://azure.iapm.app/landing/guided-setup/data-flow){ .md-button target="_blank" }
 
-## Step 2: Get your API key
+## Step 2: Get Your API Key
 
-Once you create your first [grid](../../../Setup/Account/index.md#grid). Click on `Instrument` button and get your API key.
+After creating your account, you'll have a [grid](../../../Setup/Account/index.md#grid) - your telemetry data container.
 
-[Manage Grids](https://azure.iapm.app/admin/grids){:class="md-button md-button--primary"}
+1. Go to your grid management page
+2. Click the **Instrument** button
+3. Copy your API key
 
-## Step 3: Use your API key and redeploy
+[Manage Grids :material-view-grid:](https://azure.iapm.app/admin/grids){ .md-button .md-button--primary target="_blank" }
 
-Add your API Key to your OpenTelemetry OTLP Exporter Configuration and redeploy it or run it locally.
+## Step 3: Instrument Your Application
 
-[View Example](../../../Setup/Custom-application/Instrument-your-application/index.md){:class="md-button md-button--primary"}
+Add your API key to your OpenTelemetry OTLP exporter configuration:
 
-> If you don't already have OpenTelemetry packages added to your application, check out the list of supported [Language APIs and SDKs](https://opentelemetry.io/docs/languages/){:target="otel"}. Your API key can be used in your own custom application and other OpenTelemtry enabled applications.
+    # Example OTLP exporter configuration
+    exporters:
+      otlp:
+        endpoint: "https://otlp.iapm.app"
+        headers:
+          "API-Key": "your-api-key-here"
 
-## Step 4: Analyze and Visualize
+[View Full Examples :material-code-tags:](../../../Setup/Custom-application/Instrument-your-application/index.md){ .md-button .md-button--primary }
 
-### 3D and VR
+!!! tip "New to OpenTelemetry?"
+    Check the official [Language APIs and SDKs](https://opentelemetry.io/docs/languages/){ target="_blank" } for instrumentation guides in your programming language.
 
-Enter the World of Your Application&reg; with your mouse and keyboard or Virtual Reality Headset.
+## Step 4: Visualize Your Data
 
-Select the grid for the API key you used and click `Enter`
+Once telemetry is flowing, explore your application:
 
-[Install](../../../Products/IAPM/Guides/Installation/index.md){:class="md-button md-button--primary"}
-[Docs](../../../Products/IAPM/index.md){:class="md-button"}
+### IAPM Desktop (3D/VR)
 
-### Web browser & Mobile
+Enter the World of Your Application with mouse and keyboard or a VR headset.
 
-Select the grid for the API key you used and click `Enter`
+[Install Desktop :material-download:](../../../Products/IAPM-Desktop/Guides/Installation/index.md){ .md-button .md-button--primary }
+[Desktop Documentation :material-book-open:](../../../Products/IAPM-Desktop/index.md){ .md-button }
 
-[Manage Grids](https://azure.iapm.app/admin/grids){:class="md-button md-button--primary"}
-[Docs](../../../Products/IAPM-Web/index.md){:class="md-button"}
+### IAPM Web (Browser)
+
+Access dashboards, alerts, and account management from any browser.
+
+[Open IAPM Web :material-web:](https://azure.iapm.app/admin/grids){ .md-button .md-button--primary target="_blank" }
+[Web Documentation :material-book-open:](../../../Products/IAPM-Web/index.md){ .md-button }

@@ -1,14 +1,30 @@
 # Early Adopter Discount
 
-All early adopters enjoy a lifetime 50% discount on all cloud service charges. Join the [discussion on Discord](https://discord.com/channels/946854209272287333/1328717683226837093/1328718707454902327)!
+Join IAPM early and save 50% for life on all cloud service charges.
 
-> Consulting/Premium services are excluded.
+## Discount Details
+
+| Detail | Value |
+|--------|-------|
+| **Discount** | 50% off cloud services |
+| **Duration** | Lifetime (as long as subscription is active) |
+| **Eligibility** | Early adopter sign-ups |
+
+!!! warning "Exclusions"
+    Consulting and premium services are not included in the early adopter discount.
+
+## How to Qualify
+
+1. Sign up for IAPM during the early adopter period
+2. Your discount is applied automatically
+3. Maintain an active subscription to keep your discount
 
 ## Other Discounts and Promotions
 
-Check out or inquire about [discounts and promotions](https://discord.com/channels/946854209272287333/1328717683226837093) in Discord.
+Additional discounts and promotions are announced in our Discord community.
 
+[Join Discord Discussion :material-chat:](https://discord.com/channels/946854209272287333/1328717683226837093){ .md-button target="_blank" }
 
-# Are you ready?
+## Get Started
 
-[Get Started Today!](../../Getting-Started/index.md){:class="md-button md-button--primary"}
+[Sign Up Now :material-arrow-right:](../../Getting-Started/index.md){ .md-button .md-button--primary }

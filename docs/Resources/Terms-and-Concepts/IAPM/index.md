@@ -66,7 +66,7 @@ Visualize traffic patterns and resource utilization. See where bottlenecks are l
 
 | Product | Description | Best For |
 |---------|-------------|----------|
-| [IAPM Desktop](../../../Products/IAPM/index.md) | Full 3D/VR client application | Deep investigation, VR immersion |
+| [IAPM Desktop](../../../Products/IAPM-Desktop/index.md) | Full 3D/VR client application | Deep investigation, VR immersion |
 | [IAPM Web](../../../Products/IAPM-Web/index.md) | Browser-based access | Quick access, team management |
 
 ## Getting Started
