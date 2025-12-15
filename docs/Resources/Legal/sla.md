@@ -1,18 +1,119 @@
-# Service Level Agreements 
+# Service Level Agreement
 
-Service Level Agreements (SLAs) are an important part of any service-based business or organization. Essentially, an SLA is a contract between the service provider and the customer that outlines the agreed-upon level of service that the provider will deliver.
+This Service Level Agreement (SLA) describes Immersive Fusion's commitments regarding IAPM service availability, performance, and support response times.
 
-The purpose of an SLA is to ensure that the service provider is meeting the customer's expectations and needs, and that the customer is aware of what they can expect from the service. Typically, an SLA will include details such as the scope of the service, the expected response time, the availability of the service, and the performance metrics that will be used to measure the provider's performance.
+## Service Availability
 
-## Downtime SLA
+### Uptime Commitment
 
-Downtime SLA is a contract between a service provider and a customer that specifies the maximum amount of allowable downtime for a service. This contract is used to define the level of service that the customer can expect from the provider, and it outlines the penalties that the provider will face if they fail to meet the agreed-upon levels of service.
+IAPM is designed for high availability. Our target uptime varies by subscription tier:
 
-The level of allowable downtime is typically expressed as a percentage of uptime. For example, a 99.9% uptime SLA would allow for a maximum of 43 minutes and 50 seconds of downtime per month. The level of uptime specified in the SLA is often determined by the criticality of the service being provided. For example, a mission-critical service such as a financial trading platform might require a higher level of uptime than a non-critical service such as a blog site.
+| Plan | Monthly Uptime Target | Maximum Monthly Downtime |
+|------|----------------------|--------------------------|
+| Starter | 99.5% | 3 hours 39 minutes |
+| Professional | 99.9% | 43 minutes 50 seconds |
+| Enterprise | 99.95% | 21 minutes 55 seconds |
 
-In summary, a downtime SLA is an important contract that specifies the level of service that a customer can expect from a service provider. It outlines the maximum amount of allowable downtime and the penalties that the provider will face if they fail to meet the agreed-upon levels of service. By defining these parameters upfront, the customer can have confidence in the reliability of the service and the provider is incentivized to maintain a high level of uptime.
+### What Counts as Downtime
 
-Example SLA comparison tool can be found [here](https://uptime.is/compare). 
+Downtime is measured when the IAPM platform is unavailable for normal use. This includes:
 
-## Summary
-SLAs are an important tool for ensuring that service-based businesses and organizations are able to meet the needs and expectations of their customers. By establishing clear expectations and obligations, SLAs help to build trust and ensure that both parties are satisfied with the service that is being provided.
+- Inability to ingest telemetry data
+- Inability to access the IAPM Web interface
+- Inability to connect via IAPM Desktop client
+
+### Exclusions
+
+The following are not counted as downtime:
+
+- Scheduled maintenance (announced 48 hours in advance)
+- Issues caused by customer's network or systems
+- Force majeure events
+- Features in beta or preview status
+
+## Support Response Times
+
+### Response Time Targets
+
+| Severity | Description | Initial Response |
+|----------|-------------|------------------|
+| **Critical** | Service completely unavailable | 1 hour |
+| **High** | Major feature impaired, no workaround | 4 hours |
+| **Medium** | Feature impaired with workaround available | 8 business hours |
+| **Low** | General questions, minor issues | 24 business hours |
+
+### Support Channels
+
+| Channel | Availability | Best For |
+|---------|--------------|----------|
+| Email | 24/7 | All inquiries |
+| In-app chat | Business hours | Quick questions |
+| Phone | Enterprise plans | Critical issues |
+
+## Service Credits
+
+If IAPM fails to meet the uptime commitment, eligible customers may request service credits:
+
+| Monthly Uptime | Credit Percentage |
+|----------------|-------------------|
+| < 99.9% but ≥ 99.0% | 10% |
+| < 99.0% but ≥ 95.0% | 25% |
+| < 95.0% | 50% |
+
+### Requesting Credits
+
+To request a service credit:
+
+1. Submit a request within 30 days of the incident
+2. Include dates and times of the outage
+3. Provide any relevant error messages or screenshots
+
+Credits are applied to future invoices and do not exceed one month's subscription fee.
+
+## Maintenance Windows
+
+### Scheduled Maintenance
+
+- **Notification:** Minimum 48 hours advance notice
+- **Timing:** Typically scheduled during low-usage periods
+- **Duration:** Usually under 30 minutes
+
+### Emergency Maintenance
+
+In rare cases, emergency maintenance may be required without advance notice to address critical security issues or prevent service degradation.
+
+## Monitoring and Transparency
+
+### Status Page
+
+Check real-time service status at [status.immersivefusion.com](https://status.immersivefusion.com)
+
+### Incident Communication
+
+During service disruptions:
+
+1. **Detection:** Automated monitoring alerts our team
+2. **Acknowledgment:** Status page updated within 15 minutes
+3. **Updates:** Regular updates every 30 minutes during active incidents
+4. **Resolution:** Post-incident summary published within 48 hours
+
+## SLA Calculator
+
+Use this reference to understand what different uptime percentages mean in practice:
+
+| Uptime | Daily Downtime | Monthly Downtime | Yearly Downtime |
+|--------|----------------|------------------|-----------------|
+| 99% | 14 min 24 sec | 7 hours 18 min | 3.65 days |
+| 99.5% | 7 min 12 sec | 3 hours 39 min | 1.83 days |
+| 99.9% | 1 min 26 sec | 43 min 50 sec | 8.77 hours |
+| 99.95% | 43 sec | 21 min 55 sec | 4.38 hours |
+| 99.99% | 8.6 sec | 4 min 23 sec | 52.6 min |
+
+For an interactive comparison tool, visit [uptime.is](https://uptime.is/compare).
+
+## Contact
+
+For SLA-related inquiries or to report a service issue:
+
+- **Support:** [support@immersivefusion.com](mailto:support@immersivefusion.com)
+- **Status:** [status.immersivefusion.com](https://status.immersivefusion.com)

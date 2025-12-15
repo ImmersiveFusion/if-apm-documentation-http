@@ -1,43 +1,61 @@
-# Getting started 
+# Getting Started
 
-!!! info "Social"
-    [LinkedIn](https://www.linkedin.com/company/immersivefusion) | 
-    [Mastodon](https://mastodon.social/@immersivefusion) |
-    [X](https://x.com/immersivefusion) |
-    [YouTube](https://www.youtube.com/@immersivefusion) |
-    [Facebook](https://www.facebook.com/immersivefusion) |
-    [Instagram](https://www.instagram.com/immersivefusion) |
-    [GitHub](https://github.com/immersivefusion) |
-    [Discord](https://discord.gg/zevywnQp6K)
+Get up and running with IAPM in minutes. This guide walks you through account setup, application instrumentation, and your first visualization.
 
-<!-- ![Immersive Fusion Avatar](../assets/images/avatar.png) -->
+## Choose Your Login Method
 
-## Big Picture
+Select how you want to authenticate with IAPM:
 
-Software observability is the ability to monitor, measure, and understand the internal workings of a software system in order to identify and troubleshoot issues.
+[Microsoft Entra ID :material-microsoft:](Step-By-Step-Instructions/Entra-ID/index.md){ .md-button .md-button--primary }
+[Local or Social Account :material-account:](Step-By-Step-Instructions/Local-and-Social/index.md){ .md-button }
 
-Observable applications enjoy faster problem resolution, provide better user experience, have improved reliability and enjoy better resource allocation.
+| Option | Best For | Identity Providers |
+|--------|----------|-------------------|
+| **Entra ID** | Organizations using Microsoft 365 or Azure | Microsoft work/school accounts, SSO |
+| **Local/Social** | Individual developers, non-Microsoft environments | Email, Google, GitHub |
 
-Organizations save time and resources when using observability tools with their observable applications.
+Both options provide identical features and pricing.
 
-Immersive APM (&commat;ImmersiveAPM and #ImmersiveAPM on social media) is an Immersive Fusion product that leverages and showcases innovative approaches to ([APM](../Resources/Terms-and-Concepts/APM/index.md)). It uses [web](../Analysis-and-Visualization/Web-and-Mobile/index.md) and immersive technologies, such as [three dimensions (3D) and Virtual Reality (VR)](../Analysis-and-Visualization/3D-and-VR/index.md), to provide engineers with a more intuitive and immersive view of application performance. 
+## Quick Start Overview
 
-[Value Presentation (PDF)](https://ifshare.blob.core.windows.net/public/pitch/if_value.pdf){:class="md-button"}
+```mermaid
+graph LR
+    A[Sign Up] --> B[Create Grid]
+    B --> C[Get API Key]
+    C --> D[Instrument App]
+    D --> E[Visualize Data]
+```
 
-## Step By Step Instructions
+| Step | Action | Time |
+|------|--------|------|
+| 1 | Sign up and configure your account | 2 min |
+| 2 | Create a grid (telemetry container) | 1 min |
+| 3 | Copy your API key | 30 sec |
+| 4 | Add OpenTelemetry to your application | 5-15 min |
+| 5 | Deploy and explore your data | Immediate |
 
-> The instructions and service costs are the same with all authentication options. The differences are only related to the cloud addresses you would be accessing.
+## Try Before You Instrument
 
-## Choose your authentication method
+Not ready to instrument your own application? Explore IAPM with pre-loaded demo data:
 
-[Use your Microsoft Office 365 / Azure / Entra ID Account](Step-By-Step-Instructions/Entra-ID/index.md){:class="md-button md-button--primary"}
-> [Entra ID](../Setup/Login/index.md#microsoft-office-365-azure-entra-id) is a cloud-based identity and access management solution provided by Microsoft that provides businesses with a range of benefits. It provides businesses with a secure way to manage user identities and access to resources. It includes features such as multi-factor authentication, single sign-on.
+[Open Sandbox :material-flask:](../Setup/Sandbox/index.md){ .md-button .md-button--primary }
 
-[Use your Local & Social Account](Step-By-Step-Instructions/Local-and-Social/index.md){:class="md-button"}
-> [Local account ](../Setup/Login/index.md#local-social-accounts)and social logins are two common login options for online services and applications. A local account login requires users to create a username and password. Immersive Fusion offers this functionality free of charge for customers. 
+The sandbox provides a fully-functional environment with sample traces, metrics, and logs.
 
-## We are here to help!
+## Explore Your Data
 
-You if you are having any issues at all. [Chat with us](javascript:zE.activate()) through the site or join us on [Discord](https://discord.gg/zevywnQp6K).
+Once your application is sending telemetry, choose how to visualize:
 
+| Product | Description | Access |
+|---------|-------------|--------|
+| **IAPM Web** | Browser-based dashboards, account management, alerts | [Learn more](../Products/IAPM-Web/index.md) |
+| **IAPM Desktop** | Full 3D visualization with optional VR support | [Learn more](../Products/IAPM-Desktop/index.md) |
 
+## Need Help?
+
+| Channel | Best For |
+|---------|----------|
+| [Live Chat](javascript:zE.activate()) | Quick questions, immediate support |
+| [Discord](https://discord.gg/zevywnQp6K){ target="_blank" } | Community help, feature discussions |
+| [YouTube](https://www.youtube.com/@immersivefusion){ target="_blank" } | Video tutorials, walkthroughs |
+| [Contact Us](../contact.md) | Sales, licensing, enterprise support |

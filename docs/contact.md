@@ -1,21 +1,44 @@
-# Contact
+# Contact Us
 
-We are always happy to help. Send an email or give us a phone call. Usual response time is less than 24 hours.
+We're here to help you succeed with IAPM. Reach out through any channel below.
 
-## We are here to help!
+## Quick Support
 
-You if you are having any issues at all. [Chat with us](javascript:zE.activate()) through the site or join us on [Discord](https://discord.gg/zevywnQp6K).
+| Channel | Response Time | Best For |
+|---------|---------------|----------|
+| [Live Chat](javascript:zE.activate()) | Immediate | Quick questions, troubleshooting |
+| [Discord](https://discord.gg/zevywnQp6K){ target="_blank" } | Community-driven | Discussions, tips, community help |
 
 ## Email
 
-### Information/Licensing
+| Department | Email | Use For |
+|------------|-------|---------|
+| **Support** | [support@immersivefusion.com](mailto:support@immersivefusion.com) | Technical help, onboarding, issues |
+| **Sales** | [sales@immersivefusion.com](mailto:sales@immersivefusion.com) | Pricing, enterprise plans, demos |
+| **General** | [info@immersivefusion.com](mailto:info@immersivefusion.com) | Partnerships, licensing, other inquiries |
 
-[info@immersivefusion.com](mailto:info@immersivefusion.com)
+## Phone
 
-### Onboarding/Support
+| | |
+|---|---|
+| **Toll-free (US)** | [888-992-3429](tel:+18889923429) |
 
-[support@immersivefusion.com](mailto:support@immersivefusion.com)
+## Connect With Us
 
-## Telephone
+| Platform | Link |
+|----------|------|
+| :material-linkedin: LinkedIn | [immersivefusion](https://www.linkedin.com/company/immersivefusion){ target="_blank" } |
+| :material-twitter: X (Twitter) | [@immersivefusion](https://x.com/immersivefusion){ target="_blank" } |
+| :material-youtube: YouTube | [Immersive Fusion](https://www.youtube.com/@immersivefusion){ target="_blank" } |
+| :material-github: GitHub | [immersivefusion](https://github.com/immersivefusion){ target="_blank" } |
 
-Toll-free: [888-992-3429](tel:+18889923429)
+## Response Times
+
+| Priority | Typical Response |
+|----------|------------------|
+| Live chat | Immediate during business hours |
+| Email | Within 24 hours |
+| Phone | Immediate during business hours |
+
+!!! info "Business Hours"
+    Monday - Friday, 9 AM - 6 PM EST

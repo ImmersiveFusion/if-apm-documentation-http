@@ -18,16 +18,15 @@
     }
 
 
-    body{
-      background-image: url("assets/images/backdrop.png");
-      background-size: cover;
-    }
-
     .backdrop
     {
-      height:70vh;
+      min-height: calc(100vh - 120px);
       display: flex;
       align-items: center;
+      background-image: url("{{ 'assets/images/backdrop.png' | url }}");
+      background-size: cover;
+      background-position: center bottom;
+      background-repeat: no-repeat;
     }
 
     .light
@@ -123,32 +122,42 @@
         </div>
 
         <div class="text-center">
-          <h2 class="smoke">Immersive APM Web & Mobile</h2>
+          <h2 class="smoke">IAPM Web</h2>
           <a
         href="https://azure.iapm.app"
-        title="Immersive APM Web & Mobile for Azure / Entra ID"
+        title="IAPM Web for Azure / Entra ID"
         class="md-button md-button--accent"
       >
         Office 365 / Azure / Entra ID
       </a>
       <a
         href="https://my.iapm.app"
-        title="Immersive APM Web & Mobile for Local Accounts"
+        title="IAPM Web for Local Accounts"
         class="md-button md-button--accent"
       >
-        Local Accounts        
+        Local Accounts
       </a>
     </div>
     <div class="text-center">
-        <h2 class="smoke">Immersive APM 3D & VR</h2>
+        <h2 class="smoke">IAPM Desktop</h2>
           <a
-            href="/analysis-and-visualization/3d-and-vr/guides/installation/windows"
-            title="Immersive APM Installer for Windows"
+            href="/Products/IAPM/Guides/Installation/Windows/"
+            title="IAPM Desktop for Windows"
             class="md-button md-button--accent"
           >
-            Installer for Windows 
+            Windows
             <span class="twemoji windows">
               {% include ".icons/fontawesome/brands/windows.svg" %}
+            </span>
+          </a>
+          <a
+            href="/Products/IAPM/Guides/Installation/macOS/"
+            title="IAPM Desktop for macOS"
+            class="md-button md-button--accent"
+          >
+            macOS
+            <span class="twemoji apple">
+              {% include ".icons/fontawesome/brands/apple.svg" %}
             </span>
           </a>
         </div>

@@ -1,51 +1,105 @@
-# Configure your account
+# Account Configuration
 
 {!template/subscription-management.mdp!}
 
-## New Customers
+Configure your IAPM account structure to organize telemetry data and manage billing.
 
-If you haven't already, [start your subscription](https://www.immersivefusion.com/pricing){:target="myif"} by choosing the plan right for you. Then, follow the steps to configure your account:
+## Account Hierarchy
 
-1. Create a new tenant ([What is this?](#tenant)) 
-1. Create a new billing profile ([What is this?](#billing-profile)) 
-1. Create a new subscription ([What is this?](#subscription)) 
+```mermaid
+graph TD
+    A[Account] --> B[Tenant]
+    B --> C[Billing Profile]
+    B --> D[Subscription]
+    D --> E[Environment]
+    E --> F[Grid]
+    E --> G[Grid]
+```
 
-## All Customers
+![Billing Model](img/billingmodel.png)
 
-1. Create a new environment ([What is this?](#environment)) 
-1. Create a new (application) grid ([What is this?](#grid)) 
+## Setup Steps
+
+### New Customers
+
+| Step | Action | Description |
+|------|--------|-------------|
+| 1 | [Choose a plan](https://www.immersivefusion.com/pricing){ target="_blank" } | Select the subscription tier that fits your needs |
+| 2 | Create a tenant | Set up your organizational unit |
+| 3 | Add billing profile | Configure payment method |
+| 4 | Activate subscription | Start your plan |
+
+### All Customers
+
+| Step | Action | Description |
+|------|--------|-------------|
+| 1 | Create environment | Organize by deployment stage (dev, prod) |
+| 2 | Create grid | Add your application's telemetry container |
 
 ## Account Components
 
-### Customer Account
+### Account
 
-A customer account is a personalized space provided by Immersive Fusion to its customers, where they can subscribe to, join and access various features and services. A customer account typically requires customers to create a profile with their personal information, such as their name, email address, and sometimes billing information. 
-
-![Immersive Fusion Billing Model](img/billingmodel.png)
+Your organization's identity in IAPM. Contains all tenants, subscriptions, and data.
 
 ### Tenant
 
-Accounts can have one or more *tenants*. A tenant represents organizational structure that is meaningful to the customer such the company itself or a department that has monitored or managed resources. 
+An organizational unit within your account. Use tenants to separate:
+
+- Different companies (for agencies/MSPs)
+- Business units or departments
+- Cost centers
 
 ### Billing Profile
 
-Tenants have an associated *billing profile* that is used to pay for services used. 
+Payment configuration for a tenant:
+
+- Payment method (credit card, invoice)
+- Billing address
+- Tax information
 
 ### Subscription
 
-A subscription allows aggregated billing for services rendered for the customer. They are a common pricing model used by businesses to offer their products or services to customers. With a subscription plan, customers pay a recurring fee at regular intervals (usually monthly or annually) to access the product or service. Plans are structured in a variety of ways depending on the nature of the product, service quality and reliability being offered. 
+Your IAPM plan. Determines:
 
-For a list of current plans, [click here](https://immersivefusion.com/pricing)
+| Aspect | Description |
+|--------|-------------|
+| **Features** | Available capabilities |
+| **Data retention** | How long telemetry is stored |
+| **Support level** | Response time guarantees |
+| **Billing cycle** | Monthly or annual |
+
+[View pricing plans](https://immersivefusion.com/pricing){ target="_blank" }
 
 ### Environment
 
-Managed resources for a tenant are organized by *environments*. Environments group different software applications based on their physical location, purpose or deployment designation. For example, applications in separate data centers or stages such as development and production. 
+A logical grouping of applications. Common patterns:
+
+| Environment | Purpose |
+|-------------|---------|
+| Development | Local and CI/CD testing |
+| Staging | Pre-production validation |
+| Production | Live customer-facing systems |
 
 ### Grid
 
-Each managed application is a member of environment is referred to a *grid*.
+A container for a single application's telemetry data. Each grid has:
 
-# Are you ready?
+- Unique API key for instrumentation
+- Separate data storage
+- Independent retention settings
 
-[Get Started Today!](../../Getting-Started/index.md){:class="md-button md-button--primary"}
+## Managing Your Account
 
+| Task | Location |
+|------|----------|
+| View/edit tenant | Billing → Tenants |
+| Update billing | Billing → Billing Profiles |
+| Manage subscription | Billing → Subscriptions |
+| Create environment | Applications → Environments |
+| Create grid | Applications → Grids |
+
+## Next Steps
+
+[Get Started :material-arrow-right:](../../Getting-Started/index.md){ .md-button .md-button--primary }
+[Get API Key :material-key:](../Api-Key/index.md){ .md-button }

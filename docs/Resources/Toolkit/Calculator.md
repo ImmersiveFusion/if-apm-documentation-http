@@ -1,28 +1,66 @@
-# Immersive APM Calculator
+# Pricing Calculator
 
-Trying to estimate your monthly Immersive APM costs? We've got you covered. Make a copy of the calculator to your desired location and make changes to experiment with the different plans.
+Estimate your monthly IAPM subscription costs with our interactive calculator. Make a copy to your preferred location and adjust the inputs to match your requirements.
 
-[Excel Spreadsheet](https://docs.google.com/spreadsheets/d/1t5tnafX0khdi0wWvi195TfmtfWwXq-vf/edit?usp=sharing&ouid=117302896292116417792&rtpof=true&sd=true){:class="md-button"}
-[Google Sheet](https://docs.google.com/spreadsheets/d/1eR7-TftjKlR2urxYcvemoam__8t-Whxn9QLB1w7eSgk/edit?usp=sharing){:class="md-button"}
+## Get the Calculator
 
-## Example
+[Excel Spreadsheet :material-microsoft-excel:](https://docs.google.com/spreadsheets/d/1t5tnafX0khdi0wWvi195TfmtfWwXq-vf/edit?usp=sharing&ouid=117302896292116417792&rtpof=true&sd=true){ .md-button target="_blank" }
+[Google Sheets :material-google-spreadsheet:](https://docs.google.com/spreadsheets/d/1eR7-TftjKlR2urxYcvemoam__8t-Whxn9QLB1w7eSgk/edit?usp=sharing){ .md-button target="_blank" }
 
-!!! info "Example Calculation Details"
-    * ACME Company has ten (10) software developers
-    * Telemetry data is stored for seven (7) days
-    * ACME has two development environments with some applications in them
-    * ACME has three production environments with some applications in them
-    * Adding developer instances
+## How to Use
 
-![Calculator Example](img/calculator-example.png)
+1. **Open the calculator** using one of the links above
+2. **Make a copy** to your Google Drive or download the Excel file
+3. **Enter your parameters:**
+    - Number of developers/users
+    - Data retention period
+    - Number of environments
+    - Expected telemetry volume
+4. **Review the estimated cost** based on your inputs
 
-!!! info "Usage Weight"
-    Usage weight is a simple way to break down your scenarios. For example, using only the Visualize plan would have a usage weight of 100%. A mix of Visualize and Analyze packages can be accomplished by splitting the percentage. For example, %50 in Visualize and %50 in Analyze.
+## Example Calculation
+
+Here's a sample calculation for a mid-sized development team:
+
+!!! example "ACME Company Scenario"
+
+    | Parameter | Value |
+    |-----------|-------|
+    | Software developers | 10 |
+    | Data retention | 7 days |
+    | Development environments | 2 |
+    | Production environments | 3 |
+
+    ![Calculator Example](img/calculator-example.png)
+
+## Understanding Usage Weight
+
+Usage weight helps you model mixed-plan scenarios:
+
+| Scenario | Visualize | Analyze |
+|----------|-----------|---------|
+| Visualize only | 100% | 0% |
+| Analyze only | 0% | 100% |
+| Mixed usage | 50% | 50% |
+
+!!! tip "Usage Weight"
+    Adjust the usage weight percentages to reflect how your team will use different IAPM features. This helps generate a more accurate cost estimate for mixed workloads.
 
 ## Discounts and Promotions
 
-Check out or inquire about [discounts and promotions](https://discord.gg/UhSAUHAW) in Discord.
+We offer discounts for:
 
-## We are here to help!
+- **Annual commitments** - Save with yearly billing
+- **Startups** - Special pricing for early-stage companies
+- **Non-profits** - Reduced rates for qualifying organizations
+- **Education** - Academic pricing available
 
-You if you are having any issues at all. [Chat with us](javascript:zE.activate()) through the site or join us on [Discord](https://discord.gg/zevywnQp6K).
+Check our [Discord community](https://discord.gg/UhSAUHAW){ target="_blank" } for current promotions and discount codes.
+
+## Need Help?
+
+Having trouble with the calculator or need a custom quote?
+
+- **Chat with us** - Use the chat widget on our website
+- **Join Discord** - [discord.gg/zevywnQp6K](https://discord.gg/zevywnQp6K){ target="_blank" }
+- **Email sales** - [sales@immersivefusion.com](mailto:sales@immersivefusion.com)

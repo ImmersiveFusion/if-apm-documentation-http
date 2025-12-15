@@ -45,23 +45,25 @@ theme:
     - navigation.top
     - navigation.tracking
     - search.highlight
-    - search.share
+    # - search.share  # Disabled to prevent Google indexing ?q= URLs
     - search.suggest
     - toc.follow
     # - toc.integrate
   palette:
+    # Dark mode first (default) - Futuristic cyberpunk theme
+    - scheme: slate
+      primary: black
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    # Light mode alternative
     - scheme: default
       primary: deep purple
       accent: deep purple
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-    - scheme: slate
-      primary: black
-      accent: deep purple
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
   font:
     header: Josefin Sans # doesn't actually do anything, just for the record
     #text: Josefin Sans
@@ -85,6 +87,79 @@ plugins:
   - redirects:
       redirect_maps:
         'instrument/index.md': 'Setup/Custom-application/Instrument-your-application/index.md'
+
+        # Restructure redirects - preserve old URLs
+        # Analysis-and-Visualization → Products/IAPM-Desktop / Products/IAPM-Web
+        'analysis-and-visualization/index.md': 'Products/IAPM-Desktop/index.md'
+        'analysis-and-visualization/3d-and-vr/index.md': 'Products/IAPM-Desktop/index.md'
+        'analysis-and-visualization/3d-and-vr/guides/index.md': 'Products/IAPM-Desktop/Guides/index.md'
+        'analysis-and-visualization/3d-and-vr/guides/installation/index.md': 'Products/IAPM-Desktop/Guides/Installation/index.md'
+        'analysis-and-visualization/3d-and-vr/guides/installation/windows/index.md': 'Products/IAPM-Desktop/Guides/Installation/Windows/index.md'
+        'analysis-and-visualization/3d-and-vr/guides/installation/mac/index.md': 'Products/IAPM-Desktop/Guides/Installation/macOS/index.md'
+        'analysis-and-visualization/3d-and-vr/guides/installation/linux/index.md': 'Products/IAPM-Desktop/Guides/Installation/Linux/index.md'
+        'analysis-and-visualization/3d-and-vr/guides/navigation/index.md': 'Products/IAPM-Desktop/Guides/Navigation/index.md'
+        'analysis-and-visualization/3d-and-vr/guides/preferences/index.md': 'Products/IAPM-Desktop/Guides/Preferences/index.md'
+        'analysis-and-visualization/3d-and-vr/guides/uninstallation/index.md': 'Products/IAPM-Desktop/Guides/Uninstallation/index.md'
+        'analysis-and-visualization/3d-and-vr/guides/uninstallation/windows/index.md': 'Products/IAPM-Desktop/Guides/Uninstallation/Windows/index.md'
+        'analysis-and-visualization/3d-and-vr/guides/uninstallation/mac/index.md': 'Products/IAPM-Desktop/Guides/Uninstallation/macOS/index.md'
+        'analysis-and-visualization/3d-and-vr/guides/uninstallation/linux/index.md': 'Products/IAPM-Desktop/Guides/Uninstallation/Linux/index.md'
+        'analysis-and-visualization/3d-and-vr/integrations/index.md': 'Products/IAPM-Desktop/Integrations/index.md'
+        'analysis-and-visualization/3d-and-vr/integrations/htc-vive/index.md': 'Products/IAPM-Desktop/Integrations/HTC-Vive/index.md'
+        'analysis-and-visualization/3d-and-vr/integrations/meta-quest/index.md': 'Products/IAPM-Desktop/Integrations/Meta-Quest/index.md'
+        'analysis-and-visualization/3d-and-vr/supported-configurations/index.md': 'Products/IAPM-Desktop/Supported-Configurations/index.md'
+        'analysis-and-visualization/3d-and-vr/release-notes.md': 'Products/IAPM-Desktop/release-notes.md'
+
+        'analysis-and-visualization/web-and-mobile/index.md': 'Products/IAPM-Web/index.md'
+        'analysis-and-visualization/web-and-mobile/guides/index.md': 'Products/IAPM-Web/Guides/index.md'
+        'analysis-and-visualization/web-and-mobile/supported-configurations/index.md': 'Products/IAPM-Web/Supported-Configurations/index.md'
+        'analysis-and-visualization/web-and-mobile/release-notes.md': 'Products/IAPM-Web/release-notes.md'
+
+        # Mac → macOS redirects
+        'Products/IAPM-Desktop/Guides/Installation/Mac/index.md': 'Products/IAPM-Desktop/Guides/Installation/macOS/index.md'
+        'Products/IAPM-Desktop/Guides/Uninstallation/Mac/index.md': 'Products/IAPM-Desktop/Guides/Uninstallation/macOS/index.md'
+
+        # Old IAPM paths → Products/IAPM-Desktop
+        'iapm/index.md': 'Products/IAPM-Desktop/index.md'
+        'iapm/features/index.md': 'Products/IAPM-Desktop/Features/index.md'
+        'iapm/guides/index.md': 'Products/IAPM-Desktop/Guides/index.md'
+        'iapm-web/index.md': 'Products/IAPM-Web/index.md'
+
+        # Products/IAPM → Products/IAPM-Desktop redirects
+        'Products/IAPM/index.md': 'Products/IAPM-Desktop/index.md'
+        'Products/IAPM/Features/index.md': 'Products/IAPM-Desktop/Features/index.md'
+        'Products/IAPM/Guides/index.md': 'Products/IAPM-Desktop/Guides/index.md'
+        'Products/IAPM/Guides/Installation/index.md': 'Products/IAPM-Desktop/Guides/Installation/index.md'
+        'Products/IAPM/Guides/Installation/Windows/index.md': 'Products/IAPM-Desktop/Guides/Installation/Windows/index.md'
+        'Products/IAPM/Guides/Installation/macOS/index.md': 'Products/IAPM-Desktop/Guides/Installation/macOS/index.md'
+        'Products/IAPM/Guides/Installation/Linux/index.md': 'Products/IAPM-Desktop/Guides/Installation/Linux/index.md'
+        'Products/IAPM/Guides/Navigation/index.md': 'Products/IAPM-Desktop/Guides/Navigation/index.md'
+        'Products/IAPM/Guides/Preferences/index.md': 'Products/IAPM-Desktop/Guides/Preferences/index.md'
+        'Products/IAPM/Guides/Uninstallation/index.md': 'Products/IAPM-Desktop/Guides/Uninstallation/index.md'
+        'Products/IAPM/Guides/Uninstallation/Windows/index.md': 'Products/IAPM-Desktop/Guides/Uninstallation/Windows/index.md'
+        'Products/IAPM/Guides/Uninstallation/macOS/index.md': 'Products/IAPM-Desktop/Guides/Uninstallation/macOS/index.md'
+        'Products/IAPM/Guides/Uninstallation/Linux/index.md': 'Products/IAPM-Desktop/Guides/Uninstallation/Linux/index.md'
+        'Products/IAPM/Integrations/index.md': 'Products/IAPM-Desktop/Integrations/index.md'
+        'Products/IAPM/Integrations/HTC-Vive/index.md': 'Products/IAPM-Desktop/Integrations/HTC-Vive/index.md'
+        'Products/IAPM/Integrations/Meta-Quest/index.md': 'Products/IAPM-Desktop/Integrations/Meta-Quest/index.md'
+        'Products/IAPM/Supported-Configurations/index.md': 'Products/IAPM-Desktop/Supported-Configurations/index.md'
+        'Products/IAPM/release-notes.md': 'Products/IAPM-Desktop/release-notes.md'
+        'Products/IAPM/Features/AI-Copilot.md': 'Products/IAPM-Desktop/Features/AI-Copilot.md'
+
+        # Configuration-and-Management → Setup
+        'configuration-and-management/index.md': 'Setup/index.md'
+        'configuration-and-management/sandbox/index.md': 'Setup/Sandbox/index.md'
+        'configuration-and-management/login/index.md': 'Setup/Login/index.md'
+        'configuration-and-management/account/index.md': 'Setup/Account/index.md'
+        'configuration-and-management/api-key/index.md': 'Setup/Api-Key/index.md'
+        'configuration-and-management/custom-application/index.md': 'Setup/Custom-application/index.md'
+
+        # Partner → Resources/Partner
+        'partner/index.md': 'Resources/Partner/index.md'
+
+        # Short marketing-friendly aliases
+        'ai/index.md': 'Products/IAPM-Desktop/Features/AI-Copilot.md'
+        'copilot/index.md': 'Products/IAPM-Desktop/Features/AI-Copilot.md'
+        'config/index.md': 'Setup/index.md'
 
         #social
         'social/x/index.md': 'https://x.com/immersivefusion'

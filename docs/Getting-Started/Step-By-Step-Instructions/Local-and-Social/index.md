@@ -1,57 +1,68 @@
-# Step By Step: Use Local & Social account
+# Local and Social Account Setup
 
-## Step 0: Basic information
+Use an email address or social login (Google, GitHub) to access IAPM.
 
-> Recommended but not required
+## Prerequisites
 
-* [Observability](../../../Resources/Terms-and-Concepts/Observability/index.md)
-* [APM Basics](../../../Resources/Terms-and-Concepts/APM/index.md)
-* [Immersive APM (IAPM)](../../../Resources/Terms-and-Concepts/IAPM/index.md)
+!!! info "Optional Reading"
+    New to observability? These concepts will help you get the most from IAPM:
 
-## Step 1: Configure your account
+    - [Observability](../../../Resources/Terms-and-Concepts/Observability/index.md) - The three pillars of monitoring
+    - [APM Basics](../../../Resources/Terms-and-Concepts/APM/index.md) - Application performance management fundamentals
+    - [IAPM](../../../Resources/Terms-and-Concepts/IAPM/index.md) - How IAPM visualizes telemetry data
 
-How would you like to configure your account?
+## Step 1: Create Your Account
 
-[Quick Start](https://my.iapm.app/landing/quick-start/data-flow){:class="md-button md-button--primary"} 
-> The Quick Start automates the process of Immersive APM account activation with the least number of steps and questions. 
+Choose your setup experience:
 
-[Guided Setup](https://my.iapm.app/landing/guided-setup/data-flow){:class="md-button"}
-> The Guided Setup also automates the process but allows for additional customization of your account and subscription.
+| Option | Description | Best For |
+|--------|-------------|----------|
+| **Quick Start** | Automated setup with minimal steps | Getting started fast |
+| **Guided Setup** | Step-by-step with customization options | Fine-tuning your configuration |
 
-## Step 2: Get your API key
+[Quick Start :material-rocket-launch:](https://my.iapm.app/landing/quick-start/data-flow){ .md-button .md-button--primary target="_blank" }
+[Guided Setup :material-cog:](https://my.iapm.app/landing/guided-setup/data-flow){ .md-button target="_blank" }
 
-Once you create your first [grid](../../../Setup/Account/index.md#grid). Click on `Instrument` button and get your API key.
+## Step 2: Get Your API Key
 
-[Manage Grids](https://my.iapm.app/admin/grids){:class="md-button md-button--primary"} 
+After creating your account, you'll have a [grid](../../../Setup/Account/index.md#grid) - your telemetry data container.
 
-## Step 3: Use your API key and redeploy
+1. Go to your grid management page
+2. Click the **Instrument** button
+3. Copy your API key
 
-Add your API Key to your OpenTelemetry OTLP Exporter Configuration and redeploy it or run it locally.
+[Manage Grids :material-view-grid:](https://my.iapm.app/admin/grids){ .md-button .md-button--primary target="_blank" }
 
-[View Example](../../../Setup/Custom-application/Instrument-your-application/index.md){:class="md-button md-button--primary"} 
+## Step 3: Instrument Your Application
 
-> If you don't already have OpenTelemetry packages added to your application, check out the list of supported [Language APIs and SDKs](https://opentelemetry.io/docs/languages/){:target="otel"}. Your API key can be used in your own custom application and other OpenTelemtry enabled applications.
+Add your API key to your OpenTelemetry OTLP exporter configuration:
 
-## Step 4: Analyze and Visualize
+    # Example OTLP exporter configuration
+    exporters:
+      otlp:
+        endpoint: "https://otlp.iapm.app"
+        headers:
+          "API-Key": "your-api-key-here"
 
-### 3D and VR
+[View Full Examples :material-code-tags:](../../../Setup/Custom-application/Instrument-your-application/index.md){ .md-button .md-button--primary }
 
-Enter the World of Your Application&reg; with your mouse and keyboard or Virtual Reality Headset. 
+!!! tip "New to OpenTelemetry?"
+    Check the official [Language APIs and SDKs](https://opentelemetry.io/docs/languages/){ target="_blank" } for instrumentation guides in your programming language.
 
-Select the grid for the API key you used and click `Enter`
+## Step 4: Visualize Your Data
 
-[Install](../../../Analysis-and-Visualization/3D-and-VR/Guides/Installation//index.md){:class="md-button md-button--primary"} 
-[Docs](../../../Analysis-and-Visualization/3D-and-VR/index.md){:class="md-button"} 
+Once telemetry is flowing, explore your application:
 
-### Web browser & Mobile
+### IAPM Desktop (3D/VR)
 
-Select the grid for the API key you used and click `Enter`
+Enter the World of Your Application with mouse and keyboard or a VR headset.
 
-[Manage Grids](https://my.iapm.app/admin/grids){:class="md-button md-button--primary"} 
-[Docs](../../../Analysis-and-Visualization/Web-and-Mobile/index.md){:class="md-button"} 
+[Install Desktop :material-download:](../../../Products/IAPM-Desktop/Guides/Installation/index.md){ .md-button .md-button--primary }
+[Desktop Documentation :material-book-open:](../../../Products/IAPM-Desktop/index.md){ .md-button }
 
+### IAPM Web (Browser)
 
+Access dashboards, alerts, and account management from any browser.
 
-
-
-
+[Open IAPM Web :material-web:](https://my.iapm.app/admin/grids){ .md-button .md-button--primary target="_blank" }
+[Web Documentation :material-book-open:](../../../Products/IAPM-Web/index.md){ .md-button }

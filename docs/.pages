@@ -1,9 +1,8 @@
 arrange:
     - index.md
     - Getting-Started
+    - Products
     - Setup
-    - Analysis-and-Visualization
-    - Partner
     - Resources
     # - observability
     # - apm
