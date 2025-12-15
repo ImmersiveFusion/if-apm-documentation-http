@@ -67,63 +67,63 @@
 
 ---
 
-### 3. Analysis and Visualization
+### 3. Products
 
-**Purpose:** Use Immersive APM clients to analyze application performance
+**Purpose:** IAPM client applications for analyzing application performance
 
-#### A. 3D and VR Client
+#### A. IAPM Desktop (3D/VR)
 
 **Installation:**
+
 - **Windows Installation:** MSI installer (1.5GB), system requirements
-- **Mac Installation:** Experimental support, installation steps
+- **macOS Installation:** Experimental support, installation steps
 - **Linux Installation:** Platform support and setup
 
 **Uninstallation:**
+
 - **Windows Uninstall:** Proper removal procedures
-- **Mac Uninstall:** Application removal steps
+- **macOS Uninstall:** Application removal steps
 
 **Usage:**
+
 - **Navigating:** Interface navigation, controls, camera movement
 - **Preferences:** Settings and customization options
 
 **VR Integration:**
+
 - **HTC Vive:** Setup and usage with Vive headsets
 - **Meta Quest:** Quest 2/3/Pro integration
 
 **Configuration:**
+
 - **Supported Configurations:** Hardware and software requirements
   - .NET 9.0 required
   - Unity 6 engine
   - VR headset specs
 
 **Version History:**
+
 - **Release Notes:** Comprehensive changelog
   - v1.10.0 - Latest features (AI Copilot enhancements)
-  - v1.9.1 - Recent updates
-  - v1.9.0 - Major features
-  - v1.8.0 - Stability improvements
-  - v1.7.1 - Bug fixes
-  - v1.7.0 - New features
-  - v1.6.2, v1.6.1, v1.6.0 - Iterative improvements
-  - v1.5.5 - Performance updates
-  - v1.5.4 - Early release
   - Earlier versions back to v0.8.6
 
-#### B. Web and Mobile Client
+#### B. IAPM Web
 
 **Access:**
+
 - **Browser-Based:** Cross-platform web application
   - azure.iapm.app (Entra ID)
   - my.iapm.app (Local/Social)
 
 **Configuration:**
+
 - **Supported Configurations:** Browser requirements and compatibility
 
 **Version History:**
+
 - **Release Notes:** Detailed changelog
-  - v3.34.1 - Latest patch
-  - v3.34.0 - Recent major release
-  - v3.33.0 through v3.25.0 - Progressive updates
+  - v3.71.1 - Latest (Angular 21, span waterfall, network graph)
+  - Earlier versions back to v3.25.0
 
 **Target Audience:** All users - engineers analyzing performance data
 

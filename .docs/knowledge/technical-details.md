@@ -99,10 +99,14 @@ Web/Mobile Client OR 3D/VR Client
 
 ### Web/Mobile Client Evolution
 
-**v3.34.x** (Latest)
-- Current production version
+**v3.71.x** (Latest)
 
-**v3.33.0 - v3.25.0**
+- Angular 21 upgrade
+- Span waterfall view, network graph, flame graph improvements
+- Dashboard overhaul
+- Dark/light theme refinements
+
+**v3.34.x - v3.25.0**
 - Progressive feature additions
 - UI/UX improvements
 

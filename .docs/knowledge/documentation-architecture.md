@@ -31,12 +31,12 @@
 if-apm-documentation-http/
 ├── .docs/               # Project knowledge (this folder)
 │   └── knowledge/       # Documentation about the documentation
-├── docs/                # Source markdown files (53 files)
-│   ├── Analysis-and-Visualization/
-│   │   ├── 3D-and-VR/
-│   │   └── Web-and-Mobile/
+├── docs/                # Source markdown files
 │   ├── Getting-Started/
 │   ├── Setup/
+│   ├── Products/
+│   │   ├── IAPM-Desktop/
+│   │   └── IAPM-Web/
 │   ├── Partner/
 │   ├── Resources/
 │   │   ├── Terms-and-Concepts/
@@ -103,7 +103,7 @@ Navigation is managed through:
 
 1. **Getting Started** - Onboarding and authentication
 2. **Setup** - Configuration and instrumentation
-3. **Analysis and Visualization** - Client applications
+3. **Products** - IAPM Desktop (3D/VR) and IAPM Web clients
 4. **Partner** - Programs and recognition
 5. **Resources** - Concepts, legal, tools
 6. **Contact** - Community and support
