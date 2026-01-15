@@ -18,7 +18,6 @@ Learn how to use IAPM Web effectively for monitoring, analysis, and account mana
 | **Trace Analysis** | Explore request flows with waterfall and flame graph views |
 | **Grid Management** | Create, configure, and organize telemetry containers |
 | **API Keys** | Generate, rotate, and manage instrumentation credentials |
-| **Team Management** | Invite members, assign roles, manage permissions |
 | **Billing** | View usage, manage subscription, download invoices |
 
 ## Dashboard Overview

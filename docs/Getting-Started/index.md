@@ -16,6 +16,9 @@ Select how you want to authenticate with IAPM:
 
 Both options provide identical features and pricing.
 
+!!! info "Free to Start"
+    New accounts start on the free **Start** plan. No credit card required. See [Plans & Pricing](../Setup/Plans/index.md) for all options.
+
 ## Quick Start Overview
 
 ```mermaid
