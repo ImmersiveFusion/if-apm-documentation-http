@@ -3,7 +3,8 @@
     "allow": [
       "Bash(mkdir:*)",
       "Bash(.serve.ps1)",
-      "Bash(powershell.exe -ExecutionPolicy Bypass -File serve.ps1)"
+      "Bash(powershell.exe -ExecutionPolicy Bypass -File serve.ps1)",
+      "Bash(git mv:*)"
     ],
     "deny": [],
     "ask": []

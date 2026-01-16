@@ -7,6 +7,7 @@ Configure your IAPM environment, manage your account, and connect your applicati
 | Guide | Description |
 |-------|-------------|
 | [Sandbox](Sandbox/index.md) | Try IAPM with pre-loaded demo data |
+| [Plans](Plans/index.md) | Compare subscription plans and features |
 | [Login](Login/index.md) | Authentication options (Entra ID, Local/Social) |
 | [Account](Account/index.md) | Account structure and configuration |
 | [API Key](Api-Key/index.md) | Generate and manage API keys |
