@@ -45,7 +45,7 @@ Master the controls to move through your application's 3D environment efficientl
 
 | Action | Keys | Description | Status |
 |--------|------|-------------|--------|
-| Toggle AI Copilot | `C` | Open/close the AI assistant panel | :material-clock: |
+| Toggle AI Assistant | `C` | Open/close the AI assistant panel | :material-clock: |
 | Toggle Metrics | — | Show/hide metrics overlay | :material-lock: |
 | Toggle Logs | `L` | Show/hide log panel | :material-clock: |
 | Toggle Traces | `T` | Show/hide trace details | :material-clock: |
@@ -64,7 +64,7 @@ See [HTC Vive Integration](../../Integrations/HTC-Vive/index.md) for detailed se
 | Select | Trigger | Select service or UI element |
 | Grab | Grip buttons | Grab and manipulate objects |
 | Menu | Menu button | Open radial menu |
-<!-- | AI Copilot | Grip + voice | Activate voice assistant | -->
+<!-- | AI Assistant | Grip + voice | Activate voice assistant | -->
 
 ### Meta Quest
 
@@ -76,7 +76,7 @@ See [Meta Quest Integration](../../Integrations/Meta-Quest/index.md) for detaile
 | Select | Trigger | Select service or UI element |
 | Grab | Grip | Grab and manipulate objects |
 | Menu | Menu button | Open radial menu |
-<!-- | AI Copilot | Press A + speak | Activate voice assistant | -->
+<!-- | AI Assistant | Press A + speak | Activate voice assistant | -->
 
 ## Navigation Tips
 
@@ -220,7 +220,7 @@ Press `1` to return to standard first-person navigation.
 
 | Key | Action |
 |-----|--------|
-| `C` | AI Copilot |
+| `C` | AI Assistant |
 | `M` | Metrics |
 | `L` | Logs |
 | `T` | Traces |
@@ -260,5 +260,5 @@ Custom key bindings can be configured in **Preferences** > **Controls** > **Key 
 ## Related
 
 - [Preferences](../Preferences/index.md) - Customize controls and display settings
-- [AI Copilot](../../Features/AI-Copilot.md) - Voice and chat interaction
+- [AI Assistant](../../Features/AI-Assistant.md) - Voice and chat interaction
 - [VR Integrations](../../Integrations/index.md) - Headset-specific guides

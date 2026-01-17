@@ -55,7 +55,7 @@ Once telemetry is flowing, explore your application:
 
 ### IAPM Desktop (3D/VR)
 
-Enter the World of Your Application with mouse and keyboard or a VR headset.
+Enter the World of Your Application® with mouse and keyboard or a VR headset.
 
 [Install Desktop :material-download:](../../../Products/IAPM-Desktop/Guides/Installation/index.md){ .md-button .md-button--primary }
 [Desktop Documentation :material-book-open:](../../../Products/IAPM-Desktop/index.md){ .md-button }

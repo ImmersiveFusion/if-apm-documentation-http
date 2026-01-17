@@ -17,7 +17,7 @@ Get IAPM through the Microsoft Azure Marketplace for simplified procurement and 
 |---------|--------------|
 | IAPM Desktop | :material-check: Full access |
 | IAPM Web | :material-check: Full access |
-| AI Copilot | :material-check: Included |
+| AI Assistant | :material-check: Included |
 | Standard support | :material-check: Included |
 
 ## How to Subscribe

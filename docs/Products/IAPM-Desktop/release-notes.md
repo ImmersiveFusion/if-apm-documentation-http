@@ -6,7 +6,7 @@
 
 **Introduction:**
 
-This release marks a major milestone for Immersive APM with the debut of the **AI Copilot**, our first integrated GPT-powered assistant. Users can now interact with their telemetry data using **natural language**, via **chat or voice**, to explore performance metrics, investigate anomalies, and generate insights without writing a single query.
+This release marks a major milestone for Immersive APM with the debut of the **AI Assistant**, our first integrated GPT-powered assistant. Users can now interact with their telemetry data using **natural language**, via **chat or voice**, to explore performance metrics, investigate anomalies, and generate insights without writing a single query.
 
 Also introduced is **experimental support for macOS**, allowing developers and analysts on Apple Silicon devices to begin testing Immersive APM in native environments. While not yet feature-complete, this lays the groundwork for full cross-platform parity in future releases.
 
@@ -19,8 +19,8 @@ Also introduced is **experimental support for macOS**, allowing developers and a
 
 **Improvements:**
 
-- Introduced **Immersive APM AI Copilot** with GPT integration for chat and voice-based data exploration.
-- **AI Copilot Enhancements**:
+- Introduced **Immersive APM AI Assistant** with GPT integration for chat and voice-based data exploration.
+- **AI Assistant Enhancements**:
     - Migrated from OpenAI to **Microsoft Semantic Kernel** for improved extensibility.
     - New kernel-based function architecture with input/output filters.
     - Enhanced voice interaction with new voice profiles.
@@ -79,7 +79,7 @@ Also introduced is **experimental support for macOS**, allowing developers and a
 
 **Introduction:**
 
-This release includes the addition of the [Buzludzha Monument](https://en.wikipedia.org/wiki/Buzludzha_monument) video and panels for more details. Materials are courtesy of the [Buzludzha Project](https://buzludzha-project.com/en/?source=if). The Buzludzha Monument, reimagined as the [Hall of Supporters](https://docs.immersivefusion.com/Partner/Hall-of-Supporters/) in Immersive Fusion’s 3D/VR world, is a powerful symbol of renewal, bridging a historic vision of Application Performance Management (APM) with a revolutionary new approach.
+This release includes the addition of the [Buzludzha Monument](https://en.wikipedia.org/wiki/Buzludzha_monument) video and panels for more details. Materials are courtesy of the [Buzludzha Project](https://buzludzha-project.com/en/?source=if). The Buzludzha Monument, reimagined as the [Hall of Supporters](../../../Resources/Partner/Hall-of-Supporters/index.md) in Immersive Fusion's 3D/VR world, is a powerful symbol of renewal, bridging a historic vision of Application Performance Management (APM) with a revolutionary new approach.
 
 **Improvements:**
 

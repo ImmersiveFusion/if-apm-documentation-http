@@ -26,7 +26,7 @@ Browser-based access to your application telemetry. No installation required - a
 | Trace waterfall view | :material-check: | :material-check: |
 | Deep troubleshooting | | :material-check: |
 | 3D visualization | | :material-check: |
-| AI Copilot | Coming soon | :material-check: |
+| AI Assistant | Coming soon | :material-check: |
 | VR immersion | | :material-check: |
 
 ## Getting Started

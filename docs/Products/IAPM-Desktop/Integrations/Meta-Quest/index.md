@@ -50,7 +50,7 @@ Once connected, you'll enter your IAPM grid in full VR. Use your Quest controlle
 
 ## Controls
 
-![Quest Controllers](../../../../assets/images/quest-controllers.png)
+<!-- TODO: Add quest-controllers.png image to docs/assets/images/ -->
 
 ### Left Controller
 
@@ -70,11 +70,11 @@ Once connected, you'll enter your IAPM grid in full VR. Use your Quest controlle
 | B button | Copy highlighted content to clipboard |
 | Oculus button | Quest Menu |
 
-## AI Copilot
+## AI Assistant
 
-The AI Copilot listens by default for natural conversation. Simply speak to ask questions or request assistance while exploring your application.
+The AI Assistant listens by default for natural conversation. Simply speak to ask questions or request assistance while exploring your application.
 
-To mute the AI Copilot, use the mute toggle in the IAPM UI.
+To mute the AI Assistant, use the mute toggle in the IAPM UI.
 
 ## Troubleshooting
 

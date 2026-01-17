@@ -13,7 +13,7 @@ IAPM is available in two editions that work together to provide complete observa
 | **Visualization** | | |
 | 3D Visualization | Full immersive | :material-close: |
 | VR Headset Support | :material-check: | :material-close: |
-| AI Copilot | :material-check: | Coming soon |
+| AI Assistant | :material-check: | Coming soon |
 | Dashboards | In-world views | Traditional |
 | **Administration** | | |
 | Account Management | :material-close: | :material-check: |
@@ -21,7 +21,7 @@ IAPM is available in two editions that work together to provide complete observa
 
 ## IAPM Desktop
 
-The full immersive experience. A desktop application with 3D visualization, AI Copilot, and optional VR headset support.
+The full immersive experience. A desktop application with 3D visualization, AI Assistant, and optional VR headset support.
 
 [IAPM Desktop :material-cube-outline:](IAPM-Desktop/index.md){ .md-button .md-button--primary }
 
@@ -29,7 +29,7 @@ The full immersive experience. A desktop application with 3D visualization, AI C
 |----------|-----|
 | Deep-dive troubleshooting | Navigate through your application in 3D |
 | Architecture reviews | Visualize service dependencies spatially |
-| AI-assisted analysis | Natural chat with AI Copilot |
+| AI-assisted analysis | Natural chat with AI Assistant |
 | VR enthusiasts | Full headset support |
 
 ## IAPM Web

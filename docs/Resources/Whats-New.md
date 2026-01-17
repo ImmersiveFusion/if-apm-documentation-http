@@ -6,7 +6,7 @@ Recent updates and features in IAPM. For complete version history, see the relea
 
 ## Latest Highlights
 
-### AI Copilot (Desktop 1.11)
+### AI Assistant (Desktop 1.11)
 
 Interact with your telemetry using natural language. Ask questions via chat or voice - no queries required.
 

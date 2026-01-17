@@ -29,7 +29,7 @@ graph LR
 |---------|-------------|
 | **3D Visualization** | Application topology rendered in three dimensions with spatial relationships |
 | **Real-Time Data** | Live telemetry via [OpenTelemetry](../Observability/Frameworks/OpenTelemetry/index.md) |
-| **AI-Assisted** | Copilot for root cause analysis and anomaly explanation |
+| **AI-Assisted** | AI Assistant for root cause analysis and anomaly explanation |
 | **VR-Ready** | Optional immersive headset support for deep exploration |
 | **Collaborative** | Multiple team members can explore the same environment |
 

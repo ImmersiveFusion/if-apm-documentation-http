@@ -24,7 +24,7 @@ Access preferences by pressing `F10` → **Main Menu** → **Preferences**. Cust
 | Master Volume | Overall audio level | 80% | :material-clock: |
 | Effects | UI sounds and notifications | 100% | :material-clock: |
 | Ambient | Environmental audio | 50% | :material-clock: |
-| Voice | AI Copilot voice responses | 100% | :material-clock: |
+| Voice | AI Assistant voice responses | 100% | :material-clock: |
 
 ## Control Settings
 
@@ -58,12 +58,12 @@ Access preferences by pressing `F10` → **Main Menu** → **Preferences**. Cust
 !!! tip "Motion Sensitivity"
     If you experience discomfort in VR, enable **Snap Turning** and **Vignette** for a more comfortable experience.
 
-## AI Copilot Settings
+## AI Assistant Settings
 
 | Setting | Description | Default | Status |
 |---------|-------------|---------|--------|
-| Voice Activation | Enable "Hey Copilot" wake word | Off | :material-lock: |
-| Voice Profile | Copilot voice selection | Default | :material-clock: |
+| Voice Activation | Enable "Hey Tessa" wake word | Off | :material-lock: |
+| Voice Profile | AI Assistant voice selection | Default | :material-clock: |
 | Response Length | Brief, standard, or detailed | Standard | :material-lock: |
 | Auto-suggestions | Show proactive insights | On | :material-lock: |
 

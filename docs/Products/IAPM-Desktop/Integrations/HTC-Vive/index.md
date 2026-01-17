@@ -47,7 +47,7 @@ Once connected, you'll enter your IAPM grid in full VR. Use your Vive controller
 | Select | Trigger | Select service or UI element |
 | Grab | Grip buttons | Grab and manipulate objects |
 | Menu | Menu button | Open radial menu |
-| AI Copilot | Grip + speak | Activate voice assistant |
+| AI Assistant | Grip + speak | Activate voice assistant |
 
 See [Navigation & Controls](../../Guides/Navigation/index.md#htc-vive) for complete control reference.
 

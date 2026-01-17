@@ -4,9 +4,9 @@ Immersive APM delivers a revolutionary approach to application performance manag
 
 ## Core Features
 
-### [AI Copilot](AI-Copilot.md)
+### [AI Assistant](AI-Assistant.md)
 
-Your expert companion for application diagnostics. The AI Copilot provides intelligent explanations, root cause suggestions, and recommended actions - achieving **95% accuracy** compared to 60% for generic AI tools.
+Your expert companion for application diagnostics. The AI Assistant provides intelligent explanations, root cause suggestions, and recommended actions - achieving **95% accuracy** compared to 60% for generic AI tools.
 
 ### [Real-Time Visualization](Real-Time.md)
 

@@ -12,7 +12,7 @@ repo_url: https://github.com/ImmersiveFusion/if-apm-documentation-http
 edit_uri: edit/main/docs
 
 # Copyright
-copyright: Copyright &copy; 2020-2026 <a href="https://www.immersivefusion.com">Immersive Fusion LLC</a>, Maintained by the <a href="/about/release-notes/#maintenance-team">Immersive Team</a>. Some content generation and supplimentation using GPT through Azure OpenIA 
+copyright: Copyright &copy; 2020-2026 <a href="https://www.immersivefusion.com">Immersive Fusion LLC</a>, Maintained by the <a href="/contact/">Immersive Team</a>. Some content generation and supplementation using GPT through Azure OpenAI 
 
 watch:
   - docs
@@ -143,7 +143,8 @@ plugins:
         'Products/IAPM/Integrations/Meta-Quest/index.md': 'Products/IAPM-Desktop/Integrations/Meta-Quest/index.md'
         'Products/IAPM/Supported-Configurations/index.md': 'Products/IAPM-Desktop/Supported-Configurations/index.md'
         'Products/IAPM/release-notes.md': 'Products/IAPM-Desktop/release-notes.md'
-        'Products/IAPM/Features/AI-Copilot.md': 'Products/IAPM-Desktop/Features/AI-Copilot.md'
+        'Products/IAPM/Features/AI-Copilot.md': 'Products/IAPM-Desktop/Features/AI-Assistant.md'
+        'Products/IAPM-Desktop/Features/AI-Copilot.md': 'Products/IAPM-Desktop/Features/AI-Assistant.md'
 
         # Configuration-and-Management → Setup
         'configuration-and-management/index.md': 'Setup/index.md'
@@ -157,8 +158,9 @@ plugins:
         'partner/index.md': 'Resources/Partner/index.md'
 
         # Short marketing-friendly aliases
-        'ai/index.md': 'Products/IAPM-Desktop/Features/AI-Copilot.md'
-        'copilot/index.md': 'Products/IAPM-Desktop/Features/AI-Copilot.md'
+        'ai/index.md': 'Products/IAPM-Desktop/Features/AI-Assistant.md'
+        'copilot/index.md': 'Products/IAPM-Desktop/Features/AI-Assistant.md'
+        'ai-assistant/index.md': 'Products/IAPM-Desktop/Features/AI-Assistant.md'
         'config/index.md': 'Setup/index.md'
 
         #social

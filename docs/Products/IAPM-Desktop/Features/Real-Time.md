@@ -69,6 +69,6 @@ Organizations experience substantial benefits from real-time visibility:
 
 ## Related
 
-- [AI Copilot](AI-Copilot.md) - Get intelligent guidance on what you're observing
+- [AI Assistant](AI-Assistant.md) - Get intelligent guidance on what you're observing
 - [Immersive Navigation](Immersion.md) - Move through the real-time environment
 - [360° Stack Visibility](360-View.md) - See all layers of your stack in real-time

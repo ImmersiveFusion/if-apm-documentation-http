@@ -1,20 +1,20 @@
-# AI Copilot
+# AI Assistant
 
-The AI Copilot is your expert companion for application diagnostics, providing intelligent guidance throughout your troubleshooting journey. Unlike generic AI tools, the Copilot is purpose-built for APM with deep integration into your live system data.
+The AI Assistant is your expert companion for application diagnostics, providing intelligent guidance throughout your troubleshooting journey. Unlike generic AI tools, the AI Assistant is purpose-built for APM with deep integration into your live system data.
 
 ## Key Capabilities
 
 ### Intelligent Explanations
 
-The Copilot interprets complex system behavior in actionable terms. Instead of decoding raw logs and metrics yourself, receive clear explanations of what's happening in your application.
+The AI Assistant interprets complex system behavior in actionable terms. Instead of decoding raw logs and metrics yourself, receive clear explanations of what's happening in your application.
 
 ### Root Cause Suggestions
 
-Using live data from your environment, the Copilot highlights probable causes of issues - eliminating guesswork and accelerating resolution.
+Using live data from your environment, the AI Assistant highlights probable causes of issues - eliminating guesswork and accelerating resolution.
 
 ### Recommended Actions
 
-Get specific, tailored resolution steps based on your situation. The Copilot suggests next steps that are relevant to your technical stack and current context.
+Get specific, tailored resolution steps based on your situation. The AI Assistant suggests next steps that are relevant to your technical stack and current context.
 
 ### Context-Aware Guidance
 
@@ -22,7 +22,7 @@ Recommendations adapt based on your role and the specific technologies in your e
 
 ## Performance
 
-| Metric | AI Copilot | Generic AI Tools |
+| Metric | AI Assistant | Generic AI Tools |
 |--------|------------|------------------|
 | Accuracy | **95%** | 60% |
 | Resolution Speed | **10x faster** | Baseline |
@@ -50,7 +50,7 @@ Recommendations adapt based on your role and the specific technologies in your e
 
 ## How It Works
 
-1. **Observe** - The Copilot monitors your session and understands the context of what you're investigating
+1. **Observe** - The AI Assistant monitors your session and understands the context of what you're investigating
 2. **Analyze** - It correlates data from logs, metrics, traces, and events in real-time
 3. **Guide** - Provides explanations, suggestions, and recommended actions through natural conversation
 4. **Learn** - Continuously improves based on your environment and patterns
@@ -67,9 +67,9 @@ Hands-free troubleshooting through voice commands - ideal for VR headset users o
 
 ## Getting Started
 
-The AI Copilot is available in [IAPM](../index.md) v1.10.0 and later. Simply launch the application and access the Copilot through the chat interface or voice activation.
+The AI Assistant is available in [IAPM](../index.md) v1.10.0 and later. Simply launch the application and access the AI Assistant through the chat interface or voice activation.
 
 ## Related
 
-- [Real-Time Visualization](Real-Time.md) - See the data the Copilot analyzes
-- [360° Stack Visibility](360-View.md) - Understand the full context of Copilot suggestions
+- [Real-Time Visualization](Real-Time.md) - See the data the AI Assistant analyzes
+- [360° Stack Visibility](360-View.md) - Understand the full context of AI Assistant suggestions

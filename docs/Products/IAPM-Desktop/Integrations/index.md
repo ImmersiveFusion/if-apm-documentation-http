@@ -39,7 +39,7 @@ graph LR
 |---------|---------|-----|
 | Navigation | WASD + Mouse | Walk + Teleport + Controllers |
 | Selection | Click | Point + Trigger |
-| AI Copilot | Voice commands + Keyboard chat | Voice commands |
+| AI Assistant | Voice commands + Keyboard chat | Voice commands |
 | Spatial awareness | Monitor view | 360° immersion |
 | Collaboration | Screen share | Shared VR space |
 

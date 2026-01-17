@@ -27,5 +27,5 @@ IAPM Desktop provides a vantage point into your application's architecture, proc
 - **Explore in real-time** - See live application operation in 3D
 - **Analyze metrics** - View throughput, latency, and error rates spatially
 - **Trace requests** - Follow individual requests through your service topology
-- **Investigate issues** - Use AI Copilot for guided troubleshooting
+- **Investigate issues** - Use AI Assistant for guided troubleshooting
 - **Collaborate** - Share views and insights with your team
