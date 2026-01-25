@@ -1,5 +1,7 @@
 # AI Assistant
 
+> **Answers, Not Dashboards** - Stop hunting through charts and logs. Ask Tessa, your AI Assistant, and get answers.
+
 The AI Assistant is your expert companion for application diagnostics, providing intelligent guidance throughout your troubleshooting journey. Unlike generic AI tools, the AI Assistant is purpose-built for APM with deep integration into your live system data.
 
 ## Key Capabilities
