@@ -1,6 +1,35 @@
-# Release Notes
+# IAPM Web Release Notes
 
-## IAPM Web
+## Version History
+
+### 3.82.0 <small>January 25, 2026</small> { id="3.82.0" }
+
+**Introduction:**
+
+This release introduces new account management features, a usage dashboard, and significant navigation improvements for a more intuitive user experience.
+
+**New Features:**
+
+- **Usage Dashboard**: New dashboard with sparkbox visualizations showing your telemetry usage at a glance.
+- **Grid Limits UI**: View your subscription limits with interactive sparkline charts.
+- **Account Page**: New dedicated account management page in the Profile section.
+- **Welcome Modal**: New onboarding experience for first-time users with guided setup.
+- **Portal App**: Standalone portal application with static hosting for improved performance.
+
+**Improvements:**
+
+- **Navigation Redesign**: New three-layout architecture for improved usability and discoverability.
+- **Dark Theme Default**: Dark theme is now the default, with improved landing page styling.
+- Updated Portal with IAPM branding and refined dark theme styling.
+- AI usage limits now displayed based on your subscription tier.
+- Improved welcome modal and empty state onboarding UX.
+- Disabled buttons are now more visually obvious in dark mode.
+- Improved confirmation dialog layout.
+
+**Bug Fixes:**
+
+- Fixed Quick Start wizard stepper checkmarks and Final checks content.
+- Fixed dark mode sparkbox styling for usage dashboard.
 
 ### 3.71.1 <small>December 9, 2025</small> { id="3.71.1" }
 

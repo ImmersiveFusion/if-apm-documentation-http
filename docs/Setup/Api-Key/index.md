@@ -8,7 +8,7 @@ API keys authenticate your application's telemetry data with IAPM. Each grid has
 
 ## Getting Your API Key
 
-1. Go to your Grids page: [azure.iapm.app](https://azure.iapm.app/admin/grids){ target="_blank" } or [my.iapm.app](https://my.iapm.app/admin/grids){ target="_blank" }
+1. Log in at [portal.iapm.app](https://portal.iapm.app){ target="_blank" }, then go to **Administration → Grids**
 2. Click the **Instrument** button (:material-cog:) on your grid
 3. Copy your API key from the wizard
 

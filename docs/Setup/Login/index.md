@@ -2,6 +2,8 @@
 
 IAPM supports multiple authentication methods. Choose the option that best fits your organization.
 
+[Start Free :material-rocket-launch:](https://portal.iapm.app){ .md-button .md-button--primary target="_blank" }
+
 !!! tip "Same Features, Same Pricing"
     All login methods provide identical features and pricing. Choose based on convenience and your organization's existing authentication infrastructure.
 
@@ -15,8 +17,6 @@ IAPM supports multiple authentication methods. Choose the option that best fits 
 ## Microsoft Entra ID
 
 Use your existing Microsoft work or school account for single sign-on.
-
-[Login with Entra ID :material-microsoft:](https://azure.iapm.app){ .md-button .md-button--primary target="_blank" }
 
 ### Benefits
 
@@ -36,8 +36,6 @@ Use your existing Microsoft work or school account for single sign-on.
 ## Local & Social Accounts
 
 Create a dedicated IAPM account or sign in with a social provider.
-
-[Login with Local/Social :material-account:](https://my.iapm.app){ .md-button target="_blank" }
 
 ### Available Providers
 
