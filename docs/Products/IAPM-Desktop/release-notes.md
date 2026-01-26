@@ -2,7 +2,7 @@
 
 ## Version History
 
-### 1.11.0 - Upcoming { id="1.11.0" }
+### 1.10.x - Upcoming { id="1.10.x" }
 
 **Introduction:**
 
@@ -12,10 +12,13 @@ Also introduced is **experimental support for macOS**, allowing developers and a
 
 **New Features:**
 
+- **Diagnostics Room**: Immersive trace visualization environment for exploring spans and logs in 3D space with proper time-scale layouts.
+- **Quantum Console**: In-game debugging console with clickable URL links, AI command routing via `/` prefix, and improved audio playback.
 - **ProTips Guidance System**:
     - Context-aware tooltip system for user guidance.
     - ProTip manager with dynamic placement and visibility controls.
     - Configurable display settings with auto-hide functionality.
+- **Water Environment**: New swimming mechanics and water prefab for enhanced world exploration.
 
 **Improvements:**
 
@@ -23,15 +26,20 @@ Also introduced is **experimental support for macOS**, allowing developers and a
 - **AI Assistant Enhancements**:
     - Migrated from OpenAI to **Microsoft Semantic Kernel** for improved extensibility.
     - New kernel-based function architecture with input/output filters.
-    - Enhanced voice interaction with new voice profiles.
+    - Enhanced voice interaction with new voice profiles and **voice control tool**.
     - Improved chat flow and assistant hologram visualization.
     - Always-listening mode with self-listen safeguards.
+    - **Location-aware context**: AI assistant now understands which room/scene you're in and provides relevant responses.
+    - Automatic session reset when context changes for cleaner conversations.
+    - Configurable context limits for trace-heavy scenarios.
+    - Speech recognition pauses when muted to conserve API usage.
 - Initial support for **macOS (experimental)**.
 - **Teleportation System Overhaul**:
     - Avatar teleportation from trace blocks and viewport controls.
-    - Portal tunnel teleport effects.
+    - Portal tunnel teleport effects with new **tesseract warp animation**.
     - Improved teleport point placement and fixes.
     - Linked viewport controls to avatar teleports.
+    - Fixed portal teleportation causing character to fall through ground.
 - **Rendering pipeline improvements**:
     - New outline system replacing MK Glow for object highlighting.
     - Updated materials to use V2 shaders.
@@ -68,6 +76,8 @@ Also introduced is **experimental support for macOS**, allowing developers and a
 - Fixed prefab layer configurations.
 - Fixed raycast interactable issues.
 - Fixed status update synchronization.
+- Fixed Diagnostics Room time scale calculation for proper span layout.
+- Fixed Cinemachine Target Group not removing destroyed blocks.
 - Removed dead scripts, materials, and behaviors.
 
 **Known Issues:**
