@@ -13,15 +13,7 @@ Use an email address or social login (Google, GitHub) to access IAPM.
 
 ## Step 1: Create Your Account
 
-Choose your setup experience:
-
-| Option | Description | Best For |
-|--------|-------------|----------|
-| **Quick Start** | Automated setup with minimal steps | Getting started fast |
-| **Guided Setup** | Step-by-step with customization options | Fine-tuning your configuration |
-
-[Quick Start :material-rocket-launch:](https://my.iapm.app/landing/quick-start/data-flow){ .md-button .md-button--primary target="_blank" }
-[Guided Setup :material-cog:](https://my.iapm.app/landing/guided-setup/data-flow){ .md-button target="_blank" }
+[Quick Start :material-rocket-launch:](https://portal.iapm.app){ .md-button .md-button--primary target="_blank" }
 
 ## Step 2: Get Your API Key
 
@@ -31,7 +23,7 @@ After creating your account, you'll have a [grid](../../../Setup/Account/index.m
 2. Click the **Instrument** button
 3. Copy your API key
 
-[Manage Grids :material-view-grid:](https://my.iapm.app/admin/grids){ .md-button .md-button--primary target="_blank" }
+Log in at [portal.iapm.app](https://portal.iapm.app){ target="_blank" }, then go to **Administration → Grids**.
 
 ## Step 3: Instrument Your Application
 
@@ -64,5 +56,5 @@ Enter the World of Your Application® with mouse and keyboard or a VR headset.
 
 Access dashboards, alerts, and account management from any browser.
 
-[Open IAPM Web :material-web:](https://my.iapm.app/admin/grids){ .md-button .md-button--primary target="_blank" }
+[Open IAPM Web :material-web:](https://portal.iapm.app){ .md-button .md-button--primary target="_blank" }
 [Web Documentation :material-book-open:](../../../Products/IAPM-Web/index.md){ .md-button }

@@ -13,7 +13,7 @@ All you need is your **OTLP endpoint** and **API key**:
 | **Endpoint** | `https://otlp.iapm.app` |
 | **API Key Header** | `API-Key: YOUR-API-KEY` |
 
-Get your API key from the [Grids page](https://my.iapm.app/admin/grids) by clicking **Instrument** on your grid.
+Get your API key by logging in at [portal.iapm.app](https://portal.iapm.app){ target="_blank" }, then go to **Administration → Grids** and click **Instrument** on your grid.
 
 ![Instrument](../img/instrument.png)
 
@@ -151,7 +151,7 @@ Once configured, OpenTelemetry automatically captures:
 
 1. Deploy or run your instrumented application
 2. Generate some traffic (make a few requests)
-3. Open [IAPM Web](https://my.iapm.app) and select your grid
+3. Open [portal.iapm.app](https://portal.iapm.app){ target="_blank" } and select your grid
 4. Click **Enter** to see your telemetry data
 
 !!! tip "Not seeing data?"

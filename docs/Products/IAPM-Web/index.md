@@ -2,8 +2,7 @@
 
 Browser-based access to your application telemetry. No installation required - access from any device with a modern browser.
 
-[Launch IAPM Web (Entra ID) :material-microsoft:](https://azure.iapm.app){ .md-button .md-button--primary target="_blank" }
-[Launch IAPM Web (Local/Social) :material-account:](https://my.iapm.app){ .md-button target="_blank" }
+[Launch IAPM Web :material-web:](https://portal.iapm.app){ .md-button .md-button--primary target="_blank" }
 
 ## Key Capabilities
 

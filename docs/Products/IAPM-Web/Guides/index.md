@@ -6,7 +6,7 @@ Learn how to use IAPM Web effectively for monitoring, analysis, and account mana
 
 ## Quick Start
 
-1. **Log in** at [azure.iapm.app](https://azure.iapm.app){ target="_blank" } (Entra ID) or [my.iapm.app](https://my.iapm.app){ target="_blank" } (Local/Social)
+1. **Log in** at [portal.iapm.app](https://portal.iapm.app){ target="_blank" }
 2. **Select a grid** from your dashboard
 3. **Click Enter** to view your application telemetry
 
