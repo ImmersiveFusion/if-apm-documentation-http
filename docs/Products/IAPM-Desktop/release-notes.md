@@ -1,6 +1,6 @@
-# Release Notes
+# IAPM Desktop Release Notes
 
-## IAPM Desktop
+## Version History
 
 ### 1.11.0 - Upcoming { id="1.11.0" }
 

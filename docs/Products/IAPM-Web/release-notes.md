@@ -1,6 +1,6 @@
-# Release Notes
+# IAPM Web Release Notes
 
-## IAPM Web
+## Version History
 
 ### 3.71.1 <small>December 9, 2025</small> { id="3.71.1" }
 

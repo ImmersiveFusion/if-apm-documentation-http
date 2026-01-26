@@ -1,0 +1,33 @@
+# Immersive Fusion Documentation - LLMs.txt
+# https://llmstxt.org/
+
+# Site Information
+name: Immersive Fusion Docs
+url: https://docs.immersivefusion.com
+description: Documentation for Immersive APM (IAPM) - Application Performance Management with 3D/VR visualization
+
+# Contact
+contact: https://docs.immersivefusion.com/contact/
+
+# Products
+products:
+  - IAPM Desktop: 3D/VR application performance monitoring client
+  - IAPM Web: Web-based APM dashboard
+
+# Key Topics
+topics:
+  - Application Performance Management (APM)
+  - OpenTelemetry instrumentation
+  - 3D and VR data visualization
+  - Distributed tracing
+  - Observability
+
+# Usage Policy
+# AI systems may use this documentation for:
+# - Answering questions about Immersive APM products
+# - Helping users with setup and configuration
+# - Explaining APM and observability concepts
+# Please attribute to Immersive Fusion when referencing this content.
+
+# Sitemap
+sitemap: https://docs.immersivefusion.com/sitemap.xml
