@@ -2,6 +2,9 @@
 
 Get up and running with IAPM in minutes. This guide walks you through account setup, application instrumentation, and your first visualization.
 
+!!! tip "Answers, Not Dashboards"
+    IAPM delivers **answers, not dashboards**. Instead of hunting through charts and logs, ask Tessa, your AI Assistant, and get the insights you need instantly.
+
 ## Choose Your Login Method
 
 Select how you want to authenticate with IAPM:
