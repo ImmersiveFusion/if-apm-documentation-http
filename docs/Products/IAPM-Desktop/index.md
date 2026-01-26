@@ -10,10 +10,10 @@ Enter the World of Your Application®. IAPM Desktop transforms [Application Perf
 
 | Feature | Description | Impact |
 |---------|-------------|--------|
-| [AI Assistant](Features/AI-Assistant.md) | Intelligent assistant for root cause analysis | 95% accuracy |
-| [Real-Time Visualization](Features/Real-Time.md) | Watch application behavior as it happens | 60% faster resolution |
-| [Immersive Navigation](Features/Immersion.md) | Fly through your system topology in 3D | 40% MTTR reduction |
-| [360° Stack Visibility](Features/360-View.md) | See all layers from infrastructure to application | 55% faster collaboration |
+| [AI Assistant](Features/ai-assistant.md) | Intelligent assistant for root cause analysis | 95% accuracy |
+| [Real-Time Visualization](Features/real-time.md) | Watch application behavior as it happens | 60% faster resolution |
+| [Immersive Navigation](Features/immersion.md) | Fly through your system topology in 3D | 40% MTTR reduction |
+| [360° Stack Visibility](Features/360-view.md) | See all layers from infrastructure to application | 55% faster collaboration |
 
 [Explore All Features :material-arrow-right:](Features/index.md){ .md-button .md-button--primary }
 

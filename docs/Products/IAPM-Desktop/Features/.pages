@@ -1,7 +1,7 @@
 title: Features
 arrange:
     - index.md
-    - AI-Assistant.md
-    - Real-Time.md
-    - Immersion.md
-    - 360-View.md
+    - ai-assistant.md
+    - real-time.md
+    - immersion.md
+    - 360-view.md

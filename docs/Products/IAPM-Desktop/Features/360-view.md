@@ -94,6 +94,6 @@ Follow issues across layer boundaries. When a service fails, see whether it's ca
 
 ## Related
 
-- [Real-Time Visualization](Real-Time.md) - Live data across all layers
-- [Immersive Navigation](Immersion.md) - Move through the complete stack
-- [AI Assistant](AI-Assistant.md) - Get guidance that considers all layers
+- [Real-Time Visualization](real-time.md) - Live data across all layers
+- [Immersive Navigation](immersion.md) - Move through the complete stack
+- [AI Assistant](ai-assistant.md) - Get guidance that considers all layers

@@ -6,7 +6,7 @@ Welcome to the IAPM Toolkit. Here you'll find utilities and calculators to help 
 
 | Tool | Description |
 |------|-------------|
-| [Pricing Calculator](Calculator.md) | Estimate your monthly IAPM subscription costs |
+| [Pricing Calculator](calculator.md) | Estimate your monthly IAPM subscription costs |
 
 ## Coming Soon
 

@@ -73,5 +73,5 @@ The AI Assistant is available in [IAPM](../index.md) v1.10.0 and later. Simply l
 
 ## Related
 
-- [Real-Time Visualization](Real-Time.md) - See the data the AI Assistant analyzes
-- [360° Stack Visibility](360-View.md) - Understand the full context of AI Assistant suggestions
+- [Real-Time Visualization](real-time.md) - See the data the AI Assistant analyzes
+- [360° Stack Visibility](360-view.md) - Understand the full context of AI Assistant suggestions

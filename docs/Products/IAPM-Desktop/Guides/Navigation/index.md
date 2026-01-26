@@ -260,5 +260,5 @@ Custom key bindings can be configured in **Preferences** > **Controls** > **Key 
 ## Related
 
 - [Preferences](../Preferences/index.md) - Customize controls and display settings
-- [AI Assistant](../../Features/AI-Assistant.md) - Voice and chat interaction
+- [AI Assistant](../../Features/ai-assistant.md) - Voice and chat interaction
 - [VR Integrations](../../Integrations/index.md) - Headset-specific guides
