@@ -22,8 +22,8 @@ Leverage human spatial cognition to understand complex distributed systems. Rela
 |-----------|---------------|--------|
 | Tool Sprawl | Teams use **4.4 monitoring tools** on average | New Relic, 2025 |
 | Context Switching | **23 minutes** to refocus after each switch | UC Irvine |
-| Training | VR delivers **4x faster** completion vs classroom | PwC Research |
-| Skill Confidence | **275% more confidence** applying new skills | PwC Research |
+| Comprehension | **22-30%** improvement with 3D visualization | Ericsson, Academia.edu |
+| MTTR | **47%** reduction in 90 days with real-time monitoring | Paessler/PRTG |
 
 ## How It Works
 
