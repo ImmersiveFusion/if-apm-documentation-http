@@ -6,19 +6,19 @@ Immersive APM delivers a revolutionary approach to application performance manag
 
 ### [AI Assistant](ai-assistant.md)
 
-Your expert companion for application diagnostics. The AI Assistant provides intelligent explanations, root cause suggestions, and recommended actions - achieving **95% accuracy** compared to 60% for generic AI tools.
+Your expert companion for application diagnostics. The AI Assistant provides intelligent explanations, root cause suggestions, and recommended actions - achieving **95% accuracy** on IAPM-specific queries compared to 60% for generic AI tools *(internal benchmark)*.
 
 ### [Real-Time Visualization](real-time.md)
 
-See your application behavior as it happens. Watch metrics, logs, traces, and events unfold in a dynamic 3D environment - enabling **60% faster incident resolution**.
+See your application behavior as it happens. Watch metrics, logs, traces, and events unfold in a dynamic 3D environment. Real-time monitoring can reduce MTTR by **47% in 90 days** *(Paessler/PRTG)*.
 
 ### [Immersive Navigation](immersion.md)
 
-Enter the world of your application. Move through your system as if you were inside it, following data paths and service interactions with intuitive spatial navigation - reducing **MTTR by 40%**.
+Enter the world of your application. Move through your system as if you were inside it, following data paths and service interactions with intuitive spatial navigation. AI-driven observability can reduce MTTR by **up to 70%** *(Neurones IT Asia)*.
 
 ### [360° Stack Visibility](360-view.md)
 
-Complete, real-time perspective of your entire system. See how infrastructure, services, and data flows interact in one unified view - enabling **55% faster collaboration**.
+Complete, real-time perspective of your entire system. See how infrastructure, services, and data flows interact in one unified view. Teams use **4.4 monitoring tools on average** *(New Relic)* - IAPM consolidates them.
 
 ## Why These Features Matter
 
@@ -31,9 +31,9 @@ Complete, real-time perspective of your entire system. See how infrastructure, s
 
 ## Why APM Matters
 
-Industry research shows the business impact of effective APM:
+Industry research shows the business impact of effective observability:
 
-- **$5.6M** average annual savings from reduced incidents
-- **64%** of preventable downtime eliminated
-- **$9,000/minute** downtime cost avoided
-- **23%** improvement in customer satisfaction
+- **$5,600-$9,000/minute** downtime cost *(Gartner, Ponemon Institute)*
+- **243-359% ROI** from observability platforms *(Forrester TEI Studies)*
+- **87%** of teams rely on multiple unintegrated monitoring tools *(EMA)*
+- **5 weeks/year** lost to context switching between tools *(Harvard Business Review)*

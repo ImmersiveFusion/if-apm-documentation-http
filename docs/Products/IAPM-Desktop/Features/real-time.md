@@ -16,13 +16,13 @@ Unlike static dashboards with charts and graphs, data is rendered directly in th
 
 Logs, metrics, traces, and alerts are layered together in a single view. No more switching between tools or tabs - full context is always available.
 
-## Performance Impact
+## Industry Context
 
-| Metric | Improvement |
-|--------|-------------|
-| Incident Resolution | **60% faster** |
-| Anomaly Detection | Real-time vs. minutes delay |
-| Context Switching | **Eliminated** |
+| Challenge | Industry Stat | Source |
+|-----------|---------------|--------|
+| MTTR Reduction | **47%** in 90 days with real-time monitoring | Paessler/PRTG |
+| False Positives | **50-80% fewer** with real-time AI | Rootly |
+| Breach Detection | **194 days** average to identify a breach | IBM 2024 |
 
 ## Benefits
 
@@ -61,11 +61,11 @@ Monitor the impact of optimizations as they happen. See latency improvements, th
 
 ## Business Value
 
-Organizations experience substantial benefits from real-time visibility:
+Industry research on the cost of delayed detection:
 
-- Enterprises lose **$5.6M annually** to application incidents
-- **64%** of downtime is preventable with real-time detection
-- Each minute of downtime costs approximately **$9,000** in lost revenue
+- Downtime costs **$5,600-$9,000 per minute** *(Gartner, Ponemon Institute)*
+- **1-second page delay** reduces conversion by up to **20%** *(SmartBear)*
+- **1 in 5 attacks** exfiltrate data within the first hour *(Palo Alto Unit 42)*
 
 ## Related
 

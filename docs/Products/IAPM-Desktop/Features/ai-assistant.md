@@ -24,11 +24,11 @@ Recommendations adapt based on your role and the specific technologies in your e
 
 ## Performance
 
-| Metric | AI Assistant | Generic AI Tools |
-|--------|------------|------------------|
-| Accuracy | **95%** | 60% |
-| Resolution Speed | **10x faster** | Baseline |
-| Training Required | Minimal | Extensive |
+| Metric | AI Assistant | Generic AI Tools | Source |
+|--------|------------|------------------|--------|
+| Accuracy | **95%** | 60% | Internal benchmark (Tessa vs GPT-4) |
+| Junior Productivity | **35-39% gains** | Baseline | Microsoft/Accenture Study |
+| Training Required | Minimal | Extensive | - |
 
 ## Benefits by Role
 
@@ -36,19 +36,19 @@ Recommendations adapt based on your role and the specific technologies in your e
 
 - **Democratize system knowledge** - Junior developers gain senior-level understanding through guided assistance
 - **Faster deployments** - Validate application stability with AI-assisted analysis
-- **Reduced rollbacks** - 80% reduction in rollback incidents
+- **Reduced cognitive load** - Platform engineering reduces developer cognitive load by **40-50%** *(Platform Engineering Research)*
 
 ### For SRE Teams
 
-- **Proactive failure detection** - Prevent up to 80% of potential outages
+- **Reduce alert fatigue** - **62%** say alert fatigue drives employee turnover *(Zenduty)*
 - **Faster incident resolution** - AI-guided root cause analysis
-- **Reduced cognitive load** - Single source of intelligent guidance
+- **Target sub-hour MTTR** - Immature teams exceed **72-hour MTTR** *(CMMI Framework)*
 
 ### For Support Teams
 
 - **Minimal training required** - Instinctive troubleshooting from day one
-- **Higher first-call resolution** - 75% improvement in first-call resolution
-- **Faster productivity** - 70% faster ramp-up for new hires
+- **AI-assisted resolution** - **40% faster** resolution with AI IT support *(Technijian)*
+- **First-call resolution** - **90%** achievable with AI assistance *(Microsoft)*
 
 ## How It Works
 
