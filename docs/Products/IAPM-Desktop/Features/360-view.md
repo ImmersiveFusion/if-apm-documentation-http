@@ -16,13 +16,14 @@ Trace issues across layers - from a failing service to the underlying infrastruc
 
 Logs, metrics, traces, and events are layered together in a single immersive view. Every data type is accessible in context, right where you need it.
 
-## Performance Impact
+## Industry Context
 
-| Metric | Improvement |
-|--------|-------------|
-| Collaboration Speed | **55% faster** |
-| Incident Response | **70% quicker** |
-| Cross-Team Alignment | Unified view |
+| Challenge | Industry Stat | Source |
+|-----------|---------------|--------|
+| Tool Sprawl | **87%** rely on multiple unintegrated tools | EMA |
+| Monitoring Tools | Teams use **4.4 tools** on average | New Relic, 2025 |
+| Context Switching | **5 weeks/year** lost switching between tools | Harvard Business Review |
+| Outage Cost | **20-40%** spent just identifying impact | Ponemon Institute |
 
 ## What You Can See
 

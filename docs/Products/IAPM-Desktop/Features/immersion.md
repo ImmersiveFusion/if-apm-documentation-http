@@ -16,13 +16,14 @@ Follow data paths, service interactions, and infrastructure impact with intuitiv
 
 Leverage human spatial cognition to understand complex distributed systems. Relationships between services become physical distances you can traverse.
 
-## Performance Impact
+## Industry Context
 
-| Metric | Improvement |
-|--------|-------------|
-| Incident Resolution | **60% faster** |
-| Mean Time To Resolution | **40% reduction** |
-| Training Time | Significantly reduced |
+| Challenge | Industry Stat | Source |
+|-----------|---------------|--------|
+| Tool Sprawl | Teams use **4.4 monitoring tools** on average | New Relic, 2025 |
+| Context Switching | **23 minutes** to refocus after each switch | UC Irvine |
+| Training | VR delivers **4x faster** completion vs classroom | PwC Research |
+| Skill Confidence | **275% more confidence** applying new skills | PwC Research |
 
 ## How It Works
 
