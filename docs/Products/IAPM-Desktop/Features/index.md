@@ -4,19 +4,19 @@ Immersive APM delivers a revolutionary approach to application performance manag
 
 ## Core Features
 
-### [AI Assistant](AI-Assistant.md)
+### [AI Assistant](ai-assistant.md)
 
 Your expert companion for application diagnostics. The AI Assistant provides intelligent explanations, root cause suggestions, and recommended actions - achieving **95% accuracy** compared to 60% for generic AI tools.
 
-### [Real-Time Visualization](Real-Time.md)
+### [Real-Time Visualization](real-time.md)
 
 See your application behavior as it happens. Watch metrics, logs, traces, and events unfold in a dynamic 3D environment - enabling **60% faster incident resolution**.
 
-### [Immersive Navigation](Immersion.md)
+### [Immersive Navigation](immersion.md)
 
 Enter the world of your application. Move through your system as if you were inside it, following data paths and service interactions with intuitive spatial navigation - reducing **MTTR by 40%**.
 
-### [360° Stack Visibility](360-View.md)
+### [360° Stack Visibility](360-view.md)
 
 Complete, real-time perspective of your entire system. See how infrastructure, services, and data flows interact in one unified view - enabling **55% faster collaboration**.
 

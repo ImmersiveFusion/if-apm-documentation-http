@@ -1,6 +1,6 @@
 # AI Assistant
 
-> **Answers, Not Dashboards** - Stop hunting through charts and logs. Ask Tessa, your AI Assistant, and get answers.
+> **The Next Dimension of Observability** - Stop hunting through charts and logs. Ask Tessa, your AI Assistant, and get answers.
 
 The AI Assistant is your expert companion for application diagnostics, providing intelligent guidance throughout your troubleshooting journey. Unlike generic AI tools, the AI Assistant is purpose-built for APM with deep integration into your live system data.
 
@@ -73,5 +73,5 @@ The AI Assistant is available in [IAPM](../index.md) v1.10.0 and later. Simply l
 
 ## Related
 
-- [Real-Time Visualization](Real-Time.md) - See the data the AI Assistant analyzes
-- [360° Stack Visibility](360-View.md) - Understand the full context of AI Assistant suggestions
+- [Real-Time Visualization](real-time.md) - See the data the AI Assistant analyzes
+- [360° Stack Visibility](360-view.md) - Understand the full context of AI Assistant suggestions

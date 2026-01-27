@@ -89,6 +89,6 @@ New team members can explore the production environment safely, building mental 
 
 ## Related
 
-- [Real-Time Visualization](Real-Time.md) - The live data you'll navigate through
-- [360° Stack Visibility](360-View.md) - See all system layers as you move
-- [AI Assistant](AI-Assistant.md) - Get guidance as you explore
+- [Real-Time Visualization](real-time.md) - The live data you'll navigate through
+- [360° Stack Visibility](360-view.md) - See all system layers as you move
+- [AI Assistant](ai-assistant.md) - Get guidance as you explore
