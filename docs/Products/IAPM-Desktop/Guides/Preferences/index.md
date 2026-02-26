@@ -37,8 +37,8 @@ Access preferences by pressing `F10` → **Main Menu** → **Preferences**. Cust
 
 ### Mouse Navigation
 
-- **Both mouse buttons held** — Move forward
-- **Right mouse button + move** — Pan camera
+- **Both mouse buttons held** - Move forward
+- **Right mouse button + move** - Pan camera
 
 ### Key Bindings
 

@@ -2,6 +2,49 @@
 
 ## Version History
 
+### 3.90.0 <small>February 25, 2026</small> { id="3.90.0" }
+
+**Introduction:**
+
+This release introduces the AI Assistant with real-time chat, an invitation and permission system for team collaboration, a token and energy system for usage management, and Personal Access Token support.
+
+**New Features:**
+
+- **AI Assistant Chat**: Integrated AI assistant with streaming server-sent events, thinking channels, and client tool calling.
+- **Energy System**: Token and energy management with a 3-state model, energy bar UI with game mechanics, and 150K free-tier token limit per 6-hour window. Origin-level users receive unlimited energy.
+- **Invitation System**: Magic-link invitation flow with role descriptions and a new guest role for external collaborators.
+- **Permission System**: Role-based permission management with owner authorization guards on tenant, subscription, and grid API key actions.
+- **Personal Access Tokens**: PAT creation and rotation with scope validation, expiration enforcement, and a 30-day limit for non-Origin users.
+- **Achievements**: Achievement badges with Coming Soon ribbons and a completed filter.
+- **GitHub Login**: GitHub is now available as a login option in the Portal.
+- **Welcome Email**: Automated welcome email on first login with embedded HTML templates.
+- **Demo Grid Selector**: Quick-access demo grid dropdown, with internal global grids hidden from the list.
+- **Grid Templates**: Subscription-based AI limits via grid templates for tiered usage control.
+- **Speech Proxy**: Text-to-speech proxy with WAV output for Unity client compatibility.
+
+**Improvements:**
+
+- **API v2.0**: Default API version is now v2.0; all legacy V1 controllers have been removed.
+- **.NET 10 Upgrade**: Backend upgraded from .NET 9 to .NET 10.
+- **AI Model Ladder**: Tier-aware model routing with automatic fallback on exhaustion and vision modality support.
+- **Response Channels**: Structured assistant output with separate thinking, spoken, and written channels.
+- **Public Grid Access**: Guest access on public grids with streamlined authorization.
+- **Rate Limiting**: Server-side rate limiting for API endpoints.
+- Improved OpenAPI spec with proper nullable `$ref` support.
+- Grid delete now uses deferred cleanup for safer removal.
+- Simplified AI Model and Speech entity management by removing redundant Name fields.
+- Lightweight token introspect endpoint for faster authorization checks.
+
+**Bug Fixes:**
+
+- Fixed default role in invitation creation from "member" to "user".
+- Fixed grid-to-free-tier fallback and personal energy on the `/me` endpoint.
+- Fixed SPA build errors from enum-to-string migration in assistant status.
+- Fixed null handling for invalid or missing API keys.
+- Fixed `.gitignore` corruption for the `.angular` directory.
+
+---
+
 ### 3.82.0 <small>January 25, 2026</small> { id="3.82.0" }
 
 **Introduction:**

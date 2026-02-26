@@ -11,7 +11,7 @@ IAPM uses **per-node pricing**. A node is any monitored application instance sen
 | Feature | Start | Visualize | Analyze | Fuse |
 |---------|:-----:|:---------:|:-------:|:----:|
 | **Price** | Free | $20/node/mo | $45/node/mo | $60/node/mo |
-| **Node Minimum** | — | 1 | 25 | 50 |
+| **Node Minimum** | - | 1 | 25 | 50 |
 | **Infrastructure** | Shared | Shared | Dedicated | Dedicated |
 | **Visualization** | | | | |
 | IAPM Web | :material-check: | :material-check: | :material-check: | :material-check: |
@@ -20,7 +20,7 @@ IAPM uses **per-node pricing**. A node is any monitored application instance sen
 | **Data Retention** | None | None | 15+ days | 30+ days |
 | **AI (Tessa)** | Limited | Limited | Standard | Premium |
 | **Support** | Discord | Chat/Email | Chat/Email/Phone | Chat/Email/Phone |
-| **Uptime SLA** | — | 99% | 99.9% | 99.99% |
+| **Uptime SLA** | - | 99% | 99.9% | 99.99% |
 | **Dedicated Success Rep** | :material-close: | :material-close: | :material-check: | :material-check: |
 | **Professional Consulting** | :material-close: | :material-close: | :material-check: | :material-check: |
 | **Early Access Features** | :material-close: | :material-close: | :material-close: | :material-check: |

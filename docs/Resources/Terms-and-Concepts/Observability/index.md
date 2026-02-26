@@ -1,6 +1,6 @@
 # Observability
 
-Observability is the ability to understand a system's internal state by examining its external outputs. Unlike traditional monitoring that tells you *when* something is wrong, observability helps you understand *why* it's wrong—even for problems you've never seen before.
+Observability is the ability to understand a system's internal state by examining its external outputs. Unlike traditional monitoring that tells you *when* something is wrong, observability helps you understand *why* it's wrong-even for problems you've never seen before.
 
 ## The Three Pillars
 

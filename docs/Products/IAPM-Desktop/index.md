@@ -8,12 +8,12 @@ Enter the World of Your Application®. IAPM Desktop transforms [Application Perf
 
 ## Key Features
 
-| Feature | Description | Impact |
-|---------|-------------|--------|
-| [AI Assistant](Features/ai-assistant.md) | Intelligent assistant for root cause analysis | 95% accuracy |
-| [Real-Time Visualization](Features/real-time.md) | Watch application behavior as it happens | 60% faster resolution |
-| [Immersive Navigation](Features/immersion.md) | Fly through your system topology in 3D | 40% MTTR reduction |
-| [360° Stack Visibility](Features/360-view.md) | See all layers from infrastructure to application | 55% faster collaboration |
+| Feature | Description |
+|---------|-------------|
+| [AI Assistant](Features/ai-assistant.md) | Chat and voice-driven root cause analysis with Tessa |
+| [Real-Time Visualization](Features/real-time.md) | Watch application behavior as it happens in 3D |
+| [Immersive Navigation](Features/immersion.md) | Fly through your system topology and teleport between services |
+| [360° Stack Visibility](Features/360-view.md) | See all layers from infrastructure to application in one space |
 
 [Explore All Features :material-arrow-right:](Features/index.md){ .md-button .md-button--primary }
 
@@ -24,7 +24,7 @@ Enter the World of Your Application®. IAPM Desktop transforms [Application Perf
 | Interface | Multiple dashboards | Unified 3D environment |
 | Root cause analysis | Manual log correlation | AI-guided diagnostics |
 | Query complexity | Complex DSL required | Visual, intuitive exploration |
-| Time to resolution | Minutes | Seconds with AI |
+| Time to resolution | Manual log correlation | AI-assisted with spatial context |
 | Team collaboration | Siloed views | Shared immersive space |
 
 ## Getting Started
@@ -43,7 +43,7 @@ IAPM Desktop works great with mouse and keyboard. For full immersion, connect a 
 | Headset | Status | Guide |
 |---------|--------|-------|
 | Meta Quest | Supported | [Setup Guide](Integrations/Meta-Quest/index.md) |
-| HTC Vive | Coming soon | — |
+| HTC Vive | Coming soon | - |
 
 ## Video Resources
 
