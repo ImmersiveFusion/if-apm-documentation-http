@@ -12,113 +12,42 @@ Also introduced is **experimental support for macOS**, allowing developers and a
 
 **New Features:**
 
+- **AI Assistant (Tessa)**: Chat and voice-driven assistant for root cause analysis, performance exploration, and guided troubleshooting using natural language.
+    - Streaming speech with smart chunking and audio prefetching.
+    - Natural conversation flow with hybrid turn detection.
+    - `/mute`, `/unmute`, and `/listen` voice toggle commands.
+    - Press Escape to interrupt speech without losing your prompt queue.
+    - Location-aware context - Tessa knows which room you're in and adapts her responses.
+    - Session persistence - chat history is saved and restored across sessions.
+    - Built-in help section for onboarding new users.
 - **Diagnostics Room**: Immersive trace visualization environment for exploring spans and logs in 3D space with proper time-scale layouts.
-    - Enhanced span visualization with backlight effects.
-- **Quantum Console**: In-game debugging console with clickable URL links, AI command routing via `/` prefix, and improved audio playback.
-    - Updated console fonts and theme.
-    - Markdown text rendering support in console output.
-- **ProTips Guidance System**:
-    - Context-aware tooltip system for user guidance.
-    - ProTip manager with dynamic placement and visibility controls.
-    - Configurable display settings with auto-hide functionality.
-- **Water Environment**: New swimming mechanics and water prefab for enhanced world exploration.
-- **Grid Picker Redesign**: New card-based grid selection UI replacing the previous two-dropdown flow for a more intuitive space entry experience.
+- **Energy System**: Energy bar showing AI assistant usage with tier-aware capability levels.
+- **Grid Picker Redesign**: Card-based grid selection UI replacing the previous two-dropdown flow.
     - Demo grid support for exploring the product without live data.
-- **WhereAmI Wayfinding Display**: On-screen indicator showing your current room and location within the 3D world.
-- **Energy System**: Client-side energy metering with tier-aware model selection, providing visibility into AI assistant usage and resource consumption.
+- **ProTips Guidance System**: Context-aware tooltips with auto-hide and configurable display settings.
+- **WhereAmI Wayfinding Display**: On-screen indicator showing your current room and location.
+- **Water Environment**: Swimming mechanics for enhanced world exploration.
 
 **Improvements:**
 
-- Introduced **Immersive APM AI Assistant** with GPT integration for chat and voice-based data exploration.
-- **AI Assistant Enhancements**:
-    - Migrated from OpenAI to **Microsoft Semantic Kernel** for improved extensibility.
-    - Refactored chat architecture to use **SDK AssistantClient** for cleaner integration.
-    - New kernel-based function architecture with input/output filters.
-    - **Response channels**: Structured output with separate thinking, spoken, and written channels for richer interaction feedback.
-    - **Multi-agent orchestration** infrastructure with token usage tracking across sub-agents.
-    - **Hats system**: Switchable assistant modes (e.g., Researcher, System Architect) that filter available tools to match the task at hand.
-    - Enhanced voice interaction with new voice profiles and **voice control tool**.
-    - **Streaming speech synthesis** with smart text chunking and audio prefetching for smoother voice output.
-    - **Natural conversation flow** with hybrid turn detection for more human-like dialogue pacing.
-    - **Speech interrupt**: Press Escape to interrupt speech playback without losing your prompt queue.
-    - `/mute`, `/unmute`, and `/listen` voice toggle commands for quick audio control.
-    - Improved chat flow and assistant hologram visualization.
-    - Always-listening mode with self-listen safeguards.
-    - **Location-aware context**: AI assistant now understands which room/scene you're in and provides relevant responses.
-    - Proximity-based context providers for the Research Room, Security Room, and Hall of Supporters.
-    - Automatic session reset when context changes for cleaner conversations.
-    - **Session persistence**: Chat messages are saved immediately and can be restored across sessions.
-    - Configurable context limits for trace-heavy scenarios.
-    - Speech recognition pauses when muted to conserve API usage.
-    - **Token optimization**: Stripped redundant tool definitions from streaming requests, saving ~18K tokens per conversation turn.
-    - Graceful handling of energy exhaustion (403) errors, distinct from authentication failures.
-    - **AI Assistant help section** with Tessa guide for onboarding new users.
-    - Replaced Bing Search with **DuckDuckGo** for assistant web search queries.
-    - User-friendly error messages via AssistantException for clearer API error reporting.
 - Initial support for **macOS (experimental)**.
-- **Teleportation System Overhaul**:
-    - Avatar teleportation from trace blocks and viewport controls.
-    - Portal tunnel teleport effects with new **tesseract warp animation**.
-    - Improved teleport point placement and fixes.
-    - Linked viewport controls to avatar teleports.
-    - Fixed portal teleportation causing character to fall through ground.
-- **Rendering pipeline improvements**:
-    - New outline system replacing MK Glow for object highlighting.
-    - Updated materials to use V2 shaders.
-    - Enhanced **real-time traffic visualization** on performance graphs.
-    - Improved **photo rendering fidelity** for embedded media and scene textures.
-    - Updated **quality settings** for better scalability across device profiles.
-    - Improved layer culling between cameras.
-    - Enhanced overhead camera with adjustable height and input handling.
-- **Platform & Engine Updates**:
-    - Upgraded to **Unity 6000.3.8f1**.
-    - Improved macOS build pipeline.
-    - Removed Photon Fusion networking dependencies.
-    - Removed `com.unity.visualscripting` package.
-    - Extensive assembly breakdown and namespace reorganization.
-    - Switched bus tunnel from SSE to **WebSocket** for improved real-time connectivity.
-- **Unified Logging**: Migrated to **Serilog** file sink, replacing scattered Unity console and assistant file loggers with a single configurable logging pipeline.
-- Replaced LiteDB with **in-memory storage** for diagnostic messages, reducing disk I/O overhead.
-- Added **version reporter** that logs the application version on startup for easier troubleshooting.
-- Added additional **code signing for authentication DLLs** to improve security and integrity validation during deployment.
-- **Authentication & Connectivity**:
-    - JWT and related connection fixes for improved reliability.
-    - Enhanced resilience in connection handling.
-    - Connection failure dialog improvements with clearer error messaging.
-- **UI/UX Improvements**:
-    - Quantum Console integration for debugging.
-    - Improved growl notifications with conditional logging.
-    - Dynamic highlighter property support.
-    - Idle indicator for system status.
-    - UI size and accuracy improvements.
-    - Improved grid card selection visibility.
-- Fixed crouching animation.
-- Added an overhead camera that zooms in the view and removes the avatar from view.
-- Various package updates for Unity game engine.
+- **Teleportation overhaul**: Teleport from trace blocks and viewport controls, portal tunnel effects with tesseract warp animation.
+- Enhanced real-time traffic visualization on performance graphs.
+- Improved rendering quality and scalability across device profiles.
+- Overhead camera with adjustable height for top-down views.
+- Upgraded to **Unity 6000.3.8f1**.
+- Improved connection reliability and clearer error messaging on connection failures.
+- Additional code signing for authentication DLLs.
 
 **Bug Fixes:**
 
-- Fixed multiple serialization issues.
-- Fixed singleton initialization timing (moved to Start from Awake).
-- Fixed missing layer assignments.
-- Fixed prefab layer configurations.
-- Fixed raycast interactable issues.
-- Fixed status update synchronization.
 - Fixed Diagnostics Room time scale calculation for proper span layout.
-- Fixed Cinemachine Target Group not removing destroyed blocks.
 - Fixed avatar getting stuck swimming after teleporting out of the Diagnostics Room.
-- Fixed context mashing when navigating between rooms.
-- Fixed WAV decoder UTF-8 crash when validating TTS audio responses.
-- Fixed tesseract first-frame flicker by projecting geometry at initialization.
+- Fixed portal teleportation causing character to fall through ground.
 - Fixed grid connection and initialization bugs.
-- Fixed singleton cache returning destroyed Unity components.
-- Fixed MissingReferenceException in trace and log diagnostics managers.
-- Fixed space instance entry to use correct GetSpaces API.
-- Fixed prompt queue stalling after speech interruption.
-- Fixed double-interrupt causing zombie ProcessAsync and duplicate tool loops.
-- Fixed AI tool time-range queries by converting DateTimeOffset to UTC before API calls.
-- Fixed null prompt serialization error in tool loop chat requests.
-- Removed dead scripts, materials, and behaviors.
+- Fixed context switching when navigating between rooms.
+- Fixed speech interruption causing stalled prompt queue.
+- Fixed crouching animation.
 
 **Known Issues:**
 
