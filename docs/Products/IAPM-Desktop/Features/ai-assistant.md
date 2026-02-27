@@ -22,33 +22,25 @@ Get specific, tailored resolution steps based on your situation. The AI Assistan
 
 Recommendations adapt based on your role and the specific technologies in your environment, ensuring relevant and actionable advice.
 
-## Performance
-
-| Metric | AI Assistant | Generic AI Tools | Source |
-|--------|------------|------------------|--------|
-| Accuracy | **95%** | 60% | Internal benchmark (Tessa vs GPT-4) |
-| Junior Productivity | **35-39% gains** | Baseline | Microsoft/Accenture Study |
-| Training Required | Minimal | Extensive | - |
-
 ## Benefits by Role
 
 ### For DevOps Teams
 
 - **Democratize system knowledge** - Junior developers gain senior-level understanding through guided assistance
 - **Faster deployments** - Validate application stability with AI-assisted analysis
-- **Reduced cognitive load** - Platform engineering reduces developer cognitive load by **40-50%** *(Platform Engineering Research)*
+- **Reduced cognitive load** - One environment instead of juggling multiple monitoring tools
 
 ### For SRE Teams
 
-- **Reduce alert fatigue** - **62%** say alert fatigue drives employee turnover *(Zenduty)*
-- **Faster incident resolution** - AI-guided root cause analysis
-- **Target sub-hour MTTR** - Immature teams exceed **72-hour MTTR** *(CMMI Framework)*
+- **Reduce alert fatigue** - AI-guided root cause analysis surfaces what matters
+- **Faster incident resolution** - Spatial context and live data accelerate diagnosis
+- **Shared understanding** - Teams see the same environment during incidents
 
 ### For Support Teams
 
 - **Minimal training required** - Instinctive troubleshooting from day one
-- **AI-assisted resolution** - **40% faster** resolution with AI IT support *(Technijian)*
-- **First-call resolution** - **90%** achievable with AI assistance *(Microsoft)*
+- **AI-assisted resolution** - Ask Tessa instead of learning complex query languages
+- **First-call resolution** - Full context available from the start of every investigation
 
 ## How It Works
 

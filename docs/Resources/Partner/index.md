@@ -40,7 +40,7 @@ Partners and early adopters are catalysts for IAPM's growth:
 - **Co-Innovation** - Collaborative development that addresses specific industry pain points
 
 !!! quote "Our Philosophy"
-    By valuing early adopters and partners with recognition, influence, and mutual growth, Immersive Fusion transforms them into evangelists. Their contributions don't just fuel the platform—they spark a movement, positioning 3D/VR APM as the future of industry.
+    By valuing early adopters and partners with recognition, influence, and mutual growth, Immersive Fusion transforms them into evangelists. Their contributions don't just fuel the platform-they spark a movement, positioning 3D/VR APM as the future of industry.
 
 ## Get Started
 

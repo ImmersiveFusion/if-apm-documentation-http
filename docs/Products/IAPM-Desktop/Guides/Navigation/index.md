@@ -39,14 +39,14 @@ Master the controls to move through your application's 3D environment efficientl
 | Select | Left-click | Interact with world object | |
 | Context Menu | Right-click | Show available actions | :material-clock: |
 | Deselect | `Escape` | Clear current selection | |
-| Follow Trace | — | Animate along the request path | :material-clock: |
+| Follow Trace | - | Animate along the request path | :material-clock: |
 
 ### UI & Panels
 
 | Action | Keys | Description | Status |
 |--------|------|-------------|--------|
 | Toggle AI Assistant | `C` | Open/close the AI assistant panel | :material-clock: |
-| Toggle Metrics | — | Show/hide metrics overlay | :material-lock: |
+| Toggle Metrics | - | Show/hide metrics overlay | :material-lock: |
 | Toggle Logs | `L` | Show/hide log panel | :material-clock: |
 | Toggle Traces | `T` | Show/hide trace details | :material-clock: |
 | Toggle Grid View | `M` | Switch to grid layout | |

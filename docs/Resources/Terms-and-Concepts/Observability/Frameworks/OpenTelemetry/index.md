@@ -8,7 +8,7 @@
 
 | Benefit | Description |
 |---------|-------------|
-| **Vendor Neutral** | No lock-in—switch backends without changing instrumentation |
+| **Vendor Neutral** | No lock-in-switch backends without changing instrumentation |
 | **Comprehensive** | Single framework for traces, metrics, and logs |
 | **Industry Backed** | CNCF project with support from major cloud providers |
 | **Active Ecosystem** | Rich library of auto-instrumentation for popular frameworks |

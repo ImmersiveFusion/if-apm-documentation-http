@@ -2,7 +2,7 @@
 
 {!template/subscription-required.mdp!}
 
-Instrumentation is the process of adding code to your application to generate telemetry data—traces, metrics, and logs. This data provides visibility into how your application behaves in production.
+Instrumentation is the process of adding code to your application to generate telemetry data-traces, metrics, and logs. This data provides visibility into how your application behaves in production.
 
 ## How Instrumentation Works
 
