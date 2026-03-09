@@ -259,13 +259,11 @@ markdown_extensions:
   - markdown_include.include:
       base_path: docs
 
-extra_javascript:
+extra_javascript: []
   #- https://static.zdassets.com/ekr/snippet.js?key=b33c5a1c-bfe2-432b-84ae-613f7eb1d2b6
-  - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js
-  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js  
-  - js/config.js
+  # Removed: require.js 2.3.6 (CVE-2024-38999, CVSS 10.0) and highlight.js 10.1.1 (2 CVEs)
+  # Both were vestigial - pymdownx.highlight handles syntax highlighting server-side via Pygments
 extra_css:
-  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css
   - css/extra.css
 # # Page tree
 # nav:
