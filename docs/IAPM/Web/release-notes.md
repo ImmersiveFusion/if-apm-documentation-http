@@ -2,6 +2,62 @@
 
 ## Version History
 
+### 3.131.0 <small>April 2, 2026</small> { id="3.131.0" }
+
+**Introduction:**
+
+This release adds composite diagnostics endpoints for intent-driven AI queries, enabling Tessa to fetch correlated performance data in a single call. The energy dashboard has been redesigned with per-grid energy visibility and tier breakdowns, and the pricing page now reflects current subscription features.
+
+**New Features:**
+
+- **Composite Diagnostics**: Server-side alert summary and intent-driven diagnostic endpoints for richer AI-assisted troubleshooting.
+- **Energy Dashboard Redesign**: Per-grid energy visibility, source labels, tier breakdown on usage page, and origin dashboard.
+- **Vision/Image Support**: Image input support for the Chat API, allowing Tessa to analyze screenshots and visual content.
+
+**Improvements:**
+
+- Upgraded to **.NET 10**.
+- Updated pricing page features to match current database values.
+- Added tenant AI usage dashboard with per-tenant energy tracking.
+- Trace-level OperationStage aggregation for improved trace summaries.
+
+**Bug Fixes:**
+
+- Fixed OperationStage mapping to read Stage directly from ADX instead of re-mapping StatusCode.
+- Fixed OTEL StatusCode 0 (Unset) mapping to Processed.
+- Fixed energy fallback calculations on first of month.
+
+---
+
+### 3.110.0 <small>March 17, 2026</small> { id="3.110.0" }
+
+**Introduction:**
+
+This release completes the migration from SQL and Azure Search to Azure Data Explorer (ADX) for all short-term telemetry storage, delivering faster queries and simplified architecture. The application terminology has been updated to align with OpenTelemetry standards throughout.
+
+**New Features:**
+
+- **ADX Storage Migration**: All trace and log storage migrated from SQL/Azure Search to ADX, with new filter and facet support.
+- **Secure Proxy Gateway**: Server-side proxy for AI chat and speech, with Personal Access Token security and instance management.
+- **Perpetual Testing**: Automated test enforcement with mutation testing (Stryker), secret scanning (Gitleaks), and SAST (Semgrep) on all pull requests.
+
+**Improvements:**
+
+- Renamed view models and SPA to OpenTelemetry terminology throughout.
+- Removed deprecated search storage from database schema and admin UI.
+- Health check standardization across all services.
+- Upgraded Ingestion SDK to v8.0.0.
+- Removed credential-bearing models from instance endpoints for improved security.
+- Dropped all V1 API controllers, defaulting to API v2.0.
+
+**Bug Fixes:**
+
+- Fixed orphaned grid template syntax from search storage removal.
+- Fixed ghost span filtering in OTEL StatusCode mapping.
+- Removed unused GridName from query results to reduce payload size.
+
+---
+
 ### 3.90.0 <small>February 25, 2026</small> { id="3.90.0" }
 
 **Introduction:**
@@ -96,6 +152,40 @@ This release delivers a major dashboard overhaul, Angular 21 upgrade, and signif
 **Known Issues:**
 
 - None identified in this release.
+
+### 3.60.0 <small>May 21, 2025</small> { id="3.60.0" }
+
+**Introduction:**
+
+This release upgrades the frontend to Angular 20 with OpenTelemetry browser instrumentation, adds promo code support for billing, and improves the landing page login flow.
+
+**Improvements:**
+
+- Upgraded to **Angular 20**.
+- Added OpenTelemetry browser instrumentation.
+- Improved landing page login flow with better authentication handling.
+- Added promo code and coupon support for billing.
+- Orchestration pool optimizations for improved performance.
+
+**Bug Fixes:**
+
+- Fixed credit card expiration validation for cards expiring in the current month.
+- Fixed API request URL handling for SDK operations.
+
+---
+
+### 3.44.0 <small>December 28, 2024</small> { id="3.44.0" }
+
+**Introduction:**
+
+This release upgrades the backend to .NET 9.0 and resolves globalization issues in containerized environments.
+
+**Improvements:**
+
+- Upgraded to **.NET 9.0**.
+- Fixed globalization support in Alpine-based Docker containers.
+
+---
 
 ### 3.34.1 <small>September 16, 2024</small> { id="3.34.1" }
 

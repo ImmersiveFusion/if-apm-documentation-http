@@ -2,13 +2,90 @@
 
 ## Version History
 
-### 1.10.x - Upcoming { id="1.10.x" }
+### 1.12.0 <small>April 3, 2026</small> { id="1.12.0" }
 
 **Introduction:**
 
-This release marks a major milestone for Immersive APM with the debut of the **AI Assistant**, our first integrated GPT-powered assistant. Users can now interact with their telemetry data using **natural language**, via **chat or voice**, to explore performance metrics, investigate anomalies, and generate insights without writing a single query.
+This release brings the Skills system to the 3D client, enabling extensible AI capabilities, along with multimodal vision support that lets users paste screenshots directly into prompts. It also achieves client parity with IAPM Studio for memory, orchestration, and context preservation.
 
-Also introduced is **experimental support for macOS**, allowing developers and analysts on Apple Silicon devices to begin testing Immersive APM in native environments. While not yet feature-complete, this lays the groundwork for full cross-platform parity in future releases.
+**New Features:**
+
+- **Skills System**: Extensible skill agent registry with catalog injection, enabling modular AI capabilities.
+- **Multimodal Vision**: Paste screenshots with Ctrl+V for visual prompts, allowing Tessa to analyze images alongside text.
+- **Composite Diagnostics Tools**: New diagnostic and competitive analysis tools for Tessa, providing richer troubleshooting insights.
+
+**Improvements:**
+
+- Client parity with IAPM Studio: Memory.Local, Orchestration, and Context Preservation support.
+- Migrated filter system from legacy messages to ADX DTOs.
+- Added unit tests for all 28 assistant tools.
+- Updated IF.Assistant to 1.17.0.
+- Migrated to shared CI pipeline templates for Semgrep, Stryker, and Gitleaks.
+
+### 1.11.0 <small>March 21, 2026</small> { id="1.11.0" }
+
+**Introduction:**
+
+This release completes the migration to an OpenTelemetry-native data model, replacing legacy TraceMessage and LogMessage types with standard Span and Log representations throughout the visualization pipeline. The service graph receives further refinements with warming periods and improved placement algorithms.
+
+**New Features:**
+
+- **OpenTelemetry-Native Pipeline**: Full migration to OTEL proto consumption with Span/Log DTOs across all 33+ visualization files.
+
+**Improvements:**
+
+- Service graph: warming period with batch cascade graduation for smoother facility placement.
+- Typed enrichment generics and live stage label updates on blocks.
+- Assistant tools aligned to latest API with ToolBase and rich LLM descriptions.
+- Improved tooltip providers and enrichment controls.
+- Authorization guard for grid access.
+
+**Bug Fixes:**
+
+- Fixed trace blocks stopping after ADX migration due to stage mapping issues.
+- Fixed service graph node physics settling and position release.
+- Fixed null TraceId warnings downgraded to debug level.
+
+### 1.10.0 <small>January 25, 2026</small> { id="1.10.0" }
+
+**Introduction:**
+
+This release introduces the live force-directed service graph, a real-time 3D visualization of service dependencies with physics-based layout and animated traffic pulses. Major performance improvements resolve block rendering bottlenecks, and the AI chat system adopts a secure backend proxy architecture.
+
+**New Features:**
+
+- **Live Service Graph**: Force-directed 3D graph with edge congestion visuals, error pulse coloring, and physics-based node settling.
+- **Tracegen Demo Tool**: Built-in telemetry generator with 20 services and 15 scenarios for exploring the product without live data.
+- **Energy System UI**: Energy bar with tier-aware capability gating and experience state display.
+
+**Improvements:**
+
+- Adopted secure backend proxy for AI chat, replacing direct API calls.
+- Replaced browser-based authentication with direct library integration.
+- WebSocket bus tunnel for improved real-time communication.
+- Speech interrupt with Escape key without losing the prompt queue.
+- Unified logging with Serilog file sink replacing Unity console logger.
+- Expanded unit test coverage to 1,997+ tests across 22 projects.
+- Updated to IF.Assistant 1.5.x with thinking and spoken channels.
+
+**Bug Fixes:**
+
+- Fixed block rendering bottleneck causing 4-9 FPS under load.
+- Fixed memory leaks: disposed MemoryCache, removed shadow collections, eliminated per-frame allocations.
+- Fixed DeepCube span/log scaling, bleeding, and deduplication.
+- Fixed lobby flickering on authentication.
+- Fixed empty streaming response with Polly retry and fallback.
+- Fixed WAV decoder UTF-8 crash in TTS audio responses.
+
+**Known Issues:**
+
+- macOS support is experimental and may lack full feature parity with Windows builds.
+
+### 1.9.0 <small>September 11, 2025</small> { id="1.9.0" }
+
+**Introduction:**
+
+This release marks a major milestone for Immersive APM with the debut of the **AI Assistant**, the first integrated GPT-powered assistant. Users can now interact with their telemetry data using **natural language**, via **chat or voice**, to explore performance metrics, investigate anomalies, and generate insights without writing a single query. Also introduced is the Diagnostics Room for immersive trace visualization, a redesigned grid picker, and environmental exploration features including swimming and portal teleportation.
 
 **New Features:**
 
@@ -16,9 +93,8 @@ Also introduced is **experimental support for macOS**, allowing developers and a
     - Streaming speech with smart chunking and audio prefetching.
     - Natural conversation flow with hybrid turn detection.
     - `/mute`, `/unmute`, and `/listen` voice toggle commands.
-    - Press Escape to interrupt speech without losing your prompt queue.
-    - Location-aware context - Tessa knows which room you're in and adapts her responses.
-    - Session persistence - chat history is saved and restored across sessions.
+    - Location-aware context: Tessa knows which room you are in and adapts her responses.
+    - Session persistence: chat history is saved and restored across sessions.
     - Built-in help section for onboarding new users.
 - **Diagnostics Room**: Immersive trace visualization environment for exploring spans and logs in 3D space with proper time-scale layouts.
 - **Energy System**: Energy bar showing AI assistant usage with tier-aware capability levels.
@@ -104,7 +180,7 @@ This release includes several new features, improvements, and bug fixes to enhan
 
 **Bug Fixes:**
 
-- Fixed bug that crashes client on exit 
+- Fixed bug that crashes client on exit
 - Fixed issue where platforms did not have tooltips
 
 **Known Issues:**
@@ -170,7 +246,7 @@ Bug fixes:
 
 ### 1.2.2 <small>September 13, 2024</small> { id="1.2.2" }
 
-Bug fixes: 
+Bug fixes:
 
 - Fixed bug: Trace/process camera zooms
 - Fixed bug: Log tooltips
@@ -187,7 +263,7 @@ Bug fixes:
 
 ### 1.1.0 <small>September 3, 2024</small> { id="1.1.0" }
 
-- Local storage prep for replay 
+- Local storage prep for replay
 
 Bug fixes:
 
