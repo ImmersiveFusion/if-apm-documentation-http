@@ -1,12 +1,22 @@
 # Installation
 
-IAPM is a software application built on top of the Unity 3D engine and is a standalone software program that runs on a user's computer. The application needs to be installed in order to access the necessary files and resources required to run.
+IAPM is a desktop application built on the Unity 3D engine. It runs on your local computer and connects to IAPM's cloud backend for telemetry data. Virtual machines are not supported or recommended.
 
-When the application is installed, it creates a folder on your computer that contains all necessary files and resources, such as textures, sounds, and scripts, needed to run the application. This ensures that the application has access to all required resources and can run smoothly without any issues.
+## Steam (Recommended)
 
-Installing the application ensures that it is properly registered with the user's operating system, which can help prevent conflicts and issues with other software programs installed on the computer. By properly installing an application, you can ensure that it runs smoothly and without any issues, and provides the best possible experience for the user.
+The easiest way to install IAPM. Steam handles downloads, updates, and version management automatically.
 
-## Available Installers
+[Open in Steam :material-steam:](steam://store/3624760){ .md-button .md-button--primary }
+[View on Steam Store :material-open-in-new:](https://store.steampowered.com/app/3624760/Immersive_APM/){ .md-button target="_blank" }
+
+{!template/store-steam.mdp!}
+
+Free to install. A subscription is required to use IAPM.
+
+## Offline Installers
+
+For environments where Steam is not available, download the installer directly.
 
 [Windows :material-microsoft-windows:](Windows/index.md){ .md-button .md-button--primary }
 [macOS :material-apple:](macOS/index.md){ .md-button }
+[Linux :material-linux:](Linux/index.md){ .md-button }
