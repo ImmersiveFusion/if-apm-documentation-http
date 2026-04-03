@@ -5,12 +5,10 @@
 
 ## Steam
 
-[Open in Steam :material-steam:](steam://store/3624760){ .md-button .md-button--primary }
-[View on Steam Store :material-open-in-new:](https://store.steampowered.com/app/3624760/Immersive_APM/){ .md-button target="_blank" }
+!!! info "Windows Only"
+    Steam is currently available for Windows only. macOS support on Steam is planned for a future release.
 
-{!template/store-steam.mdp!}
-
-Free to install. A subscription is required to use IAPM. Learn more about [Steam](https://store.steampowered.com/about/){ target="_blank" } on their website.
+Learn more about [Steam](https://store.steampowered.com/about/){ target="_blank" } on their website.
 
 ## Offline Installer (DMG)
 
