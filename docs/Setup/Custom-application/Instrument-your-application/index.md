@@ -162,6 +162,6 @@ Once configured, OpenTelemetry automatically captures:
 
 ## Next Steps
 
-- [View your data in IAPM Web](../../../Products/IAPM-Web/index.md)
-- [Explore in 3D with IAPM Desktop](../../../Products/IAPM-Desktop/index.md)
+- [View your data in IAPM Web](../../../IAPM/Web/index.md)
+- [Explore in 3D with IAPM](../../../IAPM/3D/index.md)
 - [OpenTelemetry Language SDKs](https://opentelemetry.io/docs/languages/){ target="_blank" }

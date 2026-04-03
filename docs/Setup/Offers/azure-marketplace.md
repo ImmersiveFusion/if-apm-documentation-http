@@ -15,7 +15,7 @@ Get IAPM through the Microsoft Azure Marketplace for simplified procurement and 
 
 | Feature | Availability |
 |---------|--------------|
-| IAPM Desktop | :material-check: Full access |
+| IAPM (3D & VR) | :material-check: Full access |
 | IAPM Web | :material-check: Full access |
 | AI Assistant | :material-check: Included |
 | Standard support | :material-check: Included |

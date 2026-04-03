@@ -45,16 +45,16 @@ Add your API key to your OpenTelemetry OTLP exporter configuration:
 
 Once telemetry is flowing, explore your application:
 
-### IAPM Desktop (3D/VR)
+### IAPM (3D & VR)
 
 Enter the World of Your Application® with mouse and keyboard or a VR headset.
 
-[Install Desktop :material-download:](../../../Products/IAPM-Desktop/Guides/Installation/index.md){ .md-button .md-button--primary }
-[Desktop Documentation :material-book-open:](../../../Products/IAPM-Desktop/index.md){ .md-button }
+[Install IAPM :material-download:](../../../IAPM/3D/Guides/Installation/index.md){ .md-button .md-button--primary }
+[3D & VR Documentation :material-book-open:](../../../IAPM/3D/index.md){ .md-button }
 
 ### IAPM Web (Browser)
 
-Access dashboards, alerts, and account management from any browser.
+Access traces, alerts, and account management from any browser.
 
 [Open IAPM Web :material-web:](https://portal.iapm.app){ .md-button .md-button--primary target="_blank" }
-[Web Documentation :material-book-open:](../../../Products/IAPM-Web/index.md){ .md-button }
+[Web Documentation :material-book-open:](../../../IAPM/Web/index.md){ .md-button }

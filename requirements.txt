@@ -1,0 +1,12 @@
+# MkDocs documentation site dependencies
+# Pinned to prevent MkDocs 2.0 upgrade (incompatible with Material for MkDocs)
+# Review gate: 2026-10-01 - reassess if Material 9.x goes EOL or Python 3.13 breaks
+
+mkdocs>=1.6.1,<2.0
+mkdocs-material>=9.7.4,<10.0
+pymdown-extensions>=10.0,<11.0
+markdown-include>=0.8.0,<1.0
+mkdocs-awesome-pages-plugin>=2.9.0,<3.0
+mkdocs-git-revision-date-localized-plugin>=1.2.0,<2.0
+mkdocs-minify-plugin>=0.7.0,<1.0
+mkdocs-redirects>=1.2.0,<2.0

@@ -20,7 +20,7 @@ Downtime is measured when the IAPM platform is unavailable for normal use. This 
 
 - Inability to ingest telemetry data
 - Inability to access the IAPM Web interface
-- Inability to connect via IAPM Desktop client
+- Inability to connect via IAPM client
 
 ### Exclusions
 

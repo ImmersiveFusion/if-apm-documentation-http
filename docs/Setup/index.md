@@ -37,7 +37,7 @@ graph LR
 | 2 | [Create Account](Account/index.md) - Sign up and configure | 5 min |
 | 3 | [Get API Key](Api-Key/index.md) - Generate credentials | 1 min |
 | 4 | [Instrument App](Custom-application/index.md) - Add OpenTelemetry | 10-30 min |
-| 5 | View data in [IAPM Desktop](../Products/IAPM-Desktop/index.md) or [IAPM Web](../Products/IAPM-Web/index.md) | Immediate |
+| 5 | View data in [IAPM (3D & VR)](../IAPM/3D/index.md) or [IAPM Web](../IAPM/Web/index.md) | Immediate |
 
 ## Account Structure
 
