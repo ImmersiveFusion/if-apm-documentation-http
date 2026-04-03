@@ -6,76 +6,63 @@
 
 **Introduction:**
 
-This release brings the Skills system to the 3D client, enabling extensible AI capabilities, along with multimodal vision support that lets users paste screenshots directly into prompts. It also achieves client parity with IAPM Studio for memory, orchestration, and context preservation.
+This release introduces the Skills system for extensible AI capabilities, multimodal vision for pasting screenshots directly into prompts, and feature parity with IAPM Studio.
 
 **New Features:**
 
-- **Skills System**: Extensible skill agent registry with catalog injection, enabling modular AI capabilities.
-- **Multimodal Vision**: Paste screenshots with Ctrl+V for visual prompts, allowing Tessa to analyze images alongside text.
-- **Composite Diagnostics Tools**: New diagnostic and competitive analysis tools for Tessa, providing richer troubleshooting insights.
+- **Skills**: Tessa can now use modular skills for specialized tasks, with a browsable skill catalog.
+- **Multimodal Vision**: Paste screenshots with Ctrl+V and ask Tessa to analyze what you see.
+- **Diagnostics Tools**: New diagnostic and analysis tools give Tessa richer troubleshooting insights.
 
 **Improvements:**
 
-- Client parity with IAPM Studio: Memory.Local, Orchestration, and Context Preservation support.
-- Migrated filter system from legacy messages to ADX DTOs.
-- Added unit tests for all 28 assistant tools.
-- Updated IF.Assistant to 1.17.0.
-- Migrated to shared CI pipeline templates for Semgrep, Stryker, and Gitleaks.
+- Feature parity with IAPM Studio for memory, orchestration, and context preservation.
+- Improved filtering across all telemetry views.
 
 ### 1.11.0 <small>March 21, 2026</small> { id="1.11.0" }
 
 **Introduction:**
 
-This release completes the migration to an OpenTelemetry-native data model, replacing legacy TraceMessage and LogMessage types with standard Span and Log representations throughout the visualization pipeline. The service graph receives further refinements with warming periods and improved placement algorithms.
-
-**New Features:**
-
-- **OpenTelemetry-Native Pipeline**: Full migration to OTEL proto consumption with Span/Log DTOs across all 33+ visualization files.
+This release adopts the OpenTelemetry standard data model across the entire visualization pipeline and refines the service graph with smoother placement behavior.
 
 **Improvements:**
 
-- Service graph: warming period with batch cascade graduation for smoother facility placement.
-- Typed enrichment generics and live stage label updates on blocks.
-- Assistant tools aligned to latest API with ToolBase and rich LLM descriptions.
-- Improved tooltip providers and enrichment controls.
-- Authorization guard for grid access.
+- Full adoption of OpenTelemetry-native data model for all trace and log visualizations.
+- Service graph now transitions smoothly from startup, with improved node placement.
+- Tessa's tools updated with richer descriptions and better accuracy.
+- Improved tooltips and stage labels across all views.
 
 **Bug Fixes:**
 
-- Fixed trace blocks stopping after ADX migration due to stage mapping issues.
-- Fixed service graph node physics settling and position release.
-- Fixed null TraceId warnings downgraded to debug level.
+- Fixed trace blocks occasionally stopping after internal data updates.
+- Fixed service graph nodes not settling into stable positions.
+- Reduced excessive log noise from missing trace identifiers.
 
 ### 1.10.0 <small>January 25, 2026</small> { id="1.10.0" }
 
 **Introduction:**
 
-This release introduces the live force-directed service graph, a real-time 3D visualization of service dependencies with physics-based layout and animated traffic pulses. Major performance improvements resolve block rendering bottlenecks, and the AI chat system adopts a secure backend proxy architecture.
+This release introduces the live service graph, a real-time 3D visualization of service dependencies with animated traffic pulses. Major performance and stability improvements are included, along with a streamlined authentication experience.
 
 **New Features:**
 
-- **Live Service Graph**: Force-directed 3D graph with edge congestion visuals, error pulse coloring, and physics-based node settling.
-- **Tracegen Demo Tool**: Built-in telemetry generator with 20 services and 15 scenarios for exploring the product without live data.
-- **Energy System UI**: Energy bar with tier-aware capability gating and experience state display.
+- **Live Service Graph**: Real-time 3D visualization of service dependencies with animated traffic flow, error highlighting, and physics-based layout.
+- **Demo Telemetry**: Built-in demo scenarios for exploring the product without connecting live data.
+- **Energy System UI**: Energy bar showing AI usage with tier-aware capability levels.
 
 **Improvements:**
 
-- Adopted secure backend proxy for AI chat, replacing direct API calls.
-- Replaced browser-based authentication with direct library integration.
-- WebSocket bus tunnel for improved real-time communication.
-- Speech interrupt with Escape key without losing the prompt queue.
-- Unified logging with Serilog file sink replacing Unity console logger.
-- Expanded unit test coverage to 1,997+ tests across 22 projects.
-- Updated to IF.Assistant 1.5.x with thinking and spoken channels.
+- Streamlined authentication (no longer requires a separate browser window).
+- Press Escape to interrupt Tessa's speech without losing your prompt queue.
+- Significant performance and stability improvements.
 
 **Bug Fixes:**
 
-- Fixed block rendering bottleneck causing 4-9 FPS under load.
-- Fixed memory leaks: disposed MemoryCache, removed shadow collections, eliminated per-frame allocations.
-- Fixed DeepCube span/log scaling, bleeding, and deduplication.
-- Fixed lobby flickering on authentication.
-- Fixed empty streaming response with Polly retry and fallback.
-- Fixed WAV decoder UTF-8 crash in TTS audio responses.
+- Fixed rendering performance under high telemetry load.
+- Fixed memory-related stability issues during long sessions.
+- Fixed trace visualization scaling and display issues in the Diagnostics Room.
+- Fixed lobby flickering during login.
+- Fixed voice responses occasionally failing to stream.
 
 **Known Issues:**
 
@@ -85,49 +72,46 @@ This release introduces the live force-directed service graph, a real-time 3D vi
 
 **Introduction:**
 
-This release marks a major milestone for Immersive APM with the debut of the **AI Assistant**, the first integrated GPT-powered assistant. Users can now interact with their telemetry data using **natural language**, via **chat or voice**, to explore performance metrics, investigate anomalies, and generate insights without writing a single query. Also introduced is the Diagnostics Room for immersive trace visualization, a redesigned grid picker, and environmental exploration features including swimming and portal teleportation.
+This release marks a major milestone for Immersive APM with the debut of **Tessa**, your AI Assistant. Interact with your telemetry data using **natural language**, via **chat or voice**, to explore performance metrics, investigate anomalies, and generate insights without writing a single query. Also new: the Diagnostics Room for immersive trace visualization, a redesigned grid picker, and new ways to explore the world.
 
 **New Features:**
 
-- **AI Assistant (Tessa)**: Chat and voice-driven assistant for root cause analysis, performance exploration, and guided troubleshooting using natural language.
-    - Streaming speech with smart chunking and audio prefetching.
-    - Natural conversation flow with hybrid turn detection.
+- **AI Assistant (Tessa)**: Chat and voice-driven assistant for root cause analysis, performance exploration, and guided troubleshooting.
+    - Ask questions by typing or speaking.
     - `/mute`, `/unmute`, and `/listen` voice toggle commands.
-    - Location-aware context: Tessa knows which room you are in and adapts her responses.
-    - Session persistence: chat history is saved and restored across sessions.
+    - Tessa knows which room you are in and adapts her responses.
+    - Chat history is saved and restored across sessions.
     - Built-in help section for onboarding new users.
-- **Diagnostics Room**: Immersive trace visualization environment for exploring spans and logs in 3D space with proper time-scale layouts.
+- **Diagnostics Room**: Immersive trace visualization environment for exploring spans and logs in 3D space.
 - **Energy System**: Energy bar showing AI assistant usage with tier-aware capability levels.
-- **Grid Picker Redesign**: Card-based grid selection UI replacing the previous two-dropdown flow.
+- **Grid Picker Redesign**: Card-based grid selection replacing the previous dropdown flow.
     - Demo grid support for exploring the product without live data.
-- **ProTips Guidance System**: Context-aware tooltips with auto-hide and configurable display settings.
-- **WhereAmI Wayfinding Display**: On-screen indicator showing your current room and location.
-- **Water Environment**: Swimming mechanics for enhanced world exploration.
+- **ProTips**: Context-aware guidance tooltips that help you discover features as you go.
+- **WhereAmI Display**: On-screen indicator showing your current room and location.
+- **Water Environment**: Swimming mechanics for world exploration.
 
 **Improvements:**
 
 - Initial support for **macOS (experimental)**.
-- **Teleportation overhaul**: Teleport from trace blocks and viewport controls, portal tunnel effects with tesseract warp animation.
+- **Teleportation overhaul**: Teleport from trace blocks, portal tunnel effects with warp animation.
 - Enhanced real-time traffic visualization on performance graphs.
 - Improved rendering quality and scalability across device profiles.
 - Overhead camera with adjustable height for top-down views.
-- Upgraded to **Unity 6000.3.8f1**.
-- Improved connection reliability and clearer error messaging on connection failures.
-- Additional code signing for authentication DLLs.
+- Improved connection reliability and clearer error messaging.
 
 **Bug Fixes:**
 
-- Fixed Diagnostics Room time scale calculation for proper span layout.
-- Fixed avatar getting stuck swimming after teleporting out of the Diagnostics Room.
+- Fixed trace layout timing in the Diagnostics Room.
+- Fixed avatar getting stuck swimming after teleporting.
 - Fixed portal teleportation causing character to fall through ground.
-- Fixed grid connection and initialization bugs.
+- Fixed grid connection and initialization issues.
 - Fixed context switching when navigating between rooms.
-- Fixed speech interruption causing stalled prompt queue.
+- Fixed voice interruption causing stalled prompts.
 - Fixed crouching animation.
 
 **Known Issues:**
 
-- Authentication still requires browser-based Entra ID flow.
+- Authentication still requires a browser-based login flow.
 - macOS support is experimental and may lack full feature parity with Windows builds.
 
 ### 1.8.0 <small>April 15, 2025</small> { id="1.8.0" }

@@ -6,26 +6,23 @@
 
 **Introduction:**
 
-This release adds composite diagnostics endpoints for intent-driven AI queries, enabling Tessa to fetch correlated performance data in a single call. The energy dashboard has been redesigned with per-grid energy visibility and tier breakdowns, and the pricing page now reflects current subscription features.
+This release gives Tessa smarter diagnostics, redesigns the energy dashboard with per-grid visibility, and adds the ability to send images to Tessa for visual analysis.
 
 **New Features:**
 
-- **Composite Diagnostics**: Server-side alert summary and intent-driven diagnostic endpoints for richer AI-assisted troubleshooting.
-- **Energy Dashboard Redesign**: Per-grid energy visibility, source labels, tier breakdown on usage page, and origin dashboard.
-- **Vision/Image Support**: Image input support for the Chat API, allowing Tessa to analyze screenshots and visual content.
+- **Smarter Diagnostics**: Tessa can now fetch correlated performance data and alert summaries in a single query for faster troubleshooting.
+- **Energy Dashboard Redesign**: See energy usage per grid, per tenant, and per tier with source labels and breakdown charts.
+- **Vision Support**: Send screenshots and images to Tessa for visual analysis alongside your telemetry data.
 
 **Improvements:**
 
-- Upgraded to **.NET 10**.
-- Updated pricing page features to match current database values.
-- Added tenant AI usage dashboard with per-tenant energy tracking.
-- Trace-level OperationStage aggregation for improved trace summaries.
+- Updated pricing page to reflect current subscription features.
+- Improved trace summaries with stage-level aggregation.
 
 **Bug Fixes:**
 
-- Fixed OperationStage mapping to read Stage directly from ADX instead of re-mapping StatusCode.
-- Fixed OTEL StatusCode 0 (Unset) mapping to Processed.
-- Fixed energy fallback calculations on first of month.
+- Fixed trace stage display for certain span types.
+- Fixed energy calculations on the first of the month.
 
 ---
 
@@ -33,28 +30,23 @@ This release adds composite diagnostics endpoints for intent-driven AI queries, 
 
 **Introduction:**
 
-This release completes the migration from SQL and Azure Search to Azure Data Explorer (ADX) for all short-term telemetry storage, delivering faster queries and simplified architecture. The application terminology has been updated to align with OpenTelemetry standards throughout.
+This release delivers faster trace and log queries through an upgraded storage backend, aligns all terminology with OpenTelemetry standards, and adds a secure gateway for AI assistant communication.
 
 **New Features:**
 
-- **ADX Storage Migration**: All trace and log storage migrated from SQL/Azure Search to ADX, with new filter and facet support.
-- **Secure Proxy Gateway**: Server-side proxy for AI chat and speech, with Personal Access Token security and instance management.
-- **Perpetual Testing**: Automated test enforcement with mutation testing (Stryker), secret scanning (Gitleaks), and SAST (Semgrep) on all pull requests.
+- **Faster Telemetry Queries**: Upgraded storage backend for significantly faster trace and log searches with improved filtering.
+- **Secure AI Gateway**: Dedicated secure channel for AI assistant communication with token-based authentication.
 
 **Improvements:**
 
-- Renamed view models and SPA to OpenTelemetry terminology throughout.
-- Removed deprecated search storage from database schema and admin UI.
-- Health check standardization across all services.
-- Upgraded Ingestion SDK to v8.0.0.
-- Removed credential-bearing models from instance endpoints for improved security.
-- Dropped all V1 API controllers, defaulting to API v2.0.
+- Terminology updated to align with OpenTelemetry standards throughout the application.
+- Health check improvements across all services.
+- Security hardening for API endpoints.
 
 **Bug Fixes:**
 
-- Fixed orphaned grid template syntax from search storage removal.
-- Fixed ghost span filtering in OTEL StatusCode mapping.
-- Removed unused GridName from query results to reduce payload size.
+- Fixed occasional phantom spans appearing in trace views.
+- Fixed grid template display after storage migration.
 
 ---
 
@@ -123,54 +115,41 @@ This release introduces new account management features, a usage dashboard, and 
 
 **Introduction:**
 
-This release delivers a major dashboard overhaul, Angular 21 upgrade, and significant improvements to trace visualization capabilities. The UI has been refined with better dark/light theme support and a reorganized SCSS architecture for maintainability.
+This release delivers a major dashboard overhaul and significant improvements to trace visualization, with new ways to explore span details and service dependencies.
 
 **New Features:**
 
-- **Span View Tab**: New waterfall timeline visualization for detailed span analysis within traces.
+- **Span View Tab**: Waterfall timeline visualization for detailed span analysis within traces.
 - **Network Graph Tab**: Interactive service dependency visualization for trace analysis.
 - **Nested Span Tags**: Collapsible tree view for exploring hierarchical span tag data.
-- **Layer Indicator Component**: Reusable partial component for consistent layer visualization.
-- **Empty Field Component**: Improved no-data messaging across the application.
 
 **Improvements:**
 
-- Upgraded from **Angular 20 to Angular 21**.
-- Major dashboard redesign with improved layout and tile components.
-- Reorganized SCSS architecture with centralized dark theme variables.
+- Major dashboard redesign with improved layout and tiles.
 - Renamed Immersive APM to **IAPM** throughout the application.
-- Enhanced dark/light theme support across all components.
+- Enhanced dark/light theme support across all views.
 - Improved flame graph sizing and span visibility.
 
 **Bug Fixes:**
 
-- Fixed sidebar badge styling and text color.
-- Fixed sidebar submenu chevron positioning for dark/light themes.
-- Fixed notification dropdown layout and vertical alignment.
-- Fixed production build SCSS import paths.
-
-**Known Issues:**
-
-- None identified in this release.
+- Fixed sidebar styling issues in dark and light themes.
+- Fixed notification dropdown layout.
 
 ### 3.60.0 <small>May 21, 2025</small> { id="3.60.0" }
 
 **Introduction:**
 
-This release upgrades the frontend to Angular 20 with OpenTelemetry browser instrumentation, adds promo code support for billing, and improves the landing page login flow.
+This release improves the login experience, adds promo code support for billing, and includes performance improvements throughout.
 
 **Improvements:**
 
-- Upgraded to **Angular 20**.
-- Added OpenTelemetry browser instrumentation.
-- Improved landing page login flow with better authentication handling.
+- Improved landing page login flow.
 - Added promo code and coupon support for billing.
-- Orchestration pool optimizations for improved performance.
+- General performance improvements.
 
 **Bug Fixes:**
 
 - Fixed credit card expiration validation for cards expiring in the current month.
-- Fixed API request URL handling for SDK operations.
 
 ---
 
@@ -178,12 +157,11 @@ This release upgrades the frontend to Angular 20 with OpenTelemetry browser inst
 
 **Introduction:**
 
-This release upgrades the backend to .NET 9.0 and resolves globalization issues in containerized environments.
+Infrastructure and platform improvements.
 
 **Improvements:**
 
-- Upgraded to **.NET 9.0**.
-- Fixed globalization support in Alpine-based Docker containers.
+- Backend platform upgrade for improved performance and compatibility.
 
 ---
 
