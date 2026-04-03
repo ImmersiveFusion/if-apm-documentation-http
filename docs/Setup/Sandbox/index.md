@@ -31,7 +31,7 @@ The [OpenTelemetry Chaos Simulator](https://github.com/ImmersiveFusion/if-opente
 1. Go to [demo.iapm.app](https://demo.iapm.app){ target="_blank" }
 2. A unique sandbox is created automatically for you
 3. Click buttons to trigger actions and inject chaos
-4. Open [IAPM Desktop](../../Products/IAPM-Desktop/index.md) to see the telemetry
+4. Open [IAPM](../../IAPM/3D/index.md) to see the telemetry
 
 !!! info "Real-time Only"
     The Chaos Simulator generates real-time data only. Historical data is not retained.

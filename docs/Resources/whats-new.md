@@ -1,6 +1,6 @@
 # What's New
 
-Recent updates and features in IAPM. For complete version history, see the release notes for [IAPM Desktop](../Products/IAPM-Desktop/release-notes.md) and [IAPM Web](../Products/IAPM-Web/release-notes.md).
+Recent updates and features in IAPM. For complete version history, see the release notes for [IAPM (3D & VR)](../IAPM/3D/release-notes.md) and [IAPM Web](../IAPM/Web/release-notes.md).
 
 ---
 
@@ -87,7 +87,7 @@ Have an idea for IAPM? We'd love to hear from you:
 
 | Channel | Link |
 |---------|------|
-| Release notes (Desktop) | [View releases](../Products/IAPM-Desktop/release-notes.md) |
-| Release notes (Web) | [View releases](../Products/IAPM-Web/release-notes.md) |
+| Release notes (3D & VR) | [View releases](../IAPM/3D/release-notes.md) |
+| Release notes (Web) | [View releases](../IAPM/Web/release-notes.md) |
 | YouTube | [Tutorials & demos](https://www.youtube.com/@immersivefusion){ target="_blank" } |
 | LinkedIn | [Company updates](https://www.linkedin.com/company/immersivefusion){ target="_blank" } |

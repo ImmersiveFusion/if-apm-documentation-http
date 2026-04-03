@@ -54,8 +54,8 @@ Once your application is sending telemetry, choose how to visualize:
 
 | Product | Description | Access |
 |---------|-------------|--------|
-| **IAPM Web** | Browser-based dashboards, account management, alerts | [Learn more](../Products/IAPM-Web/index.md) |
-| **IAPM Desktop** | Full 3D visualization with optional VR support | [Learn more](../Products/IAPM-Desktop/index.md) |
+| **IAPM Web** | Browser-based traces, account management, alerts | [Learn more](../IAPM/Web/index.md) |
+| **IAPM (3D & VR)** | Full 3D visualization with optional VR support | [Learn more](../IAPM/3D/index.md) |
 
 ## Need Help?
 
