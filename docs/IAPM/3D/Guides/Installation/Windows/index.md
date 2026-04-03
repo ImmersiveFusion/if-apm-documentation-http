@@ -2,9 +2,12 @@
 
 ## Steam
 
+[Open in Steam :material-steam:](steam://store/3624760){ .md-button .md-button--primary }
+[View on Steam Store :material-open-in-new:](https://store.steampowered.com/app/3624760/Immersive_APM/){ .md-button target="_blank" }
+
 {!template/store-steam.mdp!}
 
-Learn more about [Steam](https://store.steampowered.com/about/){ target="_blank" } on their website.
+Free to install. A subscription is required to use IAPM. Learn more about [Steam](https://store.steampowered.com/about/){ target="_blank" } on their website.
 
 ## Offline Installer (MSI)
 
