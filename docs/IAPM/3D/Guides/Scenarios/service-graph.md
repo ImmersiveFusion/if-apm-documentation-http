@@ -45,7 +45,7 @@ Before you troubleshoot, you need to understand your system. This walkthrough sh
 ## Step 3: Read the Traffic Patterns
 
 1. **Look at the lines connecting services.** Pay attention to their thickness and pulse rate.
-2. **Fly closer to a busy connection** to see the traffic detail.
+2. **Move closer to a busy connection** to see the traffic detail.
 
 | Visual | Meaning |
 |--------|---------|
@@ -85,7 +85,7 @@ Before you troubleshoot, you need to understand your system. This walkthrough sh
 ## Step 5: Identify Single Points of Failure
 
 1. **Look for services with many incoming connections** - these are hubs that many other services depend on.
-2. **Fly to the most connected service** and select it by clicking.
+2. **Teleport to the most connected service** and select it by clicking.
 
 !!! info "What you see"
     In the Graph view, single points of failure stand out visually. They sit at the center of a starburst of connections - many lines converging on a single node. `user-service` is a prime example: eleven other services depend on it. If it goes down, all eleven are affected.
@@ -122,7 +122,7 @@ Before you troubleshoot, you need to understand your system. This walkthrough sh
 
 ## Step 7: Explore Architectural Patterns
 
-1. **Fly through the different clusters** at a low altitude, examining the connections up close.
+1. **Move through the different clusters**, examining the connections up close.
 2. **Switch between Grid view (`M`) and Graph view (`N`)** to see the same services in different arrangements.
 
 !!! info "What you see"

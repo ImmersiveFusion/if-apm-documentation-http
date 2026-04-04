@@ -47,7 +47,7 @@ Errors are spreading across your system. Multiple services are red. This isn't a
 
 ## Step 3: Follow the Dependency Chain
 
-1. **Fly toward the cluster of red services.** Use `Shift` + `W` to sprint there.
+1. **Move toward the cluster of red services.** Use `Shift` + `W` to sprint, or teleport to a service platform.
 2. **Look at the connections** between the failing services. Follow the pulsing lines to see the dependency direction.
 3. **Switch to Graph view** by pressing `N` to see the relationship structure more clearly.
 

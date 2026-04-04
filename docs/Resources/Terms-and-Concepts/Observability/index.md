@@ -2,7 +2,7 @@
 
 Observability is the ability to understand a system's internal state by examining its external outputs. Unlike traditional monitoring that tells you *when* something is wrong, observability helps you understand *why* - even for problems you've never seen before.
 
-IAPM brings observability into 3D space. Instead of switching between dashboards, fly through your service topology and ask Tessa to explain what's happening.
+IAPM brings observability into 3D space. Instead of switching between dashboards, walk through your service topology, teleport to services, and ask Tessa to explain what's happening.
 
 ## The Three Pillars
 

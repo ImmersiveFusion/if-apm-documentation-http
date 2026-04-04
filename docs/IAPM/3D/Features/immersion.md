@@ -29,7 +29,7 @@ Leverage human spatial cognition to understand complex distributed systems. Rela
 
 ### Desktop Navigation
 
-Use keyboard and mouse to fly through your application topology:
+Use keyboard and mouse to navigate your application topology:
 
 - **WASD** - Move forward, backward, left, right
 - **Mouse** - Look around and aim
@@ -84,7 +84,7 @@ New team members can explore the production environment safely, building mental 
 | Aspect | Traditional Monitoring | Immersive Navigation |
 |--------|----------------------|---------------------|
 | View | Static graphs/charts | Interactive 3D space |
-| Exploration | Click through tabs | Fly through topology |
+| Exploration | Click through tabs | Walk and teleport through topology |
 | Problem finding | Query and filter | Visual anomaly detection |
 | Learning curve | High (query languages) | Low (intuitive movement) |
 

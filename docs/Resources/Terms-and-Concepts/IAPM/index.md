@@ -39,7 +39,7 @@ graph LR
 |--------|-----------------|---------------|
 | **Visualization** | 2D dashboards and graphs | 3D spatial environment |
 | **Context** | Switch between multiple views | Unified visual context |
-| **Navigation** | Query-based exploration | Fly-through navigation |
+| **Navigation** | Query-based exploration | Walk and teleport navigation |
 | **Alerts** | Text-based notifications | Visual anomaly highlighting |
 | **Scale** | Cluttered at high complexity | Spatial layout handles scale |
 | **Collaboration** | Screen sharing | Shared virtual space |

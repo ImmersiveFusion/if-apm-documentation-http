@@ -53,7 +53,7 @@ Voice is the primary interaction mode for VR:
 - **Keep voice mode on** so the microphone stays active between questions. You can have a continuous conversation without re-activating the mic each time.
 - **Be specific with service names** - speak them clearly. Tessa uses your Grid's service catalog to match what she hears.
 - **Use Escape to interrupt** long responses and redirect. In VR, this is mapped to the controller menu button.
-- **Combine voice with movement** - fly to a service node in 3D and ask "What's wrong here?" Tessa uses your position as context.
+- **Combine voice with navigation** - teleport to a service platform and ask "What's wrong here?" Tessa uses your position as context.
 - **Mute in noisy environments** - use `/mute` to switch to text-only responses if background noise is an issue.
 
 ## Combining Voice and Text

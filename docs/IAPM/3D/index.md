@@ -12,7 +12,7 @@ Enter the World of Your Application®. IAPM transforms [Application Performance 
 |---------|-------------|
 | [AI Assistant](Features/ai-assistant.md) | Chat and voice-driven root cause analysis with Tessa |
 | [Real-Time Visualization](Features/real-time.md) | Watch application behavior as it happens in 3D |
-| [Immersive Navigation](Features/immersion.md) | Fly through your system topology and teleport between services |
+| [Immersive Navigation](Features/immersion.md) | Walk, teleport, and navigate between services and rooms |
 | [360° Stack Visibility](Features/360-view.md) | See all layers from infrastructure to application in one space |
 
 [Explore All Features :material-arrow-right:](Features/index.md){ .md-button .md-button--primary }

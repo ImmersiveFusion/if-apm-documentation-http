@@ -23,7 +23,7 @@ A service is running slow. Users are complaining. In this walkthrough, you'll tr
 
 ---
 
-## Step 2: Fly to the Affected Service
+## Step 2: Navigate to the Affected Service
 
 1. **Navigate toward `order-service`** using `W` to move forward. Use `Space` to rise above the Grid for a better approach angle.
 2. **Left-click on `order-service`** to select it.
@@ -72,7 +72,7 @@ A service is running slow. Users are complaining. In this walkthrough, you'll tr
 
 ## Step 5: Examine the Slow Span
 
-1. **Fly toward the long span** - the database query.
+1. **Move toward the long span** - the database query.
 2. **Left-click** on it to see its full details.
 
 !!! info "What you see"
@@ -146,7 +146,7 @@ In this scenario, you:
 | Step | Action | Outcome |
 |------|--------|---------|
 | 1 | Spotted orange indicators on the Grid | Identified `order-service` as the problem |
-| 2 | Flew to the service and selected it | Saw latency had jumped to 1,200ms |
+| 2 | Navigated to the service and selected it | Saw latency had jumped to 1,200ms |
 | 3 | Asked Tessa to diagnose | Narrowed to slow `inventory-db` calls |
 | 4 | Entered the Diagnostics Room | Visualized the slow database span in 3D |
 | 5 | Examined the span details | Found the exact query and its 2.1s duration |

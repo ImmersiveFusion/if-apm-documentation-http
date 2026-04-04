@@ -54,7 +54,7 @@ Your first time inside IAPM. This walkthrough takes you from launch to confident
 
 ## Step 4: Read the Visual Indicators
 
-1. **Look at the colors** of your services as you fly past them.
+1. **Look at the colors** of your services as you walk past them.
 2. **Watch the connecting lines** between services - notice how some pulse with light.
 
 | Color | Meaning |
@@ -111,7 +111,7 @@ Your first time inside IAPM. This walkthrough takes you from launch to confident
 
 ## Step 8: Select a Service
 
-1. **Fly toward a service** that catches your eye (maybe one with a yellow or orange glow).
+1. **Walk toward a service** that catches your eye, or teleport to its platform (maybe one with a yellow or orange glow).
 2. **Left-click** on the service to select it.
 
 !!! info "What you see"
@@ -153,7 +153,7 @@ Now that you know the basics, try these scenarios:
 | Move | `W` `A` `S` `D` |
 | Look | Right mouse + drag |
 | Zoom | Scroll wheel |
-| Fly up/down | `Space` / `Ctrl` |
+| Move up/down | `Space` / `Ctrl` |
 | Sprint | `Shift` + movement |
 | Select | Left-click |
 | Grid view | `M` |
