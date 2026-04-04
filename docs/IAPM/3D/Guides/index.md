@@ -11,6 +11,7 @@ Learn how to use IAPM effectively. These guides cover installation, navigation, 
 | [Installation](Installation/index.md) | Download and install IAPM on Windows, macOS, or Linux |
 | [Navigation & Controls](Navigation/index.md) | Master movement, selection, and keyboard shortcuts |
 | [Preferences](Preferences/index.md) | Configure display, controls, and comfort settings |
+| [Scenarios](Scenarios/index.md) | Step-by-step walkthroughs of real-world troubleshooting workflows |
 | [Uninstallation](Uninstallation/index.md) | Remove IAPM from your system |
 
 ## Quick Start

@@ -1,0 +1,7 @@
+title: Scenarios
+arrange:
+    - index.md
+    - first-session.md
+    - latency-spike.md
+    - root-cause-analysis.md
+    - service-graph.md

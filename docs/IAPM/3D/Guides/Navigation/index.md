@@ -208,30 +208,23 @@ Press `1` to return to standard first-person navigation.
 | `2` | Top-down | 
 -->
 
-### Selection
+### Selection & Trace Navigation
 
 | Key | Action |
 |-----|--------|
-| Click | Select |
-| `Esc` | Deselect |
-| Double-click | Follow trace |
-<!-- 
-### Panels
+| Click | Select service or object |
+| `Esc` | Deselect / interrupt Tessa's speech |
+| `T` | Toggle follow trace / teleport back |
+| `F` | Start or stop following a trace |
+| `B` | Return to last console position |
+| `H` | Toggle highlighting for trace type |
+
+### Views
 
 | Key | Action |
 |-----|--------|
-| `C` | AI Assistant |
-| `M` | Metrics |
-| `L` | Logs |
-| `T` | Traces |
-
-### Tools
-
-| Key | Action |
-|-----|--------|
-| `/` | Search |
-| `B` | Bookmark |
-| `N` | Minimap | -->
+| `M` | Toggle Grid view |
+| `N` | Toggle Graph view |
 
 ### General
 

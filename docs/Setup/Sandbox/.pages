@@ -1,10 +1,4 @@
+title: Sandbox
 arrange:
     - index.md
-    #- Immersive-Clouds
-    #- Account-Configuration
-    # - observability
-    # - apm
-    # - ...
-    # - getting-started
-    # - instrument
-    # - contact.md
+    - guided-tour.md
