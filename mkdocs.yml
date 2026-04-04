@@ -119,10 +119,8 @@ plugins:
         'Products/IAPM-Desktop/Guides/Installation/Mac/index.md': 'IAPM/3D/Guides/Installation/macOS/index.md'
         'Products/IAPM-Desktop/Guides/Uninstallation/Mac/index.md': 'IAPM/3D/Guides/Uninstallation/macOS/index.md'
 
-        # Old IAPM paths → IAPM/3D
-        'iapm/index.md': 'IAPM/3D/index.md'
-        'iapm/features/index.md': 'IAPM/3D/Features/index.md'
-        'iapm/guides/index.md': 'IAPM/3D/Guides/index.md'
+        # Old IAPM paths removed - 'iapm/' collides with real 'IAPM/' on case-insensitive filesystems
+        # 'iapm/index.md', 'iapm/features/index.md', 'iapm/guides/index.md' dropped
         'iapm-web/index.md': 'IAPM/Web/index.md'
 
         # Products/IAPM → IAPM/3D redirects (old intermediate structure)
