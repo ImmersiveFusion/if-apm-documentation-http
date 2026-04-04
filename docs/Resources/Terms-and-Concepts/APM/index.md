@@ -37,7 +37,7 @@ graph TD
 | **Collaboration** | Siloed dashboard views | Shared immersive space |
 | **Pricing** | Per-host + per-GB + per-feature | Simple per-node pricing |
 
-Traditional APM tools (Datadog, Dynatrace, New Relic) give you dashboards. IAPM lets you step inside your system, fly through your service topology, and ask Tessa what's wrong.
+Traditional APM tools (Datadog, Dynatrace, New Relic) give you dashboards. IAPM lets you step inside your system, teleport between services, and ask Tessa what's wrong.
 
 ## APM vs. Observability
 
