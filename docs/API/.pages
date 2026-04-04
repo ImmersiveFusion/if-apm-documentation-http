@@ -1,0 +1,9 @@
+title: API Reference
+arrange:
+    - index.md
+    - authentication.md
+    - traces.md
+    - logs.md
+    - diagnostics.md
+    - charts.md
+    - assistant.md

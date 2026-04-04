@@ -4,7 +4,7 @@ title: IAPM Studio
 
 # IAPM Studio
 
-!!! warning "Experimental"
+!!! warning "Early Access"
     IAPM Studio is in early access. Features and availability may change.
 
 IAPM Studio is a lightweight native client built with Avalonia, providing AI-powered chat, voice interaction, workspaces, artifacts, and organizational knowledge - without the full 3D environment.

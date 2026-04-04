@@ -2,11 +2,12 @@ arrange:
     - index.md
     - Getting-Started
     - IAPM
+    - Instrument
+    - API
     - Setup
     - Resources
     # - observability
     # - apm
     # - ...
     # - getting-started
-    # - instrument
     # - contact.md

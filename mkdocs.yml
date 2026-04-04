@@ -86,7 +86,8 @@ plugins:
       minify_html: true
   - redirects:
       redirect_maps:
-        'instrument/index.md': 'Setup/Custom-application/Instrument-your-application/index.md'
+        # 'instrument/index.md' redirect removed - now a real page at Instrument/index.md
+        # On case-insensitive filesystems (Windows/Azure), this causes zip duplicate conflicts
 
         # Restructure redirects - preserve old URLs
         # Analysis-and-Visualization → IAPM/3D / IAPM/Web
@@ -189,11 +190,22 @@ plugins:
         # Partner → Resources/Partner
         'partner/index.md': 'Resources/Partner/index.md'
 
+        # Setup/Custom-application/Instrument → Instrument (promoted to top-level)
+        # Old page replaced with redirect notice pointing to new Instrument/ section
+        # Per-language sub-paths redirect safely (no real files at old paths)
+        'Setup/Custom-application/Instrument-your-application/dotnet/index.md': 'Instrument/dotnet/index.md'
+        'Setup/Custom-application/Instrument-your-application/java/index.md': 'Instrument/java/index.md'
+        'Setup/Custom-application/Instrument-your-application/python/index.md': 'Instrument/python/index.md'
+        'Setup/Custom-application/Instrument-your-application/nodejs/index.md': 'Instrument/nodejs/index.md'
+        'Setup/Custom-application/Instrument-your-application/go/index.md': 'Instrument/go/index.md'
+
         # Short marketing-friendly aliases
         'ai/index.md': 'IAPM/3D/Features/ai-assistant.md'
         'copilot/index.md': 'IAPM/3D/Features/ai-assistant.md'
         'ai-assistant/index.md': 'IAPM/3D/Features/ai-assistant.md'
         'config/index.md': 'Setup/index.md'
+        # 'api/index.md' redirect removed - now a real page at API/index.md (case-insensitive collision)
+        'sdk/index.md': 'Instrument/index.md'
 
         #social
         'social/x/index.md': 'https://x.com/immersivefusion'

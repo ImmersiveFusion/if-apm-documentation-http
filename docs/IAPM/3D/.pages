@@ -2,7 +2,8 @@ title: 3D & VR
 arrange:
     - index.md
     - Features
-    - Supported-Configurations
-    - Integrations
     - Guides
+    - Integrations
+    - Supported-Configurations
+    - Troubleshooting
     - release-notes.md

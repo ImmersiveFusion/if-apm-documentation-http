@@ -1,82 +1,47 @@
 # Instrumentation
 
-{!template/subscription-required.mdp!}
+Instrumentation is the process of adding code to your application to generate telemetry data - traces, metrics, and logs. IAPM uses [OpenTelemetry](../Observability/Frameworks/OpenTelemetry/index.md) as its instrumentation standard.
 
-Instrumentation is the process of adding code to your application to generate telemetry data-traces, metrics, and logs. This data provides visibility into how your application behaves in production.
+!!! tip "Looking for setup instructions?"
+    For step-by-step instrumentation guides with code examples for your language, see the **[Instrument Your Application](../../../Instrument/index.md)** section.
 
-## How Instrumentation Works
+## How It Works
 
 ```mermaid
 graph LR
-    A[Your Application] -->|SDK| B[Telemetry Generation]
-    B -->|Exporter| C[IAPM Collector]
-    C --> D[IAPM Platform]
+    A[Your Application] -->|OTel SDK| B[Telemetry Generation]
+    B -->|OTLP Export| C[IAPM Platform]
+    C --> D[3D / Web / Studio]
 ```
 
-When you instrument an application:
-
-1. **Add the SDK** - Include the instrumentation library in your application
-2. **Configure exporters** - Tell the SDK where to send telemetry data
+1. **Add the SDK** - Include OpenTelemetry packages for your language
+2. **Configure the exporter** - Point to `https://otlp.iapm.app` with your API key
 3. **Deploy** - Run your instrumented application
-4. **Observe** - View telemetry data in IAPM
+4. **Observe** - View telemetry in IAPM within minutes
 
-## Instrumentation Types
+## Automatic vs Manual
 
-### Automatic Instrumentation
+| Approach | When to Use | Effort |
+|----------|-------------|--------|
+| **Auto-instrumentation** | HTTP, database, messaging frameworks | Zero code changes |
+| **Manual instrumentation** | Business logic, custom attributes, domain events | Add spans in your code |
 
-Many frameworks and libraries can be instrumented automatically without code changes:
+Most teams start with auto-instrumentation and add manual spans where business context matters.
 
-| What's Captured | Examples |
-|-----------------|----------|
-| HTTP requests | Incoming/outgoing API calls |
-| Database queries | SQL, MongoDB, Redis operations |
-| Message queues | RabbitMQ, Kafka producers/consumers |
-| Framework events | ASP.NET, Express.js, Spring Boot |
+## Language Guides
 
-**Benefits:**
-
-- No code changes required
-- Quick to implement
-- Captures common operations automatically
-
-### Manual Instrumentation
-
-Add custom instrumentation for business-specific operations:
-
-```csharp
-// Example: Custom span for business logic
-using var span = tracer.StartActiveSpan("ProcessOrder");
-span.SetAttribute("order.id", orderId);
-span.SetAttribute("order.total", orderTotal);
-// ... your business logic
-```
-
-**Benefits:**
-
-- Capture business-specific context
-- Add custom attributes and events
-- Instrument proprietary code
-
-## OpenTelemetry Integration
-
-IAPM uses [OpenTelemetry](../Observability/Frameworks/OpenTelemetry/index.md) as its instrumentation standard. OpenTelemetry provides:
-
-- **Vendor-neutral APIs** - No lock-in to specific platforms
-- **Broad language support** - .NET, Java, Python, Node.js, Go, and more
-- **Rich ecosystem** - Automatic instrumentation for popular frameworks
-- **Active community** - Continuous improvements and updates
-
-## Getting Started
-
-1. **Choose your language** - Find the OpenTelemetry SDK for your platform
-2. **Add dependencies** - Include the SDK and auto-instrumentation packages
-3. **Configure the exporter** - Point telemetry to your IAPM endpoint
-4. **Verify data flow** - Confirm telemetry appears in IAPM
-
-For detailed setup instructions, see the [OpenTelemetry documentation](https://opentelemetry.io/docs/concepts/instrumentation/).
+| Language | Guide |
+|----------|-------|
+| .NET / C# | [.NET Guide](../../../Instrument/dotnet/index.md) |
+| Java | [Java Guide](../../../Instrument/java/index.md) |
+| Python | [Python Guide](../../../Instrument/python/index.md) |
+| Node.js | [Node.js Guide](../../../Instrument/nodejs/index.md) |
+| Go | [Go Guide](../../../Instrument/go/index.md) |
+| Kubernetes | [Kubernetes Guide](../../../Instrument/kubernetes/index.md) |
+| OTel Collector | [Collector Guide](../../../Instrument/collector/index.md) |
 
 ## Next Steps
 
 - Learn about [Collection](../Collection/index.md) - How telemetry data is gathered and transmitted
 - Understand [Correlation](../Correlation/index.md) - How related telemetry is connected
-- Explore [OpenTelemetry](../Observability/Frameworks/OpenTelemetry/index.md) - Deep dive into the framework
+- Explore [OpenTelemetry](../Observability/Frameworks/OpenTelemetry/index.md) - The framework IAPM is built on

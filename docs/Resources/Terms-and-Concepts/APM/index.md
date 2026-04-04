@@ -1,54 +1,15 @@
 # Application Performance Management (APM)
 
-Application Performance Management (APM) is the practice of monitoring, managing, and optimizing the performance and availability of software applications. APM provides visibility into how applications behave in production, helping teams identify bottlenecks, diagnose issues, and ensure optimal user experiences.
+Application Performance Management (APM) is the practice of monitoring, managing, and optimizing the performance and availability of software applications. IAPM takes APM into a new dimension - literally - by replacing dashboard fatigue with immersive 3D visualization and AI-powered diagnostics.
 
 ## Why APM Matters
 
-Modern applications are complex distributed systems with many moving parts. Without proper monitoring:
+Modern applications are distributed systems with dozens of services. Without APM:
 
 - **Performance issues go undetected** until users complain
 - **Root cause analysis** becomes a time-consuming guessing game
 - **Capacity planning** relies on assumptions rather than data
 - **SLA compliance** cannot be measured or guaranteed
-
-## Key Capabilities
-
-APM solutions provide several critical capabilities:
-
-### Real-Time Monitoring
-
-Track application health metrics as they happen:
-
-- Response times and latency
-- Throughput and request rates
-- Error rates and exceptions
-- Resource utilization (CPU, memory, I/O)
-
-### Distributed Tracing
-
-Follow requests as they flow through your system:
-
-- Service-to-service communication
-- Database queries and external API calls
-- Queue processing and async operations
-
-### Alerting and Diagnostics
-
-Get notified when things go wrong:
-
-- Threshold-based alerts
-- Anomaly detection
-- Automated root cause analysis
-
-## What APM Monitors
-
-| Application Type | Examples |
-|------------------|----------|
-| Web Applications | REST APIs, GraphQL endpoints, web servers |
-| Mobile Applications | iOS and Android apps, mobile backends |
-| Databases | SQL, NoSQL, caching layers |
-| Cloud Services | Serverless functions, containers, microservices |
-| Infrastructure | Servers, networks, storage systems |
 
 ## The APM Data Pipeline
 
@@ -57,20 +18,33 @@ graph TD
     A[Application Code] -->|Instrumentation| B[Telemetry Generation]
     B -->|Collection| C[Data Aggregation]
     C -->|Processing| D[Analysis & Storage]
-    D -->|Visualization| E[Dashboards & Alerts]
+    D -->|Visualization| E[IAPM 3D / Web / Studio]
 ```
 
-1. **[Instrumentation](../Instrumentation/index.md)** - Code is instrumented to emit telemetry
-2. **[Collection](../Collection/index.md)** - Telemetry data is gathered and transmitted
-3. **[Correlation](../Correlation/index.md)** - Related data points are connected
-4. **Visualization** - Insights are presented in actionable formats
+1. **[Instrumentation](../Instrumentation/index.md)** - Your code emits traces, metrics, and logs via OpenTelemetry
+2. **[Collection](../Collection/index.md)** - Telemetry is exported to IAPM (directly or via Collector)
+3. **[Correlation](../Correlation/index.md)** - Related data points are connected across services
+4. **Visualization** - Insights surfaced in 3D, browser, or AI chat
+
+## How IAPM Is Different
+
+| Aspect | Traditional APM | IAPM |
+|--------|----------------|------|
+| **Interface** | Dashboards and query languages | 3D spatial environment |
+| **Root cause analysis** | Manual log correlation | Tessa AI diagnoses and suggests fixes |
+| **Instrumentation** | Proprietary agents | Standard OpenTelemetry (no lock-in) |
+| **Query complexity** | Complex DSL required | Ask Tessa in natural language |
+| **Collaboration** | Siloed dashboard views | Shared immersive space |
+| **Pricing** | Per-host + per-GB + per-feature | Simple per-node pricing |
+
+Traditional APM tools (Datadog, Dynatrace, New Relic) give you dashboards. IAPM lets you step inside your system, fly through your service topology, and ask Tessa what's wrong.
 
 ## APM vs. Observability
 
-While APM focuses on application performance, [observability](../Observability/index.md) is a broader concept that encompasses the ability to understand a system's internal state from its external outputs. APM is a key component of an observability strategy, working alongside logging, metrics, and tracing to provide complete system visibility.
+APM focuses on application performance. [Observability](../Observability/index.md) is broader - it encompasses the ability to understand a system's internal state from its external outputs. APM is a key component of observability, working alongside logging, metrics, and tracing to provide complete system visibility.
 
 ## Next Steps
 
 - Learn about [Observability](../Observability/index.md) and the three pillars
-- Understand how [IAPM](../IAPM/index.md) enhances traditional APM with immersive visualization
-- Explore [Instrumentation](../Instrumentation/index.md) to start collecting telemetry
+- Understand how [IAPM](../IAPM/index.md) enhances APM with immersive visualization
+- [Instrument your application](../../../Instrument/index.md) to start collecting telemetry
