@@ -1,0 +1,55 @@
+# Installation
+
+{!template/subscription-required.mdp!}
+
+!!! warning "Early Access"
+    IAPM Studio is in early access. Features and interfaces may change between releases.
+
+IAPM Studio is a native desktop application distributed as a standalone installer. It does not require Steam or any game platform - it is downloaded directly from Immersive Fusion.
+
+## Download
+
+Download IAPM Studio for your platform:
+
+[Windows :material-microsoft-windows:](https://www.immersivefusion.com/downloads){ .md-button .md-button--primary target="_blank" }
+[macOS :material-apple:](https://www.immersivefusion.com/downloads){ .md-button target="_blank" }
+
+A subscription is required to use IAPM Studio.
+
+## Windows
+
+1. Download the IAPM Studio installer from the link above
+2. Run the installer and follow the on-screen prompts
+3. Launch IAPM Studio from the Start menu or desktop shortcut
+4. Sign in with your IAPM account credentials
+5. Select a grid to connect to
+
+!!! note "Requirements"
+    Windows 10 or later (64-bit). See [Supported Configurations](../../Supported-Configurations/index.md) for full details.
+
+## macOS
+
+1. Download the IAPM Studio disk image from the link above
+2. Open the `.dmg` file and drag IAPM Studio to your Applications folder
+3. Launch IAPM Studio from Applications
+4. If prompted, allow the application in **System Settings** - **Privacy & Security**
+5. Sign in with your IAPM account credentials
+6. Select a grid to connect to
+
+!!! note "Requirements"
+    macOS 12 (Monterey) or later with Apple Silicon. See [Supported Configurations](../../Supported-Configurations/index.md) for full details.
+
+## Updates
+
+During early access, updates are released frequently. IAPM Studio checks for updates on launch and prompts you to install new versions when available.
+
+## Differences from IAPM 3D
+
+IAPM Studio is a separate application from IAPM (3D & VR). Key differences:
+
+| | Studio | 3D |
+|-|--------|----|
+| **Distribution** | Direct download from Immersive Fusion | Steam or offline installers |
+| **Engine** | Avalonia (native UI) | Unity 3D |
+| **Focus** | AI chat, workspaces, artifacts | 3D visualization, VR |
+| **Install size** | Lightweight | Larger (3D engine) |

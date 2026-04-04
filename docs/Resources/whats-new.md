@@ -1,66 +1,79 @@
 # What's New
 
-Recent updates and features in IAPM. For complete version history, see the release notes for [IAPM (3D & VR)](../IAPM/3D/release-notes.md) and [IAPM Web](../IAPM/Web/release-notes.md).
+Recent updates and features across IAPM. For complete version history, see the release notes for [IAPM (3D & VR)](../IAPM/3D/release-notes.md), [IAPM Web](../IAPM/Web/release-notes.md), and [IAPM Studio](../IAPM/Studio/release-notes.md).
 
 ---
 
 ## Latest Highlights
 
-### Usage Dashboard & Navigation Redesign (Web 3.82)
+### Skills System & Multimodal Vision (3D v1.12, Studio v0.7)
 
-A major update to IAPM Web with new account management features and improved navigation.
-
-| Feature | Description |
-|---------|-------------|
-| **Usage Dashboard** | Sparkbox visualizations showing telemetry usage at a glance |
-| **Grid Limits UI** | View subscription limits with interactive sparkline charts |
-| **Account Page** | New dedicated account management in Profile section |
-| **Welcome Modal** | Guided onboarding for first-time users |
-| **Dark Theme Default** | Dark theme is now the default experience |
-
-### AI Assistant & Diagnostics Room (Desktop 1.10)
-
-Interact with your telemetry using natural language and explore traces in immersive 3D.
+Tessa gains extensible capabilities and the ability to analyze images.
 
 | Feature | Description |
 |---------|-------------|
-| **Chat interface** | Ask questions about your traces and metrics |
-| **Voice commands** | Hands-free exploration with voice control |
-| **Location-aware context** | AI understands which room/scene you're in |
-| **Diagnostics Room** | Immersive trace visualization in 3D space |
-| **Quantum Console** | In-game debugging with AI command routing |
+| **Skills** | Tessa can now use modular skills for specialized tasks, with a browsable skill catalog |
+| **Multimodal Vision** | Paste screenshots with Ctrl+V and ask Tessa to analyze what you see |
+| **Diagnostics Tools** | New diagnostic and analysis tools give Tessa richer troubleshooting insights |
+| **Memory & Context** | Tessa remembers context across sessions for more coherent conversations |
 
-### macOS Support (Desktop 1.10)
+### Smarter Diagnostics & Vision (Web 3.131)
 
-Experimental support for Apple Silicon Macs. Download and test on macOS while we work toward full feature parity.
+| Feature | Description |
+|---------|-------------|
+| **Smarter Diagnostics** | Tessa fetches correlated performance data and alert summaries in a single query |
+| **Energy Dashboard Redesign** | See energy usage per grid, per tenant, and per tier with breakdown charts |
+| **Vision Support** | Send screenshots and images to Tessa for visual analysis |
+
+### OpenTelemetry Data Model (3D v1.11)
+
+Full adoption of the OpenTelemetry-native data model across all trace and log visualizations, with improved service graph placement and smoother transitions.
+
+### Multi-Tab Chat & Split Pane (Studio v0.5)
+
+| Feature | Description |
+|---------|-------------|
+| **Multi-Tab Chat** | Run multiple conversations with Tessa simultaneously |
+| **Split Pane View** | Drag to split, reorder, and arrange conversation panes |
+| **Session Persistence** | Chat history survives application restarts |
 
 ---
 
 ## Recent Updates
 
+### April 2026
+
+- **3D v1.12**: Skills system, multimodal vision, diagnostics tools, Studio feature parity
+- **Web 3.131**: Smarter diagnostics, energy dashboard redesign, vision support
+- **Studio v0.7**: Multimodal vision, Skills, memory and context
+
+### March 2026
+
+- **3D v1.11**: OpenTelemetry data model adoption, improved service graph, better tooltips
+- **Web 3.110**: Faster telemetry queries, OTel terminology alignment, secure AI gateway
+- **Studio v0.5**: Multi-tab chat, split pane view, session persistence, workspace browser
+- **Studio v0.1**: Initial early access release with AI chat and workspace management
+
+### February 2026
+
+- **Web 3.90**: AI Assistant chat with streaming and voice, energy system, invitation system, permission management, Personal Access Tokens, achievements, GitHub login, demo grid selector
+
 ### January 2026
 
-- **Web 3.82**: Usage Dashboard with sparkbox visualizations
-- **Web 3.82**: Navigation redesign with three-layout architecture
-- **Web 3.82**: Portal App with static hosting for improved performance
-- **Web 3.82**: Welcome modal for new user onboarding
+- **3D v1.10**: Live service graph, demo telemetry, energy system UI, streamlined authentication
+- **Web 3.82**: Usage dashboard with sparkbox visualizations, navigation redesign, welcome modal
 
 ### December 2025
 
-- **Web 3.71**: Major dashboard overhaul, Angular 21 upgrade
-- **Web 3.71**: Span View and Network Graph for trace analysis
-- **Web 3.71**: Dark/light theme improvements across all components
+- **Web 3.71**: Dashboard overhaul, Angular 21 upgrade, span view, network graph, dark/light themes
 
 ### April 2025
 
-- **Desktop 1.8**: Hall of Supporters with Buzludzha Monument
-- **Desktop 1.8**: .NET 9.0 rollup
+- **3D v1.8**: Hall of Supporters with Buzludzha Monument, .NET 9.0 rollup
 
-### January 2025
+### September 2025
 
-- **Desktop 1.6**: Live Charts showing Published/Processed/Failed/Lost counts
-- **Desktop 1.6**: Top view with automatic zoom
-- **Desktop 1.6**: Improved OTLP exporter delay handling
+- **3D v1.9**: Tessa AI Assistant debut (chat + voice), Diagnostics Room, grid picker redesign, ProTips, water environment, macOS experimental support
 
 ---
 
@@ -68,9 +81,9 @@ Experimental support for Apple Silicon Macs. Download and test on macOS while we
 
 | Feature | Product | Status |
 |---------|---------|--------|
-| Diagnostics Room | Desktop | Testing |
-| Full macOS support | Desktop | Experimental |
-| Achievements System | Web | In development |
+| Alerts configuration | Web | In development |
+| Full macOS support | 3D | Experimental |
+| Linux support | Studio | Planned |
 
 ---
 
@@ -89,5 +102,6 @@ Have an idea for IAPM? We'd love to hear from you:
 |---------|------|
 | Release notes (3D & VR) | [View releases](../IAPM/3D/release-notes.md) |
 | Release notes (Web) | [View releases](../IAPM/Web/release-notes.md) |
+| Release notes (Studio) | [View releases](../IAPM/Studio/release-notes.md) |
 | YouTube | [Tutorials & demos](https://www.youtube.com/@immersivefusion){ target="_blank" } |
 | LinkedIn | [Company updates](https://www.linkedin.com/company/immersivefusion){ target="_blank" } |

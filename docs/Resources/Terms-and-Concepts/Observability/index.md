@@ -1,10 +1,10 @@
 # Observability
 
-Observability is the ability to understand a system's internal state by examining its external outputs. Unlike traditional monitoring that tells you *when* something is wrong, observability helps you understand *why* it's wrong-even for problems you've never seen before.
+Observability is the ability to understand a system's internal state by examining its external outputs. Unlike traditional monitoring that tells you *when* something is wrong, observability helps you understand *why* - even for problems you've never seen before.
+
+IAPM brings observability into 3D space. Instead of switching between dashboards, fly through your service topology and ask Tessa to explain what's happening.
 
 ## The Three Pillars
-
-Observability is built on three complementary data types, each providing a different perspective on system behavior:
 
 ```mermaid
 graph TD
@@ -13,111 +13,45 @@ graph TD
         M[Metrics]
         T[Traces]
     end
-    L --> O[Complete Observability]
+    L --> O[IAPM - Correlated Observability]
     M --> O
     T --> O
 ```
 
-### Logs
+### Traces
 
-**What they are:** Timestamped records of discrete events that happened in your system.
+Records of requests as they flow through distributed systems. In IAPM, traces are visualized as 3D structures in the Diagnostics Room - you can walk through a request's journey across services.
 
-**Best for:**
-
-- Debugging specific errors and exceptions
-- Audit trails and compliance
-- Understanding application behavior at a granular level
-
-**Example:**
-
-```text
-2024-01-15T10:23:45Z ERROR [PaymentService] Failed to process payment for order #12345: Card declined
-```
+**Best for:** Understanding request flow, identifying latency bottlenecks, debugging distributed failures.
 
 ### Metrics
 
-**What they are:** Numeric measurements collected at regular intervals.
+Numeric measurements collected at regular intervals - counters, gauges, and histograms. IAPM renders metrics as real-time graphs on the Grid surface.
 
-**Best for:**
+**Best for:** Tracking trends, setting alert thresholds, capacity planning.
 
-- Tracking trends over time
-- Setting up alerts and thresholds
-- Capacity planning and resource optimization
+### Logs
 
-**Common metrics:**
+Timestamped records of discrete events. IAPM correlates logs with their parent traces, so you can jump from a failed span directly to the error log.
 
-| Metric Type | Examples |
-|-------------|----------|
-| Counters | Request count, error count |
-| Gauges | CPU usage, memory utilization, queue depth |
-| Histograms | Response time distribution, payload sizes |
+**Best for:** Debugging specific errors, audit trails, understanding application behavior at a granular level.
 
-### Traces
+## How the Pillars Work Together in IAPM
 
-**What they are:** Records of requests as they flow through distributed systems.
+The real power is correlation - connecting signals across pillars:
 
-**Best for:**
+| You Notice | Start With | Then Use | IAPM Experience |
+|------------|-----------|----------|-----------------|
+| "Response times are slow" | Metrics (latency graph) | Traces (find slow spans) | Ask Tessa: "Why is the order service slow?" |
+| "Error rate is spiking" | Metrics (error rate alert) | Logs (error details) | Tessa correlates alerts with root cause |
+| "Request failed" | Traces (failed span) | Logs (exception stack trace) | Click the span, see the log inline |
 
-- Understanding request flow across services
-- Identifying latency bottlenecks
-- Debugging distributed system issues
+## OpenTelemetry
 
-**Example trace:**
-
-```text
-User Request
-  └─ API Gateway (5ms)
-      └─ Auth Service (12ms)
-      └─ Order Service (45ms)
-          └─ Database Query (30ms)
-          └─ Payment Service (200ms) ← bottleneck!
-```
-
-## How the Pillars Work Together
-
-Each pillar provides unique insights, but the real power comes from correlating them:
-
-| Scenario | Start With | Then Use |
-|----------|------------|----------|
-| "Response times are slow" | Metrics (latency dashboard) | Traces (find slow spans) |
-| "Error rate is spiking" | Metrics (error rate alert) | Logs (error details) |
-| "Request failed" | Traces (failed span) | Logs (exception stack trace) |
-
-## Observability vs. Monitoring
-
-| Aspect | Traditional Monitoring | Observability |
-|--------|------------------------|---------------|
-| Approach | Predefined checks | Exploratory analysis |
-| Questions | Known unknowns | Unknown unknowns |
-| Data | Aggregated metrics | High-cardinality data |
-| Debugging | Dashboard-driven | Query-driven |
-
-## Benefits of Observability
-
-### Faster Incident Resolution
-
-With correlated telemetry data, teams can quickly trace issues from symptoms to root causes without guessing or extensive log searching.
-
-### Proactive Problem Detection
-
-Identify anomalies and degradation before they impact users through intelligent alerting and trend analysis.
-
-### Better Collaboration
-
-A shared observability platform gives developers, operations, and SRE teams a common view of system health, improving communication and reducing finger-pointing.
-
-### Data-Driven Decisions
-
-Make informed decisions about architecture, scaling, and optimization based on actual system behavior rather than assumptions.
-
-## Frameworks
-
-IAPM supports industry-standard observability frameworks:
-
-- **[OpenTelemetry](Frameworks/OpenTelemetry/index.md)** - The vendor-neutral standard for instrumentation
+IAPM uses [OpenTelemetry](Frameworks/OpenTelemetry/index.md) as its sole instrumentation framework. One SDK captures all three pillars - no separate agents for logs vs traces vs metrics.
 
 ## Next Steps
 
-- Learn how to add [Instrumentation](../Instrumentation/index.md) to your applications
+- Learn how to [instrument your application](../../../Instrument/index.md) with OpenTelemetry
 - Understand how [Collection](../Collection/index.md) gathers telemetry data
-- See how [Correlation](../Correlation/index.md) connects your observability data
+- See how [Correlation](../Correlation/index.md) connects signals across pillars

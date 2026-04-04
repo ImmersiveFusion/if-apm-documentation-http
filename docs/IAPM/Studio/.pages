@@ -1,4 +1,8 @@
 title: Studio
 arrange:
     - index.md
+    - Features
+    - Guides
+    - Supported-Configurations
+    - Troubleshooting
     - release-notes.md

@@ -51,5 +51,15 @@ IAPM works great with mouse and keyboard. For full immersion, connect a supporte
 [Explainers :material-school:](https://www.youtube.com/playlist?list=PLRCpHPtJkLZLM4h_4T6DMG99_SsIGyiYi){ .md-button target="_blank" }
 [Testimonials :material-account-voice:](https://www.youtube.com/playlist?list=PLRCpHPtJkLZJNMSlq8gd1ayCsOk_X-myO){ .md-button target="_blank" }
 
+## How IAPM Compares
+
+See how IAPM stacks up against other observability platforms:
+
+[vs Datadog](https://www.immersivefusion.com/compare/datadog){ .md-button target="_blank" }
+[vs Dynatrace](https://www.immersivefusion.com/compare/dynatrace){ .md-button target="_blank" }
+[vs New Relic](https://www.immersivefusion.com/compare/new-relic){ .md-button target="_blank" }
+[vs Grafana](https://www.immersivefusion.com/compare/grafana){ .md-button target="_blank" }
+[All Comparisons :material-arrow-right:](https://www.immersivefusion.com/compare){ .md-button target="_blank" }
+
 !!! tip "Looking for browser-based access?"
     [IAPM Web](../Web/index.md) provides quick access without installation for account management and basic monitoring.

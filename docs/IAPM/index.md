@@ -13,7 +13,7 @@ IAPM is available in three surfaces that work together to provide complete obser
 | **Visualization** | | | |
 | 3D Visualization | Full immersive | :material-close: | :material-close: |
 | VR Headset Support | :material-check: | :material-close: | :material-close: |
-| AI Assistant (Tessa) | :material-check: | Coming soon | :material-check: |
+| AI Assistant (Tessa) | :material-check: | :material-check: | :material-check: |
 | **Collaboration** | | | |
 | Workspaces + Artifacts | :material-check: | :material-close: | :material-check: |
 | Org Knowledge | :material-check: | :material-close: | :material-check: |
@@ -49,7 +49,7 @@ Browser-based access to your telemetry data. Manage your account, configure aler
 
 ## IAPM Studio
 
-!!! warning "Experimental"
+!!! warning "Early Access"
     IAPM Studio is in early access. Features and availability may change.
 
 Lightweight native client for AI-powered chat, voice interaction, workspaces, and organizational knowledge - without the full 3D environment.

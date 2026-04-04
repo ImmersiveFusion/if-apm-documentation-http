@@ -16,9 +16,9 @@ IAPM uses **per-node pricing**. A node is any monitored application instance sen
 | **Visualization** | | | | |
 | IAPM Web | :material-check: | :material-check: | :material-check: | :material-check: |
 | IAPM (3D & VR) | :material-check: | :material-check: | :material-check: | :material-check: |
-| **Throughput** | 5/sec | 10/sec | 50/sec | 100/sec |
-| **Data Retention** | None | None | 15+ days | 30+ days |
-| **AI (Tessa)** | Limited | Limited | Standard | Premium |
+| **Throughput** | 50/sec | 200/sec | 1,000/sec | 2,000/sec |
+| **Data Retention** | 7 days | 30 days | 90 days | 365 days |
+| **AI (Tessa)** | 7 queries/day | 35 queries/day | Unlimited + Code Fix | Unlimited + Code Fix + Infra |
 | **Support** | Discord | Chat/Email | Chat/Email/Phone | Chat/Email/Phone |
 | **Uptime SLA** | - | 99% | 99.9% | 99.99% |
 | **Dedicated Success Rep** | :material-close: | :material-close: | :material-check: | :material-check: |
@@ -32,45 +32,56 @@ IAPM uses **per-node pricing**. A node is any monitored application instance sen
 
 ### Start (Free)
 
-Best for trials and proof-of-concept.
+Experience application immersion with zero risk, allowing you to gain valuable insights into your application's behavior.
 
-- No cost to get started
-- Full 3D/VR visualization
-- Limited Tessa AI assistance
+- Free forever trial
+- Shared infrastructure
+- 50 traces + logs per second
+- 7 days data retention
+- 7 AI Assistant queries per day
 - Community support via Discord
-- No data retention (real-time only)
 
 ### Visualize
 
-Best for small teams getting started with production monitoring.
+Enhance your application immersion capabilities with expanded availability and comprehensive support.
 
-- $20/node/month (volume discounts available)
+- $20/node/month (1 node minimum)
+- Shared infrastructure
 - 99% uptime SLA
+- 200 traces + logs per second
+- 30 days data retention
+- 35 AI Assistant queries per day
 - Chat and email support
-- Real-time monitoring (no historical data)
 
 ### Analyze
 
-Best for mid-market teams needing historical data and reliability.
+Improve your application visualization capabilities by incorporating historical data retention and dedicated resources.
 
 - $45/node/month (25 node minimum = $1,125/month)
 - Dedicated infrastructure
-- 15+ days data retention
 - 99.9% uptime SLA
+- 1,000 traces + logs per second
+- 90 days data retention
+- Unlimited AI Assistant + Code Fix
 - Phone support
 - Dedicated success representative
-- Professional consulting included
+- Professional consulting services
 
 ### Fuse
 
-Best for enterprise teams requiring premium support and SLA.
+Elevate your application monitoring and management with the stability, scalability, and expertise.
 
 - $60/node/month (50 node minimum = $3,000/month)
-- 30+ days data retention
+- Dedicated infrastructure
 - 99.99% uptime SLA
-- Premium Tessa AI limits
-- Early access to new features
-- Recognition in Hall of Supporters
+- 2,000 traces + logs per second
+- 365 days data retention
+- Unlimited AI Assistant + Code Fix + Infra
+- Phone support
+- Dedicated success representative
+- Professional consulting services
+- Early access to new functionality
+- Hall of Supporters feature
 
 ## Volume Discounts
 
@@ -86,8 +97,8 @@ Volume pricing rewards larger deployments:
 
 | Plan | Calculation | Monthly |
 |------|-------------|---------|
-| Visualize | (5 × $20) + (35 × $15) | $625 |
-| Analyze | (25 × $45) + (15 × $30) | $1,575 |
+| Visualize | (5 x $20) + (35 x $15) | $625 |
+| Analyze | (25 x $45) + (15 x $30) | $1,575 |
 
 ## Annual Discount
 
@@ -109,7 +120,7 @@ Save approximately 17% with annual prepayment.
 
 Upgrade at any time:
 
-1. Go to **Billing** → **Subscriptions**
+1. Go to **Billing** > **Subscriptions**
 2. Click **Change Plan**
 3. Select your new plan
 4. Confirm the change
@@ -120,7 +131,7 @@ Upgrades take effect immediately with prorated billing.
 
 Downgrade at the end of your billing cycle:
 
-1. Go to **Billing** → **Subscriptions**
+1. Go to **Billing** > **Subscriptions**
 2. Click **Change Plan**
 3. Select the lower tier
 4. Confirm the change
