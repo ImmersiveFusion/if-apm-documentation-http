@@ -23,6 +23,17 @@ graph LR
     C --> E[Web Interface]
 ```
 
+## Service Types on the Service Map
+
+IAPM automatically discovers and displays two types of services:
+
+| Type | Definition | Billable | How Detected |
+|------|-----------|----------|--------------|
+| **Instrumented Service** | An application instance emitting telemetry via OpenTelemetry SDK | Yes (1 node) | `service.name` in OTel Resource |
+| **Inferred Service** | An entity referenced by span attributes with no direct telemetry | No | `db.system`, `server.address`, `peer.service` in span attributes |
+
+Both appear on the Service Map. When an inferred service becomes instrumented (you add OpenTelemetry to it), IAPM automatically upgrades it in place, preserving its connections and history.
+
 ## Key Characteristics
 
 | Feature | Description |
