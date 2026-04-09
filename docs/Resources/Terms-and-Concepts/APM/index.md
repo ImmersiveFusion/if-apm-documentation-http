@@ -35,7 +35,7 @@ graph TD
 | **Instrumentation** | Proprietary agents | Standard OpenTelemetry (no lock-in) |
 | **Query complexity** | Complex DSL required | Ask Tessa in natural language |
 | **Collaboration** | Siloed dashboard views | Shared immersive space |
-| **Pricing** | Per-host + per-GB + per-feature | Simple per-node pricing |
+| **Pricing** | Per-host + per-GB + per-feature | Simple per-node pricing (node = instrumented service) |
 
 Traditional APM tools (Datadog, Dynatrace, New Relic) give you dashboards. IAPM lets you step inside your system, teleport between services, and ask Tessa what's wrong.
 
