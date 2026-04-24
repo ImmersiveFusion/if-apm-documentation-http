@@ -11,16 +11,16 @@ Free to install. A subscription is required to use IAPM. Learn more about [Steam
 
 ## Offline Installer (MSI)
 
-[Latest Release Build :material-download:](https://ifapm.blob.core.windows.net/release/rtm/msi/ImmersiveAPM.latest.msi){ .md-button .md-button--primary }
-[Latest Beta Build :material-download:](https://ifapm.blob.core.windows.net/release/beta/msi/ImmersiveAPM.latest.msi){ .md-button }
-[Latest Alpha Build :material-download:](https://ifapm.blob.core.windows.net/release/alpha/msi/ImmersiveAPM.latest.msi){ .md-button }
+[Latest Release Build :material-download:](https://ifapm.blob.core.windows.net/release/rtm/msi/DC.latest.msi){ .md-button .md-button--primary }
+[Latest Beta Build :material-download:](https://ifapm.blob.core.windows.net/release/beta/msi/DC.latest.msi){ .md-button }
+[Latest Alpha Build :material-download:](https://ifapm.blob.core.windows.net/release/alpha/msi/DC.latest.msi){ .md-button }
 
 1. Click on the button above to download the installer for IAPM for Windows from the cloud. The file size is around `1.5GB`
     ![Download](img/1.download.png)
 
 1. Run the installer
 
-    Navigate to your Downloads folder, click on the installer called `ImmersiveAPM.latest.msi` and run it.
+    Navigate to your Downloads folder, click on the installer called `DC.latest.msi` and run it.
 
     ![Download](img/2.open.png)
 

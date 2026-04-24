@@ -2,6 +2,57 @@
 
 ## Version History
 
+### 1.14.0 <small>April 20, 2026</small> { id="1.14.0" }
+
+**Introduction:**
+
+This release delivers a big jump in in-world information density. Services and dependencies now carry their own content screens with error tables, log tables, and cost summaries, and you can tap any table row to teleport directly to the matching facility. A new force-directed service graph replaces the previous physics layout with smoother, more stable placement. Tessa picks up a new visual companion, Boop, for contextual guidance.
+
+**New Features:**
+
+- **Per-Facility Content Screens**: Services, dependencies, and the root hub each have their own error table, log table, and cost summary screens, pulled live from the telemetry stream.
+- **Row-Tap Teleport**: Tap any row in a service, dependency, error, or log table to teleport directly to the corresponding facility.
+- **GenAI Cost Visibility**: Dedicated cost summary screens on the root hub, service facilities, and the Diagnostics Room show GenAI spend and token usage at a glance.
+
+**Improvements:**
+
+- **New Service Graph Engine**: The service graph uses a new force-directed layout for smoother transitions, stable node placement, and reliable prevention of ghost nodes.
+- **Auto-Flatten Graph**: The graph flattens to 2D when you are in the hub and unfolds to 3D when you approach a facility.
+- **Portal Hub Return**: Facility portals now reliably return you to the central hub, with correct orientation and landing position.
+- **Loading Screen Timing**: The loading screen now waits for all environment scenes to finish loading before handing off to the world.
+- **Paused World**: Pausing the world now freezes the service graph, photons, and physics so you can inspect the scene without motion.
+- **Tooltip and Label Polish**: F6 copy hints standardized across tooltips, proximity labels refined, and dependency type now displays database and messaging system details.
+- **Installer Packaging**: New Windows Installer (MSI) with dialog and banner graphics, and a new macOS disk image (DMG) distribution flow.
+
+**Bug Fixes:**
+
+- Fixed completed spans being mistakenly classified as lost with inflated durations.
+- Fixed ghost nodes appearing in the service graph during high churn.
+- Fixed avatar falling through the ground after portal teleport.
+- Fixed portal ring orientation so portals face the hub center correctly.
+- Fixed graph layout instability with improved bounding box handling and cooling behavior.
+- Fixed Diagnostics Room width computation after scene hierarchy changes.
+- Fixed numerous trace table and tooltip rendering issues.
+
+**Known Issues:**
+
+- macOS support is experimental and may lack full feature parity with Windows builds.
+
+### 1.12.1 <small>April 5, 2026</small> { id="1.12.1" }
+
+**Introduction:**
+
+This patch refines service context awareness so Tessa can ground her answers in the specific service you are looking at.
+
+**Improvements:**
+
+- Service facilities now carry richer platform context (runtime, operating system, service version) that Tessa can consult when answering questions.
+- Refined service context providers for more accurate location and topic awareness.
+
+**Bug Fixes:**
+
+- Fixed an error when the grid selection modal loads before authentication completes.
+
 ### 1.12.0 <small>April 3, 2026</small> { id="1.12.0" }
 
 **Introduction:**

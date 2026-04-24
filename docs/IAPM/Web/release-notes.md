@@ -2,6 +2,18 @@
 
 ## Version History
 
+### 3.132.0 <small>April 5, 2026</small> { id="3.132.0" }
+
+**Introduction:**
+
+This patch keeps Tessa's memory intact across multi-step tool conversations, so follow-up questions no longer lose the context of earlier actions.
+
+**Bug Fixes:**
+
+- Fixed Tessa losing file and tool context between conversation turns when using server-side tools. Follow-up questions about previously inspected data now work correctly.
+
+---
+
 ### 3.131.0 <small>April 2, 2026</small> { id="3.131.0" }
 
 **Introduction:**

@@ -5,6 +5,42 @@
 
 ## Version History
 
+### 0.8.0 <small>April 16, 2026</small> { id="0.8.0" }
+
+**Introduction:**
+
+This release makes Studio genuinely multi-workspace: every chat tab now binds to its own workspace, so you can work on several projects side by side without cross-talk. A redesigned tool card surface shows Tessa's actions with side-by-side diffs, chat sessions survive restarts, and Studio is now available for both Windows and macOS.
+
+**New Features:**
+
+- **Per-Tab Workspace Binding**: Each chat tab can target a different workspace, with a workspace picker available from the new-tab button and a current-workspace indicator in the status bar.
+- **Tool Card UI**: Tessa's tool actions render as expandable cards with side-by-side before/after diffs so you can see exactly what she changed.
+- **Session Restore**: Your open tabs and chat history are restored automatically when you reopen Studio.
+- **macOS Distribution**: Studio now ships a macOS disk image alongside the Windows installer.
+
+**Improvements:**
+
+- Rebranded app shell to DC Studio with a matching Windows installer experience.
+- Background authentication token refresh so long sessions no longer hit expired-token errors.
+- Installer pipeline overhauled for both Windows (MSI) and macOS (DMG) distribution, with cleaner upgrades and a new blob-published download flow.
+- Version is now shown on the login screen for easier support and troubleshooting.
+
+**Bug Fixes:**
+
+- Fixed startup crash related to embedded browser initialization and user data folder location.
+- Fixed race condition where switching workspaces could spawn a ghost tab.
+- Fixed workspace switching losing chat state mid-conversation.
+
+### 0.7.1 <small>April 5, 2026</small> { id="0.7.1" }
+
+**Introduction:**
+
+This patch cleans up Tessa's output rendering for more consistent formatting in chat responses.
+
+**Bug Fixes:**
+
+- Fixed assorted output formatting glitches in Tessa's responses.
+
 ### 0.7.0 <small>April 3, 2026</small> { id="0.7.0" }
 
 **Introduction:**
