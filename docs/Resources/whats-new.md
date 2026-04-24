@@ -6,6 +6,20 @@ Recent updates and features across IAPM. For complete version history, see the r
 
 ## Latest Highlights
 
+### In-World Content Screens & Per-Tab Workspaces (3D v1.14, Studio v0.8)
+
+Big density jump in the 3D world with per-facility content screens, and Studio makes every chat tab its own workspace.
+
+| Feature | Description |
+|---------|-------------|
+| **Per-Facility Content Screens** | Services and dependencies carry their own error, log, and cost summary screens in the 3D world |
+| **Row-Tap Teleport** | Tap any row in a table to teleport directly to the matching facility |
+| **New Service Graph Engine** | Force-directed layout with smoother transitions and stable node placement |
+| **Per-Tab Workspaces** | Each Studio chat tab binds to its own workspace, so multiple projects run side by side |
+| **Tool Card UI** | Studio renders Tessa's actions as cards with side-by-side before/after diffs |
+| **Session Restore** | Studio reopens your tabs and chat history automatically |
+| **macOS Studio** | Studio now ships a macOS disk image alongside the Windows installer |
+
 ### Skills System & Multimodal Vision (3D v1.12, Studio v0.7)
 
 Tessa gains extensible capabilities and the ability to analyze images.
@@ -43,6 +57,11 @@ Full adoption of the OpenTelemetry-native data model across all trace and log vi
 
 ### April 2026
 
+- **3D v1.14**: Per-facility content screens, row-tap teleport, new force-directed service graph, Boop companion, macOS disk image
+- **3D v1.12.1**: Richer service platform context for Tessa
+- **Studio v0.8**: Per-tab workspace binding, tool card UI with diffs, session restore, macOS distribution
+- **Studio v0.7.1**: Output formatting fixes
+- **Web 3.132**: Fixed Tessa losing context between multi-step tool turns
 - **3D v1.12**: Skills system, multimodal vision, diagnostics tools, Studio feature parity
 - **Web 3.131**: Smarter diagnostics, energy dashboard redesign, vision support
 - **Studio v0.7**: Multimodal vision, Skills, memory and context
