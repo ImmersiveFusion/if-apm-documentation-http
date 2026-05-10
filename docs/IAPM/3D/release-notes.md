@@ -2,6 +2,60 @@
 
 ## Version History
 
+### 1.15.0 <small>May 8, 2026</small> { id="1.15.0" }
+
+**Introduction:**
+
+Boop graduates from preview to a full in-world presence. You can now switch workspaces from voice or the console without leaving the world, the radial menu reorganizes around how you actually work (Help, Quick Read, Deep Analysis), and gamepad players get a proper on-screen cursor with orbit-on-stick movement. Boop also picks up a richer set of idle behaviors that make the world feel less empty during long sessions.
+
+**New Features:**
+
+- **Voice and Console Workspace Switching**: Say or type a workspace command to switch grids without opening the picker. The world reloads cleanly with the new workspace context.
+- **Three-Bucket Boop Menu**: The radial menu reorganizes around intent: Help, Quick Read, and Deep Analysis. Workspace-aware Security and Research entries appear when relevant, and GenAI Cost shows up in trace context.
+- **Gamepad Cursor and Stick Orbiting**: A screen-center reticle gives gamepad players a true cursor for in-world targeting. Pushing the right stick now activates orbiting around the focal point.
+- **Boop Idle Behaviors**: Boop now wanders, plays small skits, picks up props, and chatters while you work, with smoother pose recovery and tilt handling.
+
+**Improvements:**
+
+- Boop menu prefills the console for quick edits before send, and surfaces an active-context diagnostic so you can see what Boop is reasoning over.
+- Empty-slice handling and recall easing polish the radial menu interaction.
+- Boop is disabled by default until you opt in.
+
+**Bug Fixes:**
+
+- Fixed Boop getting stuck in poses or tilted after rapid prop interactions.
+- Fixed input-action bleed when the radial menu opened or closed mid-action.
+
+**Known Issues:**
+
+- macOS support is experimental and may lack full feature parity with Windows builds.
+
+### 1.14.11 <small>April 24, 2026</small> { id="1.14.11" }
+
+**Introduction:**
+
+A series of stabilization patches across the 1.14.x line, focused on Windows installer reliability, in-world polish, and an early look at Boop that lands properly in 1.15.0. If you are upgrading from 1.14.0, this is the recommended 1.14.x build to install.
+
+**Improvements:**
+
+- **Smaller, More Reliable Windows Installer**: Reworked the Windows installer payload so large worlds package and install reliably on all Windows configurations.
+- **Refreshed Installer Branding**: New Windows installer dialog and banner artwork, with the executable and shortcuts aligned to the DC naming convention.
+- **macOS Disk Image Distribution**: A new macOS disk image (DMG) flow ships alongside the Windows installer.
+- **Boop Preview**: Early in-world preview of Boop with idle behaviors, props, and a contextual radial menu. Disabled by default; full release lands in 1.15.0.
+- **Service Facility Polish**: Refined service facility content, including overlay menu fixes, tooltip cleanup, and smarter error/log table rendering pulled from receiver buffers.
+- **Portal Landing Polish**: Portal teleport landings fall back through to ground reliably, and portal ring orientation faces the hub center correctly.
+
+**Bug Fixes:**
+
+- Fixed graph layout stability with improved bounding box handling and cooling behavior.
+- Fixed avatar fall-through after portal teleport.
+- Fixed assorted prefab and scale issues across error and log tables.
+- Fixed dependency tap-target resolution to use the cell value instead of the row index.
+
+**Known Issues:**
+
+- macOS support is experimental and may lack full feature parity with Windows builds.
+
 ### 1.14.0 <small>April 20, 2026</small> { id="1.14.0" }
 
 **Introduction:**

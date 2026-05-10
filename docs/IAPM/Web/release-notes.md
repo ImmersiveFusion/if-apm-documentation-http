@@ -2,6 +2,50 @@
 
 ## Version History
 
+### 3.141.0 <small>May 6, 2026</small> { id="3.141.0" }
+
+**Introduction:**
+
+Stage 2 of the personal subscription enablement, with smoother subscription cancellation and a build pipeline that's ready to publish updates more reliably.
+
+**Improvements:**
+
+- Cleaner subscription cancellation flow with extracted lifecycle handling, so cancellations and reactivations leave a consistent account state.
+- Pipeline and template updates so subscription tag and publish builds stay green.
+
+**Bug Fixes:**
+
+- Fixed discount template bindings on the subscription confirmation page that broke after the subscription model update.
+
+---
+
+### 3.140.0 <small>May 5, 2026</small> { id="3.140.0" }
+
+**Introduction:**
+
+This release rolls out the Personal Product License model end to end. Tessa is now its own purchasable subscription on the personal plan, the Portal grows admin tools to manage seats and attestations across a tenant, and the energy bar surfaces your tier and energy source so you always know which usage pool a request is drawing from.
+
+**New Features:**
+
+- **Personal Product License Model**: Tessa Personal is now a first-class subscription with a published catalog, signup gating, and proper graduated tiered pricing on the energy plan.
+- **Admin Seat Management**: New Portal admin pages for assigning, revoking, and attesting seats across a tenant, with role-based authorization guards.
+- **Tier and Energy Source on the Energy Bar**: The Usage page energy bar now shows your current tier and which energy source a request was billed against, so personal vs grid usage is no longer ambiguous.
+
+**Improvements:**
+
+- Subscription catalog is published from a single source-of-truth definition, with availability gates so signup-only and inquire-only SKUs are surfaced consistently across the Portal and pricing page.
+- Removed legacy bypass paths in the grid and space flows so usage is properly metered for every request.
+- More accurate billing on the first day of the month, with running-cycle-average metering for grids and the Tessa assistant.
+- Fixed token-window naming consistency across the SPA and SDK.
+- Hardened CI so subscription pipelines stay reliable across SDK and snapshot updates.
+
+**Bug Fixes:**
+
+- Fixed a long-running storage meter job error that masked failures in usage rollups.
+- Fixed assorted snapshot drift across the Portal admin and pricing surfaces.
+
+---
+
 ### 3.132.0 <small>April 5, 2026</small> { id="3.132.0" }
 
 **Introduction:**
