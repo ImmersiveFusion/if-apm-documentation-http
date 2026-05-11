@@ -5,6 +5,25 @@
 
 ## Version History
 
+### 0.8.23 <small>April 20, 2026</small> { id="0.8.23" }
+
+**Introduction:**
+
+A stabilization series across the 0.8.x line, focused on shipping the Windows and macOS installers reliably and hardening the embedded browser startup. If you are upgrading from 0.8.0, this is the recommended 0.8.x build to install.
+
+**Improvements:**
+
+- **Reliable macOS Disk Image**: The macOS disk image flow is hardened end to end, the installed app is consistently named **IAPM Studio**, proper signing on unsigned ship builds, and reliable artifact downloads.
+- **Polished Windows Installer**: Windows installer publishes as **IAPM Studio** with refreshed dialog and banner artwork, and the installer link step resolves harvested file sources cleanly.
+- **Hardened Embedded Browser Startup**: The embedded browser now initializes in the correct order, redirects its user data folder out of restricted locations, and logs initialization failures so support can diagnose them.
+- **Cleaner Per-OS Publish Pipelines**: Publish pipelines split per operating system so Windows and macOS builds run on their native build agents and produce predictable artifacts.
+
+**Bug Fixes:**
+
+- Fixed embedded browser startup failures caused by initialization order and restricted user data folder paths.
+- Fixed installer link errors by resolving harvested file sources through the correct bind path.
+- Fixed the macOS app bundle name so the published bundle is consistently named **IAPM Studio**.
+
 ### 0.8.0 <small>April 16, 2026</small> { id="0.8.0" }
 
 **Introduction:**
@@ -20,7 +39,7 @@ This release makes Studio genuinely multi-workspace: every chat tab now binds to
 
 **Improvements:**
 
-- Rebranded app shell to DC Studio with a matching Windows installer experience.
+- Rebranded app shell to **IAPM Studio** with a matching Windows installer experience.
 - Background authentication token refresh so long sessions no longer hit expired-token errors.
 - Installer pipeline overhauled for both Windows (MSI) and macOS (DMG) distribution, with cleaner upgrades and a new blob-published download flow.
 - Version is now shown on the login screen for easier support and troubleshooting.

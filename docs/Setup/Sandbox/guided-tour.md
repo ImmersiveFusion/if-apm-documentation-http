@@ -10,7 +10,7 @@ The Demo Grid is the fastest way to see IAPM 3D in action. It generates a realis
 
 ### Step 1: Launch IAPM 3D
 
-Open IAPM 3D. If you haven't installed it yet, see the [installation guide](../../IAPM/3D/Guides/Installation/index.md).
+Open IAPM 3D. If you haven't installed it yet, see the [installation guide](../../DC/3D/Guides/Installation/index.md).
 
 !!! note "Version requirement"
     The Demo Grid requires IAPM 3D **v1.10 or later**. Check your version in the app settings.
@@ -141,5 +141,5 @@ You've covered the basics. Here are some ideas to go deeper before connecting yo
 When you're ready to move beyond the sandbox:
 
 [Instrument Your Application :material-arrow-right:](../../Instrument/index.md){ .md-button .md-button--primary }
-[Explore IAPM Features :material-cube-outline:](../../IAPM/3D/index.md){ .md-button }
-[Browse Scenario Walkthroughs :material-map:](../../IAPM/3D/Guides/Scenarios/index.md){ .md-button }
+[Explore IAPM Features :material-cube-outline:](../../DC/3D/index.md){ .md-button }
+[Browse Scenario Walkthroughs :material-map:](../../DC/3D/Guides/Scenarios/index.md){ .md-button }
