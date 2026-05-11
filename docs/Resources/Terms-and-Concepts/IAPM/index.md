@@ -77,9 +77,9 @@ Visualize traffic patterns and resource utilization. See where bottlenecks are l
 
 | Product | Description | Best For |
 |---------|-------------|----------|
-| [IAPM (3D & VR)](../../../IAPM/3D/index.md) | Full 3D/VR client application | Deep investigation, VR immersion |
-| [IAPM Web](../../../IAPM/Web/index.md) | Browser-based access | Quick access, team management |
-| [IAPM Studio](../../../IAPM/Studio/index.md) | Lightweight AI assistant client | Chat, voice, workspaces, org knowledge |
+| [IAPM (3D & VR)](../../../DC/3D/index.md) | Full 3D/VR client application | Deep investigation, VR immersion |
+| [IAPM Web](../../../DC/Web/index.md) | Browser-based access | Quick access, team management |
+| [IAPM Studio](../../../DC/Studio/index.md) | Lightweight AI assistant client | Chat, voice, workspaces, org knowledge |
 
 ## Getting Started
 

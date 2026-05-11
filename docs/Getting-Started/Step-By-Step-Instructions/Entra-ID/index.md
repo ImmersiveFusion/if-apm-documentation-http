@@ -49,12 +49,12 @@ Once telemetry is flowing, explore your application:
 
 Enter the World of Your Application® with mouse and keyboard or a VR headset.
 
-[Install IAPM :material-download:](../../../IAPM/3D/Guides/Installation/index.md){ .md-button .md-button--primary }
-[3D & VR Documentation :material-book-open:](../../../IAPM/3D/index.md){ .md-button }
+[Install IAPM :material-download:](../../../DC/3D/Guides/Installation/index.md){ .md-button .md-button--primary }
+[3D & VR Documentation :material-book-open:](../../../DC/3D/index.md){ .md-button }
 
 ### IAPM Web (Browser)
 
 Access traces, alerts, and account management from any browser.
 
 [Open IAPM Web :material-web:](https://portal.iapm.app){ .md-button .md-button--primary target="_blank" }
-[Web Documentation :material-book-open:](../../../IAPM/Web/index.md){ .md-button }
+[Web Documentation :material-book-open:](../../../DC/Web/index.md){ .md-button }

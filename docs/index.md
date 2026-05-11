@@ -16,7 +16,7 @@ social:
     Immersive 3D and VR observability. Explore traces, metrics, and logs
     in a spatial environment on the Grid.
 
-    [:octicons-arrow-right-24: Explore IAPM 3D](IAPM/3D/index.md)
+    [:octicons-arrow-right-24: Explore IAPM 3D](DC/3D/index.md)
 
 -   :material-web:{ .lg .middle } **IAPM Web**
 
@@ -25,7 +25,7 @@ social:
     Browser-based observability portal. Monitor services, analyze traces,
     and manage your account from any device.
 
-    [:octicons-arrow-right-24: Explore IAPM Web](IAPM/Web/index.md)
+    [:octicons-arrow-right-24: Explore IAPM Web](DC/Web/index.md)
 
 -   :material-creation-outline:{ .lg .middle } **IAPM Studio**
 
@@ -34,7 +34,7 @@ social:
     Lightweight native client for AI-powered chat, voice, and
     workspaces with Tessa. Currently in early access.
 
-    [:octicons-arrow-right-24: Explore IAPM Studio](IAPM/Studio/index.md)
+    [:octicons-arrow-right-24: Explore IAPM Studio](DC/Studio/index.md)
 
 </div>
 
@@ -75,7 +75,7 @@ social:
 
     See what shipped in the latest releases across all IAPM surfaces.
 
-    [:octicons-arrow-right-24: 3D](IAPM/3D/release-notes.md) &nbsp; [:octicons-arrow-right-24: Web](IAPM/Web/release-notes.md) &nbsp; [:octicons-arrow-right-24: Studio](IAPM/Studio/release-notes.md)
+    [:octicons-arrow-right-24: 3D](DC/3D/release-notes.md) &nbsp; [:octicons-arrow-right-24: Web](DC/Web/release-notes.md) &nbsp; [:octicons-arrow-right-24: Studio](DC/Studio/release-notes.md)
 
 </div>
 

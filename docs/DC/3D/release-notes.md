@@ -39,7 +39,7 @@ A series of stabilization patches across the 1.14.x line, focused on Windows ins
 **Improvements:**
 
 - **Smaller, More Reliable Windows Installer**: Reworked the Windows installer payload so large worlds package and install reliably on all Windows configurations.
-- **Refreshed Installer Branding**: New Windows installer dialog and banner artwork, with the executable and shortcuts aligned to the DC naming convention.
+- **Refreshed Installer Branding**: New Windows installer dialog and banner artwork, with the installer, Start Menu shortcut, and app all consistently named **IAPM**.
 - **macOS Disk Image Distribution**: A new macOS disk image (DMG) flow ships alongside the Windows installer.
 - **Boop Preview**: Early in-world preview of Boop with idle behaviors, props, and a contextual radial menu. Disabled by default; full release lands in 1.15.0.
 - **Service Facility Polish**: Refined service facility content, including overlay menu fixes, tooltip cleanup, and smarter error/log table rendering pulled from receiver buffers.

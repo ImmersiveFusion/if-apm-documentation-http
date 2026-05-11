@@ -55,7 +55,7 @@ The [OpenTelemetry Chaos Simulator](https://github.com/ImmersiveFusion/if-opente
 1. Go to [demo.iapm.app](https://demo.iapm.app){ target="_blank" }
 2. A unique sandbox is created automatically for you
 3. Click buttons to generate traffic and inject chaos
-4. Open [IAPM](../../IAPM/3D/index.md) to see the telemetry appear live
+4. Open [IAPM](../../DC/3D/index.md) to see the telemetry appear live
 
 ### What You Can Simulate
 
