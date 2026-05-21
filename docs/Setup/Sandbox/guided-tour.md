@@ -142,4 +142,4 @@ When you're ready to move beyond the sandbox:
 
 [Instrument Your Application :material-arrow-right:](../../Instrument/index.md){ .md-button .md-button--primary }
 [Explore IAPM Features :material-cube-outline:](../../DC/3D/index.md){ .md-button }
-[Browse Scenario Walkthroughs :material-map:](../../DC/3D/Guides/Scenarios/index.md){ .md-button }
+[Browse Tutorials :material-map:](../../DC/3D/Tutorials/index.md){ .md-button }

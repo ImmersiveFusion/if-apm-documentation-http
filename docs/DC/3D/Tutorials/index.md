@@ -15,9 +15,9 @@ These walkthroughs show IAPM in action - step by step through real-world trouble
 
 Each scenario assumes you have:
 
-- IAPM [installed](../Installation/index.md) and running
+- IAPM [installed](../Guides/Installation/index.md) and running
 - An active subscription with a connected grid
-- Familiarity with [basic navigation controls](../Navigation/index.md) (recommended for intermediate scenarios)
+- Familiarity with [basic navigation controls](../Guides/Navigation/index.md) (recommended for intermediate scenarios)
 
 !!! tip "Demo Grid"
     If you don't have a production grid connected yet, you can use the demo grid to follow along with these scenarios. The demo grid includes a simulated microservice architecture with realistic traffic patterns.

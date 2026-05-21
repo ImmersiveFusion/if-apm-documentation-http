@@ -174,4 +174,4 @@ Errors are spreading across your system. Multiple services are red. This isn't a
 
 - [Investigating a Latency Spike](latency-spike.md) - Single-service latency diagnosis
 - [Understanding Your Service Topology](service-graph.md) - Mapping dependencies before incidents happen
-- [Navigation & Controls](../Navigation/index.md) - Full keyboard and mouse reference
+- [Navigation & Controls](../Guides/Navigation/index.md) - Full keyboard and mouse reference

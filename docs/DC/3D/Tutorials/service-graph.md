@@ -169,4 +169,4 @@ Use what you've learned for:
 
 - [Investigating a Latency Spike](latency-spike.md) - Troubleshooting a specific service
 - [Root Cause Analysis with Tessa](root-cause-analysis.md) - Diagnosing cascading failures
-- [Navigation & Controls](../Navigation/index.md) - Full keyboard and mouse reference
+- [Navigation & Controls](../Guides/Navigation/index.md) - Full keyboard and mouse reference

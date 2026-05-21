@@ -158,6 +158,6 @@ In this scenario, you:
 
 ## Related
 
-- [Navigation & Controls](../Navigation/index.md) - Full keyboard and mouse reference
+- [Navigation & Controls](../Guides/Navigation/index.md) - Full keyboard and mouse reference
 - [Root Cause Analysis with Tessa](root-cause-analysis.md) - Diagnosing multi-service failures
 - [Understanding Your Service Topology](service-graph.md) - Mapping dependencies and traffic patterns

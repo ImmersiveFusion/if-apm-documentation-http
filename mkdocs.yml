@@ -145,11 +145,11 @@ plugins:
         'IAPM/3D/Guides/Installation/Linux/index.md': 'DC/3D/Guides/Installation/Linux/index.md'
         'IAPM/3D/Guides/Navigation/index.md': 'DC/3D/Guides/Navigation/index.md'
         'IAPM/3D/Guides/Preferences/index.md': 'DC/3D/Guides/Preferences/index.md'
-        'IAPM/3D/Guides/Scenarios/index.md': 'DC/3D/Guides/Scenarios/index.md'
-        'IAPM/3D/Guides/Scenarios/first-session.md': 'DC/3D/Guides/Scenarios/first-session.md'
-        'IAPM/3D/Guides/Scenarios/latency-spike.md': 'DC/3D/Guides/Scenarios/latency-spike.md'
-        'IAPM/3D/Guides/Scenarios/root-cause-analysis.md': 'DC/3D/Guides/Scenarios/root-cause-analysis.md'
-        'IAPM/3D/Guides/Scenarios/service-graph.md': 'DC/3D/Guides/Scenarios/service-graph.md'
+        'IAPM/3D/Guides/Scenarios/index.md': 'DC/3D/Tutorials/index.md'
+        'IAPM/3D/Guides/Scenarios/first-session.md': 'DC/3D/Tutorials/first-session.md'
+        'IAPM/3D/Guides/Scenarios/latency-spike.md': 'DC/3D/Tutorials/latency-spike.md'
+        'IAPM/3D/Guides/Scenarios/root-cause-analysis.md': 'DC/3D/Tutorials/root-cause-analysis.md'
+        'IAPM/3D/Guides/Scenarios/service-graph.md': 'DC/3D/Tutorials/service-graph.md'
         'IAPM/3D/Guides/Uninstallation/index.md': 'DC/3D/Guides/Uninstallation/index.md'
         'IAPM/3D/Guides/Uninstallation/Windows/index.md': 'DC/3D/Guides/Uninstallation/Windows/index.md'
         'IAPM/3D/Guides/Uninstallation/macOS/index.md': 'DC/3D/Guides/Uninstallation/macOS/index.md'
@@ -274,6 +274,13 @@ plugins:
         
         #links
         'link/discord/index.md': 'https://discord.gg/zevywnQp6K'
+
+        # SP-071 D1: Scenarios -> Tutorials (2026-05-20)
+        'DC/3D/Guides/Scenarios/index.md': 'DC/3D/Tutorials/index.md'
+        'DC/3D/Guides/Scenarios/first-session.md': 'DC/3D/Tutorials/first-session.md'
+        'DC/3D/Guides/Scenarios/latency-spike.md': 'DC/3D/Tutorials/latency-spike.md'
+        'DC/3D/Guides/Scenarios/root-cause-analysis.md': 'DC/3D/Tutorials/root-cause-analysis.md'
+        'DC/3D/Guides/Scenarios/service-graph.md': 'DC/3D/Tutorials/service-graph.md'
 
 # Hooks
 # hooks:
