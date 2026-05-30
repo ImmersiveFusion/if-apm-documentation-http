@@ -69,10 +69,13 @@ theme:
     #text: Josefin Sans
     text: Roboto
     code: Roboto Mono
-  favicon: assets/favicon.png
+  # Shared brand icon family (sibling of immersivefusion.academy). The full
+  # family (apple-touch-icon, web-app-manifest PNGs, site.webmanifest,
+  # theme-color) is wired in overrides/main.html {% block extrahead %}.
+  favicon: favicon.ico
   # icon:
   #   logo: assets/logo
-  logo: assets/logo.png
+  logo: favicon-96x96.png
 
 # Plugins
 plugins:
