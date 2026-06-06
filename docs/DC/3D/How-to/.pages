@@ -1,0 +1,6 @@
+title: How-to
+arrange:
+    - index.md
+    - assistant-voice.md
+    - assistant-vision.md
+    - assistant-prompts.md
