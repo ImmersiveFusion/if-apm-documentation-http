@@ -1,6 +1,14 @@
-# Skills
+---
+title: Tessa skills
+diataxis: reference
+tags: [reference, tessa, skills]
+---
 
-> *Available since IAPM 3D v1.12, Web v3.131, and Studio v0.7*
+# Tessa skills
+
+This page documents Tessa's six specialized skill domains, the kinds of agents in each, and how Tessa routes between them.
+
+> *Available since IAPM 3D v1.12 and Studio v0.7. Web integration not yet shipped.*
 
 Skills are specialized domains that extend Tessa beyond diagnostics. Each skill contains multiple specialized agents that Tessa routes to automatically based on your request.
 
@@ -10,10 +18,10 @@ Skills are specialized domains that extend Tessa beyond diagnostics. Each skill 
 |-------|--------|-------------|
 | **Problem-Solving** | 9 | Systematic problem decomposition - research, analysis, architecture decisions, validation, synthesis, reviews, investigations, and reporting |
 | **Engineering Team** | 10+ | Full engineering workflow - architecture, backend, frontend, DevSecOps, QA, security review, incident response |
-| **Red Team** | Variable | Offensive security methodology - reconnaissance, vulnerability analysis, exploitation, lateral movement, reporting |
+| **Red Team** | 11 | Offensive security methodology - reconnaissance, vulnerability analysis, exploitation, lateral movement, reporting |
 | **Adversary** | 3 | Adversarial quality reviews - strategy selection, execution against deliverables, LLM-as-Judge scoring |
 | **NASA SE** | 10+ | Systems engineering processes per NPR 7123.1D - requirements, verification, risk, reviews, integration, configuration |
-| **Prompt Engineering** | Variable | Structured prompt construction, quality validation, constraint generation |
+| **Prompt Engineering** | 3 | Structured prompt construction, quality validation, constraint generation |
 
 ## How Skills Work
 
@@ -50,14 +58,14 @@ Ask Tessa what she can do:
 
 ## Skills and Plans
 
-| Plan | Skill Access |
-|------|-------------|
-| Start | Core diagnostics only |
-| Visualize | Standard skill catalog |
-| Analyze | Full skill catalog + code analysis |
-| Fuse | Full skill catalog + infrastructure analysis |
+Every plan has access to every skill. Tessa's full skill catalog is uniform across all Grid tiers (Start, Visualize, Analyze, Fuse) and all Tessa quality tiers (Basic, Professional, Premium). No plan unlocks, gates, or restricts a skill.
+
+What changes by plan is **how much** you can use Tessa (usage per window) and **how smart** she is on hard problems (which model runs each operation), not **which** skills you can reach. A lower tier runs the same skills on a lighter model; it never loses a skill.
+
+The one usage-level boundary is **Agentic Mode**, which requires an E5 or higher energy level. This gates an integration surface (CLI/IDE and deep-research sessions), not a reasoning skill: the same analytical capabilities are reachable in Chat Mode on every tier.
 
 ## Related
 
-- [Diagnostics](diagnostics.md) - Tessa's built-in APM diagnostic tools
-- [Prompt Guide](prompts.md) - Example prompts for different skill domains
+- **For concept and design:** see [Tessa - Your AI Assistant](../Overview/ai-assistant.md).
+- **For the diagnostic catalog:** see [Tessa diagnostics](assistant-diagnostics.md).
+- **For prompt patterns by skill domain:** see [Write better prompts for Tessa](../How-to/assistant-prompts.md).

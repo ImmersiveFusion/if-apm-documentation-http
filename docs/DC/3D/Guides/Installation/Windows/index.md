@@ -11,9 +11,9 @@ Free to install. A subscription is required to use IAPM. Learn more about [Steam
 
 ## Offline Installer (MSI)
 
-[Latest Release Build :material-download:](https://ifapm.blob.core.windows.net/release/rtm/msi/DC.latest.msi){ .md-button .md-button--primary }
-[Latest Beta Build :material-download:](https://ifapm.blob.core.windows.net/release/beta/msi/DC.latest.msi){ .md-button }
-[Latest Alpha Build :material-download:](https://ifapm.blob.core.windows.net/release/alpha/msi/DC.latest.msi){ .md-button }
+[Latest Stable Build :material-download:](https://ifdl.blob.core.windows.net/release/stable/DC.latest.msi){ .md-button .md-button--primary }
+[Latest Beta Build :material-download:](https://ifdl.blob.core.windows.net/release/beta/DC.latest.msi){ .md-button }
+[Latest Alpha Build :material-download:](https://ifdl.blob.core.windows.net/release/alpha/DC.latest.msi){ .md-button }
 
 1. Click on the button above to download the installer for IAPM for Windows from the cloud. The file size is around `1.5GB`
     ![Download](img/1.download.png)

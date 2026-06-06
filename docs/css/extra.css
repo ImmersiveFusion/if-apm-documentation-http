@@ -88,6 +88,11 @@ html, body {
   box-shadow: none;
 }
 
+/* Layout band: aligned to the 68rem family width shared across the academy,
+   docs, and Knowledge Nexus tiers, so all four mkdocs sites render at the same
+   content width. (The general academy sets the same value in academy.css.) */
+.md-grid { max-width: 68rem; }
+
 /* Header title with gradient like "Immersive Fusion" */
 [data-md-color-scheme="slate"] .md-header__title {
   font-family: 'Josefin Sans', sans-serif;
@@ -985,5 +990,51 @@ h5 {
 
 [data-md-color-scheme="slate"] img:hover {
   filter: drop-shadow(0 0 10px rgba(0, 229, 255, 0.3));
+}
+
+/* ============================================
+   Site title lockup: IF(docs) { }
+   ============================================
+
+   The product-docs predicate per the brand grammar doc
+   (docs/marketing/brand-grammar-if-predicate.md in IF.Knowledge): empty scope
+   reads "the docs, open to all readers." Sibling of the general academy's
+   `IF(academy) { }` CSS lockup. Implemented purely in CSS so Material's stock
+   header runs unmodified (search + palette-toggle JS keep working): the first
+   header-topic's original site_name text is hidden and the lockup injected via
+   ::after. The second topic (current page title on scroll) is left alone.
+
+   Set in JetBrains Mono per the grammar's typography rules (the IF product-docs
+   code face, already imported above). Never placed in <title>/og:title (those
+   stay plain-English — see the grammar doc's accessibility section). */
+.md-header__topic:first-child .md-ellipsis {
+  font-size: 0;
+  letter-spacing: 0;
+  position: relative;
+}
+.md-header__topic:first-child .md-ellipsis::after {
+  content: "IF(docs) { }";
+  font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  white-space: nowrap;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+/* Slate (dark): inherit the existing cyan -> purple gradient text-fill the
+   header-topic already carries, so the lockup glows in the cyberpunk theme. */
+[data-md-color-scheme="slate"] .md-header__topic:first-child .md-ellipsis::after {
+  background: linear-gradient(90deg, #00E5FF, #7C4DFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Default (light): dark ink, matching the rest of the light-mode header. */
+[data-md-color-scheme="default"] .md-header__topic:first-child .md-ellipsis::after {
+  color: #333;
 }
 

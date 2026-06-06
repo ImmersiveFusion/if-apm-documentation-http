@@ -8,6 +8,16 @@
 
     <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=b33c5a1c-bfe2-432b-84ae-613f7eb1d2b6" defer></script>
 
+    {# Shared brand icon family (sibling of immersivefusion.academy). Material's
+       theme.favicon emits the primary <link rel="icon">; the rest of the family
+       is declared here, keeping the product-docs tab/PWA icons in lockstep with
+       the academy and Knowledge Nexus tiers. #}
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ 'favicon-96x96.png' | url }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ 'apple-touch-icon.png' | url }}">
+    <link rel="manifest" href="{{ 'site.webmanifest' | url }}">
+    {# Address-bar tint on mobile Chrome / Android — the deep brand teal, shared
+       across the academy and docs tiers. #}
+    <meta name="theme-color" content="#0e6082">
 
   {% endblock %}
   {% block announce %}

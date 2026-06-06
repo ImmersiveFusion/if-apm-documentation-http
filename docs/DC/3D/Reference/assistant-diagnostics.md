@@ -1,4 +1,12 @@
-# Diagnostics
+---
+title: Tessa diagnostics
+diataxis: reference
+tags: [reference, tessa, diagnostics]
+---
+
+# Tessa diagnostics
+
+This page documents the diagnostic capabilities Tessa offers when connected to a Grid.
 
 > Tessa doesn't just answer questions - she runs real diagnostics against your live telemetry. Every response is backed by actual data from your Grid.
 
@@ -6,13 +14,13 @@
 
 When you ask Tessa a question, she selects the right diagnostic tool, queries your Grid data, and synthesizes the results into a clear answer. She can chain multiple tools together for complex investigations - for example, checking system health, then drilling into the unhealthy service, then comparing it to yesterday's performance.
 
-Tessa correlates across **traces, logs, and metrics** automatically. You don't need to specify which data source to check - she figures that out based on your question.
+Tessa queries **traces, logs, and metrics** through dedicated tools, often chaining several in a single response. You don't need to specify which data source to check - she selects the right tools based on your question.
 
 ## Diagnostic Capabilities
 
 ### System Health Check
 
-Get an instant overview of your system's current state. Tessa evaluates service health, error rates, latency, and throughput across your entire Grid.
+Get an instant overview of your system's current state. Tessa reports overall system health including per-service states, error rates, the Apdex score, and the top errors across your Grid.
 
 !!! example "Try asking"
     - "How is my system doing?"
@@ -24,7 +32,7 @@ Get an instant overview of your system's current state. Tessa evaluates service 
 
 ### Alert Summary
 
-See what's firing, what recently resolved, and what's trending toward a threshold. Tessa pulls active and recent alerts and explains what they mean.
+See the current alert status derived from your system health thresholds. Tessa pulls active and recent alerts and explains what they mean.
 
 !!! example "Try asking"
     - "Are there any active alerts?"
@@ -35,7 +43,9 @@ See what's firing, what recently resolved, and what's trending toward a threshol
 
 ### Root Cause Analysis
 
-Tessa traces the chain of causation when something goes wrong. She follows the dependency graph, checks for correlated errors, and identifies the most likely origin of the problem.
+> Underlying tool: `GetDiagnosis`
+
+Tessa diagnoses current system issues by analyzing recent errors, grouping them by root cause, and ranking them by severity.
 
 !!! example "Try asking"
     - "Why is checkout slow?"
@@ -47,7 +57,7 @@ Tessa traces the chain of causation when something goes wrong. She follows the d
 
 ### Pressure Detection
 
-Identify services or resources that are under strain before they fail. Tessa detects rising error rates, increasing latency, queue depth growth, and resource saturation.
+Identify services under active strain before they fail. Tessa detects services under pressure by comparing the current window against a 30-minute baseline.
 
 !!! example "Try asking"
     - "Is there pressure building anywhere?"
@@ -59,7 +69,7 @@ Identify services or resources that are under strain before they fail. Tessa det
 
 ### Trend Analysis
 
-Understand how metrics are changing over time. Tessa identifies trends in latency, throughput, error rates, and resource utilization, and flags anything unusual.
+Understand how metrics are changing over time. Tessa analyzes latency, error rate, and throughput trends by comparing recent performance against a baseline, and flags anything unusual.
 
 !!! example "Try asking"
     - "Show me the latency trend for auth-service"
@@ -71,7 +81,7 @@ Understand how metrics are changing over time. Tessa identifies trends in latenc
 
 ### Service Dependency Map
 
-Visualize how services connect and depend on each other. Tessa maps out the dependency graph and identifies critical paths, single points of failure, and high-traffic connections.
+Visualize how services connect and depend on each other. Tessa builds a service dependency map with per-service health, latency, error rates, and inter-service dependencies.
 
 !!! example "Try asking"
     - "Show me the service dependency map"
@@ -81,9 +91,24 @@ Visualize how services connect and depend on each other. Tessa maps out the depe
 
 ---
 
-### Event Timeline
+### Service Detail
 
-Build a chronological view of events to understand what happened and in what order. Tessa assembles deployments, alerts, errors, and configuration changes into a single timeline.
+> Underlying tool: `GetServiceDetail`
+
+Drill into a single named service for a focused view: error rate, latency, top errors, top endpoints, and dependencies for that service alone.
+
+!!! example "Try asking"
+    - "Tell me about order-service"
+    - "What's the current state of payment-service?"
+    - "Give me the details for auth-service"
+
+---
+
+### Incident Timeline
+
+> Underlying tool: `GetIncidentTimeline`
+
+Build a chronological view of events to understand what happened and in what order. Tessa assembles a service-level event sequence - when each service first errored, spiked in latency, or degraded.
 
 !!! example "Try asking"
     - "Build me a timeline of events in the last hour"
@@ -95,7 +120,7 @@ Build a chronological view of events to understand what happened and in what ord
 
 ### Slowest Endpoints
 
-Find the endpoints dragging down your system's performance. Tessa ranks endpoints by response time and identifies outliers.
+Find the endpoints dragging down your system's performance. Tessa returns the top 20 slowest endpoints ranked by P99 latency.
 
 !!! example "Try asking"
     - "What are the slowest endpoints?"
@@ -105,9 +130,11 @@ Find the endpoints dragging down your system's performance. Tessa ranks endpoint
 
 ---
 
-### Deployment Change Detection
+### Deployment Correlation
 
-Detect recent deployments and correlate them with performance changes. Tessa identifies what was deployed, when, and whether performance shifted afterward.
+> Underlying tool: `GetDeploymentCorrelation`
+
+Detect what changed in your system recently. Tessa surfaces new service versions, new services, new endpoints, and new hosts, so you can line changes up against performance shifts.
 
 !!! example "Try asking"
     - "What changed recently?"
@@ -119,7 +146,7 @@ Detect recent deployments and correlate them with performance changes. Tessa ide
 
 ### Time-Window Comparison
 
-Compare two time periods to understand what changed. Tessa evaluates differences in latency, error rates, throughput, and resource usage between the windows.
+Compare two time periods to understand what changed. Tessa compares system performance between two time windows (by default, the last 15 minutes versus the same window yesterday), evaluating differences in latency, error rates, and throughput.
 
 !!! example "Try asking"
     - "Compare the last hour to the same time yesterday"
@@ -129,15 +156,45 @@ Compare two time periods to understand what changed. Tessa evaluates differences
 
 ---
 
-### Trace Exploration
+## Trace and log access
 
-Dive into individual traces or trace patterns. Tessa can find traces that match specific criteria, identify anomalous spans, and explain the request flow.
+For trace-specific and log-specific questions, Tessa has a separate family of tools that read directly from your Grid's trace and log stores. Where the diagnostic capabilities above synthesize across data sources, these tools fetch specific traces, spans, or logs by ID or filter.
+
+| Tool | What it does |
+|---|---|
+| `GetTraces` | Find traces matching a time range or filter |
+| `GetTrace` | Fetch a single trace by ID |
+| `GetTraceSpans` | List the spans inside a specific trace |
+| `GetTraceSpanTags` | Read attributes on a specific span |
+| `GetTraceSpanEvents` | Read events recorded on a specific span |
+| `GetTraceErrors` | Pull error-related spans from a trace |
+| `GetTraceLogs` | Pull logs correlated to a trace |
+| `GetLogs` | Find logs matching a time range or filter |
+| `GetLog` | Fetch a single log entry |
+| `GetTraceFilterFacets` | List available filter values for trace queries |
+| `GetLogFilterFacets` | List available filter values for log queries |
+
+Tessa selects from this family automatically when you ask trace- or log-specific questions.
 
 !!! example "Try asking"
     - "Find slow traces for the checkout flow"
     - "Show me traces with errors on payment-service"
     - "What does a typical request to /api/orders look like?"
     - "Find traces where database calls took over 500ms"
+    - "Show me logs from the last hour with 'timeout' in the message"
+
+---
+
+## APM context and dashboards
+
+These tools surface the broader Grid context that informs Tessa's answers but are rarely invoked directly by a single user question.
+
+| Tool | What it does |
+|---|---|
+| `GetGridInfo` | Information about the current Grid (capabilities, scope) |
+| `GetAvailableCharts` | Discover what charts can be rendered |
+| `GetRangeData` | Pull metric data for a time range |
+| `GetDashboard` | Fetch a specific dashboard definition |
 
 ## Context Awareness in 3D
 

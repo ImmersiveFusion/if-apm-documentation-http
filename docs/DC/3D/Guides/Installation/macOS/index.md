@@ -12,11 +12,10 @@ Learn more about [Steam](https://store.steampowered.com/about/){ target="_blank"
 
 ## Offline Installer (DMG)
 
-<!--
-[Latest Release Build :material-download:](https://ifapm.blob.core.windows.net/release/rtm/dmg/DC.latest.dmg){ .md-button .md-button--primary }
-[Latest Beta Build :material-download:](https://ifapm.blob.core.windows.net/release/beta/dmg/DC.latest.dmg){ .md-button }
--->
-[Latest Alpha Build :material-download:](https://ifapm.blob.core.windows.net/release/alpha/dmg/DC.latest.dmg){ .md-button }
+!!! info "Alpha channel only on macOS"
+    The macOS build of IAPM is currently published to the **alpha** channel only. Stable and beta DMGs are not yet available. Windows builds on all three channels remain available from the [Windows installation page](../Windows/index.md).
+
+[Latest Alpha Build :material-download:](https://ifdl.blob.core.windows.net/release/alpha/DC.latest.dmg){ .md-button }
 
 1. Click on the button above to download the installer for IAPM for macOS from the cloud. The file size is around `1.5GB`
 

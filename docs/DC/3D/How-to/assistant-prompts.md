@@ -1,4 +1,12 @@
-# Prompt Guide
+---
+title: Write better prompts for Tessa
+diataxis: how-to
+tags: [how-to, tessa, prompts]
+---
+
+# Write better prompts for Tessa
+
+This guide shows how to phrase questions so Tessa gives you the most useful answers, with 30+ example prompts organized by category.
 
 > Get the most out of Tessa with the right questions. This guide covers 30+ example prompts organized by category, plus tips for effective prompting.
 
@@ -136,5 +144,5 @@ Being transparent about limits helps set the right expectations:
 - **She cannot modify your infrastructure** - Tessa can read, write, and edit files in your workspace (Code Fix), but she does not deploy, restart services, or make infrastructure changes.
 - **She cannot access data outside your Grid** - Tessa only sees telemetry data that flows into your connected Grid.
 - **She cannot predict the future** - Tessa identifies trends and pressure, but she reports on what is happening and what has happened, not what will happen.
-- **Code fixes require Analyze+ plan** - On Start and Visualize plans, Tessa describes problems but does not generate code fix suggestions.
-- **Infrastructure analysis requires Fuse plan** - Deep infrastructure diagnostics are only available on the Fuse tier.
+
+Every Tessa capability, including code fixes and infrastructure analysis, is available on every plan. Your plan changes how much you can use Tessa and how deeply she reasons on hard problems, not which capabilities you can reach. Note that lower plans have tight per-window usage limits, so a long multi-step task may use up a window before it finishes; see [query limits](../Reference/assistant-commands.md#query-limits-by-plan).

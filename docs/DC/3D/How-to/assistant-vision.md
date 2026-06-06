@@ -1,4 +1,12 @@
-# Multimodal Vision
+---
+title: Share images with Tessa
+diataxis: how-to
+tags: [how-to, tessa, vision, multimodal]
+---
+
+# Share images with Tessa
+
+This guide shows how to paste screenshots, dashboards, or photos into the chat so Tessa can analyze the image alongside your question.
 
 > *Available since IAPM 3D v1.12, Web v3.131, and Studio v0.7*
 
@@ -26,7 +34,7 @@ There are two ways to share images with Tessa:
 
 ## Supported Formats
 
-PNG, JPEG, GIF, WebP, and BMP. Images can be loaded from clipboard, file path, byte stream, or URL.
+PNG, JPEG, GIF, WebP, and BMP. Images can be loaded from clipboard, file path, or byte stream.
 
 ## What Tessa Can Analyze
 
@@ -73,6 +81,6 @@ Share snippets of configuration files, code, or infrastructure diagrams for Tess
 
 ## Related
 
-- [Tessa Overview](../ai-assistant.md) - All capabilities and commands
-- [Voice Interaction](voice.md) - Combine voice questions with pasted images
-- [Prompt Guide](prompts.md) - More example prompts
+- **For concept and design:** see [Tessa - Your AI Assistant](../Overview/ai-assistant.md).
+- **To use voice alongside pasted images:** see [Talk to Tessa with voice](assistant-voice.md).
+- **For prompt patterns:** see [Write better prompts for Tessa](assistant-prompts.md).

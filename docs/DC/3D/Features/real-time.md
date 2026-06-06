@@ -69,6 +69,6 @@ Industry research on the cost of delayed detection:
 
 ## Related
 
-- [AI Assistant](ai-assistant.md) - Get intelligent guidance on what you're observing
+- [AI Assistant](../Overview/ai-assistant.md) - Get intelligent guidance on what you're observing
 - [Immersive Navigation](immersion.md) - Move through the real-time environment
 - [360° Stack Visibility](360-view.md) - See all layers of your stack in real-time

@@ -1,4 +1,12 @@
-# Voice Interaction
+---
+title: Talk to Tessa with voice
+diataxis: how-to
+tags: [how-to, tessa, voice]
+---
+
+# Talk to Tessa with voice
+
+This guide shows how to use speech to ask Tessa questions and hear her responses, without taking your hands off your work.
 
 > Talk to Tessa like a teammate. Ask questions out loud, get spoken answers back - no keyboard required.
 
@@ -52,9 +60,7 @@ Voice is the primary interaction mode for VR:
 
 - **Keep voice mode on** so the microphone stays active between questions. You can have a continuous conversation without re-activating the mic each time.
 - **Be specific with service names** - speak them clearly. Tessa uses your Grid's service catalog to match what she hears.
-- **Use Escape to interrupt** long responses and redirect. In VR, this is mapped to the controller menu button.
 - **Combine voice with navigation** - teleport to a service platform and ask "What's wrong here?" Tessa uses your position as context.
-- **Mute in noisy environments** - use `/mute` to switch to text-only responses if background noise is an issue.
 
 ## Combining Voice and Text
 
@@ -68,6 +74,6 @@ Chat history captures both voice and typed interactions, and everything is saved
 
 ## Related
 
-- [Tessa Overview](../ai-assistant.md) - All capabilities and commands
-- [Prompt Guide](prompts.md) - Example prompts (work with both voice and text)
-- [Multimodal Vision](vision.md) - Combine voice questions with pasted images
+- **For concept and design:** see [Tessa - Your AI Assistant](../Overview/ai-assistant.md).
+- **To share images alongside voice questions:** see [Share images with Tessa](assistant-vision.md).
+- **For prompt patterns that work with voice:** see [Write better prompts for Tessa](assistant-prompts.md).

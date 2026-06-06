@@ -2,17 +2,14 @@
 
 {!template/subscription-required.mdp!}
 
-!!! warning "Early Access"
-    IAPM Studio is in early access. Features and interfaces may change between releases.
+!!! warning "Alpha channel, Windows only"
+    IAPM Studio is currently in alpha. Only the **alpha** channel is published, and only **Windows** builds are available. Beta, stable, and macOS builds will follow.
 
 IAPM Studio is a native desktop application distributed as a standalone installer. It does not require Steam or any game platform - it is downloaded directly from Immersive Fusion.
 
 ## Download
 
-Download IAPM Studio for your platform:
-
-[Windows :material-microsoft-windows:](https://www.immersivefusion.com/downloads){ .md-button .md-button--primary target="_blank" }
-[macOS :material-apple:](https://www.immersivefusion.com/downloads){ .md-button target="_blank" }
+[Latest Alpha Build :material-microsoft-windows:](https://ifdl.blob.core.windows.net/release/alpha/DCS.latest.msi){ .md-button .md-button--primary }
 
 A subscription is required to use IAPM Studio.
 
@@ -26,18 +23,6 @@ A subscription is required to use IAPM Studio.
 
 !!! note "Requirements"
     Windows 10 or later (64-bit). See [Supported Configurations](../../Supported-Configurations/index.md) for full details.
-
-## macOS
-
-1. Download the IAPM Studio disk image from the link above
-2. Open the `.dmg` file and drag IAPM Studio to your Applications folder
-3. Launch IAPM Studio from Applications
-4. If prompted, allow the application in **System Settings** - **Privacy & Security**
-5. Sign in with your IAPM account credentials
-6. Select a grid to connect to
-
-!!! note "Requirements"
-    macOS 12 (Monterey) or later with Apple Silicon. See [Supported Configurations](../../Supported-Configurations/index.md) for full details.
 
 ## Updates
 

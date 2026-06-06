@@ -1,6 +1,10 @@
 title: 3D & VR
 arrange:
     - index.md
+    - Overview
+    - Tutorials
+    - How-to
+    - Reference
     - Features
     - Guides
     - Integrations
