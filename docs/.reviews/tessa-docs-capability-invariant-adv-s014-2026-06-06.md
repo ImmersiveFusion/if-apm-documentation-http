@@ -1,4 +1,4 @@
-# Quality Gate Record — Tessa + Spatial-Observability docs (Capability Invariant corrections)
+# Quality Gate Record: Tessa + Spatial-Observability docs (Capability Invariant corrections)
 
 **Gate:** /adversary S-014 LLM-as-Judge composite
 **Criticality:** C2 (public documentation content)
@@ -32,8 +32,8 @@
 ## Strategies run (C2 set, H-16 order)
 
 - S-003 Steelman (10 findings, all strengths confirming canonical fidelity)
-- S-002 Devil's Advocate (2 Critical, 3 Major, 2 Minor — all remediated)
-- S-007 Constitutional AI (1 Major CC-001 introduced during remediation — remediated)
+- S-002 Devil's Advocate (2 Critical, 3 Major, 2 Minor; all remediated)
+- S-007 Constitutional AI (1 Major CC-001 introduced during remediation, then remediated)
 - S-014 LLM-as-Judge (scoring): iter 2 = 0.903 REVISE -> iter 3 = 0.930 PASS
 
 ## What was reviewed
