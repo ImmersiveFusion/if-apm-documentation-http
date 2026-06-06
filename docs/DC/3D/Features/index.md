@@ -4,7 +4,7 @@ Immersive APM delivers a revolutionary approach to application performance manag
 
 ## Core Features
 
-### [AI Assistant](ai-assistant.md)
+### [AI Assistant](../Overview/ai-assistant.md)
 
 Chat and voice-driven root cause analysis with Tessa, your AI assistant. Get intelligent explanations, root cause suggestions, and recommended actions using natural language.
 

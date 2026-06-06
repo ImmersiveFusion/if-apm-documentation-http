@@ -146,14 +146,14 @@ plugins:
         'IAPM/3D/release-notes.md': 'DC/3D/release-notes.md'
         'IAPM/3D/Features/index.md': 'DC/3D/Features/index.md'
         'IAPM/3D/Features/360-view.md': 'DC/3D/Features/360-view.md'
-        'IAPM/3D/Features/ai-assistant.md': 'DC/3D/Features/ai-assistant.md'
+        'IAPM/3D/Features/ai-assistant.md': 'DC/3D/Overview/ai-assistant.md'
         'IAPM/3D/Features/immersion.md': 'DC/3D/Features/immersion.md'
         'IAPM/3D/Features/real-time.md': 'DC/3D/Features/real-time.md'
-        'IAPM/3D/Features/Tessa/diagnostics.md': 'DC/3D/Features/Tessa/diagnostics.md'
-        'IAPM/3D/Features/Tessa/prompts.md': 'DC/3D/Features/Tessa/prompts.md'
-        'IAPM/3D/Features/Tessa/skills.md': 'DC/3D/Features/Tessa/skills.md'
-        'IAPM/3D/Features/Tessa/vision.md': 'DC/3D/Features/Tessa/vision.md'
-        'IAPM/3D/Features/Tessa/voice.md': 'DC/3D/Features/Tessa/voice.md'
+        'IAPM/3D/Features/Tessa/diagnostics.md': 'DC/3D/Reference/assistant-diagnostics.md'
+        'IAPM/3D/Features/Tessa/prompts.md': 'DC/3D/How-to/assistant-prompts.md'
+        'IAPM/3D/Features/Tessa/skills.md': 'DC/3D/Reference/assistant-skills.md'
+        'IAPM/3D/Features/Tessa/vision.md': 'DC/3D/How-to/assistant-vision.md'
+        'IAPM/3D/Features/Tessa/voice.md': 'DC/3D/How-to/assistant-voice.md'
         'IAPM/3D/Guides/index.md': 'DC/3D/Guides/index.md'
         'IAPM/3D/Guides/Installation/index.md': 'DC/3D/Guides/Installation/index.md'
         'IAPM/3D/Guides/Installation/Windows/index.md': 'DC/3D/Guides/Installation/Windows/index.md'
@@ -216,15 +216,15 @@ plugins:
         'Products/IAPM/Integrations/Meta-Quest/index.md': 'DC/3D/Integrations/Meta-Quest/index.md'
         'Products/IAPM/Supported-Configurations/index.md': 'DC/3D/Supported-Configurations/index.md'
         'Products/IAPM/release-notes.md': 'DC/3D/release-notes.md'
-        'Products/IAPM/Features/AI-Copilot.md': 'DC/3D/Features/ai-assistant.md'
-        'Products/IAPM-Desktop/Features/AI-Copilot.md': 'DC/3D/Features/ai-assistant.md'
+        'Products/IAPM/Features/AI-Copilot.md': 'DC/3D/Overview/ai-assistant.md'
+        'Products/IAPM-Desktop/Features/AI-Copilot.md': 'DC/3D/Overview/ai-assistant.md'
 
         # Products/IAPM-Desktop → DC/3D redirects
         'Products/index.md': 'DC/index.md'
         'Products/IAPM-Desktop/index.md': 'DC/3D/index.md'
         'Products/IAPM-Desktop/Features/index.md': 'DC/3D/Features/index.md'
-        'Products/IAPM-Desktop/Features/ai-assistant.md': 'DC/3D/Features/ai-assistant.md'
-        'Products/IAPM-Desktop/Features/AI-Assistant.md': 'DC/3D/Features/ai-assistant.md'
+        'Products/IAPM-Desktop/Features/ai-assistant.md': 'DC/3D/Overview/ai-assistant.md'
+        'Products/IAPM-Desktop/Features/AI-Assistant.md': 'DC/3D/Overview/ai-assistant.md'
         'Products/IAPM-Desktop/Features/real-time.md': 'DC/3D/Features/real-time.md'
         'Products/IAPM-Desktop/Features/immersion.md': 'DC/3D/Features/immersion.md'
         'Products/IAPM-Desktop/Features/360-view.md': 'DC/3D/Features/360-view.md'
@@ -272,9 +272,9 @@ plugins:
         'Setup/Custom-application/Instrument-your-application/go/index.md': 'Instrument/go/index.md'
 
         # Short marketing-friendly aliases
-        'ai/index.md': 'DC/3D/Features/ai-assistant.md'
-        'copilot/index.md': 'DC/3D/Features/ai-assistant.md'
-        'ai-assistant/index.md': 'DC/3D/Features/ai-assistant.md'
+        'ai/index.md': 'DC/3D/Overview/ai-assistant.md'
+        'copilot/index.md': 'DC/3D/Overview/ai-assistant.md'
+        'ai-assistant/index.md': 'DC/3D/Overview/ai-assistant.md'
         'config/index.md': 'Setup/index.md'
         # 'api/index.md' redirect removed - now a real page at API/index.md (case-insensitive collision)
         'sdk/index.md': 'Instrument/index.md'
@@ -297,6 +297,16 @@ plugins:
         'DC/3D/Guides/Scenarios/latency-spike.md': 'DC/3D/Tutorials/latency-spike.md'
         'DC/3D/Guides/Scenarios/root-cause-analysis.md': 'DC/3D/Tutorials/root-cause-analysis.md'
         'DC/3D/Guides/Scenarios/service-graph.md': 'DC/3D/Tutorials/service-graph.md'
+
+        # SP-071 D2: Tessa split (Features/Tessa/* -> Reference/, Features/ai-assistant.md -> Overview/, voice/vision/prompts -> How-to/) (2026-05-23)
+        # ai/, copilot/, ai-assistant/ marketing aliases retargeted in place above (lines 272-274)
+        # IAPM/3D/Features/Tessa/* legacy keys retargeted in place above (lines 146, 149-153)
+        'DC/3D/Features/ai-assistant.md': 'DC/3D/Overview/ai-assistant.md'
+        'DC/3D/Features/Tessa/diagnostics.md': 'DC/3D/Reference/assistant-diagnostics.md'
+        'DC/3D/Features/Tessa/skills.md': 'DC/3D/Reference/assistant-skills.md'
+        'DC/3D/Features/Tessa/voice.md': 'DC/3D/How-to/assistant-voice.md'
+        'DC/3D/Features/Tessa/vision.md': 'DC/3D/How-to/assistant-vision.md'
+        'DC/3D/Features/Tessa/prompts.md': 'DC/3D/How-to/assistant-prompts.md'
 
 # Hooks
 # hooks:

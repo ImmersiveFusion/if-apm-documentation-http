@@ -52,6 +52,13 @@ Master the controls to move through your application's 3D environment efficientl
 | Toggle Grid View | `M` | Switch to grid layout | |
 | Toggle Graph View | `N` | Switch to graph layout | |
 
+### General
+
+| Action      | Keys  | Description                   | Status |
+|-------------|-------|-------------------------------|--------|
+| Console     | `F12` | Open the developer console    |        |
+| Preferences | `F10` | Open preferences and settings |        |
+
 ## VR Controls
 
 ### HTC Vive
@@ -180,78 +187,8 @@ Press `2` for a birds-eye view of your topology. Good for seeing the overall arc
 Press `1` to return to standard first-person navigation.
  -->
 
-## Keyboard Shortcuts Reference
-
-### Movement Keys
-
-| Key | Action |
-|-----|--------|
-| `W` | Forward |
-| `S` | Backward |
-| `A` | Left |
-| `D` | Right |
-| `Space` | Up |
-| `Ctrl` | Down |
-| `Shift` | Sprint |
-
-### Camera
-
-| Key | Action |
-|-----|--------|
-| Mouse | Look around |
-| Scroll | Zoom |
-<!-- 
-| `Home` | Reset view |
-| `O` | Orbit mode |
-| `F` | Follow mode |
-| `1` | First-person |
-| `2` | Top-down | 
--->
-
-### Selection & Trace Navigation
-
-| Key | Action |
-|-----|--------|
-| Click | Select service or object |
-| `Esc` | Deselect / interrupt Tessa's speech |
-| `T` | Toggle follow trace / teleport back |
-| `F` | Start or stop following a trace |
-| `B` | Return to last console position |
-| `H` | Toggle highlighting for trace type |
-
-### Views
-
-| Key | Action |
-|-----|--------|
-| `M` | Toggle Grid view |
-| `N` | Toggle Graph view |
-
-### General
-
-| Key | Action |
-|-----|--------|
-| `F12` | Console |
-| `F10` | Preferences |
-
-<!-- 
-## Accessibility
-
-### Motion Sensitivity
-
-If you experience motion sensitivity:
-
-1. Go to **Preferences** (`P`)
-2. Navigate to **Comfort** settings
-3. Enable **Reduced Motion** mode
-4. Adjust **FOV** (Field of View) to a comfortable level
-5. Enable **Snap Turning** for VR (discrete rotation instead of smooth)
-
-### Controller Remapping
-
-Custom key bindings can be configured in **Preferences** > **Controls** > **Key Bindings**. -->
-
 ## Related
 
 - [Preferences](../Preferences/index.md) - Customize controls and display settings
-- [AI Assistant](../../Features/ai-assistant.md) - Voice and chat interaction
+- [AI Assistant](../../Overview/ai-assistant.md) - Voice and chat interaction
 - [VR Integrations](../../Integrations/index.md) - Headset-specific guides
