@@ -102,7 +102,7 @@ Full adoption of the OpenTelemetry-native data model across all trace and log vi
 
 ### April 2025
 
-- **3D v1.8**: Hall of Supporters with Buzludzha Monument, .NET 9.0 rollup
+- **3D v1.8**: Spatial Observatory, .NET 9.0 rollup
 
 ### September 2025
 

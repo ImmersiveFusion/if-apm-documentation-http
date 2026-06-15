@@ -223,7 +223,7 @@ This release marks a major milestone for Immersive APM with the debut of **Tessa
 
 **Introduction:**
 
-This release includes the addition of the [Buzludzha Monument](https://en.wikipedia.org/wiki/Buzludzha_monument) video and panels for more details. Materials are courtesy of the [Buzludzha Project](https://buzludzha-project.com/en/?source=if). The Buzludzha Monument, reimagined as the [Hall of Supporters](../../Resources/Partner/Hall-of-Supporters/index.md) in Immersive Fusion's 3D/VR world, is a powerful symbol of renewal, bridging a historic vision of Application Performance Management (APM) with a revolutionary new approach.
+This release includes the addition of the [Spatial Observatory](../../Resources/Partner/Spatial-Observatory/index.md), with video and panels for more details. Materials are courtesy of the [Buzludzha Project](https://buzludzha-project.com/en/?source=if).
 
 **Improvements:**
 
@@ -322,7 +322,7 @@ Bug fixes:
 - Fixed Platform colors
 - Fixed Platform teleport functionality
 - Fixed photon coloring and visibility
-- Various Hall of Supporters fixes
+- Various Spatial Observatory fixes
 - Fixed 3D/VR Avatar scale and head issues
 - Fixed various framerate issues
 

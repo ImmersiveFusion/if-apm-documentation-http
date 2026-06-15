@@ -24,7 +24,6 @@ IAPM uses **per-node pricing**. A node is any monitored application instance sen
 | **Dedicated Success Rep** | :material-close: | :material-close: | :material-check: | :material-check: |
 | **Professional Consulting** | :material-close: | :material-close: | :material-check: | :material-check: |
 | **Early Access Features** | :material-close: | :material-close: | :material-close: | :material-check: |
-| **Hall of Supporters** | :material-close: | :material-close: | :material-close: | :material-check: |
 
 *Throughput = traces + logs per second*
 
@@ -81,7 +80,6 @@ Elevate your application monitoring and management with the stability, scalabili
 - Dedicated success representative
 - Professional consulting services
 - Early access to new functionality
-- Hall of Supporters feature
 
 ## Volume Discounts
 

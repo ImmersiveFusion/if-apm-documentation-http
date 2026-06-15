@@ -1,6 +1,6 @@
 # Affiliate Program
 
-Earn commissions by sharing IAPM with your network. Our affiliate program offers transparent, usage-based rewards for helping organizations discover the power of 3D/VR application performance management.
+Earn commissions by sharing Immersive Fusion with your network. Our affiliate program offers transparent, usage-based rewards for helping organizations discover the power of spatial observability.
 
 ## Program Highlights
 
@@ -9,7 +9,7 @@ Earn commissions by sharing IAPM with your network. Our affiliate program offers
 | **Usage-Based Commissions** | Earn recurring revenue tied to referred customer usage |
 | **Transparent Portal** | Real-time tracking of referrals, conversions, and earnings |
 | **Marketing Resources** | Branded demos, infographics, and shareable content |
-| **Recognition** | Top affiliates featured in the [Hall of Supporters](../Hall-of-Supporters/index.md) |
+| **Recognition** | Top affiliates recognized in the [Spatial Observatory](../Spatial-Observatory/index.md) |
 
 ## How It Works
 
@@ -44,19 +44,19 @@ Commissions scale with your referrals' engagement:
 
 | Offer Type | Description |
 |------------|-------------|
-| **Free Trial Links** | Let users experience IAPM risk-free |
+| **Free Trial Links** | Let users experience the product risk-free |
 | **Subscription Discounts** | Special offers on Starter, Professional, and Enterprise plans |
-| **Feature Campaigns** | Highlight specific capabilities like AI diagnostics or VR visualization |
+| **Feature Campaigns** | Highlight specific capabilities like AI diagnostics or spatial visualization |
 | **Event Promotions** | Time-limited bonuses tied to product launches |
 
 ### Marketing Resources
 
 We provide everything you need to succeed:
 
-- Branded VR demos and screenshots
+- Branded demos and screenshots
 - ROI infographics (e.g., "25% downtime reduction")
 - Social media templates
-- Case study content from the [Hall of Supporters](../Hall-of-Supporters/index.md)
+- Case study content from the [Spatial Observatory](../Spatial-Observatory/index.md)
 - Co-marketing opportunities (webinars, guest posts)
 
 ## Affiliate Portal
@@ -71,12 +71,12 @@ Your dedicated dashboard provides:
 
 ## Recognition and Rewards
 
-### Hall of Supporters
+### Spatial Observatory
 
 Top-performing affiliates earn:
 
-- Featured placement in the virtual [Hall of Supporters](../Hall-of-Supporters/index.md)
-- Invitations to exclusive VR events
+- Recognition in the [Spatial Observatory](../Spatial-Observatory/index.md), earned through the work
+- Invitations to exclusive events
 - Networking opportunities with partners and customers
 - Enhanced commission tiers
 
@@ -86,7 +86,7 @@ The affiliate program is ideal for:
 
 - **Content Creators** - Tech bloggers, YouTubers, podcasters
 - **Consultants** - DevOps, SRE, and observability consultants
-- **Industry Influencers** - Thought leaders in APM, cloud, and VR
+- **Industry Influencers** - Thought leaders in observability, cloud, and developer tooling
 - **Technology Partners** - Companies with complementary offerings
 - **Developer Advocates** - Those passionate about developer tools
 
