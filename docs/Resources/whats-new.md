@@ -6,16 +6,16 @@ Recent updates and features across IAPM. For complete version history, see the r
 
 ## Latest Highlights
 
-### Boop & Personal Subscription (3D v1.15, Web 3.140)
+### Mosey & Personal Subscription (3D v1.15, Web 3.140)
 
-Boop graduates from preview in 3D, with voice and console workspace switching, a three-bucket radial menu, and gamepad cursor support. The Web Portal rolls out the Personal Product License model end to end.
+Mosey graduates from preview in 3D, with voice and console workspace switching, a three-bucket radial menu, and gamepad cursor support. The Web Portal rolls out the Personal Product License model end to end.
 
 | Feature | Description |
 |---------|-------------|
 | **Voice & Console Workspace Switching** | Switch grids by voice or console command without leaving the world |
-| **Three-Bucket Boop Menu** | Help, Quick Read, and Deep Analysis with workspace-aware entries and GenAI Cost in trace context |
+| **Three-Bucket Mosey Menu** | Help, Quick Read, and Deep Analysis with workspace-aware entries and GenAI Cost in trace context |
 | **Gamepad Cursor & Stick Orbiting** | Screen-center reticle for in-world targeting, with right-stick orbiting |
-| **Boop Idle Behaviors** | Wandering, skits, prop interactions, and chatter during long sessions |
+| **Mosey Idle Behaviors** | Wandering, skits, prop interactions, and chatter during long sessions |
 | **Personal Product License** | Tessa Personal is now a first-class subscription with proper graduated tiered pricing |
 | **Admin Seat Management** | Portal admin pages for assigning, revoking, and attesting seats across a tenant |
 | **Tier & Energy Source on Energy Bar** | Energy bar shows tier and energy source so personal vs grid usage is no longer ambiguous |
@@ -63,14 +63,14 @@ Full adoption of the OpenTelemetry-native data model across all trace and log vi
 
 ### May 2026
 
-- **3D v1.15**: Boop graduates from preview, voice and console workspace switching, three-bucket radial menu, gamepad cursor and stick orbiting
+- **3D v1.15**: Mosey graduates from preview, voice and console workspace switching, three-bucket radial menu, gamepad cursor and stick orbiting
 - **Web 3.141**: Stage 2 subscription enablement with cancel cleanup, build pipeline fixes
 - **Web 3.140**: Personal product license rollout, admin seat management, tier and energy source on the energy bar
 
 ### April 2026
 
-- **3D v1.14.11**: 1.14.x stabilization series, smaller and more reliable Windows installer, macOS disk image, Boop preview
-- **3D v1.14**: Per-facility content screens, row-tap teleport, new force-directed service graph, Boop companion, macOS disk image
+- **3D v1.14.11**: 1.14.x stabilization series, smaller and more reliable Windows installer, macOS disk image, Mosey preview
+- **3D v1.14**: Per-facility content screens, row-tap teleport, new force-directed service graph, Mosey companion, macOS disk image
 - **3D v1.12.1**: Richer service platform context for Tessa
 - **Studio v0.8.23**: 0.8.x stabilization series, hardened Windows and macOS installers, embedded browser startup fixes
 - **Studio v0.8**: Per-tab workspace binding, tool card UI with diffs, session restore, macOS distribution
