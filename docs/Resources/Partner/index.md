@@ -1,14 +1,14 @@
 # Partner with Us
 
-Immersive Fusion values early adopters and partners as the cornerstone of our growth. Join us in revolutionizing Application Performance Management through 3D/VR visualization.
+Immersive Fusion values early adopters and partners as a cornerstone of our growth. Join us in making the invisible work of running software, and the people who do it, visible.
 
 ## Partnership Programs
 
 | Program | Description | Best For |
 |---------|-------------|----------|
 | [Affiliates](Affiliates/index.md) | Earn commissions by referring customers | Content creators, consultants, influencers |
-| [Benefactors](Benefactors/index.md) | Support IAPM development with contributions | Organizations invested in our mission |
-| [Hall of Supporters](Hall-of-Supporters/index.md) | Permanent recognition in the IAPM 3D world | All partners and contributors |
+| [Benefactors](Benefactors/index.md) | Support development with contributions | Organizations invested in our mission |
+| [Spatial Observatory](Spatial-Observatory/index.md) | An open space where supporters and the people who do the work are seen | Everyone |
 
 ## Why Partner with Immersive Fusion?
 
@@ -16,31 +16,30 @@ Immersive Fusion values early adopters and partners as the cornerstone of our gr
 
 | Benefit | Description |
 |---------|-------------|
-| **Premium Recognition** | Featured placement in the [Hall of Supporters](./Hall-of-Supporters/index.md) with prominent logo display |
-| **Exclusive Access** | Beta access to new features like advanced VR diagnostics and AI-driven insights |
+| **Recognition** | Recognition in the [Spatial Observatory](./Spatial-Observatory/index.md), earned through the work |
+| **Exclusive Access** | Beta access to new features and AI-driven insights |
 | **Amplified Visibility** | Spotlight in marketing campaigns and social media showcases |
-| **Community Leadership** | Invitations to exclusive VR roundtables and thought leadership opportunities |
+| **Community Leadership** | Invitations to roundtables and thought leadership opportunities |
 
 ### For Strategic Partners
 
 | Benefit | Description |
 |---------|-------------|
-| **Strategic Recognition** | Dynamic logo displays scaled by impact, with "Founders' Tier" status for early partners |
 | **Co-Innovation** | Priority for co-development projects and integration opportunities |
-| **Marketing Synergy** | Shared storytelling through the Hall's artifacts and joint marketing campaigns |
-| **Tailored Solutions** | Custom dashboards and features aligned with your industry needs |
+| **Marketing Synergy** | Joint storytelling and co-marketing campaigns |
+| **Tailored Solutions** | Custom features aligned with your industry needs |
 
 ## The Impact of Partnership
 
-Partners and early adopters are catalysts for IAPM's growth:
+Partners and early adopters are catalysts for our growth:
 
 - **Case Studies** - Real-world applications that demonstrate ROI (e.g., 20% cost savings)
-- **Industry Credibility** - Respected logos in the Hall signal validation to hesitant industries
+- **Industry Credibility** - Recognized partners signal validation to hesitant industries
 - **Organic Advocacy** - Partners become ambassadors at trade shows and on social media
 - **Co-Innovation** - Collaborative development that addresses specific industry pain points
 
 !!! quote "Our Philosophy"
-    By valuing early adopters and partners with recognition, influence, and mutual growth, Immersive Fusion transforms them into evangelists. Their contributions don't just fuel the platform-they spark a movement, positioning 3D/VR APM as the future of industry.
+    By valuing early adopters and partners with recognition, influence, and mutual growth, Immersive Fusion transforms them into evangelists. Their contributions don't just fuel the platform, they spark a movement.
 
 ## Get Started
 

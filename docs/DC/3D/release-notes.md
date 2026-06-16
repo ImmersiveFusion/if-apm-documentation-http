@@ -6,24 +6,24 @@
 
 **Introduction:**
 
-Boop graduates from preview to a full in-world presence. You can now switch workspaces from voice or the console without leaving the world, the radial menu reorganizes around how you actually work (Help, Quick Read, Deep Analysis), and gamepad players get a proper on-screen cursor with orbit-on-stick movement. Boop also picks up a richer set of idle behaviors that make the world feel less empty during long sessions.
+Mosey graduates from preview to a full in-world presence. You can now switch workspaces from voice or the console without leaving the world, the radial menu reorganizes around how you actually work (Help, Quick Read, Deep Analysis), and gamepad players get a proper on-screen cursor with orbit-on-stick movement. Mosey also picks up a richer set of idle behaviors that make the world feel less empty during long sessions.
 
 **New Features:**
 
 - **Voice and Console Workspace Switching**: Say or type a workspace command to switch grids without opening the picker. The world reloads cleanly with the new workspace context.
-- **Three-Bucket Boop Menu**: The radial menu reorganizes around intent: Help, Quick Read, and Deep Analysis. Workspace-aware Security and Research entries appear when relevant, and GenAI Cost shows up in trace context.
+- **Three-Bucket Mosey Menu**: The radial menu reorganizes around intent: Help, Quick Read, and Deep Analysis. Workspace-aware Security and Research entries appear when relevant, and GenAI Cost shows up in trace context.
 - **Gamepad Cursor and Stick Orbiting**: A screen-center reticle gives gamepad players a true cursor for in-world targeting. Pushing the right stick now activates orbiting around the focal point.
-- **Boop Idle Behaviors**: Boop now wanders, plays small skits, picks up props, and chatters while you work, with smoother pose recovery and tilt handling.
+- **Mosey Idle Behaviors**: Mosey now wanders, plays small skits, picks up props, and chatters while you work, with smoother pose recovery and tilt handling.
 
 **Improvements:**
 
-- Boop menu prefills the console for quick edits before send, and surfaces an active-context diagnostic so you can see what Boop is reasoning over.
+- Mosey menu prefills the console for quick edits before send, and surfaces an active-context diagnostic so you can see what Mosey is reasoning over.
 - Empty-slice handling and recall easing polish the radial menu interaction.
-- Boop is disabled by default until you opt in.
+- Mosey is disabled by default until you opt in.
 
 **Bug Fixes:**
 
-- Fixed Boop getting stuck in poses or tilted after rapid prop interactions.
+- Fixed Mosey getting stuck in poses or tilted after rapid prop interactions.
 - Fixed input-action bleed when the radial menu opened or closed mid-action.
 
 **Known Issues:**
@@ -34,14 +34,14 @@ Boop graduates from preview to a full in-world presence. You can now switch work
 
 **Introduction:**
 
-A series of stabilization patches across the 1.14.x line, focused on Windows installer reliability, in-world polish, and an early look at Boop that lands properly in 1.15.0. If you are upgrading from 1.14.0, this is the recommended 1.14.x build to install.
+A series of stabilization patches across the 1.14.x line, focused on Windows installer reliability, in-world polish, and an early look at Mosey that lands properly in 1.15.0. If you are upgrading from 1.14.0, this is the recommended 1.14.x build to install.
 
 **Improvements:**
 
 - **Smaller, More Reliable Windows Installer**: Reworked the Windows installer payload so large worlds package and install reliably on all Windows configurations.
 - **Refreshed Installer Branding**: New Windows installer dialog and banner artwork, with the installer, Start Menu shortcut, and app all consistently named **IAPM**.
 - **macOS Disk Image Distribution**: A new macOS disk image (DMG) flow ships alongside the Windows installer.
-- **Boop Preview**: Early in-world preview of Boop with idle behaviors, props, and a contextual radial menu. Disabled by default; full release lands in 1.15.0.
+- **Mosey Preview**: Early in-world preview of Mosey with idle behaviors, props, and a contextual radial menu. Disabled by default; full release lands in 1.15.0.
 - **Service Facility Polish**: Refined service facility content, including overlay menu fixes, tooltip cleanup, and smarter error/log table rendering pulled from receiver buffers.
 - **Portal Landing Polish**: Portal teleport landings fall back through to ground reliably, and portal ring orientation faces the hub center correctly.
 
@@ -60,7 +60,7 @@ A series of stabilization patches across the 1.14.x line, focused on Windows ins
 
 **Introduction:**
 
-This release delivers a big jump in in-world information density. Services and dependencies now carry their own content screens with error tables, log tables, and cost summaries, and you can tap any table row to teleport directly to the matching facility. A new force-directed service graph replaces the previous physics layout with smoother, more stable placement. Tessa picks up a new visual companion, Boop, for contextual guidance.
+This release delivers a big jump in in-world information density. Services and dependencies now carry their own content screens with error tables, log tables, and cost summaries, and you can tap any table row to teleport directly to the matching facility. A new force-directed service graph replaces the previous physics layout with smoother, more stable placement. Tessa picks up a new visual companion, Mosey, for contextual guidance.
 
 **New Features:**
 
@@ -223,7 +223,7 @@ This release marks a major milestone for Immersive APM with the debut of **Tessa
 
 **Introduction:**
 
-This release includes the addition of the [Buzludzha Monument](https://en.wikipedia.org/wiki/Buzludzha_monument) video and panels for more details. Materials are courtesy of the [Buzludzha Project](https://buzludzha-project.com/en/?source=if). The Buzludzha Monument, reimagined as the [Hall of Supporters](../../Resources/Partner/Hall-of-Supporters/index.md) in Immersive Fusion's 3D/VR world, is a powerful symbol of renewal, bridging a historic vision of Application Performance Management (APM) with a revolutionary new approach.
+This release includes the addition of the [Spatial Observatory](../../Resources/Partner/Spatial-Observatory/index.md), with video and panels for more details. Materials are courtesy of the [Buzludzha Project](https://buzludzha-project.com/en/?source=if).
 
 **Improvements:**
 
@@ -322,7 +322,7 @@ Bug fixes:
 - Fixed Platform colors
 - Fixed Platform teleport functionality
 - Fixed photon coloring and visibility
-- Various Hall of Supporters fixes
+- Various Spatial Observatory fixes
 - Fixed 3D/VR Avatar scale and head issues
 - Fixed various framerate issues
 
