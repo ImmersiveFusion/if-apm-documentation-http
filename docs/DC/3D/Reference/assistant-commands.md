@@ -91,12 +91,14 @@ The remaining energy is visible in the **Energy Bar** in the chat panel. Energy 
 |------|------------------------------|-----------------------------|
 | **Start** | ~1 query | 7 |
 | **Visualize** | ~8 queries | 35 |
-| **Analyze** | Unlimited | Unlimited |
-| **Fuse** | Unlimited | Unlimited |
+| **Analyze** | Large, scales per node | Large, scales per node |
+| **Fuse** | Large, scales per node | Large, scales per node |
 
 Limits are enforced in 6-hour rolling windows, not as a single daily pool: the daily total is divided across four windows. When a window's budget is spent, energy refills as the next window opens. The window budget is measured in tokens, so the query counts above are approximate: a few large requests consume a window faster than several small ones. Your account energy panel shows the exact remaining budget.
 
-These figures apply to Grid subscriptions (Start, Visualize, Analyze, Fuse). Personal subscriptions are a separate axis: they carry energy levels (E1, E5, E15) measured in monthly token allotments rather than per-window query caps. Your account energy panel shows the active limit for either.
+No tier is unlimited. Analyze and Fuse carry large budgets that scale with your monitored node count, not infinite ones. When a window's budget is spent, the assistant drops to lighter responses (the Conserving state) and is never blocked, exactly as every paid tier does.
+
+These figures apply to Grid subscriptions (Start, Visualize, Analyze, Fuse). Personal subscriptions are a separate axis: they carry energy levels (E5, E25, E50, E150) measured in monthly token allotments rather than per-window query caps. Your account energy panel shows the active limit for either.
 
 ## Related
 

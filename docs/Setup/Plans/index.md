@@ -18,7 +18,7 @@ IAPM uses **per-node pricing**. A node is any monitored application instance sen
 | IAPM (3D & VR) | :material-check: | :material-check: | :material-check: | :material-check: |
 | **Throughput** | 50/sec | 200/sec | 1,000/sec | 2,000/sec |
 | **Data Retention** | 7 days | 30 days | 90 days | 365 days |
-| **AI (Tessa)** | 7 queries/day | 35 queries/day | Unlimited + Code Fix | Unlimited + Code Fix + Infra |
+| **AI (Tessa)** | 7 queries/day | 35 queries/day | Large daily budget + Code Fix | Large daily budget + Code Fix + Infra |
 | **Support** | Discord | Chat/Email | Chat/Email/Phone | Chat/Email/Phone |
 | **Uptime SLA** | - | 99% | 99.9% | 99.99% |
 | **Dedicated Success Rep** | :material-close: | :material-close: | :material-check: | :material-check: |
@@ -26,6 +26,8 @@ IAPM uses **per-node pricing**. A node is any monitored application instance sen
 | **Early Access Features** | :material-close: | :material-close: | :material-close: | :material-check: |
 
 *Throughput = traces + logs per second*
+
+*AI (Tessa) usage is a daily budget that scales with your monitored nodes, not an unlimited allowance. No plan is ever blocked: when a budget is spent, Tessa keeps working with lighter, faster responses until it refills.*
 
 ## Plan Details
 
@@ -61,7 +63,7 @@ Improve your application visualization capabilities by incorporating historical 
 - 99.9% uptime SLA
 - 1,000 traces + logs per second
 - 90 days data retention
-- Unlimited AI Assistant + Code Fix
+- Large daily AI Assistant budget + Code Fix
 - Phone support
 - Dedicated success representative
 - Professional consulting services
@@ -75,7 +77,7 @@ Elevate your application monitoring and management with the stability, scalabili
 - 99.99% uptime SLA
 - 2,000 traces + logs per second
 - 365 days data retention
-- Unlimited AI Assistant + Code Fix + Infra
+- Large daily AI Assistant budget + Code Fix + Infra
 - Phone support
 - Dedicated success representative
 - Professional consulting services
