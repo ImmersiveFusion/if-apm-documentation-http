@@ -15,7 +15,7 @@ Learn more about [Steam](https://store.steampowered.com/about/){ target="_blank"
 !!! info "Alpha channel only on macOS"
     The macOS build of IAPM is currently published to the **alpha** channel only. Stable and beta DMGs are not yet available. Windows builds on all three channels remain available from the [Windows installation page](../Windows/index.md).
 
-[Latest Alpha Build :material-download:](https://ifdl.blob.core.windows.net/release/alpha/DC.latest.dmg){ .md-button }
+[Latest Alpha Build :material-download:](https://downloads.immersivefusion.com/release/alpha/DC.latest.dmg){ .md-button }
 
 1. Click on the button above to download the installer for IAPM for macOS from the cloud. The file size is around `1.5GB`
 
