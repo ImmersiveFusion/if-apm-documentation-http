@@ -9,7 +9,7 @@ IAPM Studio is a native desktop application distributed as a standalone installe
 
 ## Download
 
-[Latest Alpha Build :material-microsoft-windows:](https://ifdl.blob.core.windows.net/release/alpha/DCS.latest.msi){ .md-button .md-button--primary }
+[Latest Alpha Build :material-microsoft-windows:](https://downloads.immersivefusion.com/release/alpha/DCS.latest.msi){ .md-button .md-button--primary }
 
 A subscription is required to use IAPM Studio.
 
