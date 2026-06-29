@@ -124,6 +124,14 @@ social:
 
     [:octicons-arrow-right-24: Join Discord](https://discord.gg/zevywnQp6K)
 
+-   :fontawesome-brands-twitch:{ .lg .middle } **Twitch**
+
+    ---
+
+    Live demo grids and spatial-observability sessions when we're streaming.
+
+    [:octicons-arrow-right-24: Watch on Twitch](https://www.twitch.tv/immersivefusion)
+
 -   :material-chat:{ .lg .middle } **Live Chat**
 
     ---
@@ -152,9 +160,11 @@ social:
 !!! info "Social"
     [LinkedIn](https://www.linkedin.com/company/immersivefusion) |
     [Mastodon](https://mastodon.social/@immersivefusion) |
+    [Bluesky](https://bsky.app/profile/immersivefusion.bsky.social) |
     [X](https://x.com/immersivefusion) |
     [YouTube](https://www.youtube.com/@immersivefusion) |
     [Facebook](https://www.facebook.com/immersivefusion) |
     [Instagram](https://www.instagram.com/immersivefusion) |
     [GitHub](https://github.com/immersivefusion) |
+    [Twitch](https://www.twitch.tv/immersivefusion) |
     [Discord](https://discord.gg/zevywnQp6K)
