@@ -5,6 +5,30 @@
 
 ## Version History
 
+### 1.3.0 <small>June 30, 2026</small> { id="1.3.0" }
+
+**Introduction:**
+
+Studio reaches 1.0 and beyond, consolidating everything since the 0.8.x line. The biggest change is a single, workspace-bound shell: instead of juggling multiple windows, Studio now runs one window tied to the workspace you're in and switches in place. Voice gets a proper end-to-end listen loop with a single Silent Mode control, Tessa can adopt a workspace's persona behind a consent prompt, and the chat shows when your AI energy resets.
+
+**New Features:**
+
+- **Single Workspace Shell**: Studio now runs as one window bound to the active workspace. Switching workspaces rebuilds the shell in place rather than opening new windows, your open tabs are remembered per workspace, and Studio reopens to your last workspace. A workspace picker is available from the new-tab button and at startup.
+- **Voice Conversation Mode**: A single Silent Mode control governs both the microphone and Tessa's voice: turn conversation on and Studio listens and speaks, turn it off for silence. Recognized speech is echoed into the chat as it is heard.
+- **Workspace Persona for Tessa**: Point Studio at a workspace and Tessa can adopt that workspace's persona, after an explicit consent prompt. Tessa never adopts a workspace's guidance without your approval, the choice is remembered across restarts, and you are only re-prompted when the workspace's guidance files change.
+
+**Improvements:**
+
+- **Clearer AI Energy Limit**: When you reach your AI energy budget, the chat now shows when your AI energy resets instead of a misleading "no response" message, and the energy indicator shows your current state (Optimal, Conserving, or Replenishing).
+- **Auto-Named Tabs**: New chat tabs are named automatically from Tessa's first response; renaming a tab yourself always wins.
+- **Tab Isolation**: Each chat tab is fully isolated, so responses no longer leak between tabs or windows.
+
+**Bug Fixes:**
+
+- Fixed the conversation toggle so turning it on opens the microphone, and suppressed the duplicate spoken bubble while in Silent Mode.
+- Fixed the latest prompt sticking to the top of the chat so you can always see which question the current answer belongs to.
+- Fixed Windows installer issues that could drop files from the package.
+
 ### 0.8.23 <small>April 20, 2026</small> { id="0.8.23" }
 
 **Introduction:**

@@ -2,28 +2,56 @@
 
 ## Version History
 
+### 1.17.0 <small>June 30, 2026</small> { id="1.17.0" }
+
+**Introduction:**
+
+A large release for Steam players: everything since 1.15.0 arrives in one update (1.16.x was an internal milestone not released on Steam). Tessa's in-world companion graduates into an autonomous tour guide, the service graph gains holographic "phantom" placeholders for services that are referenced but never seen, the Hall of Supporters is reimagined as the Spatial Observatory, and sign-in becomes faster and more reliable with your choice of native or in-world browser. Tessa can now adopt a workspace's persona, with a consent prompt before it does.
+
+**New Features:**
+
+- **Companion Idle Autopilot**: After about 10 minutes of inactivity, the camera follows Tessa's companion on an autonomous tour of your most interesting facilities — prioritizing failing and anomalous services, with a scenic overview when the fleet is healthy. The companion eases between points of interest, faces each one, and re-targets live as the graph reflows. Any input ends the tour and returns the companion to your avatar; pin it on to keep it running continuously instead.
+- **Phantom Nodes**: The service graph now renders holographic placeholder facilities for services that are referenced but never observed — a producer publishing to a queue no one consumes, or a client calling an API with no instrumented server. Phantoms appear with persistent edges back to the callers that referenced them, and are promoted to solid facilities automatically once real telemetry arrives.
+- **Spatial Observatory**: The Hall of Supporters is reimagined as the Spatial Observatory — an immersive space for observing your services and telemetry spatially. The Buzludja monument environment is retained; the purpose and in-world guidance now center on observation.
+- **Choose Your Sign-In Browser**: A new option on the Login screen lets you sign in with your native OS browser (default) or an embedded in-world browser. Your choice is remembered.
+- **Workspace Persona for Tessa**: Point the app at a workspace and Tessa can adopt that workspace's persona. Before it does, a consent prompt asks your approval — Tessa never adopts a workspace's guidance without it.
+
+**Improvements:**
+
+- **Energy Recharge Countdown**: When energy is replenishing, the HUD now shows a live countdown to when it resets, driven by the server's own timing.
+- More reliable sign-in: cancelling or abandoning a sign-in now unwinds cleanly, retry re-enables correctly, and rapid back-to-back logins no longer flicker or hang.
+
+**Bug Fixes:**
+
+- Fixed long Tessa answers being truncated in the console; oversized output is now chunked so nothing is lost.
+- Fixed macOS native sign-in failing on URLs with encoded characters.
+
+**Known Issues:**
+
+- macOS support is experimental and may lack full feature parity with Windows builds. The embedded in-world sign-in browser in particular may have limited support on macOS; the native browser option is recommended there.
+
 ### 1.15.0 <small>May 8, 2026</small> { id="1.15.0" }
 
 **Introduction:**
 
-Mosey graduates from preview to a full in-world presence. You can now switch workspaces from voice or the console without leaving the world, the radial menu reorganizes around how you actually work (Help, Quick Read, Deep Analysis), and gamepad players get a proper on-screen cursor with orbit-on-stick movement. Mosey also picks up a richer set of idle behaviors that make the world feel less empty during long sessions.
+Tessa's in-world companion graduates from preview to a full presence. You can now switch workspaces from voice or the console without leaving the world, the radial menu reorganizes around how you actually work (Help, Quick Read, Deep Analysis), and gamepad players get a proper on-screen cursor with orbit-on-stick movement. The companion also picks up a richer set of idle behaviors that make the world feel less empty during long sessions.
 
 **New Features:**
 
 - **Voice and Console Workspace Switching**: Say or type a workspace command to switch grids without opening the picker. The world reloads cleanly with the new workspace context.
-- **Three-Bucket Mosey Menu**: The radial menu reorganizes around intent: Help, Quick Read, and Deep Analysis. Workspace-aware Security and Research entries appear when relevant, and GenAI Cost shows up in trace context.
+- **Three-Bucket Companion Menu**: The radial menu reorganizes around intent: Help, Quick Read, and Deep Analysis. Workspace-aware Security and Research entries appear when relevant, and GenAI Cost shows up in trace context.
 - **Gamepad Cursor and Stick Orbiting**: A screen-center reticle gives gamepad players a true cursor for in-world targeting. Pushing the right stick now activates orbiting around the focal point.
-- **Mosey Idle Behaviors**: Mosey now wanders, plays small skits, picks up props, and chatters while you work, with smoother pose recovery and tilt handling.
+- **Companion Idle Behaviors**: The companion now wanders, plays small skits, picks up props, and chatters while you work, with smoother pose recovery and tilt handling.
 
 **Improvements:**
 
-- Mosey menu prefills the console for quick edits before send, and surfaces an active-context diagnostic so you can see what Mosey is reasoning over.
+- The companion menu prefills the console for quick edits before send, and surfaces an active-context diagnostic so you can see what the companion is reasoning over.
 - Empty-slice handling and recall easing polish the radial menu interaction.
-- Mosey is disabled by default until you opt in.
+- The companion is disabled by default until you opt in.
 
 **Bug Fixes:**
 
-- Fixed Mosey getting stuck in poses or tilted after rapid prop interactions.
+- Fixed the companion getting stuck in poses or tilted after rapid prop interactions.
 - Fixed input-action bleed when the radial menu opened or closed mid-action.
 
 **Known Issues:**
@@ -34,14 +62,14 @@ Mosey graduates from preview to a full in-world presence. You can now switch wor
 
 **Introduction:**
 
-A series of stabilization patches across the 1.14.x line, focused on Windows installer reliability, in-world polish, and an early look at Mosey that lands properly in 1.15.0. If you are upgrading from 1.14.0, this is the recommended 1.14.x build to install.
+A series of stabilization patches across the 1.14.x line, focused on Windows installer reliability, in-world polish, and an early look at Tessa's in-world companion that lands properly in 1.15.0. If you are upgrading from 1.14.0, this is the recommended 1.14.x build to install.
 
 **Improvements:**
 
 - **Smaller, More Reliable Windows Installer**: Reworked the Windows installer payload so large worlds package and install reliably on all Windows configurations.
 - **Refreshed Installer Branding**: New Windows installer dialog and banner artwork, with the installer, Start Menu shortcut, and app all consistently named **IAPM**.
 - **macOS Disk Image Distribution**: A new macOS disk image (DMG) flow ships alongside the Windows installer.
-- **Mosey Preview**: Early in-world preview of Mosey with idle behaviors, props, and a contextual radial menu. Disabled by default; full release lands in 1.15.0.
+- **Companion Preview**: Early in-world preview of Tessa's companion with idle behaviors, props, and a contextual radial menu. Disabled by default; full release lands in 1.15.0.
 - **Service Facility Polish**: Refined service facility content, including overlay menu fixes, tooltip cleanup, and smarter error/log table rendering pulled from receiver buffers.
 - **Portal Landing Polish**: Portal teleport landings fall back through to ground reliably, and portal ring orientation faces the hub center correctly.
 
@@ -60,7 +88,7 @@ A series of stabilization patches across the 1.14.x line, focused on Windows ins
 
 **Introduction:**
 
-This release delivers a big jump in in-world information density. Services and dependencies now carry their own content screens with error tables, log tables, and cost summaries, and you can tap any table row to teleport directly to the matching facility. A new force-directed service graph replaces the previous physics layout with smoother, more stable placement. Tessa picks up a new visual companion, Mosey, for contextual guidance.
+This release delivers a big jump in in-world information density. Services and dependencies now carry their own content screens with error tables, log tables, and cost summaries, and you can tap any table row to teleport directly to the matching facility. A new force-directed service graph replaces the previous physics layout with smoother, more stable placement. Tessa picks up a new visual companion for contextual guidance.
 
 **New Features:**
 
