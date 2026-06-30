@@ -2,6 +2,28 @@
 
 ## Version History
 
+### 3.169.0 <small>June 29, 2026</small> { id="3.169.0" }
+
+**Introduction:**
+
+This release rolls up everything since 3.141.0. Most of the work is behind the scenes (more accurate usage metering, billing, and storage accounting), but a few changes are visible: you can now choose Tessa's voice from your account, see your own personal usage, and the Energy page shows when your AI energy recharges.
+
+**New Features:**
+
+- **Assistant Voice Preference**: The Account page now has a working voice picker so you can choose Tessa's voice, saved as a personal preference in your account.
+- **Personal Usage View**: The Energy page now includes your own home and personal usage, not just grid usage, with your home space flagged.
+
+**Improvements:**
+
+- The Energy detail panel now shows a "Recharges in …" countdown when your AI energy is replenishing, so you can see when it will recover.
+- More accurate usage metering across grids, including correct per-grid node counts and more precise billing.
+
+**Bug Fixes:**
+
+- Fixed a 403 error that prevented users from selecting their own assistant voice.
+- Fixed grid node counts that always displayed as 1 regardless of how many nodes reported.
+- Fixed an issue where some usage averages were silently not billed due to a precision limit.
+
 ### 3.141.0 <small>May 6, 2026</small> { id="3.141.0" }
 
 **Introduction:**
