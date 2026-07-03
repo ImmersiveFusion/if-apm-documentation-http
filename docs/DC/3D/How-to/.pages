@@ -1,6 +1,9 @@
 title: How-to
 arrange:
     - index.md
+    - investigate-a-trace.md
+    - read-the-service-graph.md
+    - use-pro-tips.md
     - assistant-voice.md
     - assistant-vision.md
     - assistant-prompts.md

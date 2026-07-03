@@ -81,7 +81,7 @@ Understand how metrics are changing over time. Tessa analyzes latency, error rat
 
 ### Service Dependency Map
 
-Visualize how services connect and depend on each other. Tessa builds a service dependency map with per-service health, latency, error rates, and inter-service dependencies.
+Understand how services connect and depend on each other. Tessa returns a service dependency map: each service, its inter-service dependencies, and its health, latency, and error rates. This is structured data she reports in the conversation, not a separate rendered diagram.
 
 !!! example "Try asking"
     - "Show me the service dependency map"
@@ -203,7 +203,7 @@ In IAPM 3D, Tessa knows where you are. She tracks your current room and what you
 | Where You Are | What Tessa Knows |
 |---------------|------------------|
 | Standing near a service node | Which service you're investigating |
-| Inside the Diagnostics Room | Which trace you're viewing |
+| Inside the Diagnostics cube | Which trace you're viewing |
 | Viewing the service graph | The overall topology you see |
 | Looking at a performance chart | The metric and time range in view |
 

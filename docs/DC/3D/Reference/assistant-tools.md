@@ -22,12 +22,11 @@ These tools are available in every Tessa conversation, on every IAPM surface, re
 | **LS** | List directory contents |
 | **Workspace** | Manage workspaces (list, current, register, unregister, add/remove reference, create, delete, rename) |
 | **Memory** | Remember and recall facts across sessions |
-| **Voice** | Change voice, list available voices, preview samples |
+| **Voice** | List available voices, preview samples, and report the current voice. Selecting Tessa's voice is done in account preferences today, not through the assistant. |
 | **Task** | Spawn sub-agents for parallel or complex work |
 | **WebSearch** | Search the web for information |
 | **WebFetch** | Fetch and analyze web pages |
 | **GetCurrentTime** | Current date and time queries |
-| **Feedback** | Submit feedback about Tessa |
 
 ## Diagnostic tools
 

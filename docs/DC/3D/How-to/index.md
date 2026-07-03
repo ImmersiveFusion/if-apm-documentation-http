@@ -8,6 +8,14 @@ tags: [how-to]
 
 This section shows how to complete specific tasks with IAPM (3D & VR).
 
+## Working in the grid
+
+| Guide | Task |
+|---|---|
+| [Investigate a trace](investigate-a-trace.md) | Track a single trace from the grid down to its root cause in the Diagnostics cube. |
+| [Read the service graph](read-the-service-graph.md) | Read your service topology and drill into a single service. |
+| [Use Pro Tips](use-pro-tips.md) | Turn the in-world Pro-Tips placards on or off and find help another way. |
+
 ## Tessa how-to guides
 
 | Guide | Task |

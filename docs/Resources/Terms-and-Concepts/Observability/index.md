@@ -20,7 +20,7 @@ graph TD
 
 ### Traces
 
-Records of requests as they flow through distributed systems. In IAPM, traces are visualized as 3D structures in the Diagnostics Room - you can walk through a request's journey across services.
+Records of requests as they flow through distributed systems. In IAPM, traces are visualized as 3D structures in the Diagnostics cube - you can walk through a request's journey across services.
 
 **Best for:** Understanding request flow, identifying latency bottlenecks, debugging distributed failures.
 

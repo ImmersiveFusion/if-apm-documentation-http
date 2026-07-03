@@ -16,10 +16,10 @@ Paste a screenshot into the chat and Tessa will analyze it. No need to describe 
 
 There are two ways to share images with Tessa:
 
-### Clipboard (Ctrl+V)
+### Clipboard (Ctrl+V / Cmd+V)
 
-1. **Copy an image** to your clipboard (screenshot, snipping tool, or any image)
-2. **Press Ctrl+V** in the Tessa chat panel
+1. **Copy an image** to your clipboard (a screenshot, snip, or any image)
+2. **Paste it into the Tessa chat panel** with **Ctrl+V** on Windows and Linux, or **Cmd+V** on macOS
 3. The image appears in the chat as an attachment
 4. **Type your question** about the image and send
 

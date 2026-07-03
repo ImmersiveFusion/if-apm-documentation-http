@@ -4,6 +4,7 @@ arrange:
     - DC
     - Instrument
     - API
+    - Integrations
     - Setup
     - Resources
     # - observability

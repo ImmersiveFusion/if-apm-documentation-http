@@ -39,7 +39,7 @@ That's it. No accounts, no API keys, no external connections. The demo data runs
 | --- | --- |
 | **Realistic topology** | Multiple interconnected services with dependencies |
 | **Live telemetry** | Metrics, traces, and logs generated in real time |
-| **Full navigation** | Grid view, Graph view, Diagnostics Room - everything works |
+| **Full navigation** | The grid, the service graph, the Diagnostics cube - everything works |
 | **Tessa** | Ask the AI Assistant questions about the demo data |
 
 ---

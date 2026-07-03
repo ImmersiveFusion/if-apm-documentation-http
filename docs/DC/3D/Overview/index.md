@@ -10,6 +10,9 @@ This section explains what IAPM (3D & VR) is, how it works, and the ideas behind
 
 ## In this section
 
+- [The Spatial Model](the-spatial-model.md) - How IAPM lays out your whole system as one vertical space you move through by changing altitude.
+- [Rendering Absence](rendering-absence.md) - Why IAPM draws the parts of your system that are missing, not just the parts that are failing.
+- [Mosey and Tessa](companion-and-assistant.md) - Mosey the companion who routes you, and Tessa the assistant he routes you to.
 - [Tessa - Your AI Assistant](ai-assistant.md) - What Tessa is, what makes her different, and the conceptual model of hats, skills, memory, and energy.
 
 ## Where to next

@@ -38,7 +38,7 @@ IAPM 3D offers multiple ways to visualize the same data:
 | **Grid** | ++m++ | Services as blocks on the 3D platform surface |
 | **Graph** | ++n++ | Services as nodes in a dependency graph |
 
-Press ++n++ to switch to the **Graph view**. Notice how the same services are now displayed as a network diagram showing dependencies. Press ++m++ to return to the Grid.
+Press ++n++ to switch to the **service graph**. Notice how the same services are now displayed as a network diagram showing dependencies. Press ++m++ to return to the grid.
 
 ### Step 5: Talk to Tessa
 
@@ -51,18 +51,18 @@ Tessa is IAPM's AI Assistant. Open the Tessa panel and try asking questions abou
 
 Tessa works with demo data exactly the same way she works with production data - this is a great time to get familiar with what she can do.
 
-### Step 6: Enter the Diagnostics Room
+### Step 6: Enter the Diagnostics cube
 
-Select a service on the Grid and navigate into it to reach the **Diagnostics Room**. This is where you can inspect individual traces, view span waterfalls, and understand exactly what happened during a request.
+Press ++m++ for the Traces & Logs Camera View, click a trace cube to port down onto the grid, then click the rhombus on a Trace Aggregate Block to zoom into the **Diagnostics cube**. This is where you can inspect a single trace, read its span waterfall, and understand exactly what happened during a request.
 
-Inside the Diagnostics Room:
+Inside the Diagnostics cube:
 
-- **Trace timelines** show the full journey of a request across services
-- **Span details** reveal timing, attributes, and status codes
+- The **span waterfall** (north wall) shows the full journey of the request, each bar a span, its length the span's duration
+- The **logs wall** (west wall) shows the trace's logs, colored by level, text readable
 - **Error indicators** highlight where things went wrong (if any)
 
 !!! success "Checkpoint"
-    You've now seen the three core views of IAPM 3D: the Grid, the Graph, and the Diagnostics Room. Every feature you just used works identically with real production data.
+    You've now seen the three core views of IAPM 3D: the Grid, the Graph, and the Diagnostics cube. Every feature you just used works identically with real production data.
 
 ---
 
@@ -97,7 +97,7 @@ Trigger an **error** scenario. This generates HTTP 500 responses and exception t
 In IAPM, watch for:
 
 - **Red indicators** appearing on affected services
-- **Error traces** in the Diagnostics Room with full stack information
+- **Error traces** in the Diagnostics cube with full stack information
 - **Health changes** reflected in service status
 
 ### Step 5: Trigger a Cascading Failure
@@ -133,8 +133,8 @@ You've covered the basics. Here are some ideas to go deeper before connecting yo
 
 - [ ] **Compare views during a failure** - Toggle between Grid (++m++) and Graph (++n++) during a cascading failure to see which view reveals the problem fastest
 - [ ] **Race Tessa** - Inject a failure and try to find the root cause before Tessa does
-- [ ] **Latency hunting** - Inject a subtle latency spike and practice tracing it through span waterfalls in the Diagnostics Room
-- [ ] **Dependency mapping** - Use the Graph view to map out all service dependencies, then predict what will happen when you fail a specific service
+- [ ] **Latency hunting** - Inject a subtle latency spike and practice tracing it through span waterfalls in the Diagnostics cube
+- [ ] **Dependency mapping** - Use the service graph to map out all service dependencies, then predict what will happen when you fail a specific service
 
 ### Keep Going
 

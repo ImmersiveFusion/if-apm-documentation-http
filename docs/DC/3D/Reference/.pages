@@ -1,6 +1,10 @@
 title: Reference
 arrange:
     - index.md
+    - glossary.md
+    - color-legend.md
+    - navigation-model.md
+    - readouts-and-boards.md
     - assistant-tools.md
     - assistant-hats.md
     - assistant-commands.md

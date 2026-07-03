@@ -19,8 +19,8 @@ Master the controls to move through your application's 3D environment efficientl
 | Move Backward | `S` | Move away from where you're looking | |
 | Strafe Left | `A` | Slide left while maintaining view direction | |
 | Strafe Right | `D` | Slide right while maintaining view direction | |
-| Move Up | `Space` | Rise vertically in the environment | :material-lock: |
-| Move Down | `Ctrl` | Descend vertically in the environment | :material-lock: |
+| Jump | `Space` | Jump for a momentary higher look. Inside a cube, jumping starts you swimming (free vertical movement) | :material-lock: |
+| Descend | `Ctrl` | Move down while swimming inside a cube | :material-lock: |
 | Sprint | `Shift` + movement | Move faster in any direction | |
 
 ### Camera & View
@@ -49,8 +49,8 @@ Master the controls to move through your application's 3D environment efficientl
 | Toggle Metrics | - | Show/hide metrics overlay | :material-lock: |
 | Toggle Logs | `L` | Show/hide log panel | :material-clock: |
 | Toggle Traces | `T` | Show/hide trace details | :material-clock: |
-| Toggle Grid View | `M` | Switch to grid layout | |
-| Toggle Graph View | `N` | Switch to graph layout | |
+| Traces & Logs Camera View | `M` | Switch to the grid | |
+| Services & Dependencies Camera View | `N` | Switch to the service graph | |
 
 ### General
 
@@ -92,14 +92,14 @@ See [Meta Quest Integration](../../Integrations/Meta-Quest/index.md) for detaile
 | Indicator | Meaning |
 |-----------|---------|
 | Green glow | Healthy service |
-| Yellow glow | Elevated latency |
-| Orange glow | High latency or error rate |
-| Red glow | Critical issues |
-| Pulsing lines | Active request flow |
+| Red glow | Failure - errors (a service on fire also shows a burning texture) |
+| Black node | Absence - a phantom service that should be there but never reported |
+| Grey node | Idle - present but not currently active |
+| Photons flying along a line | Active request flow (a request emits a photon to the target, a response sends one back) |
+| Translucent red line | An error on that connection |
 | Thick lines | High throughput |
-| Dashed lines | Intermittent connections |
 
-### Grid View
+### The Grid
 
 A structured, organized layout where services are arranged in a grid pattern.
 
@@ -128,7 +128,7 @@ A structured, organized layout where services are arranged in a grid pattern.
 | Group By | `G` + `1-4` | Group by namespace/type/status/custom | 
 -->
 
-### Graph View
+### The Service Graph
 
 A dynamic, force-directed layout showing actual service relationships and dependencies.
 
@@ -160,8 +160,8 @@ A dynamic, force-directed layout showing actual service relationships and depend
 
 | Action | Control |
 |--------|---------|
-| Toggle Grid View | `M` |
-| Toggle Graph View | `N` |
+| Traces & Logs Camera View | `M` |
+| Services & Dependencies Camera View | `N` |
 
 <!-- 
 ## Camera Modes

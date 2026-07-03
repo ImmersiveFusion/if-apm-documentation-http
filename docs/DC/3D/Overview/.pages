@@ -1,4 +1,7 @@
 title: Overview
 arrange:
     - index.md
+    - the-spatial-model.md
+    - rendering-absence.md
+    - companion-and-assistant.md
     - ai-assistant.md

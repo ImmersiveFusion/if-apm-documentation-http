@@ -28,13 +28,13 @@ When something is wrong and you need to find out why.
 
 | Prompt | What Tessa Does |
 |--------|-----------------|
-| "Why is checkout slow?" | Traces the checkout flow and identifies bottlenecks |
-| "What's causing 500 errors on payment-service?" | Analyzes error traces and correlates with recent changes |
-| "Root cause the latency spike at 2pm" | Builds a timeline and traces causation |
-| "Why did order-service start failing?" | Checks deployments, dependencies, and resource usage |
+| "Why is checkout slow?" | Returns root cause analysis of the errors and ranks the slowest endpoints by P99 latency |
+| "What's causing 500 errors on payment-service?" | Analyzes error traces and correlates with recent deployments |
+| "Root cause the latency spike at 2pm" | Returns a chronological timeline of when each service first errored, spiked in latency, or degraded |
+| "Why did order-service start failing?" | Returns root cause analysis with recent deployments and the service's dependencies, error rate, latency, and top errors |
 | "What's wrong here?" *(standing near a node in 3D)* | Diagnoses the service you're looking at |
-| "Is this related to the database?" | Checks dependency chain for database involvement |
-| "What changed right before errors started?" | Scans for deployments, config changes, and traffic shifts |
+| "Is this related to the database?" | Checks the service's dependencies for database involvement |
+| "What changed right before errors started?" | Returns recent deployment changes: new service versions, new services, new endpoints, and new hosts |
 
 ## Performance Analysis
 
@@ -42,7 +42,7 @@ Understand trends, patterns, and how your system is performing over time.
 
 | Prompt | What Tessa Does |
 |--------|-----------------|
-| "Show me the latency trend for auth-service" | Charts latency over recent history and flags anomalies |
+| "Show me the latency trend for auth-service" | Returns a latency trend classification (improving, stable, or degrading) with percent-change against a baseline |
 | "How has error rate changed over the last 6 hours?" | Analyzes error rate trends with context |
 | "What are the slowest endpoints?" | Ranks endpoints by response time |
 | "Show me the top 10 slowest endpoints in the last hour" | Filters and ranks with a time window |
@@ -66,9 +66,9 @@ Learn about your system architecture and data flows.
 
 | Prompt | What Tessa Does |
 |--------|-----------------|
-| "Show me the service dependency map" | Visualizes how services connect |
+| "Show me the service dependency map" | Returns a structured breakdown of your services, their inter-service dependencies, and each one's health, latency, and error rates |
 | "What services depend on order-service?" | Maps upstream dependencies |
-| "Map out the request path from gateway to database" | Traces the full request flow |
+| "Map out the request path from gateway to database" | Returns the service dependency map showing the services between gateway and database |
 | "What are the downstream dependencies of auth-service?" | Maps what auth-service calls |
 | "Build me a timeline of events in the last hour" | Assembles a chronological event view |
 | "What deployments happened today?" | Lists recent deployment activity |
@@ -81,7 +81,7 @@ These work best in IAPM 3D, where Tessa uses your position and view as context.
 |--------|-----------------|
 | "What's wrong here?" | Diagnoses whatever you're looking at |
 | "Tell me about this service" | Describes the service node nearest to you |
-| "Why is this trace so slow?" *(in Diagnostics Room)* | Analyzes the trace you're currently viewing |
+| "Why is this trace so slow?" *(in Diagnostics cube)* | Analyzes the trace you're currently viewing |
 | "What connects to this?" | Maps dependencies for the service in front of you |
 
 ## Tips for Effective Prompting

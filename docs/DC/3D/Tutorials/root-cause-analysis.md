@@ -15,11 +15,11 @@ Errors are spreading across your system. Multiple services are red. This isn't a
 
 ## Step 1: See the Damage
 
-1. **Enter your grid** and immediately scan the environment.
-2. **Rise up with `Space`** to get a wide view of the entire topology.
+1. **Jump with `Space`** for a momentary higher look at the layout.
+2. **Press `N`** for the Services & Dependencies Camera View, the flattened graph of your whole topology. You do not fly around the space; you look at the graph, then click a node to teleport to it.
 
 !!! info "What you see"
-    This isn't subtle. From your elevated vantage point, you can see a cluster of red and orange services on the right side of the Grid. At least five or six services glow red with critical indicators. The connections between them pulse erratically - some lines flicker, others have gone dim. Surrounding services show yellow and orange as the impact ripples outward. The left side of the Grid is still green, unaffected - for now. The contrast between the healthy and failing regions is stark.
+    This isn't subtle. In the graph overview you can see a cluster of red services on one side, at least five or six glowing red, some with the burning texture of a service on fire. The connections between them have turned translucent red where errors are flowing. The rest of the graph is still green, unaffected for now. The contrast between the healthy and failing regions is stark. Click any red node to teleport straight to it.
 
 ---
 
@@ -48,13 +48,13 @@ Errors are spreading across your system. Multiple services are red. This isn't a
 ## Step 3: Follow the Dependency Chain
 
 1. **Move toward the cluster of red services.** Use `Shift` + `W` to sprint, or teleport to a service platform.
-2. **Look at the connections** between the failing services. Follow the pulsing lines to see the dependency direction.
-3. **Switch to Graph view** by pressing `N` to see the relationship structure more clearly.
+2. **Look at the connections** between the failing services. Follow the photons along the lines to see the dependency direction.
+3. **Press `N`** for the Services & Dependencies Camera View to see the relationship structure more clearly.
 
 !!! info "What you see"
-    In Graph view, the failing services rearrange based on their actual dependencies. The layout reveals the hierarchy clearly: `auth-service` sits at the center of the red cluster, with `session-service` and `user-service` connected directly to it. `profile-service` and `notification-service` connect through `session-service`. The dependency chain fans out from a single point.
+    In the Services & Dependencies Camera View, the failing services rearrange based on their actual dependencies. The layout reveals the hierarchy clearly: `auth-service` sits at the center of the red cluster, with `session-service` and `user-service` connected directly to it. `profile-service` and `notification-service` connect through `session-service`. The dependency chain fans out from a single point.
 
-    The connections from `auth-service` to its dependents flicker with error indicators - the pulsing has turned choppy and irregular, visually distinct from the smooth, steady pulses on healthy connections elsewhere. You can see requests flowing in but failing to complete.
+    The connections from `auth-service` to its dependents have turned translucent red, visually distinct from the healthy connections elsewhere. Photons fly in toward `auth-service`, but you can watch many of them fail to return, requests arriving but not completing.
 
 ---
 
@@ -123,11 +123,11 @@ Errors are spreading across your system. Multiple services are red. This isn't a
 
 ## Step 7: Examine the Failing Traces
 
-1. **Click on `auth-service`** to select it.
-2. **Open a failing trace** from the details panel to enter the Diagnostics Room.
+1. **Press `M`** to open the grid and find a failing trace for `auth-service`, shown as a red Trace Aggregate Block.
+2. **Click the rhombus on that Trace Aggregate Block** to zoom into the Diagnostics cube.
 
 !!! info "What you see"
-    Inside the Diagnostics Room, the trace tells the full story in 3D. The incoming request span shows a valid session token. The next span - token validation - is bright red and short, ending abruptly with the `NullReferenceException`. There's no database call, no downstream dependency - the failure happens entirely within `auth-service`'s own code. The stack trace in the span details points to a specific line in the token parser.
+    Inside the Diagnostics cube, the trace tells the full story in 3D. The incoming request span shows a valid session token. The next span - token validation - is bright red and short, ending abruptly with the `NullReferenceException`. There's no database call, no downstream dependency - the failure happens entirely within `auth-service`'s own code. The stack trace in the span details points to a specific line in the token parser.
 
     Compared to a healthy trace (which you can view side by side), the failing trace is missing the entire second half of the normal request flow. The validation span should lead to a cache lookup and a response - instead, it terminates immediately.
 
@@ -161,11 +161,11 @@ Errors are spreading across your system. Multiple services are red. This isn't a
 |------|--------|---------|
 | 1 | Observed the Grid from above | Saw a cluster of red services on one side |
 | 2 | Asked Tessa for system health | Got errors grouped by root cause, pointing to `auth-service` |
-| 3 | Followed dependency chain in Graph view | Confirmed `auth-service` as the epicenter |
+| 3 | Followed dependency chain in the service graph | Confirmed `auth-service` as the epicenter |
 | 4 | Requested incident timeline | Saw the cascade unfold chronologically from 14:32 |
 | 5 | Asked what changed | Found a deployment to `auth-service` at 14:30 |
 | 6 | Deep-dived into `auth-service` | Found the `NullReferenceException` in token validation |
-| 7 | Examined traces in the Diagnostics Room | Saw the exact failure point in 3D |
+| 7 | Examined traces in the Diagnostics cube | Saw the exact failure point in 3D |
 | 8 | Asked for an incident summary | Got a shareable report with root cause and remediation |
 
 **From "everything is red" to "roll back auth-service v2.4.1" in under 15 minutes.**

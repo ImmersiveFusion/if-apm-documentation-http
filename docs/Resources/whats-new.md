@@ -106,7 +106,7 @@ Full adoption of the OpenTelemetry-native data model across all trace and log vi
 
 ### September 2025
 
-- **3D v1.9**: Tessa AI Assistant debut (chat + voice), Diagnostics Room, grid picker redesign, ProTips, water environment, macOS experimental support
+- **3D v1.9**: Tessa AI Assistant debut (chat + voice), Diagnostics cube, grid picker redesign, ProTips, water environment, macOS experimental support
 
 ---
 
