@@ -2,24 +2,24 @@
 
 **Difficulty:** :material-star: Beginner | **Time:** ~15 minutes
 
-Before you troubleshoot, you need to understand your system. This walkthrough shows you how to use IAPM's Graph view and Tessa to explore your service architecture - identifying traffic patterns, critical dependencies, and potential single points of failure.
+Before you troubleshoot, you need to understand your system. This walkthrough shows you how to use IAPM's service graph and Tessa to explore your service architecture - identifying traffic patterns, critical dependencies, and potential single points of failure.
 
 ## What You'll Learn
 
-- How to use Graph view to visualize service dependencies
+- How to use the service graph to visualize service dependencies
 - How to read traffic patterns from visual indicators
 - How to identify architectural risks with Tessa
 - How to use topology exploration for capacity planning
 
 ---
 
-## Step 1: Enter the Grid and Switch to Graph View
+## Step 1: Enter the Grid and Switch to the Service Graph
 
-1. **Enter your grid** and orient yourself on the Grid.
-2. **Press `N`** to switch to Graph view.
+1. **Enter your grid** and orient yourself on the grid.
+2. **Press `N`** to switch to the service graph.
 
 !!! info "What you see"
-    The organized rows and columns of Grid view dissolve. Services begin to move - drifting, separating, and regrouping based on their actual connections. The force-directed physics simulation pulls connected services toward each other and pushes unconnected ones apart. After a few seconds, the layout stabilizes into organic clusters.
+    The organized rows and columns of the grid dissolve. Services begin to move - drifting, separating, and regrouping based on their actual connections. The force-directed physics simulation pulls connected services toward each other and pushes unconnected ones apart. After a few seconds, the layout stabilizes into organic clusters.
 
     Services that communicate frequently are now physically close. Isolated services have drifted to the outer edges. The shape of your architecture is visible at a glance - something no flat dashboard can show you.
 
@@ -27,7 +27,7 @@ Before you troubleshoot, you need to understand your system. This walkthrough sh
 
 ## Step 2: Observe the Clusters
 
-1. **Rise up with `Space`** to see the full layout from above.
+1. **Jump with `Space`** for a momentary higher look at the layout.
 2. **Identify the natural groupings** - services that cluster together share dependencies.
 
 !!! info "What you see"
@@ -44,20 +44,23 @@ Before you troubleshoot, you need to understand your system. This walkthrough sh
 
 ## Step 3: Read the Traffic Patterns
 
-1. **Look at the lines connecting services.** Pay attention to their thickness and pulse rate.
+1. **Look at the lines connecting services.** Pay attention to their thickness and the photons flying along them.
 2. **Move closer to a busy connection** to see the traffic detail.
 
 | Visual | Meaning |
 |--------|---------|
-| Thick, fast-pulsing line | High throughput - many requests per second |
-| Thin, slow-pulsing line | Low throughput - occasional communication |
-| Bright green pulses | Healthy traffic - low latency, low errors |
-| Yellow or orange pulses | Degraded traffic - elevated latency or errors |
+| Thick line | High throughput - a fat pipe carries heavy traffic between those services |
+| Thin line | Low throughput - occasional communication |
+| Photons flying along a line | Live traffic: a request emits a photon to the target, and a response sends one back |
+| Translucent (glass) line | Healthy connection |
+| Translucent red line | An error is occurring on that connection |
+
+Photons are performance-gated: they appear when the frame rate is high enough, and back off under heavy load so they do not tank performance.
 
 !!! info "What you see"
-    The busiest connections in your system are immediately obvious - thick glowing lines with rapid pulses of light flowing along them. You can trace the main request paths through your architecture visually: external traffic enters through the API gateway (thick incoming lines), fans out to business services (medium lines), and converges on databases (thick lines again as multiple services query the same stores).
+    The busiest connections in your system are immediately obvious - thick lines with photons streaming along them. You can trace the main request paths through your architecture visually: external traffic enters through the API gateway (thick incoming lines), fans out to business services (medium lines), and converges on databases (thick lines again as multiple services query the same stores). A request that emits a photon but gets none back is a visible failure or timeout.
 
-    Quieter connections - background jobs, health checks, async messaging - appear as thin, slow-pulsing threads between services.
+    Quieter connections - background jobs, health checks, async messaging - appear as thin threads with only the occasional photon.
 
 ---
 
@@ -88,9 +91,9 @@ Before you troubleshoot, you need to understand your system. This walkthrough sh
 2. **Teleport to the most connected service** and select it by clicking.
 
 !!! info "What you see"
-    In the Graph view, single points of failure stand out visually. They sit at the center of a starburst of connections - many lines converging on a single node. `user-service` is a prime example: eleven other services depend on it. If it goes down, all eleven are affected.
+    In the service graph, single points of failure stand out visually. They sit at the center of a starburst of connections - many lines converging on a single node. `user-service` is a prime example: eleven other services depend on it. If it goes down, all eleven are affected.
 
-    When you select it, the dependency lines highlight, and you can count the connections. The details panel shows its current load and capacity headroom.
+    When you select it, the dependency lines highlight, and you can count the connections. Hover the node for its tooltip to read its current load and metrics.
 
 ---
 
@@ -116,14 +119,14 @@ Before you troubleshoot, you need to understand your system. This walkthrough sh
     The services under the most pressure are your entry points and shared dependencies - exactly the ones that would cause the widest blast radius if they failed. This is the information you need for capacity planning conversations.
 
 !!! tip "ProTip"
-    Compare the pressure ranking with the visual layout. The most pressured services typically sit at the densest intersection of connections in Graph view. If a pressured service is also a single point of failure, it deserves priority attention.
+    Compare the pressure ranking with the visual layout. The most pressured services typically sit at the densest intersection of connections in the service graph. If a pressured service is also a single point of failure, it deserves priority attention.
 
 ---
 
 ## Step 7: Explore Architectural Patterns
 
 1. **Move through the different clusters**, examining the connections up close.
-2. **Switch between Grid view (`M`) and Graph view (`N`)** to see the same services in different arrangements.
+2. **Switch between the grid (`M`) and the service graph (`N`)** to see the same services in different arrangements.
 
 !!! info "What you see"
     As you move through the clusters, architectural patterns become tangible:
@@ -133,7 +136,7 @@ Before you troubleshoot, you need to understand your system. This walkthrough sh
     - **Service meshes:** Tightly interconnected groups where every service talks to every other - visible as dense, web-like connection clusters
     - **Chains:** Sequential dependencies where A calls B calls C - visible as linear paths through the topology
 
-    Toggling back to Grid view (`M`) and then returning to Graph view (`N`) reinforces the contrast: Grid view shows you all services equally, while Graph view reveals the actual communication structure.
+    Toggling back to the grid (`M`) and then returning to the service graph (`N`) reinforces the contrast: the grid shows you all services equally, while the service graph reveals the actual communication structure.
 
 ---
 
@@ -145,7 +148,7 @@ Use what you've learned for:
 |----------|--------|
 | **Architecture review** | Share the topology view with your team to validate the dependency structure |
 | **Capacity planning** | Focus scaling efforts on high-pressure services with many dependents |
-| **Resilience planning** | Add redundancy to single points of failure identified in the Graph view |
+| **Resilience planning** | Add redundancy to single points of failure identified in the service graph |
 | **Onboarding** | Walk new team members through the live topology to build system understanding |
 | **Incident preparation** | Know your critical paths before an incident happens |
 
@@ -155,7 +158,7 @@ Use what you've learned for:
 
 | Step | Action | Outcome |
 |------|--------|---------|
-| 1 | Switched to Graph view | Saw services arrange by dependencies |
+| 1 | Switched to the service graph | Saw services arrange by dependencies |
 | 2 | Observed clusters from above | Identified natural service groupings |
 | 3 | Read traffic line indicators | Understood throughput and health of each connection |
 | 4 | Asked Tessa for dependency map | Got a structured breakdown of the topology |

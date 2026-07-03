@@ -2,140 +2,81 @@
 
 **Difficulty:** :material-star::material-star: Intermediate | **Time:** ~15 minutes
 
-A service is running slow. Users are complaining. In this walkthrough, you'll track down a latency spike from the first visual indicator on the Grid all the way to the root cause - a slow database query - using Tessa and the Diagnostics Room.
+This tutorial walks you through tracking down a latency spike end to end, from the first visual cue on the Grid to the root cause. A service is running slow and users are complaining. You'll follow the problem into the Diagnostics cube, read the trace's spans and logs, then confirm it with Tessa.
 
 ## What You'll Learn
 
-- How to spot latency problems from visual indicators
-- How to use Tessa to diagnose latency issues
-- How to examine slow traces in the Diagnostics Room
-- How to compare current performance against a baseline
+- How to spot slow traces on the Grid by their height
+- How to send a trace into the Diagnostics cube
+- How to read the logs wall and the span waterfall to find a root cause
+- How to confirm the finding with Tessa
 
 ---
 
-## Step 1: Spot the Problem on the Grid
+## Step 1: Spot the Slow Trace on the Grid
 
-1. **Enter your grid** and look across your services.
-2. **Scan for yellow or orange indicators** - these signal elevated or high latency.
+1. **Enter your grid** and press `M` for the Traces & Logs Camera View, a top-down view of the trace field.
+2. **Find the tallest towers** in the top-down view. A trace's height is its duration, so slow traces stand out above the rest. Hover one for its tooltip if you want to confirm before dropping in.
+3. **Click a tall `order-service` trace cube** to port down onto the grid at that spot. You land on the skyline, standing next to it.
 
 !!! info "What you see"
-    Most of your Grid glows a steady green. But one service stands out - `order-service` pulses with an orange glow, noticeably different from its neighbors. The connections leading into it are still active (pulsing lines), but the pulses move slower than usual, visually reflecting the increased response times. The services downstream from `order-service` may show yellow indicators too, as the latency cascades.
+    You are now on a purple-gridded floor with a skyline of cuboid towers stretching in front of you, a city of traces. Most are short and green, steady traffic completing quickly. The cluster you dropped into rises far above the rest, tied to `order-service`. The tall towers are green, not red: these traces are completing, they are just taking a long time, so they stand tall without turning red. That height is the visual signature of a latency spike.
+
+!!! tip "ProTip"
+    A tower's height is duration and its color is health. A tall red tower is a slow trace that also failed; a tall green tower is a slow trace that still succeeded. See the [Color legend](../Reference/color-legend.md).
 
 ---
 
-## Step 2: Navigate to the Affected Service
+## Step 2: Send the Trace to the Diagnostics cube
 
-1. **Navigate toward `order-service`** using `W` to move forward. Use `Space` to rise above the Grid for a better approach angle.
-2. **Left-click on `order-service`** to select it.
+1. **Look at the tower you landed next to.** Each trace sits as two adjacent aggregate blocks: a Trace Aggregate Block (its spans) and a Log Aggregate Block (its logs).
+2. **Click the rhombus next to the Trace Aggregate Block.** You zoom deeper into that trace and arrive inside the Diagnostics cube, where Tessa's context is focused on it.
 
 !!! info "What you see"
-    As you approach, the orange glow becomes more vivid. You can see the service name and its key metrics in the selection panel - latency has jumped from its normal 80ms to over 1,200ms. The error rate is still low, so the service isn't failing - it's just slow. The outgoing connections to downstream services pulse sluggishly compared to the crisp, fast pulses on healthy connections nearby.
+    The Grid dissolves and the Diagnostics cube builds around you, "DIAGNOSTICS" on the wall. The single trace has un-flattened into two giant walls of horizontal bars, and you are standing between them. This is the payoff of a spatial trace: instead of a collapsed row in a table, the trace is a place you stand inside, logs on one wall and the span waterfall on the other.
 
 ---
 
-## Step 3: Ask Tessa What's Wrong
+## Step 3: Read the Span Waterfall
 
-1. **Open the chat panel** and type:
+1. **Turn to the north wall**, the span waterfall.
+2. **Follow the bars down and to the right.** Bar length is span duration, so the widest bar is the slowest span.
+
+!!! info "What you see"
+    The spans step down and to the right in a classic waterfall: the incoming request, then child spans branching out through middleware, business logic, and the database call. One span dominates: a `SELECT` against `inventory-db` stretches far wider than any other bar, its width standing for a ~2,100ms duration. The other spans are thin slivers by comparison. Green spans are healthy; had any errored, they would be red. The bottleneck is immediately, viscerally obvious.
+
+---
+
+## Step 4: Read the Logs Wall
+
+1. **Turn to the west wall**, all the logs for this trace.
+2. **Read the bars top to bottom.** Each log line is a horizontal bar, color-coded by level, with the text readable on its face.
+
+!!! info "What you see"
+    The logs for this one trace stack as horizontal bars, color-coded by log level: red for error, yellow for warning, white or grey for info. Reading down the wall, you find the log lines from the slow database call, the connection-pool waits and the query-plan warning that explain why the `SELECT` took so long. You read the story of the request directly off the wall, no separate log search required.
+
+!!! tip "ProTip"
+    Log-level colors (red error, yellow warning) are their own scale, separate from the Grid's health colors. Yellow is a log warning, never a Grid health state. See the [Color legend](../Reference/color-legend.md#diagnostics-log-levels).
+
+---
+
+## Step 5: Confirm the Root Cause with Tessa
+
+1. **Open the Tessa console** and ask:
    ```
-   What's causing the latency spike on order-service?
+   What changed with inventory-db, and how does now compare to yesterday?
    ```
 2. **Press Enter** and let Tessa work.
 
 !!! info "What you see"
-    Tessa begins her analysis. She runs multiple diagnostics in sequence - a health check on the service, pressure detection across its dependencies, and an analysis of the slowest endpoints. After a moment, she responds with findings:
-
-    - **Health status:** `order-service` is degraded - P95 latency is 1,240ms (normally 75ms)
-    - **Pressure source:** Outbound calls to `inventory-db` are taking 2,100ms on average
-    - **Slowest endpoint:** `POST /api/orders/create` - 95th percentile at 2,340ms
-
-    Tessa has narrowed the problem from "something is slow" to "the inventory database calls inside the order creation endpoint are the bottleneck."
-
----
-
-## Step 4: Enter the Diagnostics Room
-
-1. **Ask Tessa** or click a slow trace from the details panel to examine it up close:
-   ```
-   Show me a slow trace for order-service
-   ```
-2. **Click the trace link** that Tessa provides, or select one from the panel. You'll teleport into the Diagnostics Room.
-
-!!! info "What you see"
-    The Grid dissolves and the Diagnostics Room builds around you. You're now inside a single trace - the full journey of one request through your system. Spans are arranged in 3D space, laid out chronologically. The first span on the left is the incoming HTTP request. Moving right, you see child spans branching out - middleware, business logic, and then the database call.
-
-    One span dominates the view: `SELECT * FROM inventory WHERE product_id IN (...)` - it stretches far wider than any other span, visually representing its 2,100ms duration. The other spans are thin slivers by comparison. The bottleneck is immediately, viscerally obvious.
-
-!!! tip "ProTip"
-    In the Diagnostics Room, move closer to a span to see its full details - duration, status code, tags, and associated logs. The spatial layout makes it easy to spot which span consumed the most time without reading a single number.
-
----
-
-## Step 5: Examine the Slow Span
-
-1. **Move toward the long span** - the database query.
-2. **Left-click** on it to see its full details.
-
-!!! info "What you see"
-    The span detail panel reveals everything about this database call:
-
-    - **Operation:** `SELECT * FROM inventory WHERE product_id IN (...)`
-    - **Duration:** 2,134ms
-    - **Database:** `inventory-db` (PostgreSQL)
-    - **Rows returned:** 847
-
-    The query is fetching inventory data for a large batch of products without an efficient index. The logs associated with this span may show additional context - connection pool wait times or query plan warnings.
-
----
-
-## Step 6: Compare with Yesterday
-
-1. **Return to the chat panel** and ask Tessa:
-   ```
-   Compare the last hour to the same time yesterday
-   ```
-2. **Review Tessa's comparison.**
-
-!!! info "What you see"
-    Tessa pulls metrics from both time windows and compares them side by side:
+    Tessa is already scoped to this trace, because you are standing in it. She compares the current window against the same time yesterday and reports the regression:
 
     | Metric | Yesterday | Now | Change |
     |--------|-----------|-----|--------|
     | P95 latency | 75ms | 1,240ms | +1,553% |
-    | Throughput | 320 req/s | 290 req/s | -9% |
-    | Error rate | 0.1% | 0.4% | +300% |
     | DB query time | 12ms | 2,134ms | +17,683% |
 
-    The database query time has exploded. Everything else is a downstream effect. Tessa notes that throughput has actually decreased slightly - likely because slow responses are backing up the request queue.
-
----
-
-## Step 7: Identify the Root Cause
-
-1. **Ask Tessa for more detail:**
-   ```
-   What changed with inventory-db since yesterday?
-   ```
-
-!!! info "What you see"
-    Tessa investigates and reports back. She detects that a deployment to `inventory-service` went out this morning that added a new query pattern - the batch `SELECT` with a large `IN` clause. The `product_id` column has an index, but the query plan is falling back to a sequential scan when the `IN` list exceeds ~100 items. This is a classic missing composite index problem.
-
----
-
-## Step 8: Ask Tessa for the Fix
-
-1. **Ask Tessa:**
-   ```
-   How do I fix the slow inventory query?
-   ```
-
-!!! info "What you see"
-    Tessa provides actionable recommendations:
-
-    1. **Immediate:** Add a composite index on the `inventory` table covering the columns used in the query
-    2. **Short-term:** Limit the batch size in the `IN` clause to 50 items and paginate
-    3. **Long-term:** Consider caching frequently requested inventory data
-
-    She gives you enough context to hand this directly to the team responsible for `inventory-service`.
+    She then explains the change: a deployment to `inventory-service` this morning added a batch `SELECT` with a large `IN` clause, and the query plan falls back to a sequential scan once the list exceeds about 100 items. The tall green tower, the wide `SELECT` span, and the logs all pointed here; Tessa confirms the cause and the change that introduced it.
 
 ---
 
@@ -145,19 +86,17 @@ In this scenario, you:
 
 | Step | Action | Outcome |
 |------|--------|---------|
-| 1 | Spotted orange indicators on the Grid | Identified `order-service` as the problem |
-| 2 | Navigated to the service and selected it | Saw latency had jumped to 1,200ms |
-| 3 | Asked Tessa to diagnose | Narrowed to slow `inventory-db` calls |
-| 4 | Entered the Diagnostics Room | Visualized the slow database span in 3D |
-| 5 | Examined the span details | Found the exact query and its 2.1s duration |
-| 6 | Compared with yesterday | Confirmed this is a new regression |
-| 7 | Investigated the change | Found a new query pattern from a deployment |
-| 8 | Asked for a fix | Got actionable index and batch-size recommendations |
+| 1 | Spotted the tall, green towers on the Grid | Identified `order-service` traces as slow, not failing |
+| 2 | Clicked the trace block's rhombus | Teleported into the Diagnostics cube with the trace |
+| 3 | Read the span waterfall | Saw the wide `inventory-db` `SELECT` span as the bottleneck |
+| 4 | Read the logs wall | Found the query-plan and connection-pool detail behind the slow call |
+| 5 | Asked Tessa to confirm | Confirmed the regression and the deployment that caused it |
 
-**Total time from alert to root cause: under 5 minutes.**
+**You traveled from "something is slow" to the exact root cause by moving through space.**
 
 ## Related
 
+- [Investigate a trace](../How-to/investigate-a-trace.md) - The same arc as a quick task reference
+- [Color legend](../Reference/color-legend.md) - What green, red, black, and grey mean, and why a slow trace stays green
+- [The spatial model](../Overview/the-spatial-model.md) - How the Grid, the Core, and the Diagnostics cube fit together
 - [Navigation & Controls](../Guides/Navigation/index.md) - Full keyboard and mouse reference
-- [Root Cause Analysis with Tessa](root-cause-analysis.md) - Diagnosing multi-service failures
-- [Understanding Your Service Topology](service-graph.md) - Mapping dependencies and traffic patterns

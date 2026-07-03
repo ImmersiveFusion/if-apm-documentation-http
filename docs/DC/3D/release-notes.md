@@ -12,7 +12,7 @@ A large release for Steam players: everything since 1.15.0 arrives in one update
 
 - **Companion Idle Autopilot**: After about 10 minutes of inactivity, the camera follows Tessa's companion on an autonomous tour of your most interesting facilities — prioritizing failing and anomalous services, with a scenic overview when the fleet is healthy. The companion eases between points of interest, faces each one, and re-targets live as the graph reflows. Any input ends the tour and returns the companion to your avatar; pin it on to keep it running continuously instead.
 - **Phantom Nodes**: The service graph now renders holographic placeholder facilities for services that are referenced but never observed — a producer publishing to a queue no one consumes, or a client calling an API with no instrumented server. Phantoms appear with persistent edges back to the callers that referenced them, and are promoted to solid facilities automatically once real telemetry arrives.
-- **Spatial Observatory**: The Hall of Supporters is reimagined as the Spatial Observatory — an immersive space for observing your services and telemetry spatially. The Buzludja monument environment is retained; the purpose and in-world guidance now center on observation.
+- **Spatial Observatory**: The Hall of Supporters is renamed the Spatial Observatory, a community space inside the world of your application. It is open to anyone, and it is where the people behind the work are seen: the supporters who helped the company grow, and the operators who keep systems running. The Buzludzha monument environment is retained.
 - **Choose Your Sign-In Browser**: A new option on the Login screen lets you sign in with your native OS browser (default) or an embedded in-world browser. Your choice is remembered.
 - **Workspace Persona for Tessa**: Point the app at a workspace and Tessa can adopt that workspace's persona. Before it does, a consent prompt asks your approval — Tessa never adopts a workspace's guidance without it.
 
@@ -94,7 +94,7 @@ This release delivers a big jump in in-world information density. Services and d
 
 - **Per-Facility Content Screens**: Services, dependencies, and the root hub each have their own error table, log table, and cost summary screens, pulled live from the telemetry stream.
 - **Row-Tap Teleport**: Tap any row in a service, dependency, error, or log table to teleport directly to the corresponding facility.
-- **GenAI Cost Visibility**: Dedicated cost summary screens on the root hub, service facilities, and the Diagnostics Room show GenAI spend and token usage at a glance.
+- **GenAI Cost Visibility**: Dedicated cost summary screens on the root hub, service facilities, and the Diagnostics cube show GenAI spend and token usage at a glance.
 
 **Improvements:**
 
@@ -113,7 +113,7 @@ This release delivers a big jump in in-world information density. Services and d
 - Fixed avatar falling through the ground after portal teleport.
 - Fixed portal ring orientation so portals face the hub center correctly.
 - Fixed graph layout instability with improved bounding box handling and cooling behavior.
-- Fixed Diagnostics Room width computation after scene hierarchy changes.
+- Fixed Diagnostics cube width computation after scene hierarchy changes.
 - Fixed numerous trace table and tooltip rendering issues.
 
 **Known Issues:**
@@ -193,7 +193,7 @@ This release introduces the live service graph, a real-time 3D visualization of 
 
 - Fixed rendering performance under high telemetry load.
 - Fixed memory-related stability issues during long sessions.
-- Fixed trace visualization scaling and display issues in the Diagnostics Room.
+- Fixed trace visualization scaling and display issues in the Diagnostics cube.
 - Fixed lobby flickering during login.
 - Fixed voice responses occasionally failing to stream.
 
@@ -205,7 +205,7 @@ This release introduces the live service graph, a real-time 3D visualization of 
 
 **Introduction:**
 
-This release marks a major milestone for Immersive APM with the debut of **Tessa**, your AI Assistant. Interact with your telemetry data using **natural language**, via **chat or voice**, to explore performance metrics, investigate anomalies, and generate insights without writing a single query. Also new: the Diagnostics Room for immersive trace visualization, a redesigned grid picker, and new ways to explore the world.
+This release marks a major milestone for Immersive APM with the debut of **Tessa**, your AI Assistant. Interact with your telemetry data using **natural language**, via **chat or voice**, to explore performance metrics, investigate anomalies, and generate insights without writing a single query. Also new: the Diagnostics cube for immersive trace visualization, a redesigned grid picker, and new ways to explore the world.
 
 **New Features:**
 
@@ -215,7 +215,7 @@ This release marks a major milestone for Immersive APM with the debut of **Tessa
     - Tessa knows which room you are in and adapts her responses.
     - Chat history is saved and restored across sessions.
     - Built-in help section for onboarding new users.
-- **Diagnostics Room**: Immersive trace visualization environment for exploring spans and logs in 3D space.
+- **Diagnostics cube**: Immersive trace visualization environment for exploring spans and logs in 3D space.
 - **Energy System**: Energy bar showing AI assistant usage with tier-aware capability levels.
 - **Grid Picker Redesign**: Card-based grid selection replacing the previous dropdown flow.
     - Demo grid support for exploring the product without live data.
@@ -234,7 +234,7 @@ This release marks a major milestone for Immersive APM with the debut of **Tessa
 
 **Bug Fixes:**
 
-- Fixed trace layout timing in the Diagnostics Room.
+- Fixed trace layout timing in the Diagnostics cube.
 - Fixed avatar getting stuck swimming after teleporting.
 - Fixed portal teleportation causing character to fall through ground.
 - Fixed grid connection and initialization issues.

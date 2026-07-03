@@ -368,7 +368,7 @@ curl -X GET "https://api-azure.iapm.app/apm/diagnostics/3fa85f64-5717-4562-b3fc-
 ```
 
 !!! tip "Visualizing the Service Map"
-    The service dependency data maps directly to the 3D service topology rendered in the IAPM Diagnostics Room. Use the `edges` array to reconstruct the call graph in your own tooling.
+    The service dependency data maps directly to the 3D service topology rendered in the IAPM Diagnostics cube. Use the `edges` array to reconstruct the call graph in your own tooling.
 
 ---
 

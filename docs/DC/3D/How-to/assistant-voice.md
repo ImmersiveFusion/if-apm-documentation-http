@@ -35,16 +35,24 @@ Once active, Tessa listens for your question, processes it, and responds with sy
 
 ## Changing Tessa's Voice
 
-Tessa can speak in different voices. Use the voice tool to browse and switch:
+Tessa can speak in different voices. You choose her voice in [IAPM Web](../../Web/index.md), not in the 3D client:
 
-| What to Say | Effect |
-|-------------|--------|
-| "List available voices" | Shows voices filtered by locale and gender |
-| "Preview the Jenny voice" | Plays a sample of a specific voice |
-| "Change your voice to Jenny" | Switches to a named voice |
-| "What voice are you using?" | Shows current voice |
+1. **Sign in to IAPM Web** and open your **Account**.
+2. **Go to Preferences** and find the **Tessa Voice** dropdown.
+3. **Pick a voice** from the list. Voices are named by language, gender, and style, for example:
+    - British English - Female - Crisp (en-GB)
+    - British English - Male - Refined (en-GB)
+    - US English - Female - Bright (en-US)
+    - US English - Female - Calm (en-US)
+    - US English - Male - Steady (en-US)
+    - French - Female - Warm (fr-FR)
+    - German - Female - Clear (de-DE)
+    - Spanish - Female - Bright (es-ES)
 
-Tessa supports fuzzy matching - saying "Jenny" resolves to the full voice name (e.g., "en-US-JennyNeural"). Your voice selection persists across sessions.
+Your selection is saved to your account and applies to Tessa wherever she speaks, including the 3D client.
+
+!!! note
+    You cannot change the voice from inside IAPM 3D. Voice selection is available only in IAPM Web account preferences. Once you set it there, the 3D client uses your chosen voice.
 
 ## Interrupting Tessa
 

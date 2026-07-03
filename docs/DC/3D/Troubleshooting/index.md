@@ -12,7 +12,7 @@ This page covers common issues you may encounter with IAPM 3D and how to resolve
 | App crashes on launch | Missing or outdated GPU drivers | Update your GPU drivers to the latest version from [NVIDIA](https://www.nvidia.com/drivers){target="_blank"}, [AMD](https://www.amd.com/en/support){target="_blank"}, or [Intel](https://www.intel.com/content/www/us/en/download-center){target="_blank"}. |
 | "Unsupported GPU" error | GPU does not meet minimum requirements (DirectX 11 / Vulkan 1.1) | Check [Supported Configurations](../Supported-Configurations/index.md) for minimum GPU requirements. Integrated graphics are not supported. |
 | Antivirus blocking installation | Security software flagging the Unity runtime or installer | Add the IAPM 3D installation directory to your antivirus exclusion list. The default Steam path is `C:\Program Files (x86)\Steam\steamapps\common\IAPM`. |
-| Offline installer fails | Corrupted download or missing Visual C++ redistributables | Re-download the installer and verify the file hash. Install the latest [Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist){target="_blank"} from Microsoft. |
+| Offline installer fails | Corrupted or incomplete download | Re-download the installer and verify the file hash, then run it again. |
 | App crashes immediately after splash screen | Corrupted local settings or cache | Delete the settings folder at `%APPDATA%\..\LocalLow\Immersive Fusion\IAPM` and relaunch the application. |
 
 ---
