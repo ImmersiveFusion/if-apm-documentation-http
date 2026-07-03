@@ -17,7 +17,7 @@ One vocabulary applies at every scale: a service node, a connection between two 
 | **Green** | Healthy | Service nodes, grid aggregate blocks, spans, logs (not edges: healthy edges are translucent glass, see below) |
 | **Orange** | Warning | Log Aggregate Block (a warning log, when no error is present); log lines at warning level |
 | **Red** | Failure. The thing is there and it is broken | Service nodes (burning texture when on fire), connections/edges, grid aggregate blocks, spans, logs |
-| **Black** | Absence. The thing should be there and is not | Service nodes ("black hole" / phantom services), Trace Aggregate Block (a trace with a missing span) |
+| **Black** | Absence. The thing should be there and is not | Service nodes (phantom services), Trace Aggregate Block (a trace with a missing span) |
 | **Grey** | Idle. Present but not currently active | Service nodes, grid aggregate blocks |
 | **White** | Hover / mouse-over highlight only. Not a health state | Grid aggregate blocks, other highlightable objects |
 
@@ -34,7 +34,7 @@ One overlap applies to node color: an idle service renders grey, unless it is a 
 | Healthy | Green | Glowing ring |
 | Unhealthy | Red | Glowing ring; a service genuinely on fire also renders a burning texture in the center |
 | Idle | Grey | Present, not currently active |
-| Phantom (absent) | Black | Expected service that never reported; rendered as a void ("black hole") in the topology |
+| Phantom (absent) | Black | Expected service that never reported; rendered as a void in the topology |
 
 ### Connection / edge (service graph)
 
