@@ -38,7 +38,7 @@ The API supports two authentication methods:
 | Method | Header | Use Case |
 |--------|--------|----------|
 | **OAuth 2.0** | `Authorization: Bearer {token}` | User-context access, interactive apps |
-| **API Key** | `API-Key: {key}` | Server-to-server, automation scripts |
+| **API Key** | `api-key: {key}` | Server-to-server, automation scripts |
 
 See the [Authentication Guide](authentication.md) for setup instructions, token acquisition, and scopes.
 

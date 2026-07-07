@@ -22,7 +22,7 @@ curl -L -o opentelemetry-javaagent.jar \
 ```bash
 java -javaagent:opentelemetry-javaagent.jar \
   -Dotel.exporter.otlp.endpoint=https://otlp.iapm.app \
-  -Dotel.exporter.otlp.headers=API-Key=YOUR-API-KEY \
+  -Dotel.exporter.otlp.headers=api-key=YOUR-API-KEY \
   -Dotel.service.name=my-java-app \
   -jar your-application.jar
 ```
@@ -82,7 +82,7 @@ otel:
     otlp:
       endpoint: https://otlp.iapm.app
       headers:
-        API-Key: YOUR-API-KEY
+        api-key: YOUR-API-KEY
   service:
     name: my-spring-boot-app
 ```
@@ -91,7 +91,7 @@ Or in `application.properties`:
 
 ```properties
 otel.exporter.otlp.endpoint=https://otlp.iapm.app
-otel.exporter.otlp.headers.API-Key=YOUR-API-KEY
+otel.exporter.otlp.headers.api-key=YOUR-API-KEY
 otel.service.name=my-spring-boot-app
 ```
 
@@ -171,7 +171,7 @@ public class OtelConfig {
         // Trace exporter
         OtlpGrpcSpanExporter spanExporter = OtlpGrpcSpanExporter.builder()
             .setEndpoint("https://otlp.iapm.app")
-            .addHeader("API-Key", "YOUR-API-KEY")
+            .addHeader("api-key", "YOUR-API-KEY")
             .build();
 
         SdkTracerProvider tracerProvider = SdkTracerProvider.builder()
@@ -182,7 +182,7 @@ public class OtelConfig {
         // Metric exporter
         OtlpGrpcMetricExporter metricExporter = OtlpGrpcMetricExporter.builder()
             .setEndpoint("https://otlp.iapm.app")
-            .addHeader("API-Key", "YOUR-API-KEY")
+            .addHeader("api-key", "YOUR-API-KEY")
             .build();
 
         SdkMeterProvider meterProvider = SdkMeterProvider.builder()
@@ -251,7 +251,7 @@ The Java agent and SDK autoconfigure module read these variables:
 | Variable | Value | Description |
 |----------|-------|-------------|
 | `OTEL_EXPORTER_OTLP_ENDPOINT` | `https://otlp.iapm.app` | OTLP collector endpoint |
-| `OTEL_EXPORTER_OTLP_HEADERS` | `API-Key=YOUR-API-KEY` | Authentication header |
+| `OTEL_EXPORTER_OTLP_HEADERS` | `api-key=YOUR-API-KEY` | Authentication header |
 | `OTEL_SERVICE_NAME` | `your-service-name` | Service name shown in IAPM |
 | `OTEL_EXPORTER_OTLP_PROTOCOL` | `grpc` | Protocol (grpc or http/protobuf) |
 | `OTEL_TRACES_EXPORTER` | `otlp` | Trace exporter type |
@@ -263,7 +263,7 @@ You can also use JVM system properties (prefix with `-D` and replace underscores
 ```bash
 java -javaagent:opentelemetry-javaagent.jar \
   -Dotel.exporter.otlp.endpoint=https://otlp.iapm.app \
-  -Dotel.exporter.otlp.headers=API-Key=YOUR-API-KEY \
+  -Dotel.exporter.otlp.headers=api-key=YOUR-API-KEY \
   -Dotel.service.name=my-java-app \
   -jar your-app.jar
 ```

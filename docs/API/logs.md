@@ -5,7 +5,7 @@
 The Logs API provides access to structured log data collected from your instrumented applications. Search logs with filters, retrieve individual log entries, and discover available filter options.
 
 !!! info "Authentication Required"
-    All endpoints require a valid `Authorization: Bearer {token}` or `API-Key: {key}` header. See [Authentication](authentication.md).
+    All endpoints require a valid `Authorization: Bearer {token}` or `api-key: {key}` header. See [Authentication](authentication.md).
 
 ---
 

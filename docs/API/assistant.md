@@ -5,7 +5,7 @@
 The AI Assistant API provides programmatic access to Tessa - IAPM's purpose-built AI for application diagnostics. Send chat prompts, convert text to speech, recognize spoken audio, track usage, and manage Grid-level limits.
 
 !!! info "Authentication Required"
-    All endpoints require a valid `Authorization: Bearer {token}` or `API-Key: {key}` header. See [Authentication](authentication.md).
+    All endpoints require a valid `Authorization: Bearer {token}` or `api-key: {key}` header. See [Authentication](authentication.md).
 
 ## Instance Identifiers
 

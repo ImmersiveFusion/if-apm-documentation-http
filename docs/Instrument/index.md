@@ -12,7 +12,7 @@ All you need is your **OTLP endpoint** and **API key**:
 |---------|-------|
 | **Endpoint** | `https://otlp.iapm.app` |
 | **Protocol** | `grpc` (default) or `http/protobuf` |
-| **API Key Header** | `API-Key: YOUR-API-KEY` |
+| **API Key Header** | `api-key: YOUR-API-KEY` |
 
 Get your API key by logging in at [portal.iapm.app](https://portal.iapm.app){ target="_blank" }, then go to **Administration > Grids** and click **Instrument** on your Grid.
 
@@ -23,7 +23,7 @@ The fastest way to configure any OpenTelemetry SDK is with environment variables
 | Variable | Value | Description |
 |----------|-------|-------------|
 | `OTEL_EXPORTER_OTLP_ENDPOINT` | `https://otlp.iapm.app` | OTLP collector endpoint |
-| `OTEL_EXPORTER_OTLP_HEADERS` | `API-Key=YOUR-API-KEY` | Authentication header |
+| `OTEL_EXPORTER_OTLP_HEADERS` | `api-key=YOUR-API-KEY` | Authentication header |
 | `OTEL_SERVICE_NAME` | `your-service-name` | Identifies your service in IAPM |
 
 ## Quick Start by Language
@@ -41,14 +41,14 @@ Choose your language to see the minimal configuration needed to start sending te
             .AddOtlpExporter(options =>
             {
                 options.Endpoint = new Uri("https://otlp.iapm.app");
-                options.Headers = "API-Key=YOUR-API-KEY";
+                options.Headers = "api-key=YOUR-API-KEY";
             }))
         .WithMetrics(metrics => metrics
             .AddAspNetCoreInstrumentation()
             .AddOtlpExporter(options =>
             {
                 options.Endpoint = new Uri("https://otlp.iapm.app");
-                options.Headers = "API-Key=YOUR-API-KEY";
+                options.Headers = "api-key=YOUR-API-KEY";
             }));
     ```
 
@@ -64,7 +64,7 @@ Choose your language to see the minimal configuration needed to start sending te
     # Run your application with auto-instrumentation
     java -javaagent:opentelemetry-javaagent.jar \
       -Dotel.exporter.otlp.endpoint=https://otlp.iapm.app \
-      -Dotel.exporter.otlp.headers=API-Key=YOUR-API-KEY \
+      -Dotel.exporter.otlp.headers=api-key=YOUR-API-KEY \
       -Dotel.service.name=your-service-name \
       -jar your-app.jar
     ```
@@ -78,7 +78,7 @@ Choose your language to see the minimal configuration needed to start sending te
 
     # Auto-instrument and run
     OTEL_EXPORTER_OTLP_ENDPOINT=https://otlp.iapm.app \
-    OTEL_EXPORTER_OTLP_HEADERS="API-Key=YOUR-API-KEY" \
+    OTEL_EXPORTER_OTLP_HEADERS="api-key=YOUR-API-KEY" \
     OTEL_SERVICE_NAME=your-service-name \
     opentelemetry-instrument python your_app.py
     ```
@@ -103,7 +103,7 @@ Choose your language to see the minimal configuration needed to start sending te
     const sdk = new NodeSDK({
       traceExporter: new OTLPTraceExporter({
         url: 'https://otlp.iapm.app',
-        headers: { 'API-Key': 'YOUR-API-KEY' },
+        headers: { 'api-key': 'YOUR-API-KEY' },
       }),
       instrumentations: [getNodeAutoInstrumentations()],
     });
@@ -124,7 +124,7 @@ Choose your language to see the minimal configuration needed to start sending te
     exporter, err := otlptracegrpc.New(ctx,
         otlptracegrpc.WithEndpoint("otlp.iapm.app:443"),
         otlptracegrpc.WithHeaders(map[string]string{
-            "API-Key": "YOUR-API-KEY",
+            "api-key": "YOUR-API-KEY",
         }),
         otlptracegrpc.WithTLSCredentials(credentials.NewClientTLSFromCert(nil, "")),
     )

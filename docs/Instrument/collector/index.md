@@ -49,7 +49,7 @@ exporters:
   otlp/iapm:
     endpoint: otlp.iapm.app:443
     headers:
-      API-Key: YOUR-API-KEY
+      api-key: YOUR-API-KEY
 
 service:
   pipelines:
@@ -112,7 +112,7 @@ exporters:
   otlp/iapm:
     endpoint: otlp.iapm.app:443
     headers:
-      API-Key: ${env:IAPM_API_KEY}
+      api-key: ${env:IAPM_API_KEY}
     retry_on_failure:
       enabled: true
       initial_interval: 5s
@@ -322,7 +322,7 @@ data:
       otlp/iapm:
         endpoint: otlp.iapm.app:443
         headers:
-          API-Key: ${env:IAPM_API_KEY}
+          api-key: ${env:IAPM_API_KEY}
 
     extensions:
       health_check:

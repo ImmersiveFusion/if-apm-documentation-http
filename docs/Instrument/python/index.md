@@ -47,7 +47,7 @@ The `opentelemetry-instrument` command wraps your application and automatically 
 
 ```bash
 OTEL_EXPORTER_OTLP_ENDPOINT=https://otlp.iapm.app \
-OTEL_EXPORTER_OTLP_HEADERS="API-Key=YOUR-API-KEY" \
+OTEL_EXPORTER_OTLP_HEADERS="api-key=YOUR-API-KEY" \
 OTEL_SERVICE_NAME=my-python-app \
 opentelemetry-instrument python your_app.py
 ```
@@ -58,7 +58,7 @@ For framework-specific entry points:
 
     ```bash
     OTEL_EXPORTER_OTLP_ENDPOINT=https://otlp.iapm.app \
-    OTEL_EXPORTER_OTLP_HEADERS="API-Key=YOUR-API-KEY" \
+    OTEL_EXPORTER_OTLP_HEADERS="api-key=YOUR-API-KEY" \
     OTEL_SERVICE_NAME=my-django-app \
     opentelemetry-instrument python manage.py runserver
     ```
@@ -67,7 +67,7 @@ For framework-specific entry points:
 
     ```bash
     OTEL_EXPORTER_OTLP_ENDPOINT=https://otlp.iapm.app \
-    OTEL_EXPORTER_OTLP_HEADERS="API-Key=YOUR-API-KEY" \
+    OTEL_EXPORTER_OTLP_HEADERS="api-key=YOUR-API-KEY" \
     OTEL_SERVICE_NAME=my-flask-app \
     opentelemetry-instrument flask run
     ```
@@ -76,7 +76,7 @@ For framework-specific entry points:
 
     ```bash
     OTEL_EXPORTER_OTLP_ENDPOINT=https://otlp.iapm.app \
-    OTEL_EXPORTER_OTLP_HEADERS="API-Key=YOUR-API-KEY" \
+    OTEL_EXPORTER_OTLP_HEADERS="api-key=YOUR-API-KEY" \
     OTEL_SERVICE_NAME=my-fastapi-app \
     opentelemetry-instrument uvicorn main:app
     ```
@@ -85,7 +85,7 @@ For framework-specific entry points:
 
     ```bash
     OTEL_EXPORTER_OTLP_ENDPOINT=https://otlp.iapm.app \
-    OTEL_EXPORTER_OTLP_HEADERS="API-Key=YOUR-API-KEY" \
+    OTEL_EXPORTER_OTLP_HEADERS="api-key=YOUR-API-KEY" \
     OTEL_SERVICE_NAME=my-app \
     opentelemetry-instrument gunicorn myapp.wsgi:application
     ```
@@ -112,7 +112,7 @@ def configure_opentelemetry():
 
     exporter = OTLPSpanExporter(
         endpoint="https://otlp.iapm.app",
-        headers={"API-Key": "YOUR-API-KEY"},
+        headers={"api-key": "YOUR-API-KEY"},
     )
     provider.add_span_processor(BatchSpanProcessor(exporter))
 
@@ -153,7 +153,7 @@ resource = Resource.create({SERVICE_NAME: "my-flask-app"})
 provider = TracerProvider(resource=resource)
 exporter = OTLPSpanExporter(
     endpoint="https://otlp.iapm.app",
-    headers={"API-Key": "YOUR-API-KEY"},
+    headers={"api-key": "YOUR-API-KEY"},
 )
 provider.add_span_processor(BatchSpanProcessor(exporter))
 trace.set_tracer_provider(provider)
@@ -186,7 +186,7 @@ resource = Resource.create({SERVICE_NAME: "my-fastapi-app"})
 provider = TracerProvider(resource=resource)
 exporter = OTLPSpanExporter(
     endpoint="https://otlp.iapm.app",
-    headers={"API-Key": "YOUR-API-KEY"},
+    headers={"api-key": "YOUR-API-KEY"},
 )
 provider.add_span_processor(BatchSpanProcessor(exporter))
 trace.set_tracer_provider(provider)
@@ -268,7 +268,7 @@ The OpenTelemetry Python SDK reads these variables automatically:
 | Variable | Value | Description |
 |----------|-------|-------------|
 | `OTEL_EXPORTER_OTLP_ENDPOINT` | `https://otlp.iapm.app` | OTLP collector endpoint |
-| `OTEL_EXPORTER_OTLP_HEADERS` | `API-Key=YOUR-API-KEY` | Authentication header |
+| `OTEL_EXPORTER_OTLP_HEADERS` | `api-key=YOUR-API-KEY` | Authentication header |
 | `OTEL_SERVICE_NAME` | `your-service-name` | Service name shown in IAPM |
 | `OTEL_EXPORTER_OTLP_PROTOCOL` | `grpc` | Protocol (grpc or http/protobuf) |
 | `OTEL_TRACES_EXPORTER` | `otlp` | Trace exporter type |

@@ -76,7 +76,7 @@ spec:
 
 ```bash
 kubectl create secret generic iapm-api-key \
-  --from-literal=api-key="API-Key=YOUR-API-KEY"
+  --from-literal=api-key="api-key=YOUR-API-KEY"
 ```
 
 ### Apply the Instrumentation Resource
@@ -206,7 +206,7 @@ spec:
       otlp/iapm:
         endpoint: otlp.iapm.app:443
         headers:
-          API-Key: ${env:IAPM_API_KEY}
+          api-key: ${env:IAPM_API_KEY}
 
     service:
       pipelines:
@@ -272,7 +272,7 @@ spec:
       otlp/iapm:
         endpoint: otlp.iapm.app:443
         headers:
-          API-Key: ${env:IAPM_API_KEY}
+          api-key: ${env:IAPM_API_KEY}
 
     service:
       pipelines:
@@ -340,7 +340,7 @@ config:
     otlp/iapm:
       endpoint: otlp.iapm.app:443
       headers:
-        API-Key: YOUR-API-KEY
+        api-key: YOUR-API-KEY
 
   service:
     pipelines:

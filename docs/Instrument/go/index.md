@@ -63,7 +63,7 @@ func InitProvider(ctx context.Context, serviceName string) (func(), error) {
 	traceExporter, err := otlptracegrpc.New(ctx,
 		otlptracegrpc.WithEndpoint("otlp.iapm.app:443"),
 		otlptracegrpc.WithHeaders(map[string]string{
-			"API-Key": "YOUR-API-KEY",
+			"api-key": "YOUR-API-KEY",
 		}),
 		otlptracegrpc.WithTLSCredentials(credentials.NewClientTLSFromCert(nil, "")),
 	)
@@ -85,7 +85,7 @@ func InitProvider(ctx context.Context, serviceName string) (func(), error) {
 	metricExporter, err := otlpmetricgrpc.New(ctx,
 		otlpmetricgrpc.WithEndpoint("otlp.iapm.app:443"),
 		otlpmetricgrpc.WithHeaders(map[string]string{
-			"API-Key": "YOUR-API-KEY",
+			"api-key": "YOUR-API-KEY",
 		}),
 		otlpmetricgrpc.WithTLSCredentials(credentials.NewClientTLSFromCert(nil, "")),
 	)
@@ -291,7 +291,7 @@ The OpenTelemetry Go SDK reads these variables when using the autoconfigure opti
 | Variable | Value | Description |
 |----------|-------|-------------|
 | `OTEL_EXPORTER_OTLP_ENDPOINT` | `https://otlp.iapm.app` | OTLP collector endpoint |
-| `OTEL_EXPORTER_OTLP_HEADERS` | `API-Key=YOUR-API-KEY` | Authentication header |
+| `OTEL_EXPORTER_OTLP_HEADERS` | `api-key=YOUR-API-KEY` | Authentication header |
 | `OTEL_SERVICE_NAME` | `your-service-name` | Service name shown in IAPM |
 | `OTEL_EXPORTER_OTLP_PROTOCOL` | `grpc` | Protocol (grpc or http/protobuf) |
 

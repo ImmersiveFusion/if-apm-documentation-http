@@ -5,7 +5,7 @@
 The Charts and Dashboards API provides access to chart metadata, rendered chart images, chart data for custom rendering, and dashboard layouts.
 
 !!! info "Authentication Required"
-    All endpoints require a valid `Authorization: Bearer {token}` or `API-Key: {key}` header. See [Authentication](authentication.md).
+    All endpoints require a valid `Authorization: Bearer {token}` or `api-key: {key}` header. See [Authentication](authentication.md).
 
 ---
 

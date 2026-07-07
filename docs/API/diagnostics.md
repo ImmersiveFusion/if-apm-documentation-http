@@ -5,7 +5,7 @@
 The Diagnostics API is the most powerful section of the IAPM API. It provides automated system health analysis, root cause diagnosis, pressure detection, trend analysis, service dependency mapping, incident timelines, and time-window comparison - all computed from your live telemetry data.
 
 !!! info "Authentication Required"
-    All endpoints require a valid `Authorization: Bearer {token}` or `API-Key: {key}` header. See [Authentication](authentication.md).
+    All endpoints require a valid `Authorization: Bearer {token}` or `api-key: {key}` header. See [Authentication](authentication.md).
 
 ---
 
