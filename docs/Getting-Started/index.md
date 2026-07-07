@@ -2,7 +2,7 @@
 
 Most monitoring tools hand you dashboards and charts and leave you to reconstruct what your system is doing. IAPM takes your OpenTelemetry traces, metrics, and logs and renders them as a place you can move through: services stand as towers, calls flow between them as traffic, and a service that has gone missing shows up as a gap you can see. This is spatial observability, and IAPM is the product that does it.
 
-This guide takes you from a new account to your first telemetry rendered in the Grid.
+This guide takes you from first look to your own telemetry rendered in the Grid: explore a demo grid with no signup, then subscribe and send your own data.
 
 !!! tip "Meet Tessa"
     Tessa is your AI Assistant inside IAPM. Once your data is flowing, you can ask her about your system in plain language and she answers from what is actually in your telemetry. Tessa is in ALPHA.
@@ -21,16 +21,16 @@ To see it, you need the IAPM client. We recommend **IAPM 3D**, where the demo gr
 
 [Download IAPM 3D :material-download:](../DC/3D/Guides/Installation/index.md){ .md-button .md-button--primary }
 
-The same demo grids are also viewable in [IAPM Web](../DC/Web/index.md) from the browser. For the full sandbox walkthrough, including the built-in Demo grid, see [Sandbox](../Setup/Sandbox/index.md).
+The same demo grids are also viewable in [IAPM Web](../DC/Web/index.md) from the browser. For the full sandbox walkthrough, including the built-in Demo grid, see [Sandbox](../Setup/Sandbox/index.md). No subscription is needed to explore any demo grid, and in IAPM 3D you can also try light AI usage on them.
 
-When you are ready to see your **own** system, come back and sign up.
+When you are ready to bring in your **own** telemetry, subscribe and provision a grid below.
 
 ## Sign up and send your first telemetry
 
 Signing up is self-serve end to end: you choose how to sign in, name your account, pick a plan, and land in the product. New accounts start on the free **Start** plan.
 
-!!! info "Free to start"
-    The Start plan is free, and you can explore the product and the demo grids without entering any payment details. Provisioning your **own** grid does require a valid credit card, even on the free Start plan. See [Plans & Pricing](https://immersivefusion.com/pricing){ target="_blank" } for all options.
+!!! info "Free to start, but sending your own data needs a subscription"
+    Exploring the demo grids needs no account, no subscription, and no payment details. Sending your **own** telemetry is different: it requires an active subscription and a provisioned grid. The **Start** plan is free, but provisioning a grid requires a valid credit card even on Start. See [Plans & Pricing](https://immersivefusion.com/pricing){ target="_blank" } for all options.
 
 ### Choose how you sign in
 
