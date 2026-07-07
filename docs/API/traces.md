@@ -5,7 +5,7 @@
 The Traces API provides access to distributed tracing data collected by your instrumented applications. Search traces, inspect individual spans, retrieve correlated logs and errors, and explore span metadata.
 
 !!! info "Authentication Required"
-    All endpoints require a valid `Authorization: Bearer {token}` or `API-Key: {key}` header. See [Authentication](authentication.md).
+    All endpoints require a valid `Authorization: Bearer {token}` or `api-key: {key}` header. See [Authentication](authentication.md).
 
 ---
 

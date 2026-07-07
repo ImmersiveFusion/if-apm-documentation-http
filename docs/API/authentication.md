@@ -124,11 +124,11 @@ See [API Keys](../Setup/Api-Key/index.md) for detailed instructions.
 
 ### Using Your API Key
 
-Include the API key in the `API-Key` header:
+Include the API key in the `api-key` header:
 
 ```bash
 curl -X GET "https://api-azure.iapm.app/apm/diagnostics/{gridSecondaryId}/health?api-version=2.0" \
-  -H "API-Key: a1b2c3d4-e5f6-7890-abcd-ef1234567890"
+  -H "api-key: a1b2c3d4-e5f6-7890-abcd-ef1234567890"
 ```
 
 !!! warning "API Key Security"
@@ -154,7 +154,7 @@ Returned when authentication is missing or the token/key is invalid.
 
 **Common causes:**
 
-- Missing `Authorization` or `API-Key` header
+- Missing `Authorization` or `api-key` header
 - Expired access token - refresh it and retry
 - Malformed token string
 - Revoked or regenerated API key

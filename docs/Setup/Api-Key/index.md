@@ -20,7 +20,7 @@ API keys authenticate your application's telemetry data with IAPM. Each grid has
 |----------|-------------|
 | **Scope** | One API key per grid |
 | **Format** | UUID string |
-| **Header** | `API-Key` |
+| **Header** | `api-key` |
 | **Endpoint** | `https://otlp.iapm.app` |
 
 !!! warning "One API Key Per Application"
@@ -33,7 +33,7 @@ Configure your OpenTelemetry exporter with your API key:
 | Setting | Value |
 |---------|-------|
 | **Endpoint** | `https://otlp.iapm.app` |
-| **Header** | `API-Key: YOUR-API-KEY` |
+| **Header** | `api-key: YOUR-API-KEY` |
 
 See [Instrument Your Application](../Custom-application/Instrument-your-application/index.md) for language-specific examples.
 

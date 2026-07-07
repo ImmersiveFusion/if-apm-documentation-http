@@ -1,65 +1,95 @@
 # Getting Started
 
-Get up and running with IAPM in minutes. This guide walks you through account setup, application instrumentation, and your first visualization.
+Most monitoring tools hand you dashboards and charts and leave you to reconstruct what your system is doing. IAPM takes your OpenTelemetry traces, metrics, and logs and renders them as a place you can move through: services stand as towers, calls flow between them as traffic, and a service that has gone missing shows up as a gap you can see. This is spatial observability, and IAPM is the product that does it.
 
-!!! tip "The Next Dimension of Observability"
-    IAPM transforms troubleshooting from dashboard-hunting to immersive exploration. Step inside your system in 3D, and ask Tessa, your AI Assistant, for the insights you need.
+This guide takes you from a new account to your first telemetry rendered in the Grid.
 
-## Choose Your Login Method
+!!! tip "Meet Tessa"
+    Tessa is your AI Assistant inside IAPM. Once your data is flowing, you can ask her about your system in plain language and she answers from what is actually in your telemetry. Tessa is in ALPHA.
 
-Select how you want to authenticate with IAPM:
+## Try it before you sign up
 
-[Microsoft Entra ID :material-microsoft:](Step-By-Step-Instructions/Entra-ID/index.md){ .md-button .md-button--primary }
-[Local or Social Account :material-account:](Step-By-Step-Instructions/Local-and-Social/index.md){ .md-button }
+You can explore IAPM with demo data before creating an account. Demo grids carry sample telemetry from simulated services, so you can move through a real system in IAPM without instrumenting anything of your own.
 
-| Option | Best For | Identity Providers |
-|--------|----------|-------------------|
-| **Entra ID** | Organizations using Microsoft 365 or Azure | Microsoft work/school accounts, SSO |
-| **Local/Social** | Individual developers, non-Microsoft environments | Email, Google, GitHub |
+The fastest way in is the **Chaos Simulator**, a demo grid you drive yourself:
 
-Both options provide identical features and pricing.
+1. Go to [demo.iapm.app](https://demo.iapm.app){ target="_blank" }. A sandbox is created for you automatically.
+2. Click the controls to generate traffic and inject failures (latency, errors, timeouts, cascades).
+3. Open it in IAPM to watch the telemetry appear live.
 
-!!! info "Free to Start"
-    New accounts start on the free **Start** plan. No credit card required. See [Plans & Pricing](../Setup/Plans/index.md) for all options.
+To see it, you need the IAPM client. We recommend **IAPM 3D**, where the demo grid renders as a space you move through:
 
-## Quick Start Overview
+[Download IAPM 3D :material-download:](../DC/3D/Guides/Installation/index.md){ .md-button .md-button--primary }
 
-```mermaid
-graph LR
-    A[Sign Up] --> B[Create Grid]
-    B --> C[Get API Key]
-    C --> D[Instrument App]
-    D --> E[Visualize Data]
-```
+The same demo grids are also viewable in [IAPM Web](../DC/Web/index.md) from the browser. For the full sandbox walkthrough, including the built-in Demo grid, see [Sandbox](../Setup/Sandbox/index.md).
 
-| Step | Action | Time |
-|------|--------|------|
-| 1 | Sign up and configure your account | 2 min |
-| 2 | Create a grid (telemetry container) | 1 min |
-| 3 | Copy your API key | 30 sec |
-| 4 | Add OpenTelemetry to your application | 5-15 min |
-| 5 | Deploy and explore your data | Immediate |
+When you are ready to see your **own** system, come back and sign up.
 
-## Try Before You Instrument
+## Sign up and send your first telemetry
 
-Not ready to instrument your own application? Explore IAPM with pre-loaded demo data:
+Signing up is self-serve end to end: you choose how to sign in, name your account, pick a plan, and land in the product. New accounts start on the free **Start** plan.
 
-[Open Sandbox :material-flask:](../Setup/Sandbox/index.md){ .md-button .md-button--primary }
+!!! info "Free to start"
+    The Start plan is free, and you can explore the product and the demo grids without entering any payment details. Provisioning your **own** grid does require a valid credit card, even on the free Start plan. See [Plans & Pricing](https://immersivefusion.com/pricing){ target="_blank" } for all options.
 
-The sandbox provides a fully-functional environment with sample traces, metrics, and logs.
+### Choose how you sign in
 
-## Explore Your Data
+You can sign in three ways. All of them reach the same product; the only difference is which identity you bring.
 
-Once your application is sending telemetry, choose how to visualize:
+| Sign-in method | Best for |
+|----------------|----------|
+| **Email** | Individual developers; a self-managed email and password |
+| **GitHub** | Developers who would rather use their GitHub identity |
+| **Microsoft** | Organizations on Microsoft 365 or Entra ID, with work or school accounts and SSO |
 
-| Product | Description | Access |
-|---------|-------------|--------|
-| **IAPM Web** | Browser-based traces, account management, alerts | [Learn more](../DC/Web/index.md) |
-| **IAPM (3D & VR)** | Full 3D visualization with optional VR support | [Learn more](../DC/3D/index.md) |
+[Sign in to IAPM :material-rocket-launch:](https://portal.iapm.app){ .md-button .md-button--primary target="_blank" }
 
-## Need Help?
+Email and GitHub accounts land you in the web app at **my.iapm.app**; Microsoft accounts land you at **azure.iapm.app**. Both are the same application behind the same backend; the address differs only by how you signed in, so bookmark whichever one you land on.
 
-| Channel | Best For |
+For the full step-by-step, see [Sign up and instrument](Step-By-Step-Instructions/index.md).
+
+### What the sign-up flow asks you
+
+The first time you sign in, a short Quick Start wizard walks you through three steps:
+
+| Step | What happens |
+|------|--------------|
+| **1. Account** | Name your tenant (the label for your subscription, environment, and grid). One field; the rest is filled in for you. |
+| **2. Subscription** | Choose a plan. Pick a Grid tier, optionally add Tessa and support add-ons, all in one cart. Some higher tiers show **Coming soon** while capacity is brought online; the tiers you can pick today are the ones ready to serve you. Start on an available tier now and upgrade when the higher tiers open. |
+| **3. Final checks** | Choose where your data is stored, accept the terms, and add a payment method. Metered items are billed on what you use at the end of the cycle, not charged up front. |
+
+When the wizard finishes it provisions your subscription, environment, and grid, and drops you on the product hub.
+
+## Send your first trace
+
+Once you are in, the fastest way to see the Grid light up is to send a stream of ready-made traces before you touch your own application:
+
+[Send your first trace :material-vector-line:](your-first-trace.md){ .md-button .md-button--primary }
+
+This uses a ready-made trace generator, a single command-line tool you run locally, so there is no application to write or deploy. You point it at your grid with an API key and watch services appear.
+
+## Instrument your own application
+
+When you are ready for your real system, add OpenTelemetry to it and point it at IAPM:
+
+1. In the web app, go to **Administration → Grids** and click **Instrument** on your grid to copy its API key.
+2. Configure your OTLP exporter to send to `otlp.iapm.app:443` with your key.
+3. Deploy. Once your app is sending, services appear in the Grid within a couple of minutes.
+
+[Instrument your application :material-code-tags:](../Setup/Custom-application/Instrument-your-application/index.md){ .md-button .md-button--primary }
+
+## Explore your system
+
+With telemetry flowing, choose how you want to look at it:
+
+| Surface | What it is | Learn more |
+|---------|------------|------------|
+| **IAPM (3D & VR)** | The full spatial experience: walk your system, read it by shape and color, investigate a trace by moving into it | [3D & VR docs](../DC/3D/index.md) |
+| **IAPM Web** | Browser-based traces, metrics, logs, and account management | [Web docs](../DC/Web/index.md) |
+
+## Need help?
+
+| Channel | Best for |
 |---------|----------|
 | [Live Chat](javascript:zE.activate()) | Quick questions, immediate support |
 | [Discord](https://discord.gg/zevywnQp6K){ target="_blank" } | Community help, feature discussions |

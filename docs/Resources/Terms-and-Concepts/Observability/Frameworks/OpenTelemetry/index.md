@@ -43,12 +43,12 @@ All you need is the OTLP endpoint and your API key:
 |---------|-------|
 | **Endpoint** | `https://otlp.iapm.app` |
 | **Protocol** | OTLP/gRPC (port 443) or OTLP/HTTP |
-| **Auth Header** | `API-Key: YOUR-API-KEY` |
+| **Auth Header** | `api-key: YOUR-API-KEY` |
 
 ```bash
 # Environment variables - works with any OTel SDK
 export OTEL_EXPORTER_OTLP_ENDPOINT=https://otlp.iapm.app
-export OTEL_EXPORTER_OTLP_HEADERS="API-Key=YOUR-API-KEY"
+export OTEL_EXPORTER_OTLP_HEADERS="api-key=YOUR-API-KEY"
 ```
 
 For per-language setup, see the [Instrumentation Guides](../../../../../Instrument/index.md).

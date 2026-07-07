@@ -55,12 +55,12 @@ const sdk = new NodeSDK({
   }),
   traceExporter: new OTLPTraceExporter({
     url: 'https://otlp.iapm.app',
-    headers: { 'API-Key': 'YOUR-API-KEY' },
+    headers: { 'api-key': 'YOUR-API-KEY' },
   }),
   metricReader: new PeriodicExportingMetricReader({
     exporter: new OTLPMetricExporter({
       url: 'https://otlp.iapm.app',
-      headers: { 'API-Key': 'YOUR-API-KEY' },
+      headers: { 'api-key': 'YOUR-API-KEY' },
     }),
   }),
   instrumentations: [getNodeAutoInstrumentations()],
@@ -149,7 +149,7 @@ const sdk = new NodeSDK({
   }),
   traceExporter: new OTLPTraceExporter({
     url: 'https://otlp.iapm.app',
-    headers: { 'API-Key': 'YOUR-API-KEY' },
+    headers: { 'api-key': 'YOUR-API-KEY' },
   }),
   instrumentations: [getNodeAutoInstrumentations()],
 });
@@ -244,7 +244,7 @@ The OpenTelemetry Node.js SDK reads these variables automatically:
 | Variable | Value | Description |
 |----------|-------|-------------|
 | `OTEL_EXPORTER_OTLP_ENDPOINT` | `https://otlp.iapm.app` | OTLP collector endpoint |
-| `OTEL_EXPORTER_OTLP_HEADERS` | `API-Key=YOUR-API-KEY` | Authentication header |
+| `OTEL_EXPORTER_OTLP_HEADERS` | `api-key=YOUR-API-KEY` | Authentication header |
 | `OTEL_SERVICE_NAME` | `your-service-name` | Service name shown in IAPM |
 | `OTEL_EXPORTER_OTLP_PROTOCOL` | `grpc` | Protocol (grpc or http/protobuf) |
 | `OTEL_TRACES_EXPORTER` | `otlp` | Trace exporter type |

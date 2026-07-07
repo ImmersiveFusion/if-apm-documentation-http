@@ -59,7 +59,7 @@ builder.Services.AddOpenTelemetry()
         .AddOtlpExporter(options =>
         {
             options.Endpoint = new Uri("https://otlp.iapm.app");
-            options.Headers = "API-Key=YOUR-API-KEY";
+            options.Headers = "api-key=YOUR-API-KEY";
         }))
     .WithMetrics(metrics => metrics
         .AddAspNetCoreInstrumentation()
@@ -68,7 +68,7 @@ builder.Services.AddOpenTelemetry()
         .AddOtlpExporter(options =>
         {
             options.Endpoint = new Uri("https://otlp.iapm.app");
-            options.Headers = "API-Key=YOUR-API-KEY";
+            options.Headers = "api-key=YOUR-API-KEY";
         }));
 
 // Configure logging export
@@ -79,7 +79,7 @@ builder.Logging.AddOpenTelemetry(logging =>
     logging.AddOtlpExporter(options =>
     {
         options.Endpoint = new Uri("https://otlp.iapm.app");
-        options.Headers = "API-Key=YOUR-API-KEY";
+        options.Headers = "api-key=YOUR-API-KEY";
     });
 });
 
@@ -105,7 +105,7 @@ using var tracerProvider = Sdk.CreateTracerProviderBuilder()
     .AddOtlpExporter(options =>
     {
         options.Endpoint = new Uri("https://otlp.iapm.app");
-        options.Headers = "API-Key=YOUR-API-KEY";
+        options.Headers = "api-key=YOUR-API-KEY";
     })
     .Build();
 
@@ -116,7 +116,7 @@ using var meterProvider = Sdk.CreateMeterProviderBuilder()
     .AddOtlpExporter(options =>
     {
         options.Endpoint = new Uri("https://otlp.iapm.app");
-        options.Headers = "API-Key=YOUR-API-KEY";
+        options.Headers = "api-key=YOUR-API-KEY";
     })
     .Build();
 
@@ -149,14 +149,14 @@ builder.Services.AddOpenTelemetry()
         .AddOtlpExporter(options =>
         {
             options.Endpoint = new Uri("https://otlp.iapm.app");
-            options.Headers = "API-Key=YOUR-API-KEY";
+            options.Headers = "api-key=YOUR-API-KEY";
         }))
     .WithMetrics(metrics => metrics
         .AddRuntimeInstrumentation()
         .AddOtlpExporter(options =>
         {
             options.Endpoint = new Uri("https://otlp.iapm.app");
-            options.Headers = "API-Key=YOUR-API-KEY";
+            options.Headers = "api-key=YOUR-API-KEY";
         }));
 
 builder.Services.AddHostedService<MyWorker>();
@@ -172,7 +172,7 @@ Instead of hardcoding values, use environment variables. The OpenTelemetry .NET 
 | Variable | Value | Description |
 |----------|-------|-------------|
 | `OTEL_EXPORTER_OTLP_ENDPOINT` | `https://otlp.iapm.app` | OTLP collector endpoint |
-| `OTEL_EXPORTER_OTLP_HEADERS` | `API-Key=YOUR-API-KEY` | Authentication header |
+| `OTEL_EXPORTER_OTLP_HEADERS` | `api-key=YOUR-API-KEY` | Authentication header |
 | `OTEL_SERVICE_NAME` | `your-service-name` | Service name shown in IAPM |
 | `OTEL_EXPORTER_OTLP_PROTOCOL` | `grpc` | Protocol (grpc or http/protobuf) |
 
@@ -199,7 +199,7 @@ Set the variables in your launch profile, Docker configuration, or deployment en
         "MyApp": {
           "environmentVariables": {
             "OTEL_EXPORTER_OTLP_ENDPOINT": "https://otlp.iapm.app",
-            "OTEL_EXPORTER_OTLP_HEADERS": "API-Key=YOUR-API-KEY",
+            "OTEL_EXPORTER_OTLP_HEADERS": "api-key=YOUR-API-KEY",
             "OTEL_SERVICE_NAME": "my-app"
           }
         }
@@ -211,7 +211,7 @@ Set the variables in your launch profile, Docker configuration, or deployment en
 
     ```dockerfile
     ENV OTEL_EXPORTER_OTLP_ENDPOINT=https://otlp.iapm.app
-    ENV OTEL_EXPORTER_OTLP_HEADERS=API-Key=YOUR-API-KEY
+    ENV OTEL_EXPORTER_OTLP_HEADERS=api-key=YOUR-API-KEY
     ENV OTEL_SERVICE_NAME=my-app
     ```
 
@@ -231,7 +231,7 @@ Set the variables in your launch profile, Docker configuration, or deployment en
     .AddOtlpExporter(options =>
     {
         options.Endpoint = new Uri(builder.Configuration["Otel:Endpoint"]!);
-        options.Headers = $"API-Key={builder.Configuration["Otel:ApiKey"]}";
+        options.Headers = $"api-key={builder.Configuration["Otel:ApiKey"]}";
     })
     ```
 
