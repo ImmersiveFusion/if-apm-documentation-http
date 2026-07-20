@@ -32,8 +32,8 @@ See IAPM in action with a .NET Aspire application:
 | Step | Description |
 |------|-------------|
 | **1. Get API Key** | [Obtain your grid's API key](../Api-Key/index.md) |
-| **2. Instrument** | [Add OpenTelemetry to your application](Instrument-your-application/index.md) |
+| **2. Instrument** | [Add OpenTelemetry to your application](../../Instrument/index.md) |
 | **3. Best Practices** | [Follow instrumentation guidelines](../Best-Practices/index.md) |
 
-[Instrument Your Application :material-arrow-right:](Instrument-your-application/index.md){ .md-button .md-button--primary }
+[Instrument Your Application :material-arrow-right:](../../Instrument/index.md){ .md-button .md-button--primary }
 [View Best Practices :material-book-open:](../Best-Practices/index.md){ .md-button }
