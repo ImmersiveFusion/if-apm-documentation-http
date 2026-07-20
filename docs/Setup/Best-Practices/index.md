@@ -124,6 +124,6 @@ Before going to production:
 
 ## Related
 
-- [Instrument Your Application](../Custom-application/Instrument-your-application/index.md) - Setup guide
+- [Instrument Your Application](../../Instrument/index.md) - Setup guide
 - [OpenTelemetry Docs](https://opentelemetry.io/docs/){ target="_blank" } - Official documentation
 - [Semantic Conventions](https://opentelemetry.io/docs/specs/semconv/){ target="_blank" } - Attribute naming standards

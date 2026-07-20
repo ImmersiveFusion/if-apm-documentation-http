@@ -35,7 +35,7 @@ Configure your OpenTelemetry exporter with your API key:
 | **Endpoint** | `https://otlp.iapm.app` |
 | **Header** | `api-key: YOUR-API-KEY` |
 
-See [Instrument Your Application](../Custom-application/Instrument-your-application/index.md) for language-specific examples.
+See [Instrument Your Application](../../Instrument/index.md) for language-specific examples.
 
 ## Security Best Practices
 
@@ -59,5 +59,5 @@ If an API key is compromised:
 
 ## Next Steps
 
-[Instrument Your Application :material-arrow-right:](../Custom-application/Instrument-your-application/index.md){ .md-button .md-button--primary }
+[Instrument Your Application :material-arrow-right:](../../Instrument/index.md){ .md-button .md-button--primary }
 [View Best Practices :material-book-open:](../Best-Practices/index.md){ .md-button }
