@@ -6,7 +6,7 @@ tags: [explanation, overview]
 
 # Overview
 
-This section explains what IAPM (3D & VR) is, how it works, and the ideas behind it.
+This section explains what IAPM is, how it works, and the ideas behind it.
 
 ## In this section
 

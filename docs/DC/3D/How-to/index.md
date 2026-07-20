@@ -6,7 +6,7 @@ tags: [how-to]
 
 # How-to guides
 
-This section shows how to complete specific tasks with IAPM (3D & VR).
+This section shows how to complete specific tasks with IAPM.
 
 ## Working in the grid
 

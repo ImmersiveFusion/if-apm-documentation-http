@@ -6,7 +6,7 @@ tags: [reference, glossary, terminology]
 
 # Glossary
 
-This page documents the canonical names for the objects, places, and behaviors in IAPM (3D & VR), and where each one sits. Use these terms and positions exactly; they are the same across every surface and document. This page is the source of record: when another page describes an object, a direction, or a color, it matches what is written here.
+This page documents the canonical names for the objects, places, and behaviors in IAPM, and where each one sits. Use these terms and positions exactly; they are the same across every surface and document. This page is the source of record: when another page describes an object, a direction, or a color, it matches what is written here.
 
 ## Spatial layout (canon)
 

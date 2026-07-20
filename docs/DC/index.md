@@ -4,7 +4,7 @@ IAPM is available in three surfaces that work together to provide complete obser
 
 ## Surface Comparison
 
-| Feature | 3D & VR | Web | Studio |
+| Feature | 3D | Web | Studio |
 |---------|---------|-----|--------|
 | **Telemetry Data** | | | |
 | Traces | Detailed | :material-check: | Via Tessa |
@@ -21,11 +21,11 @@ IAPM is available in three surfaces that work together to provide complete obser
 | Account Management | :material-close: | :material-check: | :material-close: |
 | Mobile Access | :material-close: | :material-check: | :material-close: |
 
-## IAPM (3D & VR)
+## IAPM
 
 The full immersive experience. A native application with 3D visualization, AI Assistant, and optional VR headset support.
 
-[3D & VR :material-cube-outline:](3D/index.md){ .md-button .md-button--primary }
+[3D :material-cube-outline:](3D/index.md){ .md-button .md-button--primary }
 
 | Best For | Why |
 |----------|-----|
@@ -67,7 +67,7 @@ Lightweight native client for AI-powered chat, voice interaction, workspaces, an
 ```mermaid
 graph LR
     A[Your Application] -->|OpenTelemetry| B[IAPM Platform]
-    B --> C[IAPM 3D & VR]
+    B --> C[IAPM]
     B --> D[IAPM Web]
     B --> G[IAPM Studio]
     C -->|3D/VR Analysis| E[Deep Investigation]
@@ -75,4 +75,4 @@ graph LR
     G -->|AI Chat & Voice| H[Workspaces & Knowledge]
 ```
 
-Most teams use multiple surfaces: IAPM Web for account management and quick status checks, IAPM (3D & VR) for detailed troubleshooting and immersive analysis, and IAPM Studio for AI-powered workflows and organizational knowledge.
+Most teams use multiple surfaces: IAPM Web for account management and quick status checks, IAPM for detailed troubleshooting and immersive analysis, and IAPM Studio for AI-powered workflows and organizational knowledge.

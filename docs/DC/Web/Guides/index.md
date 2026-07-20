@@ -57,6 +57,6 @@ IAPM Web offers multiple ways to analyze traces:
 
 | Action | Link |
 |--------|------|
-| Instrument your application | [Instrumentation Guide](../../../Setup/Custom-application/Instrument-your-application/index.md) |
-| Try 3D visualization | [IAPM (3D & VR)](../../3D/index.md) |
+| Instrument your application | [Instrumentation Guide](../../../Instrument/index.md) |
+| Try 3D visualization | [IAPM](../../3D/index.md) |
 | Check browser support | [Supported Browsers](../Supported-Configurations/index.md) |

@@ -39,7 +39,7 @@ Point your OpenTelemetry OTLP exporter at IAPM. The endpoint is `otlp.iapm.app:4
         headers:
           "api-key": "your-api-key-here"
 
-[View full instrumentation examples :material-code-tags:](../../Setup/Custom-application/Instrument-your-application/index.md){ .md-button .md-button--primary }
+[View full instrumentation examples :material-code-tags:](../../Instrument/index.md){ .md-button .md-button--primary }
 
 !!! tip "Want to see it work before instrumenting your own app?"
     Send a stream of ready-made traces first with the trace generator, a single command-line tool you run locally, so there is no application to write. Follow [Send your first trace](../your-first-trace.md), then come back and point your real application here.
@@ -54,12 +54,12 @@ Point your OpenTelemetry OTLP exporter at IAPM. The endpoint is `otlp.iapm.app:4
 
 Once telemetry is flowing, choose how to look at it.
 
-### IAPM (3D & VR)
+### IAPM
 
 Enter the World of Your Application® with mouse and keyboard or a VR headset. Your services stand as towers, traffic flows between them, and a service that has gone dark shows up as a gap you can see.
 
 [Install IAPM :material-download:](../../DC/3D/Guides/Installation/index.md){ .md-button .md-button--primary }
-[3D & VR documentation :material-book-open:](../../DC/3D/index.md){ .md-button }
+[3D documentation :material-book-open:](../../DC/3D/index.md){ .md-button }
 
 ### IAPM Web
 
