@@ -1,4 +1,4 @@
-# IAPM (3D & VR)
+# IAPM
 
 Enter the World of Your Application®. IAPM transforms [Application Performance Management](../../Resources/Terms-and-Concepts/APM/index.md) into an immersive 3D experience with AI-powered assistance.
 

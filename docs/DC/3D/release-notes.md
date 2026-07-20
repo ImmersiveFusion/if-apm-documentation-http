@@ -1,4 +1,4 @@
-# IAPM (3D & VR) Release Notes
+# IAPM Release Notes
 
 ## Version History
 

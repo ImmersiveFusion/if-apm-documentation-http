@@ -6,7 +6,7 @@ tags: [reference]
 
 # Reference
 
-This page documents the lookup material for IAPM (3D & VR).
+This page documents the lookup material for IAPM.
 
 ## World and navigation reference
 

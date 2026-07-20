@@ -15,7 +15,7 @@ IAPM uses **per-node pricing**. A node is any monitored application instance sen
 | **Infrastructure** | Shared | Shared | Dedicated | Dedicated |
 | **Visualization** | | | | |
 | IAPM Web | :material-check: | :material-check: | :material-check: | :material-check: |
-| IAPM (3D & VR) | :material-check: | :material-check: | :material-check: | :material-check: |
+| IAPM | :material-check: | :material-check: | :material-check: | :material-check: |
 | **Throughput** | 50/sec | 200/sec | 1,000/sec | 2,000/sec |
 | **Data Retention** | 7 days | 30 days | 90 days | 365 days |
 | **AI (Tessa)** | 7 queries/day | 35 queries/day | Large daily budget + Code Fix | Large daily budget + Code Fix + Infra |

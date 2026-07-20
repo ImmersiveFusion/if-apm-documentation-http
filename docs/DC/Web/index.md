@@ -15,9 +15,9 @@ Browser-based access to your application telemetry. No installation required - a
 | **Account Management** | Subscriptions, billing, team members, and settings |
 <!-- | **Alerts** | Configure notifications for performance thresholds | -->
 
-## IAPM Web vs 3D & VR
+## IAPM Web vs 3D
 
-| Use Case | IAPM Web | IAPM (3D & VR) |
+| Use Case | IAPM Web | IAPM |
 |----------|:--------:|:------------:|
 | Quick status check | :material-check: | |
 | Account management | :material-check: | |
@@ -59,5 +59,5 @@ See [Release Notes](release-notes.md) for complete version history.
 |--------|------|
 | View detailed guides | [IAPM Web Guides](Guides/index.md) |
 | Check browser support | [Supported Browsers](Supported-Configurations/index.md) |
-| Instrument your app | [Instrumentation Guide](../../Setup/Custom-application/Instrument-your-application/index.md) |
-| Try 3D visualization | [IAPM (3D & VR)](../3D/index.md) |
+| Instrument your app | [Instrumentation Guide](../../Instrument/index.md) |
+| Try 3D visualization | [IAPM](../3D/index.md) |

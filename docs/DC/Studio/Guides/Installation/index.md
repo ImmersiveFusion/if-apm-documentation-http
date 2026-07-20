@@ -30,7 +30,7 @@ During early access, updates are released frequently. IAPM Studio checks for upd
 
 ## Differences from IAPM 3D
 
-IAPM Studio is a separate application from IAPM (3D & VR). Key differences:
+IAPM Studio is a separate application from IAPM. Key differences:
 
 | | Studio | 3D |
 |-|--------|----|

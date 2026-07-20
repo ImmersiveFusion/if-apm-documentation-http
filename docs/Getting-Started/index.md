@@ -76,7 +76,7 @@ When you are ready for your real system, add OpenTelemetry to it and point it at
 2. Configure your OTLP exporter to send to `otlp.iapm.app:443` with your key.
 3. Deploy. Once your app is sending, services appear in the Grid within a couple of minutes.
 
-[Instrument your application :material-code-tags:](../Setup/Custom-application/Instrument-your-application/index.md){ .md-button .md-button--primary }
+[Instrument your application :material-code-tags:](../Instrument/index.md){ .md-button .md-button--primary }
 
 ## Explore your system
 
@@ -84,7 +84,7 @@ With telemetry flowing, choose how you want to look at it:
 
 | Surface | What it is | Learn more |
 |---------|------------|------------|
-| **IAPM (3D & VR)** | The full spatial experience: walk your system, read it by shape and color, investigate a trace by moving into it | [3D & VR docs](../DC/3D/index.md) |
+| **IAPM** | The full spatial experience: walk your system, read it by shape and color, investigate a trace by moving into it | [3D docs](../DC/3D/index.md) |
 | **IAPM Web** | Browser-based traces, metrics, logs, and account management | [Web docs](../DC/Web/index.md) |
 
 ## Need help?
