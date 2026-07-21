@@ -50,5 +50,5 @@ The right analyst-framing archetype is the Bloomberg Terminal of production syst
 - A canonical "what is spatial observability" blog post on immersivefusion.com (coming soon; link to be wired when the post publishes)
 - [APM (predecessor discipline)](../APM/index.md)
 - [Observability (the broader practice)](../Observability/index.md)
-- [IAPM (the product implementing the category)](../IAPM/index.md)
+- [IAPM (the product implementing the category)](../DC/index.md)
 - [OpenTelemetry (the open-standard foundation)](../Observability/Frameworks/OpenTelemetry/index.md)

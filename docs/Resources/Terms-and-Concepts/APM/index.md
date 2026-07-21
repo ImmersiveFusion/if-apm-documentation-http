@@ -46,5 +46,5 @@ APM focuses on application performance. [Observability](../Observability/index.m
 ## Next Steps
 
 - Learn about [Observability](../Observability/index.md) and the three pillars
-- Understand how [IAPM](../IAPM/index.md) enhances APM with immersive visualization
+- Understand how [IAPM](../DC/index.md) enhances APM with immersive visualization
 - [Instrument your application](../../../Instrument/index.md) to start collecting telemetry
