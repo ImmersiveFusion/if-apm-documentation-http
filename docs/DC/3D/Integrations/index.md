@@ -1,6 +1,9 @@
 # VR Headset Integrations
 
-IAPM works great with keyboard and mouse. For a fully immersive experience, connect a supported VR headset.
+!!! warning "VR support is not actively maintained"
+    VR is not a supported surface right now. These pages are kept for anyone already running a headset: the steps may still work, but VR is not currently a maintained part of the product.
+
+IAPM runs on keyboard and mouse. It can also connect to a supported VR headset, documented here for existing headset users.
 
 ## Supported Headsets
 

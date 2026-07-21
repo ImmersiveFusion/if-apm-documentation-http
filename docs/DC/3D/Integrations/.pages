@@ -2,3 +2,7 @@ arrange:
     - index.md
     - Meta-Quest
     - HTC-Vive
+# VR mothball: whole Integrations section hidden from nav (VR not actively
+# maintained). Pages kept live so existing headset users and inbound links
+# still resolve. Restore by removing this hide: line when VR is resumed.
+hide: true

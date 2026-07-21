@@ -1,5 +1,8 @@
 # HTC Vive Integration
 
+!!! warning "VR support is not actively maintained"
+    VR is not a supported surface right now. This page is kept for anyone already running a headset: the steps may still work, but VR is not currently a maintained part of the product.
+
 Connect your HTC Vive headset to experience IAPM in full VR.
 
 ## Supported Models
