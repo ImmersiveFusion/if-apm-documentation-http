@@ -1,6 +1,6 @@
-# Immersive APM (IAPM)
+# IAPM
 
-**Immersive APM** is Immersive Fusion's approach to [Application Performance Management](../APM/index.md) that uses 3D visualization and optional VR to help engineers understand complex distributed systems.
+**IAPM** (Immersive APM) is Immersive Fusion's approach to [Application Performance Management](../APM/index.md) that uses 3D visualization and optional VR to help engineers understand complex distributed systems.
 
 ## The Challenge with Traditional APM
 
@@ -73,23 +73,15 @@ New team members can explore the architecture interactively. Build mental models
 
 Visualize traffic patterns and resource utilization. See where bottlenecks are likely to form.
 
-## Products
+## From concept to product
 
-| Product | Description | Best For |
-|---------|-------------|----------|
-| [IAPM](../../../DC/3D/index.md) | Full 3D/VR client application | Deep investigation, VR immersion |
-| [IAPM Web](../../../DC/Web/index.md) | Browser-based access | Quick access, team management |
-| [IAPM Studio](../../../DC/Studio/index.md) | Lightweight AI assistant client | Chat, voice, workspaces, org knowledge |
+IAPM is the idea; the product that realizes it is documented separately. It ships as three surfaces onto the same platform, and the product documentation covers what each one does, how to install or access it, and how to use it.
 
-## Getting Started
-
-1. **Instrument your application** with [OpenTelemetry](../Observability/Frameworks/OpenTelemetry/index.md)
-2. **Configure export** to your IAPM endpoint
-3. **Install IAPM** or access via web
-4. **Explore** your system in 3D
+See the [IAPM product documentation](../../../DC/index.md) to get started.
 
 ## See Also
 
 - [APM](../APM/index.md) - Application Performance Management fundamentals
+- [Spatial Observability](../Spatial-Observability/index.md) - The category IAPM belongs to
 - [Observability](../Observability/index.md) - The three pillars of observability
 - [Instrumentation](../Instrumentation/index.md) - How to instrument your applications
