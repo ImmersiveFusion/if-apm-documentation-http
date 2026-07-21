@@ -10,7 +10,7 @@ Build your foundation with these essential concepts:
 |---------|-------------|
 | [APM](APM/index.md) | Application Performance Management fundamentals and why they matter |
 | [Observability](Observability/index.md) | The three pillars: logs, metrics, and traces |
-| [IAPM](IAPM/index.md) | How immersive 3D/VR visualization transforms APM |
+| [IAPM](DC/index.md) | How immersive 3D visualization transforms APM |
 
 ## Data Pipeline
 
