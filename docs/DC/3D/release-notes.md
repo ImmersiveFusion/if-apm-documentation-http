@@ -251,7 +251,7 @@ This release marks a major milestone for Immersive APM with the debut of **Tessa
 
 **Introduction:**
 
-This release includes the addition of the [Spatial Observatory](../../Resources/Partner/Spatial-Observatory/index.md), with video and panels for more details. Materials are courtesy of the [Buzludzha Project](https://buzludzha-project.com/en/?source=if).
+This release includes the addition of the Spatial Observatory, with video and panels for more details. Materials are courtesy of the [Buzludzha Project](https://buzludzha-project.com/en/?source=if).
 
 **Improvements:**
 

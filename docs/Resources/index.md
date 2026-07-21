@@ -36,15 +36,3 @@ Latest news, deep dives, and announcements from the Immersive Fusion team.
 Review our service agreements, policies, and security commitments.
 
 [View Legal Documents :material-arrow-right:](Legal/index.md){ .md-button }
-
-## :material-toolbox: Toolkit
-
-Access calculators and utilities to help plan your IAPM deployment.
-
-[Open Toolkit :material-arrow-right:](Toolkit/index.md){ .md-button }
-
-## :material-handshake: Partner
-
-Join our partner ecosystem and grow with us.
-
-[Become a Partner :material-arrow-right:](Partner/index.md){ .md-button }

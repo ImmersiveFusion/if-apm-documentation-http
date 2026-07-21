@@ -131,9 +131,6 @@ plugins:
         'analysis-and-visualization/web-and-mobile/supported-configurations/index.md': 'DC/Web/Supported-Configurations/index.md'
         'analysis-and-visualization/web-and-mobile/release-notes.md': 'DC/Web/release-notes.md'
 
-        # Hall of Supporters → Spatial Observatory rename (preserve old URL)
-        'Resources/Partner/Hall-of-Supporters/index.md': 'Resources/Partner/Spatial-Observatory/index.md'
-
         # Mac → macOS redirects
         'Products/IAPM-Desktop/Guides/Installation/Mac/index.md': 'DC/3D/Guides/Installation/macOS/index.md'
         'Products/IAPM-Desktop/Guides/Uninstallation/Mac/index.md': 'DC/3D/Guides/Uninstallation/macOS/index.md'
@@ -261,9 +258,6 @@ plugins:
         'configuration-and-management/account/index.md': 'Setup/Account/index.md'
         'configuration-and-management/api-key/index.md': 'Setup/Api-Key/index.md'
         'configuration-and-management/custom-application/index.md': 'Setup/Custom-application/index.md'
-
-        # Partner → Resources/Partner
-        'partner/index.md': 'Resources/Partner/index.md'
 
         # Setup/Custom-application/Instrument → Instrument (promoted to top-level)
         # Old page replaced with redirect notice pointing to new Instrument/ section

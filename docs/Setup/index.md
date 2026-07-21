@@ -14,13 +14,6 @@ Configure your IAPM environment, manage your account, and connect your applicati
 | [Custom Application](Custom-application/index.md) | Instrument your applications |
 | [Best Practices](Best-Practices/index.md) | OpenTelemetry configuration guidelines |
 
-## Offers & Discounts
-
-| Offer | Description |
-|-------|-------------|
-| [Azure Marketplace](Offers/azure-marketplace.md) | Purchase through Microsoft Azure |
-| [Early Adopter](Discounts/early-adopter.md) | Special pricing for early customers |
-
 ## Quick Start Path
 
 ```mermaid
