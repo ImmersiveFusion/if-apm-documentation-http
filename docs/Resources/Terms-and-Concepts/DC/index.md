@@ -1,6 +1,6 @@
 # IAPM
 
-**IAPM** (Immersive APM) is Immersive Fusion's approach to [Application Performance Management](../APM/index.md) that uses 3D visualization and optional VR to help engineers understand complex distributed systems.
+**IAPM** (Immersive APM) is Immersive Fusion's approach to [Application Performance Management](../APM/index.md) that uses 3D visualization to help engineers understand complex distributed systems.
 
 ## The Challenge with Traditional APM
 
@@ -19,7 +19,7 @@ IAPM transforms how you understand your systems by rendering your application ar
 graph LR
     A[Telemetry Data] --> B[IAPM Platform]
     B --> C[3D Spatial Model]
-    C --> D[Desktop/VR Client]
+    C --> D[Desktop Client]
     C --> E[Web Interface]
 ```
 
@@ -41,7 +41,6 @@ Both appear on the Service Map. When an inferred service becomes instrumented (y
 | **3D Visualization** | Application topology rendered in three dimensions with spatial relationships |
 | **Real-Time Data** | Live telemetry via [OpenTelemetry](../Observability/Frameworks/OpenTelemetry/index.md) |
 | **AI-Assisted** | AI Assistant for root cause analysis and anomaly explanation |
-| **VR-Ready** | Optional immersive headset support for deep exploration |
 | **Collaborative** | Multiple team members can explore the same environment |
 
 ## How It Differs from Traditional APM

@@ -38,14 +38,14 @@ Use keyboard and mouse to navigate your application topology:
 
 ### VR Navigation
 
-With a VR headset, experience true immersion:
+VR is not actively maintained right now. If you already run a headset, the following controls apply:
 
 - **Teleport** - Point and move to locations
 - **Controllers** - Interact with services and data
 - **Head tracking** - Natural look-around
 - **Room scale** - Physical movement in your space
 
-See [VR Headset Integration](../Integrations/index.md) for supported devices.
+See [VR integrations](../Integrations/index.md) for supported devices.
 
 ## Benefits
 

@@ -12,7 +12,6 @@ IAPM is available in three surfaces that work together to provide complete obser
 | Metrics | Minimal | :material-check: | Via Tessa |
 | **Visualization** | | | |
 | 3D Visualization | Full immersive | :material-close: | :material-close: |
-| VR Headset Support | :material-check: | :material-close: | :material-close: |
 | AI Assistant (Tessa) | :material-check: | :material-check: | :material-check: |
 | **Collaboration** | | | |
 | Workspaces + Artifacts | :material-check: | :material-close: | :material-check: |
@@ -23,7 +22,7 @@ IAPM is available in three surfaces that work together to provide complete obser
 
 ## IAPM
 
-The full immersive experience. A native application with 3D visualization, AI Assistant, and optional VR headset support.
+The full immersive experience. A native application with 3D visualization and AI Assistant.
 
 [3D :material-cube-outline:](3D/index.md){ .md-button .md-button--primary }
 
@@ -32,7 +31,6 @@ The full immersive experience. A native application with 3D visualization, AI As
 | Deep-dive troubleshooting | Navigate through your application in 3D |
 | Architecture reviews | Visualize service dependencies spatially |
 | AI-assisted analysis | Natural chat with Tessa |
-| VR enthusiasts | Full headset support |
 
 ## IAPM Web
 
@@ -70,7 +68,7 @@ graph LR
     B --> C[IAPM]
     B --> D[IAPM Web]
     B --> G[IAPM Studio]
-    C -->|3D/VR Analysis| E[Deep Investigation]
+    C -->|3D Analysis| E[Deep Investigation]
     D -->|Browser Access| F[Quick Checks & Admin]
     G -->|AI Chat & Voice| H[Workspaces & Knowledge]
 ```

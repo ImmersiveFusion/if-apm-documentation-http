@@ -33,6 +33,6 @@ IAPM Studio is one of three surfaces into the same IAPM backend. Your workspaces
 
 | Surface | Best For |
 |---------|----------|
-| [IAPM](../3D/index.md) | Deep 3D investigation, spatial visualization, VR immersion |
+| [IAPM](../3D/index.md) | Deep 3D investigation, spatial visualization |
 | **IAPM Studio** | AI-powered chat, workspaces, artifacts, org knowledge |
 | [IAPM Web](../Web/index.md) | Quick browser access, account management, trace analysis |
