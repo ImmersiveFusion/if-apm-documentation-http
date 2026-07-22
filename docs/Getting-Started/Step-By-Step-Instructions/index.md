@@ -56,7 +56,7 @@ Once telemetry is flowing, choose how to look at it.
 
 ### IAPM
 
-Enter the World of Your Application® with mouse and keyboard or a VR headset. Your services stand as towers, traffic flows between them, and a service that has gone dark shows up as a gap you can see.
+Enter the World of Your Application® with mouse and keyboard. Your services stand as towers, traffic flows between them, and a service that has gone dark shows up as a gap you can see.
 
 [Install IAPM :material-download:](../../DC/3D/Guides/Installation/index.md){ .md-button .md-button--primary }
 [3D documentation :material-book-open:](../../DC/3D/index.md){ .md-button }

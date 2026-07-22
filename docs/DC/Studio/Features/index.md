@@ -76,5 +76,4 @@ Your conversations are saved automatically and restored when you restart Studio.
 | Multimodal vision | :material-check: | :material-close: | :material-close: |
 | Skills system | :material-check: | :material-close: | :material-close: |
 | 3D visualization | :material-close: | :material-check: | :material-close: |
-| VR support | :material-close: | :material-check: | :material-close: |
 | Browser access | :material-close: | :material-close: | :material-check: |

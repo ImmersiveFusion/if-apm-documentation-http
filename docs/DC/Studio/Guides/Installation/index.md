@@ -36,5 +36,5 @@ IAPM Studio is a separate application from IAPM. Key differences:
 |-|--------|----|
 | **Distribution** | Direct download from Immersive Fusion | Steam or offline installers |
 | **Engine** | Avalonia (native UI) | Unity 3D |
-| **Focus** | AI chat, workspaces, artifacts | 3D visualization, VR |
+| **Focus** | AI chat, workspaces, artifacts | 3D visualization |
 | **Install size** | Lightweight | Larger (3D engine) |

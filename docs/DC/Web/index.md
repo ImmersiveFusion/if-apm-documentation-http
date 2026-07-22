@@ -26,7 +26,6 @@ Browser-based access to your application telemetry. No installation required - a
 | Deep troubleshooting | | :material-check: |
 | 3D visualization | | :material-check: |
 | AI Assistant | :material-check: | :material-check: |
-| VR immersion | | :material-check: |
 
 ## Getting Started
 

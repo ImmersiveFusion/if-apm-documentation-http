@@ -36,14 +36,9 @@ Enter the World of Your Application®. IAPM transforms [Application Performance 
 | 3 | Learn navigation controls | [Navigation Guide](Guides/Navigation/index.md) |
 | 4 | Connect your telemetry data | [Instrumentation](../../Setup/Custom-application/index.md) |
 
-## VR Headset Support
+## VR headsets
 
-IAPM works great with mouse and keyboard. For full immersion, connect a supported VR headset:
-
-| Headset | Status | Guide |
-|---------|--------|-------|
-| Meta Quest | Supported | [Setup Guide](Integrations/Meta-Quest/index.md) |
-| HTC Vive | Coming soon | - |
+IAPM runs on mouse and keyboard. It can also connect to a VR headset, though VR is not actively maintained right now. If you already run a headset, see the [VR integrations](Integrations/index.md) pages.
 
 ## Video Resources
 

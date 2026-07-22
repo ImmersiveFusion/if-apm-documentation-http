@@ -13,7 +13,7 @@ social:
 
     ---
 
-    Immersive 3D and VR observability. Explore traces, metrics, and logs
+    Immersive 3D observability. Explore traces, metrics, and logs
     in a spatial environment on the Grid.
 
     [:octicons-arrow-right-24: Explore IAPM 3D](DC/3D/index.md)
