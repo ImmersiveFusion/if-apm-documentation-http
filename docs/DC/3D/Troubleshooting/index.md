@@ -52,6 +52,8 @@ This page covers common issues you may encounter with IAPM 3D and how to resolve
 
 ## VR
 
+VR is not actively maintained right now. If you already run a headset, the issues below still apply.
+
 | Symptom | Cause | Resolution |
 |---------|-------|------------|
 | VR headset not detected | SteamVR not installed or headset not properly connected | Install [SteamVR](https://store.steampowered.com/app/250820/SteamVR/){target="_blank"} and verify your headset appears in the SteamVR dashboard before launching IAPM 3D. Check USB and DisplayPort/HDMI connections. |
