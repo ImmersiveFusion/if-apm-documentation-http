@@ -10,7 +10,7 @@ This guide shows how to use speech to ask Tessa questions and hear her responses
 
 > Talk to Tessa like a teammate. Ask questions out loud, get spoken answers back - no keyboard required.
 
-Voice interaction lets you have a natural conversation with Tessa using speech recognition and synthesis. This is especially valuable in VR, where typing is impractical and hands-free operation keeps you immersed in the 3D environment.
+Voice interaction lets you have a natural conversation with Tessa using speech recognition and synthesis, keeping your hands free while you work in the 3D environment.
 
 ## Activating Voice
 
@@ -64,7 +64,7 @@ Pressing Escape does not lose your place in the conversation. Tessa's text respo
 
 ## Tips for VR Headset Users
 
-Voice is the primary interaction mode for VR:
+VR is not actively maintained right now. If you already run a headset, voice is the primary interaction mode:
 
 - **Keep voice mode on** so the microphone stays active between questions. You can have a continuous conversation without re-activating the mic each time.
 - **Be specific with service names** - speak them clearly. Tessa uses your Grid's service catalog to match what she hears.

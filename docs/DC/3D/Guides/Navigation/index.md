@@ -2,7 +2,7 @@
 
 <!-- TODO: Verify all keyboard shortcuts are accurate for current IAPM version -->
 
-Master the controls to move through your application's 3D environment efficiently. IAPM supports both desktop and VR navigation modes.
+Master the controls to move through your application's 3D environment efficiently. Desktop (keyboard and mouse) is the actively maintained navigation mode; VR controls are documented below for existing headset users but are not actively maintained.
 
 | Icon | Meaning |
 |------|---------|
@@ -60,6 +60,8 @@ Master the controls to move through your application's 3D environment efficientl
 | Preferences | `F10` | Open preferences and settings |        |
 
 ## VR Controls
+
+VR is not actively maintained right now. If you already run a headset, the controls below still apply.
 
 ### HTC Vive
 
